@@ -8,7 +8,6 @@ import { Alert, AlertTitle } from '@material-ui/lab';
 import SlideProducts from 'components/SlideProducts';
 import Product from 'components/SlideProducts/Product';
 import { CustomRouterLink } from 'components';
-import { fetchWithoutToken } from 'helpers/fetch';
 import { productsLoadProductsSections } from 'actions/products';
 
 const useStyles = makeStyles((theme) => ({
@@ -28,16 +27,16 @@ const useStyles = makeStyles((theme) => ({
 export default function Products(props) {
 	const { productsSections } = useSelector((state) => state.products);
 	const {
-		uiAllProductsSections: { isLoading, error, success },
+		uiAllProductsSections: { isLoading, error },
 	} = useSelector((state) => state.ui);
 	const classes = useStyles();
 	const dispatch = useDispatch();
 
-	useEffect(async () => {
+	useEffect(() => {
 		if (productsSections.length === 0) {
 			dispatch(productsLoadProductsSections());
 		}
-	}, []);
+	}, [dispatch, productsSections.length]);
 
 	return (
 		<div className={classes.root}>

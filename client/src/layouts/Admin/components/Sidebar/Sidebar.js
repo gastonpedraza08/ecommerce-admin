@@ -4,14 +4,15 @@ import { makeStyles } from "@material-ui/styles";
 import Divider from "@material-ui/core/Divider";
 import Drawer from "@material-ui/core/Drawer";
 
-import DashboardIcon from "@material-ui/icons/Dashboard";
-import PeopleIcon from "@material-ui/icons/People";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
-import TextFieldsIcon from "@material-ui/icons/TextFields";
 import LayersIcon from "@material-ui/icons/Layers";
+
+import DashboardIcon from "@material-ui/icons/Layers";
+import PeopleIcon from "@material-ui/icons/People";
+import LockOpenIcon from "@material-ui/icons/LockOpen";
+import TextFieldsIcon from "@material-ui/icons/TextFields";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import SettingsIcon from "@material-ui/icons/Settings";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
 
 import { Profile, SidebarNav } from "./components";
 
@@ -44,7 +45,7 @@ export default function Sidebar(props) {
   const classes = useStyles();
 
   const pages = [
-    /*{
+    {
       title: "Dashboard",
       href: "/admin/dashboard",
       icon: <DashboardIcon />,
@@ -53,13 +54,13 @@ export default function Sidebar(props) {
       title: "Users",
       href: "/admin/users",
       icon: <PeopleIcon />,
-    },*/
+    },
     {
       title: "Products",
       href: "/admin/products",
       icon: <ShoppingBasketIcon />,
     },
-    /*{
+    {
       title: "Authentication",
       href: "/admin/sign-in",
       icon: <LockOpenIcon />,
@@ -68,13 +69,13 @@ export default function Sidebar(props) {
       title: "Typography",
       href: "/admin/typography",
       icon: <TextFieldsIcon />,
-    },*/
+    },
     {
       title: "Integration",
       href: "/admin/integration",
       icon: <LayersIcon />,
     },
-    /*{
+    {
       title: "Account",
       href: "/admin/account",
       icon: <AccountBoxIcon />,
@@ -83,7 +84,7 @@ export default function Sidebar(props) {
       title: "Settings",
       href: "/admin/settings",
       icon: <SettingsIcon />,
-    },*/
+    },
   ];
 
   return (

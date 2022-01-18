@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Divider from '@material-ui/core/Divider';
-import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Alert, AlertTitle } from '@material-ui/lab';
@@ -83,7 +81,7 @@ export default function MainApp() {
 				)
 			);
 		}
-	}, [dispatch]);
+	}, [dispatch, productsSections.length, slideCurrentSlides.length]);
 
 	useEffect(() => {
 		if (productsSections.length % 2 === 0) {

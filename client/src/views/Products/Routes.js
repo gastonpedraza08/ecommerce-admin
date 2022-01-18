@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Switch, Redirect, Route, useLocation } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 
-import { productsLoadAllproducts, productsDeleteAllProducts } from 'actions/products';
+import { productsLoadAllproducts } from 'actions/products';
 
 import { Main as MainView, CreateProduct as CreateProductView } from "./views";
 import Breadcrumbs from "components/Breadcrumbs";
@@ -36,7 +36,7 @@ export default function Routes() {
 			dispatch(productsLoadAllproducts());
 		}
 		//return () => dispatch(productsDeleteAllProducts());
-	}, []);
+	}, [products.length, dispatch]);
 
 	return (
 		<div className={classes.root}>

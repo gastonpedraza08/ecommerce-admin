@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
-import { makeStyles, useTheme } from '@material-ui/styles';
+import { makeStyles } from '@material-ui/styles';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import AppBar from './AppBar';
@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
 		left: 0,
 		height: '100%',
 		width: '100%',
-		cursor: 'not-allowed',
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',

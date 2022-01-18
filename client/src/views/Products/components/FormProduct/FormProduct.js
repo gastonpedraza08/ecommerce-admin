@@ -2,9 +2,6 @@ import React, { useState } from 'react';
 import {
 	Formik,
 	Form,
-	Field,
-	ErrorMessage,
-	useFormik,
 	FastField,
 } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
@@ -12,22 +9,13 @@ import { v4 as uuidv4 } from 'uuid';
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import Button from '@material-ui/core/Button';
-import Input from '@material-ui/core/Input';
-import FilledInput from '@material-ui/core/FilledInput';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
-import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
-import Visibility from '@material-ui/icons/Visibility';
-import VisibilityOff from '@material-ui/icons/VisibilityOff';
-import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
 import UploadAlbum from '../UploadAlbum';

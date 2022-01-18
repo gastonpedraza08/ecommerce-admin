@@ -1,5 +1,4 @@
 import React, { useState, useRef } from 'react';
-import Swal from 'sweetalert2';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';

@@ -6,7 +6,6 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, alpha } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
 import InputBase from '@material-ui/core/InputBase';
 
 import { CustomRouterLink } from 'components';
@@ -150,9 +149,4 @@ export default function Footer(props) {
 			</Grid>
 		</Grid>
 	);
-}
-
-
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
 }

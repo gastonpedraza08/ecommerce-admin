@@ -55,11 +55,10 @@ export default function SearchProduct() {
 	const dispatch = useDispatch();
 	const classes = useStyles();
 	const { productsSearch } = useSelector(state => state.products);
-	const { uiSearchingProducts } = useSelector(state => state.ui);
 
 	useEffect(() => {
 		dispatch(productsSearchProducts(location.search));
-	}, []);
+	}, [dispatch, location.search]);
 
 	return (
 		<div className={classes.root}>

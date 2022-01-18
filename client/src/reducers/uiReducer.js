@@ -139,7 +139,7 @@ export const uiReducer = (state = initialState, action) => {
 					success: null
 				}
 			};
-		case types.uiStartAddProductsSection:
+		case types.uiStopAddProductsSection:
 			return {
 				...state,
 				uiAddProductsSection: {

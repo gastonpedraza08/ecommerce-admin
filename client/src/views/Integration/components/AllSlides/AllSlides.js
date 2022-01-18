@@ -45,7 +45,7 @@ export default function AllSlides() {
 	      )
 	    );
   	}
-  }, [dispatch]);
+  }, [dispatch, slides.length]);
 
   const classes = useStyles();
   return (

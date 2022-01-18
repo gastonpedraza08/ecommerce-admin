@@ -189,13 +189,6 @@ export const NumberGraterThanColumnFilter = ({
   column: { filterValue = [], preFilteredRows, setFilter, id, Header },
 }) => {
   const classes = useStyles();
-  const [min] = React.useMemo(() => {
-    let min = preFilteredRows.length ? preFilteredRows[0].values[id] : 0;
-    preFilteredRows.forEach((row) => {
-      min = Math.min(row.values[id], min);
-    });
-    return [min];
-  }, [id, preFilteredRows]);
 
   const count = preFilteredRows.length;
   const [value, setValue] = useState('');

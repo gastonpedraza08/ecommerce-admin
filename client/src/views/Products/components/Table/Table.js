@@ -10,7 +10,6 @@ import {
 import { matchSorter } from 'match-sorter';
 import { withStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
-import Box from '@material-ui/core/Box';
 import Input from '@material-ui/core/Input';
 import Typography from '@material-ui/core/Typography';
 import NativeSelect from '@material-ui/core/NativeSelect';

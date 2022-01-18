@@ -7,8 +7,6 @@ import {
 	uiStopLoadingProductsSections,
 	uiStartCreateProduct,
 	uiStopCreateProduct,
-	uiStartAddProductsSection,
-	uiStopAddProductsSection,
 	uiStartSearchingProducts,
 	uiStopSearchingProducts,
 } from "actions/ui";

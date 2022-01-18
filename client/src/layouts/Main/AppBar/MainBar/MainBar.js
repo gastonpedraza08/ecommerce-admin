@@ -36,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
 export default function MenuAppBar() {
   const dispatch = useDispatch();
   const history = useHistory();
-  const location = useLocation();
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);

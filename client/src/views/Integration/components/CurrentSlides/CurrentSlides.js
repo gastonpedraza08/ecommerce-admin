@@ -30,7 +30,7 @@ export default function CurrentSlides() {
     if (slideCurrentSlides.length === 0) {
       dispatch(slideLoadCurrentSlides());
     }
-  }, [dispatch]);
+  }, [dispatch, slideCurrentSlides.length]);
 
   const handleOpen = () => {
     setOpen(true);
