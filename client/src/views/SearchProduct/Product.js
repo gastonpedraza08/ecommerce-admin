@@ -1,0 +1,99 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import ButtonBase from '@material-ui/core/ButtonBase';
+
+import celular from 'assets/celular.jpg';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    margin: 'auto',
+    borderBottom: '2px solid ' + theme.palette.background.default
+  },
+  media: {
+		backgroundPosition: 'center',
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'contain',
+		width: 100,
+		height: 100,
+	},
+	title: {
+		textAlign: 'left',
+		color: theme.palette.text.primary,
+		display: '-webkit-box',
+		boxOrient: 'vertical',
+		lineClamp: 2,
+		wordBreak: 'break-all',
+		overflow: 'hidden',
+	},
+	subtitle: {
+		marginTop: theme.spacing(1),
+		fontSize: 12,
+		textAlign: 'left',
+		color: theme.palette.text.secondary,
+		display: '-webkit-box',
+		boxOrient: 'vertical',
+		wordBreak: 'break-all',
+		overflow: 'hidden',
+		[theme.breakpoints.up('xs')]: {
+			lineClamp: 2,
+		},
+		[theme.breakpoints.up('md')]: {
+			lineClamp: 3,
+		}
+	},
+	price: {
+		fontWeight: 500,
+		marginTop: theme.spacing(2)
+	}
+}));
+
+export default function ComplexGrid(props) {
+	const { product } = props;
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <div className={classes.paper}>
+        <Grid container spacing={2}>
+          <Grid item>
+          	<div 
+          		className={classes.media}
+          		style={{
+          			backgroundImage: `url(${product.thumbnail})`,
+          		}}
+          	>
+          	</div>
+          </Grid>
+          <Grid item xs container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Box
+									fontSize="h5.fontSize"
+									component="div"
+									classes={{ root: classes.title }}
+								>
+									{product.name}
+								</Box>
+								<Box component="div" classes={{ root: classes.subtitle }}>
+									<div dangerouslySetInnerHTML={{ __html: product.description }} >
+									</div>
+								</Box>
+                <Typography className={classes.price} display="block" gutterBottom>
+									$ {product.price}
+								</Typography>
+              </Grid>
+            </Grid>
+          </Grid>
+        </Grid>
+      </div>
+    </div>
+  );
+}
