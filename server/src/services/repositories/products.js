@@ -1,4 +1,5 @@
 const { Product, Category, sequelize, Sequelize } = require('../../models');
+const { getFilterLine } = require('../../utils/commons');
 
 const persist = async productToPersist => {
 	const result = await Product.create(productToPersist);
@@ -38,38 +39,6 @@ ORDER BY
   END;
 
 */
-
-
-const sqlEquivalent = {
-	'ram_memory': {
-		text: '',
-		sign: '='
-	},
-	'min_ram_memory': {
-		text: '.memory.ram_memory_gb',
-		sign: '>'
-	},
-	'max_ram_memory': {
-		text: '.memory.ram_memory_gb',
-		sign: '<'
-	},
-}
-
-function getFilterLine(prop, params) {
-	switch(prop) {
-		case 'ram_memory':
-			return `AND info->>"$.memory.ram_memory_gb"=${params[prop]}`
-			break;
-		case 'min_ram_memory':
-			return `AND info->>"$.memory.ram_memory_gb">${params[prop]}`
-			break;
-		case 'max_ram_memory':
-			return `AND info->>"$.memory.ram_memory_gb"<${params[prop]}`
-			break;
-		default:
-			return '';
-	}
-}
 
 const searchProducts = async params => {
 	const searchArr = params.search.split(' ');
