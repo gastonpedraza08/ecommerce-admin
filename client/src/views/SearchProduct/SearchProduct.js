@@ -1,14 +1,11 @@
-import React, { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { makeStyles } from "@material-ui/styles";
 import Grid from '@material-ui/core/Grid';
 
 import Filter from './Filter';
 import Product from './Product';
 import Pagination from './Pagination';
-
-import { productsSearchProducts } from "actions/products";
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -51,14 +48,14 @@ const useStyles = makeStyles(theme => ({
 
 
 export default function SearchProduct() {
-	const location = useLocation();
-	const dispatch = useDispatch();
+	//const location = useLocation();
+	//const dispatch = useDispatch();
 	const classes = useStyles();
 	const { productsSearch } = useSelector(state => state.products);
 
-	useEffect(() => {
+	/*useEffect(() => {
 		dispatch(productsSearchProducts(location.search));
-	}, [dispatch, location.search]);
+	}, [dispatch, location.search]);*/
 
 	return (
 		<div className={classes.root}>
