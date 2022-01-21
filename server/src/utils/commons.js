@@ -16,7 +16,13 @@ const validate = (req, res, next) => {
 function getFilterLine(prop, params) {
 	switch(prop) {
 
-		//general_characteristics
+		/*
+		*
+		*
+			general_characteristics
+		*
+		*
+		*/
 		case 'trademark':
 			return `AND info->>"$.general_characteristics.trademark" LIKE "${params[prop]}"`
 			break;
@@ -24,7 +30,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.general_characteristics.phone_line" LIKE "${params[prop]}"`
 			break;
 
-		//os
+		/*
+		*
+		*
+			os
+		*
+		*
+		*/
 		case 'os_name':
 			return `AND info->>"$.os.os_name" LIKE "${params[prop]}"`
 			break;
@@ -69,7 +81,13 @@ function getFilterLine(prop, params) {
 			break;
 		}
 
-		//screen
+		/*
+		*
+		*
+			screen
+		*
+		*
+		*/
 		case 'screen_size_inch':
 			return `AND info->>"$.screen.screen_size_inch"=${params[prop]}`
 			break;
@@ -84,7 +102,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.screen.screen_with_touch" LIKE "${params[prop]}"`
 			break;
 			
-		//battery
+		/*
+		*
+		*
+			battery
+		*
+		*
+		*/
 		case 'battery_capacity_mah':
 			return `AND info->>"$.battery.battery_capacity_mah"=${params[prop]}`
 			break;
@@ -109,7 +133,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.battery.battery_with_removable" LIKE "${params[prop]}"`
 			break;
 
-		//sim_card
+		/*
+		*
+		*
+			sim_card
+		*
+		*
+		*/
 		case 'is_dual_sim':
 			return `AND info->>"$.sim_card.is_dual_sim" LIKE "${params[prop]}"`
 			break;
@@ -120,7 +150,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.sim_card.with_esim" LIKE "${params[prop]}"`
 			break;
 
-		//memory
+		/*
+		*
+		*
+			memory
+		*
+		*
+		*/
 		case 'internal_memory_gb':
 			return `AND info->>"$.memory.internal_memory_gb"=${params[prop]}`
 			break;
@@ -155,7 +191,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.memory.maximum_memory_card_capacity_gb"<=${params[prop]}`
 			break;
 
-		//camera
+		/*
+		*
+		*
+			camera
+		*
+		*
+		*/
 		case 'main_rear_camera_resolution_mpx':
 			return `AND info->>"$.camera.main_rear_camera_resolution_mpx"=${params[prop]}`
 			break;
@@ -183,7 +225,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.camera.with_flash_on_the_front_camera" LIKE "${params[prop]}"`
 			break;
 
-		//connectivity
+		/*
+		*
+		*
+			connectivity
+		*
+		*
+		*/
 		case 'connectivity_red':
 			return `AND info->>"$.connectivity.connectivity_red" LIKE "${params[prop]}"`
 			break;
@@ -209,7 +257,13 @@ function getFilterLine(prop, params) {
 			return `AND info->>"$.connectivity.with_tv_tuner" LIKE "${params[prop]}"`
 			break;
 
-		//categoryId
+		/*
+		*
+		*
+			categoryId
+		*
+		*
+		*/
 		case 'categoryId':
 			return `AND categoryId=${params[prop]}`
 			break;
