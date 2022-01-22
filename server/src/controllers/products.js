@@ -88,7 +88,8 @@ router.get('/search', async (req, res) => {
 		const result = await handler.searchProducts(req.query);
 		res.json({
 			ok: true,
-			products: result
+			count: result ? result.length : 0,
+			products: result,
 		});
 	} catch (error) {
 		res.status(500).json({

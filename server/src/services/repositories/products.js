@@ -46,7 +46,7 @@ const searchProducts = async params => {
 	const sqlSearch = `name LIKE "%${searchArr.join(' ')}%"`;
 	const sqlInfoArr = searchArr.map(item => {
 		return (
-			`info LIKE "%${item}%"`
+			`infoHelper LIKE "%${item}%"`
 		);
 	});
 	const sqlSecondSearch = sqlInfoArr.join(' AND ');

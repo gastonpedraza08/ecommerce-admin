@@ -50,13 +50,17 @@ module.exports = {
 				defaultValue: "activo",
 				allowNull: false,
 			},
-			info: {
+			infoHelper: {
 				type: Sequelize.TEXT('long'),
 				allowNull: false,
 			},
 			condition: {
 				type: Sequelize.STRING,
 				allowNull: false,
+			},
+			link: {
+				type: Sequelize.TEXT('long'),
+				allowNull: true,
 			},
 			createdAt: {
 				allowNull: false,
