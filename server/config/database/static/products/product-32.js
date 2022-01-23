@@ -114,7 +114,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A7 2018 Sm-a750 Azul 64gb 4gb Ram Factura A/b",
-      "price": 32.999,
+      "price": 32999,
       "condition": "Usado",
       "description": "<p>TE TRAEMOS OTRA OFERTA DE NOTREDAME</p><br><p>SAMSUNG GALAXY A7 2018 SM-A750G DE 64GB DE ALMACENAMIENTO Y 4GB DE RAM COLOR AZUL OSCURO</p><br><p>Procesador: Ocho núcleos a 2.2 GHz.</p><br><p>Memoria</p><p>RAM: 4 GB</p><br><p>Almacenamiento.</p><p>Interno: 64 GB</p><p>MicroSD: sí, hasta 128 GB (sólo en el modelo de 64 GB)</p><br><p>Pantalla.</p><p>Tamaño: 6.0 pulgadas.</p><p>Resolución: FHD+ (2220 x 1080 px)</p><p>Ratio de pantalla 19:9.</p><br><p>Tecnología: AMOLED</p><br><p>Cámara trasera.</p><p>Sensor normal de 24 Mpx con apertura f/1.7</p><p>Sensor gran angular de 8 Mpx con f/2.4 y 120º de angular</p><p>Sensor para medir la profundidad de 5 Mpx con f/2.2</p><br><p>Otros: LED Flash…</p><br><p>Cámara delantera.</p><p>Resolución: 24 Mpx.</p><p>Apertura: f/2.2.</p><br><p>Conectividad: 4G/LTE, Dual SIM, Bluetooth 5, WiFi 802.11a/b/g/n/ac, radio FM, NFC</p><br><p>Puertos:</p><p>Jack 3.5 mm.</p><p>Conector MicroUSB.</p><p>Sensor de huellas en el lateral.</p><br><p>Batería: 3300 mAh.</p><p>Dimensiones: 159.8 x 76.8 x 7.5 mm.</p><p>Peso: 168 g.</p><br><p>Sistema:</p><p>Versión de Android: Android One 8 Oreo.</p><br><p>SE ENTREGA CON CARGADOR TURBO NUEVO Y 1 UNA FUNDA TRANSPARENTE DE REGALO</p><br><p>USADO</p><p>30 DIAS DE GARANTIA</p><br><p>RETIRAS POR LA ZONA DE CABILDO Y JURAMENTO EN EL BARRIO DE BELGRANO MUY CERCA DE TODOS LOS COLECTIVOS Y SUBTE D CERCA DE AMBAS ESTACIONES DE TRENES DE BELGRANO</p><p>ESTAMOS DE LU A VI DE 10 A 13 Y 14 A 19HS</p><p>TE ESPERAMOS EN NOTREDAME</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_706756-MLA43763640201_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_888673-MLA43763632448_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_990469-MLA43763640203_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_624864-MLA43763644106_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_995382-MLA43763632451_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_791213-MLA43763635401_102020-R.webp",
@@ -456,7 +456,7 @@ module.exports = {
     },
     {
       "name": "Nokia 106 (2018) 4 Mb Gris Oscuro 4 Mb Ram",
-      "price": 9.013,
+      "price": 9013,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono 106 (2018) es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu 106 (2018) podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_822663-MLA41813920064_052020-R.webp;https://http2.mlstatic.com/D_Q_NP_973097-MLA48848732168_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_933820-MLA43228769638_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_627351-MLA41813920065_052020-R.webp;https://http2.mlstatic.com/D_Q_NP_745847-MLA43229493005_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_714863-MLA43229015081_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_853544-MLA43229360451_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_860623-MLA48282031197_112021-R.webp",
@@ -543,7 +543,7 @@ module.exports = {
     },
     {
       "name": "Realme Gt Master Edition 256gb + 8gb Ram 5g Voyager Gray _s",
-      "price": 127.08,
+      "price": 12708,
       "condition": "Nuevo",
       "description": "<p>Smartphone de 6.43 pulgadas de gama media-alta</p><p>Buen sistema operativo Realme UI 2.0 con Android 11</p><p>Hardware muy completo con buena batería y procesador</p><p>Triple cámara de 61MP+8MP+2MP que graba a 4K 60fps</p><p>Buena conectividad con 5G, Bluetooth 5.2, NFC y Wifi</p><p>Panel Full HD con 120Hz nativos AMOLED</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_730788-MLA48485986929_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_691491-MLA48486038647_122021-R.webp",
@@ -662,7 +662,7 @@ module.exports = {
     },
     {
       "name": "Motorola Moto Z2 Play Xt1710-06 64gb 4gb Libre Factura A/b",
-      "price": 26.999,
+      "price": 26999,
       "condition": "Usado",
       "description": "<p>TE TRAEMOS OTRA OFERTA DE NOTREDAME</p><br><p>MOTOROLA MOTO Z2 PLAY XT1710-06 DE 64GB DE ALMACENAMIENTO / 4GB RAM</p><br><p>Pantalla: 5.5\", 1080 x 1920 pixels</p><p>RAM: 4GB</p><p>Almacenamiento: 64GB</p><p>Expansión: microSD</p><p>Cámara: 12 MP</p><p>Batería: 3000 mAh</p><p>Perfil: 6 mm</p><p>Peso: 145 g</p><br><p>equipo usado se entrega con cargador nuevo alternativo, sin caja ni accesorios</p><p>30 DIAS DE GARANTIA</p><br><p>RETIRAS POR LA ZONA DE CABILDO Y JURAMENTO EN EL BARRIO DE BELGRANO MUY CERCA DE TODOS LOS COLECTIVOS Y SUBTE D CERCA DE AMBAS ESTACIONES DE TRENES DE BELGRANO</p><p>ESTAMOS DE LU A VI DE 10 A 13 Y 14 A 19HS</p><p>TE ESPERAMOS EN NOTREDAME</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_914075-MLA48037586235_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_893122-MLA48037473744_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_878922-MLA48037599196_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_750951-MLA48037445893_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_978070-MLA48037625073_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_807455-MLA48037431986_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_844876-MLA48037458839_102021-R.webp",
@@ -886,7 +886,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung Galaxy A30 Sm-a305 32gb 3gb Ram Cuotas (Reacondicionado)",
-      "price": 11.999,
+      "price": 11999,
       "condition": "Reacondicionado",
       "description": "<p>——————————————————————</p><p>SKY VISION TECHNOTOWN</p><p>MercadoLíder Platinum</p><p>——————————————————————</p><p>==================================================</p><p>ATENCION ATENCION LEER ANTES DE COMPRAR</p><br><p>EL PRODUCTO AL SER REACONDICIONADO PUEDE TENER GOLPES O MARCAS DE USO QUE NO AFECTAN A SU FUNCIONAMIENTO</p><br><p>SI TIENE DUDAS DE ESTO CONSULTE ANTES DE COMPRAR</p><br><p>==================================================</p><p>************************************************************</p><p>¿Qué significa refabricado?</p><p>Se trata de un proceso mundialmente conocido orientado a la puesta a nuevo de equipos. El origen de los celulares puede ser por haber estado en exhibición, por presentar una falla al momento de la venta, por tener el embalaje golpeado o dañado, por ser devuelto en el tiempo que las grandes tiendas dan de cambio y devolución o simplemente porque la caja fue abierta y no puede venderse como nuevo.</p><br><p>La puesta a nuevo de estos equipos lo realiza el Service Oficial de la marca reemplazando las piezas falladas con repuestos originales dejando el equipo apto para la venta, respetando los estándares y pruebas de calidad del fabricante. Al ser equipos que quizás fueron usados, pueden llegar a tener marcas de uso, las cuales no afectan el funcionamiento del equipo.</p><br><p>Se entregan en caja genérica con cargador generico.</p><br><p>DESCRIPCIÓN</p><br><p>El Samsung Galaxy A30 es un smartphone Android con una pantalla Super AMOLED Full HD+ de 6.4 pulgadas con notch en forma de gota de agua (Infinity-U). Potenciado por un procesador Exynos 7904 de ocho núcleos, el Galaxy A30 tiene 3GB de memoria RAM con 32GB de almacenamiento interno o bien 4GB de memoria RAM y 64GB de almacenamiento. La cámara principal del Galaxy A30 es dual de 16 MP + 5 MP, y tiene una cámara para selfies de 16 MP. El Galaxy A30 completa sus especificaciones con una batería de 4000 mAh con carga rápida, puerto USB-C y Android 9.0 Pie.</p><br><p>REDES 2G GSM 850 / 900 / 1800 / 1900 (SIM 1 & SIM 2)</p><p>3G HSDPA 850 / 900 / 1700 (AWS) / 1900 / 2100</p><p>4G LTE 1(2100), 3(1800), 5(850), 7(2600), 8(900), 20(800), 38(2600), 40(2300), 41(2500)</p><p>GPRS Si</p><p>EDGE Si</p><p>SIM nano-SIM / nano-SIM dual</p><br><p>TAMAÑO</p><p>Dimensiones 158.5 x 74.7 x 7.7 mm</p><p>Peso 165 g</p><p>Materiales Frente de vidrio, cuerpo de plástico</p><br><p>DISPLAY</p><p>Tipo Super AMOLED touchscreen capacitivo, 16M colores</p><p>Tamaño 6.4 pulgadas, 19.5:9</p><p>Resolución 1080 x 2340 pixels</p><p>Densidad 403 ppi</p><p>Protección Gorilla Glass 3</p><br><p>PLATAFORMA</p><p>OS Android 9.0 Pie</p><p>UI One UI</p><p>Procesador Exynos 7904 octa-core 1.8GHz</p><p>GPU Mali-G71 MP2</p><br><p>MEMORIA</p><p>Interna 3GB RAM, 32GB almacenamiento interno</p><p>Slot de tarjeta microSD, hasta 512GB</p><br><p>CÁMARA</p><p>Principal Dual, 16 MP (f/1.7, PDAF) + 5 MP (f/2.2, ultra wide)</p><p>Funciones autofocus por detección de fase, flash LED, detección de rostro y sonrisa, geo-tagging, HDR</p><p>Video 1080p@30fps</p><p>Frontal 16 MP, f/2.0, 1080p</p><br><p>CONECTIVIDAD</p><p>Wi-Fi Wi-Fi 802.11 a/b/g/n/ac; Wi-Fi Direct; banda dual</p><p>Bluetooth v5.0 LE, A2DP</p><p>GPS GPS con soporte A-GPS, GLONASS, BDS</p><p>USB USB Type-C 2.0</p><p>NFC No</p><p>Puerto infrarrojo No</p><p>SONIDO Parlante Altoparlante</p><p>Conector de audio Conector de audio 3.5 mm</p><p>Notificaciones Ringtones Polifónico, MP3, WAV; Vibración</p><p>Radio FM Si</p><p>Reproductor de video MP4/H.264</p><p>Reproductor de audio MP3/eAAC+/WAV/FLAC</p><p>Cancelación activa de ruido con micrófono dedicado</p><br><p>CARACTERÍSTICAS</p><p>Sensores Acelerómetro</p><p>Proximidad</p><p>Luz ambiente</p><p>Seguridad Lector de huellas</p><p>Desbloqueo facial</p><p>Resistencia al agua No</p><p>Mensajería SMS, MMS, Email, Push Mail, IM</p><p>Navegador HTML5</p><p>Colores Negro, Azul, Rojo</p><p>Extras Visor de documentos</p><p>Editor de fotos</p><p>Comandos de voz Bixby</p><br><p>BATERÍA</p><p>Capacidad 4000 mAh</p><p>Tipo Li-Po</p><p>Extraíble No</p><p>Carga rápida Si, 15W</p><br><p>************************************************************</p><p>——————————————————————</p><p>—> ENTREGAS</p><br><p>OFICINAS DE MÁXIMA SEGURIDAD SKY VISION</p><br><p>Ubicada en el barrio de Belgrano a cuadras de Av. Cabildo y Juramento.</p><p>Horarios: Lunes a Viernes 10 a 18hs.</p><br><p>ENVÍO POR MENSAJERÍA EN CAPITAL Y GBA</p><p>Al momento de realizar la compra tenés que elegir la opción de entrega “lo retiro en domicilio del vendedor” y luego coordinar la entrega.</p><br><p>ENVÍOS A TODO EL PAÍS</p><br><p>ACEPTAMOS MERCADO ENVÍOS</p><br><p>—> FORMAS DE PAGO</p><br><p>MecadoPago (todas las tarjetas de crédito, rapipago, pagofacil, trasferencia)</p><br><p>—> EMITIMOS FACTURA A o B</p><br><p>—> UBICACIÓN Y HORARIOS</p><p>Oficinas de máxima seguridad ubicada en el barrio de Belgrano a cuadras de Av. Cabildo y Juramento.</p><p>Horarios: Lunes a Viernes 10 a 18hs.</p><br><p>—> GARANTÍA</p><p>Todos nuestros productos se entregan con certificados de garantía escrito.</p><br><p>—> NO ACEPTAMOS CANJES NI TOMAMOS ARTÍCULOS EN FORMA DE PAGO</p><p>——————————————————————</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_877270-MLA41107289473_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_940639-MLA41107293426_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_777160-MLA41107323066_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_927235-MLA41107368675_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_874599-MLA41107368676_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_813428-MLA41107373412_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_946553-MLA41107370587_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_652912-MLA41107362799_032020-R.webp",
@@ -997,7 +997,7 @@ module.exports = {
     },
     {
       "name": "iPhone 8 Liberado + Cargador + Cable + Funda + Templado (Reacondicionado)",
-      "price": 31.666,
+      "price": 31666,
       "condition": "Reacondicionado",
       "description": "<p>IPHONE 8 PLUS 64GB GOLD (ORO)</p><br><p>/// INCLUYE CARGADOR - CABLE - FUNDA - GLASS ///</p><br><p>== BATERIA 100% ==</p><br><p>*** INCREIBLE TELEFONO - PERFECTO ESTADO ***</p><br><p>¿Qué significa refabricado?</p><p>“Refurbished o Refabricado” es un término que se utiliza para describir como equipos usados que han sido restaurados a su estado como nuevo. Cuando un equipo está reformado o restaurado, las partes que no están funcionando correctamente se sustituyen. Este proceso garantiza que el producto funcione al 100% en todas sus funciones. Al ser equipos que quizás fueron usados, pueden llegar a mantener marcas de uso.</p><br><p>***CON SISTEMA OPERATIVO IOS ACTUALIZADO***</p><br><p>- Pantalla ion-x a prueba de golpes</p><p>- Superficie oleofóbica resistente a rayones</p><p>- Soporte multitouch</p><p>- Sensor de huellas dactilares Touch ID</p><p>- Sensor acelerómetro para auto rotación</p><p>- Sensor giróscopico</p><p>- Sensor de proximidad para auto apagado</p><p>- Barómetro</p><br><p>iPhone no es un un Smartphone como cualquier otro, ingresa al mundo iPhone y descubrilo!</p><br><p>El iPhone ha sido diseñado para funcionar de manera optima, bajo las mayores exigencias, su sistema operativo es simple, intuitivo y amigable, el mismo ha sido diseñado en relacion al equipo, lo que garantiza la mas absoluta compatibilidad de todas sus funciones, asi como la optimizacion del rendimiento de la bateria, que ha sido mejorada en esta ultima version de iPhone.</p><p>Hace con iPhone todo lo que desees e imagines posible, su velocidad y eficiencia, nunca se veran afectadas.</p><p>Realiza llamadas con la mayor calidad de audio y eliminacion de ruidos ambientales.</p><p>Lleva tu musica a otro nivel, su parlante stereo no tiene rival en sonido ambiente ni con sus auriculares.</p><p>Saca fotos y selfies increibles instantaneamente compartilas en tus redes, tus dispositivos o chats, imprimilas o envialas por correo, y mas!</p><p>Conectividad 4G, si tu operador lo permite, contas con la mayor velocidad de descarga, reproduccion y navegacion en tu iPhone.</p><p>Mira tus series o peliculas favoritas en Netflix (debes disponer de una cuenta), o cualquier otro servicio de streaming.</p><p>Ultilizalo para el trabajo, con hojas de calculo, presentaciones o texto enriquecido.</p><p>Si vas a viajar utiliza su GPS, y navegador satelital, para elegir la ruta mas adecuada.</p><p>Por esto y muchas cosas mas, cuando ingreses al mundo iPhone, ya no volveras a otra marca.</p><br><p>IPhone 8 Libre de fábrica para todas las empresa y de iCloud. Funcionando 10 puntos todo. Consulte antes de ofertar</p><br><p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 12 Mpx.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 7 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 4.7\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Gran capacidad de almacenamiento</p><p>Con su memoria interna siempre tendrás espacio para almacenar archivos y documentos importantes. Además, podrás guardar películas, series y videos para reproducirlos cuando quieras sin conexión.</p><br><p>---------------------------------------------------------</p><br><p>LA ROCA SOUND</p><p>Nacimos como una empresa destinada a brindar servicio y asesoramiento en el rubro de la música. Nuestra empresa se dedica principalmente a la fabricación de consolas y potencias, Venta y distribución de bafles, instrumentos, micrófonos y accesorios.</p><p>En un mercado tan competitivo no es casual que hayamos ganado la confianza y credibilidad de clientes de todo el país, quienes tienen la seguridad de que sus requerimientos de mercadería serán abastecidos en tiempo y forma, con productos de calidad.</p><p>Fue así, que con Honestidad, eficiencia, Calidad, Servicio y sobre todo respeto al cliente, nuestra empresa fue creciendo y ganando prestigio, lo cual pueden afirmar cualquiera de nuestros clientes o proveedores.</p><p>Somos Mercado Lider Platinum (La calificación mas alta de Mercado Libre)</p><br><p>---------------------------------------------------------</p><br><p>//// COMPRA PROTEGIDA CON MERCADO PAGO ////</p><p>Si surge algún problema o no recibes el producto que se describe en esta publicación, te devolveremos el dinero</p><br><p>---------------------------------------------------------</p><br><p>Garantia 3 meses</p><br><p>---------------------------------------------------------</p><br><p>FORMAS DE PAGO</p><p>Podés pagar a través de mercado pago por tarjeta de crédito al instante o en efectivo generando un cupón de pago y luego dirigiéndote al centro de pago de tu preferencia.</p><br><p>Realizamos facturas para consumidor final, A y B, adaptándonos a cada necesidad.</p><br><p>---------------------------------------------------------</p><br><p>FORMAS DE ENVIO</p><p>- Mercado Envíos a todo el País</p><p>- Mercado Flex en el dia en Capital y Gran Buenos Aires</p><br><p>---------------------------------------------------------</p><br><p>UBICACIÓN:</p><p>Estamos Ubicados en el Barrio de Caballito, Capital Federal, Cerca de Av Gaona y Av Donato Alvarez</p><p>Te dejan cerca de nosotros los colectivos: 24 – 34 – 44 – 57 – 76 – 99 – 105 – 106 – 109 – 110 – 124 – 135 – 146 – 166 – 181</p><br><p>---------------------------------------------------------</p><br><p>MUCHAS GRACIAS POR CONFIAR EN NOSOTROS.</p><p>NO OLVIDES VISITAR NUESTRO ESHOP PARA VER NUESTRA AMPLIA OFERTA DE PRODUCTOS\"</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_794595-MLA48736641912_012022-R.webp",
@@ -1236,7 +1236,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung Galaxy A20 - Usado",
-      "price": 21.9,
+      "price": 219,
       "condition": "Usado",
       "description": "<p>Modelo Samsung Galaxy A20 en perfecto estado en su caja con cargador original.</p><br><p>El equipo funciona perfectamente y ya cuenta con la actualización (oficial) de Android 11 instalada.</p><br><p>Tiempo de uso - 1 año y 4 meses aproximadamente.</p><br><p>Cualquier consulta, no duden en preguntar.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_989227-MLA46697330873_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_994379-MLA46697323992_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_842583-MLA46697380224_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_723068-MLA46697371373_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_663765-MLA46697347663_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_881262-MLA46697335787_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_717935-MLA46697323993_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_893949-MLA46697345621_072021-R.webp",
@@ -1377,7 +1377,7 @@ module.exports = {
     },
     {
       "name": "iPhone 13 Pro Max 256 Gb Color Grafito - Entrega Inmediata",
-      "price": 429.999,
+      "price": 429999,
       "condition": "Nuevo",
       "description": "<p>iPhone 13 Pro Max, Negro grafito , 256GB</p><p>CONTAMOS CON ENTREGA INMEDIATA - UNA UNIDAD</p><br><p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Perfecta para los amantes del plano detalle. Su zoom óptico te ofrecerá la posibilidad de realizar acercamientos sin que tus capturas pierdan calidad.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Reconocimiento facial para mayor seguridad</p><p>Acercá el dispositivo a tu rostro para desbloquearlo instantáneamente. Su precisa tecnología de reconocimiento facial te garantiza un acceso al equipo rápido y seguro.</p><br><p>Batería superior</p><p>¡Desenchufate! Con la súper batería de 3687 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de recargar tu teléfono.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_998770-MLA44193700201_112020-R.webp;https://http2.mlstatic.com/D_Q_NP_846970-MLA44193696382_112020-R.webp",
@@ -1493,7 +1493,7 @@ module.exports = {
     },
     {
       "name": "Impecable Celular Xiaomi Redmi Note 6 Pro, Con Funda",
-      "price": 39.999,
+      "price": 39999,
       "condition": "Usado",
       "description": "<p>Impecable entrego con funda (dual SIM)</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_878495-MLA45598037051_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_611529-MLA45598016614_042021-R.webp",
@@ -1596,7 +1596,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A30 32 Gb Azul 3 Gb Ram Excelente (Reacondicionado)",
-      "price": 9.666,
+      "price": 9666,
       "condition": "Reacondicionado",
       "description": "<p>¿QUE SIGNIFICA REACONDICIONADO?</p><br><p>Son equipos con uso previo, sometidos a un proceso de revisión en sus componentes (Partes físicas del equipo) y programas del celular.</p><p>- Pueden presentar (o no) algunas marcas de uso, pero que en ningún caso afecta a su funcionamiento.</p><p>- Son revisados por nuestro servicio técnico para asegurar su correcto funcionamiento.</p><p>- Vuelven a salir al mercado como \"REACONDICIONADOS\" y con GARANTIA DE 3 MESES.</p><p>- Se envían en una caja alternativa, cerrada y con faja de seguridad.</p><br><p>--------------------------------------------------------------------</p><br><p>CATEGORÍAS DE LOS ESTADOS ESTÉTICOS:</p><br><p>EXCELENTE:</p><p>- Son equipos que evidencia buen tratamiento previo, con estado general excelente.</p><p>- Sus componentes y partes funcionan perfectamente.</p><p>- Pantalla y carcasa sin marcas.</p><p>- Pueden presentar hasta 3 marcas o rayas de uso en sus bordes.</p><br><p>MUY BUENO:</p><p>- Son equipos que evidencia buen tratamiento previo, con estado general muy bueno.</p><p>- Sus componentes y partes funcionan perfectamente.</p><p>- Pantalla y carcasa pueden presentar algún detalle mínimo de uso.</p><p>- Pueden presentar hasta 5 marcas o rayas de uso en sus bordes.</p><br><p>BUENO:</p><p>- Son equipos que funcionan perfectamente</p><p>- Pueden presentar más de 5 marcas o rayas de uso en sus bordes o carcasa.</p><p>- La pantalla puede presentar detalles de uso.</p><br><p>En todos los casos los funcionamientos de los equipos son correctos.</p><br><p>ESTADO ESTÉTICO DE ESTE CELULAR: EXCELENTE</p><br><p>---------------------------------------------------------------</p><br><p>SOMOS RIIING - TECNOLOGÍA MOVIL -</p><br><p>- Hacemos ENVIOS A TODO EL PAIS</p><br><p>- O Retira en Nuestro domicilio o en alguna de nuestras sucursales sin costo:</p><br><p>*Córdoba Capital</p><p>*Rosario</p><p>*San Miguel de Tucumán</p><p>*Salta</p><p>*San Fernando del valle de Catamarca</p><p>*Entre Ríos</p><p>*Neuquén</p><p>*San Juan</p><p>*San Luis</p><p>*Mendoza</p><p>*Santa Fe</p><p>*Corrientes</p><br><p>--------------------------------------------------------------</p><br><br><p>PREGUNTAS FRECUENTES</p><br><p>- ¿El equipo es el de la foto?</p><p>Las imágenes son a modo ilustrativo. Tenemos muchos disponibles y se nos imposibilita sacarle fotos a cada uno.</p><br><p>- ¿Funcionan bien?</p><p>Si, funcionan correctamente. Los mismos son sometidos a procesos de restauración tanto en su Hardware (Carcasa, pantalla y demás partes del equipo) como en Software (Sistema operativo).</p><br><p>-¿Es liberado?</p><p>Todos los equipos son liberados para todas las compañías.</p><br><p>-¿Cómo funciona la batería?</p><p>La batería funciona correctamente</p><br><p>Tienda oficial de RIIING - TECNOLOGÍA MÓVIL-.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_920284-MLA47890771655_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_675876-MLA48428031523_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_978668-MLA47890832223_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_835298-MLA47890827243_102021-R.webp",
@@ -1704,7 +1704,7 @@ module.exports = {
     },
     {
       "name": "Motorola G7 Plus",
-      "price": 33.75,
+      "price": 3375,
       "condition": "Usado",
       "description": "<p>Motorola G7 Plus -</p><br><p>Sin detalles con caja y accesorios.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_877463-MLA46862218419_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_802768-MLA46862219435_072021-R.webp;https://http2.mlstatic.com/D_Q_NP_920292-MLA46862223355_072021-R.webp",
@@ -1812,7 +1812,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A30 32 Gb Azul 3 Gb Ram Liberdo (Reacondicionado)",
-      "price": 9.666,
+      "price": 9666,
       "condition": "Reacondicionado",
       "description": "<p>El vendedor no incluyó una descripción del producto</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_752227-MLA47269736665_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_699141-MLA47269544979_082021-R.webp",
@@ -1920,7 +1920,7 @@ module.exports = {
     },
     {
       "name": "Realme Gt Master Edition 256gb + 8gb Ram Daybreak Blue _ap",
-      "price": 127.08,
+      "price": 12708,
       "condition": "Nuevo",
       "description": "<p>MARCA. realme.</p><p>MODELO. GT Master Edition RMX3363.</p><p>COLOR. Daybreak Blue.</p><p>MEMORIA INTERNA. 256GB.</p><p>MEMORIA RAM. 8GB.</p><p>PROCESADOR CPU. Qualcomm Snapdragon 778G 5G, Octa Core de 2.4GHz.</p><p>SISTEMA OPERATIVO. Android 11 + realme UI 2.0.</p><p>PANTALLA. Super AMOLED de 6.43\" Full HD+, 20:9 y 1.000 Nits de brilho.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_920244-MLA48493630590_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_979139-MLA48493663280_122021-R.webp",
@@ -2039,7 +2039,7 @@ module.exports = {
     },
     {
       "name": "Motorola Moto One 64 Gb Negro Muy Bueno (Reacondicionado)",
-      "price": 9.666,
+      "price": 9666,
       "condition": "Reacondicionado",
       "description": "<p>¿QUE SIGNIFICA REACONDICIONADO?</p><br><p>Son equipos con uso previo, sometidos a un proceso de revisión en sus componentes (Partes físicas del equipo) y programas del celular.</p><p>- Pueden presentar (o no) algunas marcas de uso, pero que en ningún caso afecta a su funcionamiento.</p><p>- Son revisados por nuestro servicio técnico para asegurar su correcto funcionamiento.</p><p>- Vuelven a salir al mercado como \"REACONDICIONADOS\" y con GARANTIA DE 3 MESES.</p><p>- Se envían en una caja alternativa, cerrada y con faja de seguridad.</p><br><p>--------------------------------------------------------------------</p><br><p>CATEGORÍAS DE LOS ESTADOS ESTÉTICOS:</p><br><p>EXCELENTE:</p><p>- Son equipos que evidencia buen tratamiento previo, con estado general excelente.</p><p>- Sus componentes y partes funcionan perfectamente.</p><p>- Pantalla y carcasa sin marcas.</p><p>- Pueden presentar hasta 3 marcas o rayas de uso en sus bordes.</p><br><p>MUY BUENO:</p><p>- Son equipos que evidencia buen tratamiento previo, con estado general muy bueno.</p><p>- Sus componentes y partes funcionan perfectamente.</p><p>- Pantalla y carcasa pueden presentar algún detalle mínimo de uso.</p><p>- Pueden presentar hasta 5 marcas o rayas de uso en sus bordes.</p><br><p>BUENO:</p><p>- Son equipos que funcionan perfectamente</p><p>- Pueden presentar más de 5 marcas o rayas de uso en sus bordes o carcasa.</p><p>- La pantalla puede presentar detalles de uso.</p><br><p>En todos los casos los funcionamientos de los equipos son correctos.</p><br><p>ESTADO ESTÉTICO DE ESTE CELULAR: MUY BUENO</p><br><p>---------------------------------------------------------------</p><br><p>SOMOS RIIING - TECNOLOGÍA MOVIL -</p><br><p>- Hacemos ENVIOS A TODO EL PAIS</p><br><p>- O Retira en Nuestro domicilio o en alguna de nuestras sucursales sin costo:</p><br><p>*Córdoba Capital</p><p>*Rosario</p><p>*San Miguel de Tucumán</p><p>*Salta</p><p>*San Fernando del valle de Catamarca</p><p>*Entre Ríos</p><p>*Neuquén</p><p>*San Juan</p><p>*San Luis</p><p>*Mendoza</p><p>*Santa Fe</p><p>*Corrientes</p><br><p>--------------------------------------------------------------</p><br><br><p>PREGUNTAS FRECUENTES</p><br><p>- ¿El equipo es el de la foto?</p><p>Las imágenes son a modo ilustrativo. Tenemos muchos disponibles y se nos imposibilita sacarle fotos a cada uno.</p><br><p>- ¿Funcionan bien?</p><p>Si, funcionan correctamente. Los mismos son sometidos a procesos de restauración tanto en su Hardware (Carcasa, pantalla y demás partes del equipo) como en Software (Sistema operativo).</p><br><p>-¿Es liberado?</p><p>Todos los equipos son liberados para todas las compañías.</p><br><p>-¿Cómo funciona la batería?</p><p>La batería funciona correctamente</p><br><p>Tienda oficial de RIIING - TECNOLOGÍA MÓVIL-.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_999641-MLA48644451285_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_968675-MLA48644451286_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_957682-MLA48644451287_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_954666-MLA48644451284_122021-R.webp",
@@ -2377,7 +2377,7 @@ module.exports = {
     },
     {
       "name": "Blu Studio G D790q Nuevos",
-      "price": 6.666,
+      "price": 6666,
       "condition": "Nuevo",
       "description": "<p>BLU Studio G D790Q Desbloqueado Android 6.0 4G H + 5.0\" HD 4GB 5MP de cuatro núcleos</p><br><p>Camera Resolution: 5.0MP</p><p>Tamaño de pantalla: 5\"</p><p>Operating System: Android</p><p>Factory Unlocked</p><p>Capacidad de almacenamiento: 4GB</p><p>Processor: Quad Core</p><p>Bluetooth 4.0</p><p>BATTERY Li-Ion 2000 mAh battery</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_915241-MLA31595166459_072019-R.webp;https://http2.mlstatic.com/D_Q_NP_904143-MLA31595163100_072019-R.webp;https://http2.mlstatic.com/D_Q_NP_773158-MLA31595162720_072019-R.webp;https://http2.mlstatic.com/D_Q_NP_793360-MLA25757250716_072017-R.webp",
@@ -2428,7 +2428,7 @@ module.exports = {
     },
     {
       "name": "Celular Ipro Shark 2",
-      "price": 8.499,
+      "price": 8499,
       "condition": "Nuevo",
       "description": "<p>Celular Resistente Ipro Shark Ip67. Dual Sim /Resistente Agua Y Golpes / Bluetooth, Resistente al Agua y Golpes Dual Sim Bateria 2500 mAh Linterna</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_782172-MLA46427967021_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_638441-MLA46427968020_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_860072-MLA46427887591_062021-R.webp",
@@ -2494,7 +2494,7 @@ module.exports = {
     },
     {
       "name": "Celular Liberado Kodak F1 64gb Rom 4gb Ram Huella Gris",
-      "price": 45.24,
+      "price": 4524,
       "condition": "Nuevo",
       "description": "<p>CELULAR LIBERADO KODAK F1</p><br><p>El poder de la excelencia en tu Smartphone.</p><br><p>CARACTERÍSTICAS</p><p>*Full screen infinity-0 display</p><p>*Pantalla 6.55\" *HD (720 x 1600)</p><p>*Cuádruple cámara trasera</p><p>*13mpx cámara frontaol</p><p>*Procesador octacore</p><p>*4gb RAM - 64gb ROM</p><p>*256gb expandible micro sd</p><p>*Huella</p><br><p>ESPECIFICACIONES GENERALES</p><p>*Redes: GMS 850/900/1800/1900. WCDMA 850/1900 (N5/B2) LTE. B2/B4/B7/B28A/B28B</p><p>*Sistema operativo: Android 10.0 Q</p><p>*Procesador: Mediatek MTK 6762D. Octa-Core 4x1,8 y 4x1,5GHz</p><p>*Tarjeta gráfica -GPU: IMG GE8320 600MHz</p><p>*Dual SIM: 2 nano sim</p><p>*Diseño: Táctil</p><p>*Dimensiones: 139,9 x 66,2 x 10,2mm</p><p>*Peso: 188g</p><p>*Batería: 4000 mAh Polímero de litio</p><p>*Autonomía en modo reposo: hasta 300h</p><p>*Autonomía en conversación: hasta 20h *Memoria ROM: 64gb</p><p>*Memoria RAM: 4gb</p><p>*Memoria expandible: micro SD hasta 256gb</p><p>*Giroscopio: No</p><p>*Sensor de proximidad: Sí</p><p>* Liberado para Movistar y Personal</p><br><p>PANTALLA</p><p>*Tamaño: 6.55\"</p><p>*Tipo: IPS INCELL</p><p>*Color: 16 millones</p><p>*Resolución: 720 x 1600 píxeles, densidad de píxeles 268 DPI</p><p>*Multitáctil: Sí, 5pts.</p><br><p>CONECTIVIDAD</p><p>*Wi-fi: 802.11 b/g/n</p><p>*Conexión compartida a Internet: USB, Bluetooth, pnto de acceso Wi-Fi *Bluetooth: 5</p><p>*USB OTG: Sí</p><p>*Puerto USB: tipo c</p><p>*Sincronización con PC: Sí</p><p>*Salida audio: USB TIPO C</p><br><p>FOTO Y VIDEO</p><p>*Cuádruple cámara trasera: 48AF + 13 + 5 + 2mpx</p><p>*Opción: automático/manual/time lapse/noche/panorámica/embellecimiento *Flash: Sí, flash real</p><p>*Grabación de video: 1080p@30</p><p>*Cámara frontal: 13mpx</p><p>*Enfoque automático: No</p><p>*Editor de imágenes: Sí, flash real</p><p>*Balance de blancos: auto, incandescente, luz del día, fluorescente, nublado</p><br><p>MULTIMEDIA Y ENTRETENIMIENTO</p><p>*Radio FM estéreo: Sí</p><p>*Formatos de audio compatibles: AMR-NB.AMR-WB,AAC,OCG,ADPCM,WAV,MP3,MP2,MIDI,VORBIS,APE,AAC-PLUS V1, AAC-PLUS V2, FLAC, WMA, ADPCM</p><p>*Formatos de imagen compatibles: HEVC, H.264, MPEG4, DIVX4/DIVX5/DIVX6/DIVX HD/XVID,MPEG2,H,263</p><p>*Formatos de video compatibles: P+MEGVII</p><br><p>PERSONALIZACIÓN</p><p>*Idiomas: francés, inglés, alemán, español, italiano, árabe, portugués, holandés, polaco.</p><p>*Features: finger print, página izquierda inteligente, asistente de teléfono, atajos de apps, acciones inteligentes, gestos inteligentes, capturas de pantalla inteligentes</p><br><p>LA CAJA CONTIENE</p><p>*Adaptador de corriente</p><p>*Funda silicona</p><p>*Film protector de pantalla</p><p>*Cable micro USB</p><p>*Auriculares móvil</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_924418-MLA45992597762_052021-R.webp",
@@ -2593,7 +2593,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Redmi 9a Dual Sim 32 Gb Azul 2 Gb Ram Compu Cordoba",
-      "price": 34.9,
+      "price": 349,
       "condition": "Nuevo",
       "description": "<p>COMPU CORDOBA COMPUTACION</p><p>LOCAL al PUBLICO EN NUEVA CORDOBA (Zona Terminal de Colectivos)</p><p>Lunes a Viernes de 9.30 a 13.00 / 15.00 a 19.30 - Sabados: 10.00 a 13.30</p><p>__________________________</p><p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 13 Mpx.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 6.53\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Reconocimiento facial para mayor seguridad</p><p>Acercá el dispositivo a tu rostro para desbloquearlo instantáneamente. Su precisa tecnología de reconocimiento facial te garantiza un acceso al equipo rápido y seguro.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><p>_________</p><p>CONSULTA TODAS TUS DUDAS ANTES DE OFERTAR</p><p>=================</p><p>PREGUNTAS FRECUENTES:</p><p>>>COMO RETIRARLO?</p><p>Usted puede retirar el producto en nuestro local, o se lo enviaremos a la direccion que nos sea solicitada con un costo adicional, segun la zona de residencia.</p><p>>>¿Hacen Facturas?</p><p>Si, hacemos factura A y B.</p><p>>>¿Puedo ofertar para saber sus datos?</p><p>La oferta es un compromiso de compra, pregúntanos todo lo que necesite si es que no esta seguro al momento de ofertar.</p><p>>>¿Tienen garantía?</p><p>Todos nuestros insumos tienen garantía compre con seguridad.</p><p>>>¿Precio incluye IVA?</p><p>Todos los precios publicados son con IVA incluido.</p><p>---------------------------------------------------------------------------------------</p><p>-IMPORTANTE: SI NECESITA MAS ARTICULOS NO DEJE DE PREGUNTARNOS Y LE ENVIAMOS LOS LINKS DE COMPRAS</p><p>---------------------------------------------------------------------------------------</p><p>Artículos que comercializamos:</p><p>PC, NOTEBOOKS,MONITORES; IMPRESORAS, GPS, MEMORIAS, DISCOS, PLACAS DE VIDEO, ACCESORIOS GAMER, TECLADO, MOUSE, PARLANTES, PEN DRIVE, DISCOS EXTERNOS, MEMORIAS PARA CAMARAS Y CELULARES, PLACAS DE RED Y ROUTER WIFI</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_871145-MLA48765111953_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_667260-MLA48765111955_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_863786-MLA48770449495_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_746902-MLA48765111950_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_819912-MLA48765359155_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_907384-MLA48812302265_012022-R.webp",
@@ -2839,7 +2839,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Redmi Note 9 Pro De 64gb Blanco Dual Atención Leer!!",
-      "price": 91.5,
+      "price": 915,
       "condition": "Nuevo",
       "description": "<p>ATENCIÓN NO OFERTAR SIN CONSULTAR DISPONIBILIDAD DE COLORES , somos Mega Importaciones morón</p><br><p>Pensado para vos</p><p>El Xiaomi Note 9 Pro (64 Mpx) posee el novedoso sistema operativo Android 10 que incorpora respuestas inteligentes y acciones sugeridas para todas tus aplicaciones. Entre sus diversas funcionalidades encontrarás el tema oscuro, navegación por gestos y modo sin distracciones, para que completes tus tareas mientras disfrutás al máximo tu dispositivo.</p><br><p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Perfecta para los amantes del plano detalle. Su zoom óptico te ofrecerá la posibilidad de realizar acercamientos sin que tus capturas pierdan calidad.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5020 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_700065-MLA43569097271_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_938731-MLA43569097272_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_855810-MLA43569097270_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_904314-MLA43569038497_092020-R.webp",
@@ -3084,7 +3084,7 @@ module.exports = {
     },
     {
       "name": "Moto G9 Power Morado (no Esta Roto) - Oportunidad!!!",
-      "price": 29.9,
+      "price": 299,
       "condition": "Usado",
       "description": "<p>Se vende. MOTOG9 Power</p><p>Solo por FDML. (Fuera de...)</p><p>Se retira por CABA, si necesitas envío se arregla telefónicamente.</p><br><p>No fue reparado, no está golpeado, no está con fallas. Impecable, lo usas así como viene.</p><br><p>MOTIVO: Tenía 2 uno roto y uno bueno, el mío y el de mi señora, el mío se rompió lo vendí y compre 2 nuevos, el de mi señora lo guardo porque tiene uno nuevo, así que se vende a precio razonable para costear algo del gasto del aparato nuevo.</p><br><p>ENTREGO:</p><p>* Celular</p><p>* Caja</p><p>* Cargador</p><p>* Funda Original.</p><p>* Numero de parte de FDML es 1_1DJMWA+A1</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_916423-MLA48805244533_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_970496-MLA48805297336_012022-R.webp",
@@ -3303,7 +3303,7 @@ module.exports = {
     },
     {
       "name": "Nokia 106 (2018) 4 Mb Gris Oscuro 4 Mb Ram Teclas Basico",
-      "price": 9.99,
+      "price": 999,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono 106 (2018) es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu 106 (2018) podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_822663-MLA41813920064_052020-R.webp;https://http2.mlstatic.com/D_Q_NP_933820-MLA43228769638_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_627351-MLA41813920065_052020-R.webp;https://http2.mlstatic.com/D_Q_NP_745847-MLA43229493005_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_714863-MLA43229015081_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_853544-MLA43229360451_082020-R.webp",
@@ -3415,7 +3415,7 @@ module.exports = {
     },
     {
       "name": "iPhone 7 Plus Negro Mate 32gb",
-      "price": 54.99,
+      "price": 5499,
       "condition": "Usado",
       "description": "<p>IPHONE 7 PLUS</p><br><p>32GB</p><br><p>LIBERADO PARA TODAS LAS EMPRESAS, SIN BAYPASS NI NADA RARO</p><br><p>SE ENTREGA LIBRE DE ICLOUD, RESTAURADO DE FABRICA</p><br><p>ANDA TODO A LA PERFECCIÓN</p><br><p>ÚNICO DETALLE ES LA PANTALLA QUE SE PUEDE APRECIAR BIEN EN LAS FOTOS, NO AFECTA EN NADA A SU FUNCIONAMIENTO</p><br><p>FUNDA DE REGALO Y CABLE USB</p><br><p>ENVIÓ GRATIS A TODO EL PAÍS</p><br><p>SU CONSULTA NO MOLESTA</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_622643-MLA48101090339_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_941015-MLA48101097327_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_803161-MLA48101038750_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_864610-MLA48101072483_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_867587-MLA48101077472_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_789993-MLA48101530242_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_631569-MLA48101278718_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_723506-MLA48101004951_112021-R.webp",
@@ -3536,7 +3536,7 @@ module.exports = {
     },
     {
       "name": "Sony Xperia Xa1 Negro. 32gb. Libre. Impecable. Gtia (Reacondicionado)",
-      "price": 7.666,
+      "price": 7666,
       "condition": "Reacondicionado",
       "description": "<p>Celular en excelente estado y perfecto funcionamiento.</p><br><p>Es el modelo delgado (no el de la pantalla gigante).</p><br><p>Lo entrego con cargador y cable USB pero no tengo la caja.</p><br><p>Se retira por Olivos o se realizan envíos a todo el país por MercadoEnvíos.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_637084-MLA47588485961_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_628576-MLA47588559378_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_615093-MLA47588564656_092021-R.webp",
@@ -3644,7 +3644,7 @@ module.exports = {
     },
     {
       "name": "Huawei P9",
-      "price": 7.5,
+      "price": 75,
       "condition": "Usado",
       "description": "<p>hay que cambiarle el display</p><p>Avisar antes de ofertar</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_759169-MLA43000559982_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_881584-MLA43000597582_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_666400-MLA43000564965_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_739459-MLA43000559984_082020-R.webp",
@@ -3751,7 +3751,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Redmi Note 8T Dual SIM 64 GB azul estelar 4 GB RAM",
-      "price": 47.9,
+      "price": 479,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_968797-MLA40439008919_012020-R.webp;https://http2.mlstatic.com/D_Q_NP_889272-MLA40439594102_012020-R.webp;https://http2.mlstatic.com/D_Q_NP_679736-MLA40439008921_012020-R.webp;https://http2.mlstatic.com/D_Q_NP_774441-MLA40439008922_012020-R.webp;https://http2.mlstatic.com/D_Q_NP_910488-MLA40439008924_012020-R.webp",
@@ -3871,7 +3871,7 @@ module.exports = {
     },
     {
       "name": "Moto E7i Power 32 Gb 2 Gb Ram Dual Sim Xt2097-12 Naranja _ap",
-      "price": 37.009,
+      "price": 37009,
       "condition": "Nuevo",
       "description": "<p>Especificaciones técnicas</p><p>Cámara principal: 13 Mp + 2 Mp</p><p>Cámara frontal: 5 Mp</p><p>Flash: Sí</p><p>Memoria interna: 32 GB</p><p>Memoria RAM: 2 GB</p><p>Pantalla: 6.5\" IPS HD+ (720x1600) 269 ppi</p><p>Sistema operativo: Android 10 (Edición Go)</p><p>Procesador: Unisoc Tiger SC9863A Octa-Core de 1.6 GHz</p><p>Batería: 5000 mAh</p><p>Dimensiones: 165.06 x 75.86 X 9.20 mm</p><p>Peso: 200 gr</p><br><p>Guardá lo que quieras</p><p>Posee una memoria interna (ROM) de 32 GB. Vas a poder descargar aplicaciones, almacenar videos, fotos y música sin problemas.</p><br><p>Experimentá su diseño</p><p>El Motorola E7i ofrece un diseño simplificado y muy liviano que entra perfectamente en el bolsillo. Asimismo tiene una pantalla Max Vison HD+ de 6.5 pulgadas con una resolución de 720 x 1600.</p><br><p>Capturá tus momentos</p><p>Este modelo cuenta con una cámara principal de 13 MP que te permitirá sacar fotos y grabar videos más nítidos. Además, la cámara Macro de 2MP te permitirá capturar los detalles más pequeños. Asimismo posee una cámara frontal de 5 MP con la que vas a poder capturar las mejores selfies en grupo.</p><br><p>Rendimiento</p><p>Gracias a la combinación de su procesador Octa Core y su memoria RAM de 2 GB podrás realizar varias tareas al mismo tiempo sin problemas y con fluidez.</p><br><p>----------------------------------------</p><p>IMPORTANTE:</p><p>* Entrega Inmediata</p><p>* Su oferta es compromiso de compra</p><p>* Hacemos envíos a todo el país</p><p>* Nuestros productos cuentan con Garantía</p><p>* Nuestros datos los obtendra luego de ofertar</p><br><p>MEDIOS DE PAGO:</p><p>Por nueva disposición de Mercado Libre las compras realizadas tienen que ser únicamente por MERCADOPAGO.</p><p>Acepta todas las tarjetas de Crédito (Visa, Mastercad, Amex de cualquier banco, consultá a tu banco por cuotas sin interés y promociones), la acreditación es inmediata.</p><p>También podés abonar por Rapipago, Pagofacil, ProvinciaNet o Red Link, la acreditación demora hasta 48hs hábiles.</p><br><p>ENVÍOS:</p><p>Hacemos envios a todo el país, a través de MercadoEnvíos. Podés calcular el costo del envío y su demora haciendo click en \"Calcular Costo\"</p><br><p>¡ESPERAMOS TU COMPRA!</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_803025-MLA45839434706_052021-R.webp",
@@ -4106,7 +4106,7 @@ module.exports = {
     },
     {
       "name": "Celular LG K61 Liberado Impecable",
-      "price": 28.9,
+      "price": 289,
       "condition": "Usado",
       "description": "<p>Celular LG K61 impecable solo 3 meses de uso liberado con protector de silicona transparente caja y todos sus accesorios originales hago envíos</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_671914-MLA48416413855_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_897492-MLA48416637017_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_633242-MLA48416428894_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_613360-MLA48727243599_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_774500-MLA48818397984_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_991097-MLA48818410881_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_621438-MLA48818504062_012022-R.webp",
@@ -4342,7 +4342,7 @@ module.exports = {
     },
     {
       "name": "Phone 11 Pro !! Nuevo",
-      "price": 18.555,
+      "price": 18555,
       "condition": "Nuevo",
       "description": "<p>Pantalla compacta de 5.8 pulgadas, Super Retina XDR</p><p>Pantalla con pocos biseles</p><p>Diseño trasero bonito y novedoso</p><p>Tamaño ideal para poder escribir y hacer tareas con una sola mano</p><p>Excelente rendimiento</p><p>Buenas cámaras</p><p>Modo de cámara lenta frontal</p><p>Carga rápida de 18 vatios y cargador rápido incluido en la caja</p><p>Buena duración de la batería</p><p>Face ID seguro para transacciones</p><p>Calidad de audio mejorada</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_926834-MLA44078367081_112020-R.webp",
@@ -4697,7 +4697,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung S6 32gb Negro Zafiro Excelente Estado!",
-      "price": 19.999,
+      "price": 19999,
       "condition": "Usado",
       "description": "<p>El vendedor no incluyó una descripción del producto</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_624155-MLA46202673193_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_953990-MLA46202615853_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_705731-MLA46202676169_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_639463-MLA46202680143_052021-R.webp",
@@ -5131,7 +5131,7 @@ module.exports = {
     },
     {
       "name": "Huawei Mate 64 Gb - Como Nuevo - Solo Entrego En Mano Devoto",
-      "price": 29.99,
+      "price": 2999,
       "condition": "Usado",
       "description": "<p>*************ANTES DE COMPRAR CONSULTAME ***************-</p><p>SOY PARTICULAR - NO HAGO ENVIOS - TUVE MALAS EXPERIENCIAS Y PARA RETIRAR TENDRAS QUE ENVIAR FOTO DE TU DNI FRENTE Y DORSO</p><br><p>ES UN CELULAR TODO ORIGINAL - CASI NO SE USO - ESTA IMPECABLE - VER LAS FOTOS - ES LIBRE DE ORIGEN - PODES TRAER EL CHIP DE TU COMPAÑIA Y LO PROBAS TRANQUILO</p><br><p>NO HAGO ENVIOS DE PRODUCTOS CAROS Y ELECTRONICOS</p><br><p>SE RETIRA EN ZONA VILLA DEVOTO CERCA DEL SHOPPING (A 8 CUADRAS HACIA VILLA DEL PARQUE )</p><p>NO LO DUDES - ES UNA GRAN COMPRA POR PRECIO - POR CALIDAD Y POR ESTADO DEL EQUIPO.</p><br><p>NO ACEPTO PERMUTAS</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_951755-MLA46366576667_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_806539-MLA46366859061_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_869699-MLA46366559834_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_652752-MLA46366665173_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_645172-MLA46366574676_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_895533-MLA46366620476_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_628403-MLA46366560822_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_850848-MLA46366513975_062021-R.webp",
@@ -5237,7 +5237,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A32 128 Gb Awesome Black 4 Gb Ram Cuotas",
-      "price": 64.828,
+      "price": 64828,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 6.4 \". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_630807-MLA45658531680_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_656533-MLA45658735353_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_807332-MLA45658735355_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_793841-MLA45658507914_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_602158-MLA48870943884_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_789728-MLA48871026241_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_920299-MLA48870931926_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_871955-MLA48871038135_012022-R.webp",

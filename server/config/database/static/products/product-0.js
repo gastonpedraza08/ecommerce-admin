@@ -2,7 +2,7 @@ module.exports = {
   "myArray": [
     {
       "name": "Alcatel 5H 128 GB jewelry black 4 GB RAM",
-      "price": 29.999,
+      "price": 29999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 8 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_627328-MLA47544153301_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_990646-MLA47544013866_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_822591-MLA47544103495_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_627070-MLA47544226235_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_800255-MLA47544236205_092021-R.webp",
@@ -103,7 +103,7 @@ module.exports = {
     },
     {
       "name": "Moto E7i Power 32 GB naranja 2 GB RAM",
-      "price": 22.999,
+      "price": 22999,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 6.5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_897670-MLA47135994890_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_720325-MLA47136024904_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_879539-MLA47136024903_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_938456-MLA47135994972_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_803445-MLA47136024928_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_912971-MLA47136057790_082021-R.webp;https://http2.mlstatic.com/D_Q_NP_783261-MLA47136057819_082021-R.webp",
@@ -205,7 +205,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A12 128 GB negro 4 GB RAM",
-      "price": 39.999,
+      "price": 39999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_665643-MLA45385132297_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_862003-MLA45385092408_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_881826-MLA45385132296_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_937081-MLA45385147220_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_789800-MLA45385092410_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_686795-MLA45385092412_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_786964-MLA45385147223_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_710493-MLA48419644891_122021-R.webp",
@@ -320,7 +320,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A12 64 GB negro 4 GB RAM",
-      "price": 34.999,
+      "price": 34999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_665643-MLA45385132297_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_862003-MLA45385092408_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_881826-MLA45385132296_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_937081-MLA45385147220_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_789800-MLA45385092410_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_686795-MLA45385092412_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_786964-MLA45385147223_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_710493-MLA48419644891_122021-R.webp",
@@ -435,7 +435,7 @@ module.exports = {
     },
     {
       "name": "Sansei S191 Dual SIM 3 MB negro/rojo 4 MB RAM",
-      "price": 4.249,
+      "price": 4249,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono S191 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.08 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu S191 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_896790-MLA44547132275_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_949024-MLA44547132281_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_859033-MLA44547132283_012021-R.webp",
@@ -507,7 +507,7 @@ module.exports = {
     },
     {
       "name": "Alcatel 1 16 GB negro metálico 1 GB RAM",
-      "price": 11.299,
+      "price": 11299,
       "condition": "Nuevo",
       "description": "<p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería para todo el día</p><p>Su batería de 2000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>Llevá lo esencial</p><p>Si buscás un dispositivo que te permita almacenar fotos, videos y archivos indispensables, este celular con 16 GB de memoria interna es para vos.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_913104-MLA41487029341_042020-R.webp;https://http2.mlstatic.com/D_Q_NP_934103-MLA41486926442_042020-R.webp;https://http2.mlstatic.com/D_Q_NP_968795-MLA41487029342_042020-R.webp;https://http2.mlstatic.com/D_Q_NP_964976-MLA41487029343_042020-R.webp",
@@ -610,7 +610,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Pocophone Poco X3 Pro Dual SIM 256 GB negro fantasma 8 GB RAM",
-      "price": 84.999,
+      "price": 84999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5160 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_792858-MLA48354116522_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_847472-MLA48354170139_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_678022-MLA48354116462_112021-R.webp",
@@ -726,7 +726,7 @@ module.exports = {
     },
     {
       "name": "Motorola Edge 20 Lite 128 GB verde 6 GB RAM",
-      "price": 69.999,
+      "price": 69999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 32 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_861433-MLA48233896240_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_751354-MLA48111555424_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_624105-MLA48111555564_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_922011-MLA48111555505_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_790804-MLA48233896265_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_631521-MLA48039475493_102021-R.webp",
@@ -829,7 +829,7 @@ module.exports = {
     },
     {
       "name": "Moto E20 32 GB gris grafito 2 GB RAM",
-      "price": 22.69,
+      "price": 2269,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 6.5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_832761-MLA48048712904_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_743954-MLA48048695892_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_620771-MLA48048695915_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_611584-MLA48048741839_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_977889-MLA48048696912_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_690102-MLA48048712927_102021-R.webp",
@@ -945,7 +945,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy S21+ 5G 128 GB phantom silver 8 GB RAM",
-      "price": 167.999,
+      "price": 167999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Perfecta para los amantes del plano detalle. Su zoom óptico te ofrecerá la posibilidad de realizar acercamientos sin que tus capturas pierdan calidad.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Dynamic AMOLED 2X de 6.7\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4800 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_666885-MLA45566793287_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_662206-MLA44849660809_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_668357-MLA45566793288_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_742856-MLA45566925002_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_918036-MLA44849623921_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_925691-MLA45566925014_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_835726-MLA45566612808_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_920412-MLA45566925015_042021-R.webp",
@@ -1056,7 +1056,7 @@ module.exports = {
     },
     {
       "name": "Kodak Smartway L1 Pro Dual SIM 16 GB plata 1 GB RAM",
-      "price": 11.288,
+      "price": 11288,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 5 Mpx/0.3 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 2 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 5.7\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería para todo el día</p><p>Su batería de 2700 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>Llevá lo esencial</p><p>Si buscás un dispositivo que te permita almacenar fotos, videos y archivos indispensables, este celular con 16 GB de memoria interna es para vos.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_741899-MLA47690942939_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_963845-MLA47691058418_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_895218-MLA47691080301_092021-R.webp",
@@ -1156,7 +1156,7 @@ module.exports = {
     },
     {
       "name": "Quantum YOLO Dual SIM 32 GB negro 1 GB RAM",
-      "price": 12.499,
+      "price": 12499,
       "condition": "Nuevo",
       "description": "<p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.</p><br><p>Además, con la cámara frontal con flash preparate para compartir selfies más iluminadas en tus redes sociales.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería para todo el día</p><p>Su batería de 2000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_600825-MLA47517884338_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_881299-MLA47517884273_092021-R.webp",
@@ -1243,7 +1243,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy S21 5G 128 GB phantom gray 8 GB RAM",
-      "price": 144.999,
+      "price": 144999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Su zoom híbrido es perfecto para los amantes del plano detalle, ya que integra lo mejor del zoom óptico y digital para que consigas acercamientos sin pérdida de calidad.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Dynamic AMOLED 2X de 6.2\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_794971-MLA44848256543_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_619458-MLA44848256545_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_928307-MLA44848229602_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_980879-MLA44848256544_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_920837-MLA44848229600_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_896963-MLA44848229599_022021-R.webp",
@@ -1353,7 +1353,7 @@ module.exports = {
     },
     {
       "name": "LG K40S 32 GB aurora black 2 GB RAM",
-      "price": 21.999,
+      "price": 21999,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/5 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 13 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 3500 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_807721-MLA42043400039_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_685545-MLA42043428161_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_671782-MLA42043428257_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_653217-MLA42043400279_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_920121-MLA42043400332_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_794142-MLA42043400333_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_896510-MLA42043400367_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_892497-MLA42043400370_062020-R.webp",
@@ -1454,7 +1454,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy Z Flip3 5G 128 GB phantom black 8 GB RAM",
-      "price": 149.999,
+      "price": 149999,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 12 Mpx/12 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 10 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Descubrí la pantalla plegable</p><p>Al plegarse, adopta un tamaño pequeño y compacto que te resultará muy cómodo para transportar. Cuando quieras disfrutar de tus contenidos favoritos se transforma desplegando su pantalla de 6.7\".</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería para todo el día</p><p>Su batería de 3300 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>Gran capacidad de almacenamiento</p><p>Con su memoria interna de 128 GB podrás almacenar archivos y aplicaciones de gran tamaño sin necesidad de subirlos a la nube y aprovechar tus momentos sin conexión para darles el máximo uso.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_676914-MLA47887111268_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_706543-MLA47887105286_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_889493-MLA47887162031_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_979722-MLA47886924929_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_911780-MLA47887162029_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_864530-MLA47887162073_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_607152-MLA47886924969_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_643448-MLA47887105366_102021-R.webp",
@@ -1582,7 +1582,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A22 128 GB white 4 GB RAM",
-      "price": 43.999,
+      "price": 43999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 6.4\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_875954-MLA48184831186_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_679652-MLA48184899064_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_941292-MLA48184797419_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_735862-MLA48184831308_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_839951-MLA48184797757_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_622864-MLA48184797291_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_657216-MLA48184899431_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_707942-MLA48184831627_112021-R.webp",
@@ -1693,7 +1693,7 @@ module.exports = {
     },
     {
       "name": "Alcatel 1L (2021) 32 GB power grey 2 GB RAM",
-      "price": 18.999,
+      "price": 18999,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 6.1\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería para todo el día</p><p>Su batería de 3000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_615401-MLA48592830008_122021-R.webp",
@@ -1801,7 +1801,7 @@ module.exports = {
     },
     {
       "name": "LG K52 (48 Mpx) 64 GB blue 4 GB RAM",
-      "price": 28.999,
+      "price": 28999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_896678-MLA47690462666_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_887800-MLA47690470372_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_805404-MLA47690527121_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_750155-MLA47690527120_092021-R.webp",
@@ -1901,7 +1901,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A52 128 GB awesome white 6 GB RAM",
-      "price": 66.999,
+      "price": 66999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 6.5\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4500 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_845322-MLA45401851058_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_719195-MLA45401353641_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_699365-MLA45401538416_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_615840-MLA45401328645_032021-R.webp",
@@ -2017,7 +2017,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Pocophone Poco X3 Pro Dual SIM 128 GB negro fantasma 6 GB RAM",
-      "price": 74.999,
+      "price": 74999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5160 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_792858-MLA48354116522_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_847472-MLA48354170139_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_678022-MLA48354116462_112021-R.webp",
@@ -2133,7 +2133,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Redmi Note 10 Pro (Global) Dual SIM 128 GB gris ónix 6 GB RAM",
-      "price": 80.849,
+      "price": 80849,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5020 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_785524-MLA46490094180_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_910565-MLA46490094178_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_816498-MLA46490092205_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_986275-MLA46490094181_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_764841-MLA46490106177_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_671605-MLA46490106202_062021-R.webp",
@@ -2248,7 +2248,7 @@ module.exports = {
     },
     {
       "name": "TCL 10 SE 128 GB polar night 4 GB RAM",
-      "price": 30.999,
+      "price": 30999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 13 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_708457-MLA44982721770_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_710921-MLA44982718768_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_854727-MLA44982721772_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_613980-MLA44982721773_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_824114-MLA44982721775_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_824257-MLA44982718769_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_757080-MLA44982718770_022021-R.webp;https://http2.mlstatic.com/D_Q_NP_852445-MLA44982718771_022021-R.webp",
@@ -2337,7 +2337,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy S20 FE 128 GB cloud navy 6 GB RAM",
-      "price": 107.999,
+      "price": 107999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Perfecta para los amantes del plano detalle. Su zoom óptico te ofrecerá la posibilidad de realizar acercamientos sin que tus capturas pierdan calidad.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 6.5\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4500 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_995741-MLA47861036467_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_820778-MLA47861063417_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_609105-MLA47860845894_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_823603-MLA47860845893_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_802167-MLA48427341439_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_667744-MLA47861094350_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_966886-MLA48427341404_122021-R.webp",
@@ -2459,7 +2459,7 @@ module.exports = {
     },
     {
       "name": "Alcatel 1 8 GB negro metálico 1 GB RAM",
-      "price": 13.25,
+      "price": 1325,
       "condition": "Nuevo",
       "description": "<p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería para todo el día</p><p>Su batería de 2000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>Llevá lo esencial</p><p>Si buscás un dispositivo que te permita almacenar fotos, videos y archivos indispensables, este celular con 8 GB de memoria interna es para vos.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_996401-MLA31932406532_082019-R.webp;https://http2.mlstatic.com/D_Q_NP_843134-MLA31931445392_082019-R.webp;https://http2.mlstatic.com/D_Q_NP_648342-MLA31932406535_082019-R.webp;https://http2.mlstatic.com/D_Q_NP_876495-MLA31931445395_082019-R.webp",
@@ -2562,7 +2562,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A03s 64 GB negro 4 GB RAM",
-      "price": 29.999,
+      "price": 29999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_632982-MLA48114077007_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_622787-MLA48113877667_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_927588-MLA48113924528_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_770112-MLA48113980338_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_854202-MLA48113924529_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_825762-MLA48113877670_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_736986-MLA48114077011_112021-R.webp",
@@ -2668,7 +2668,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Mi 11 Lite 5G NE Dual SIM 128 GB negro trufa 8 GB RAM",
-      "price": 89.999,
+      "price": 89999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 20 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.55\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4250 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_768134-MLA48496137270_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_708742-MLA48496082630_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_633760-MLA48496082628_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_816772-MLA48496103579_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_860255-MLA48698173457_122021-R.webp",
@@ -2784,7 +2784,7 @@ module.exports = {
     },
     {
       "name": "TCL 20 E 128 GB twilight blue 4 GB RAM",
-      "price": 28.973,
+      "price": 28973,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 8 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_726857-MLA47677091760_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_648386-MLA47677237133_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_991592-MLA47677081822_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_637644-MLA47677237134_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_804130-MLA47677237131_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_761413-MLA47677237135_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_700535-MLA47677091763_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_978884-MLA47677237237_092021-R.webp",
@@ -2882,7 +2882,7 @@ module.exports = {
     },
     {
       "name": "CAT B26 Dual SIM 8 MB negro 8 MB RAM",
-      "price": 14.879,
+      "price": 14879,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono B26 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 2 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu B26 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_960380-MLA41280816402_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_765098-MLA41280816426_032020-R.webp;https://http2.mlstatic.com/D_Q_NP_789533-MLA41280816431_032020-R.webp",
@@ -2972,7 +2972,7 @@ module.exports = {
     },
     {
       "name": "Panacom MP-1112 Dual SIM 128 MB black/blue edge 64 MB RAM",
-      "price": 6.3,
+      "price": 63,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono MP-1112 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.08 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu MP-1112 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_989360-MLA47576054467_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_963586-MLA47575730848_092021-R.webp",
@@ -3035,7 +3035,7 @@ module.exports = {
     },
     {
       "name": "LG K62 128 GB sky blue 4 GB RAM",
-      "price": 35.999,
+      "price": 35999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_973809-MLA48041270287_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_937908-MLA48040845881_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_908198-MLA48040899835_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_659804-MLA48040899845_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_640775-MLA48040845945_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_991161-MLA48040899543_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_911832-MLA48040845963_102021-R.webp",
@@ -3145,7 +3145,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A02 32 GB negro 2 GB RAM",
-      "price": 21.999,
+      "price": 21999,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla PLS de 6.5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_932750-MLA45509755691_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_839230-MLA45510771005_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_796476-MLA45509755682_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_930411-MLA48417603176_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_724731-MLA45510771004_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_990692-MLA48417603175_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_841932-MLA48417592328_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_770096-MLA48417550519_122021-R.webp",
@@ -3258,7 +3258,7 @@ module.exports = {
     },
     {
       "name": "LG K41S 32 GB titanio 3 GB RAM",
-      "price": 21.999,
+      "price": 21999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_654697-MLA43321098303_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_781176-MLA43320841855_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_668746-MLA43321098543_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_679700-MLA43321305115_082020-R.webp;https://http2.mlstatic.com/D_Q_NP_682664-MLA43321098248_082020-R.webp",
@@ -3370,7 +3370,7 @@ module.exports = {
     },
     {
       "name": "LG K51S 64 GB titan 3 GB RAM",
-      "price": 26.999,
+      "price": 26999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_787273-MLA43530871636_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_667868-MLA43530755717_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_749954-MLA43530755718_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_649970-MLA43530755719_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_785344-MLA43530755720_092020-R.webp",
@@ -3481,7 +3481,7 @@ module.exports = {
     },
     {
       "name": "BLU Z4 Dual SIM 32 MB negro/rojo 32 MB RAM",
-      "price": 5.054,
+      "price": 5054,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono Z4 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.3 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu Z4 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_710926-MLA41802341188_052020-R.webp;https://http2.mlstatic.com/D_Q_NP_764314-MLA41802341187_052020-R.webp;https://http2.mlstatic.com/D_Q_NP_785453-MLA41801984513_052020-R.webp",
@@ -3552,7 +3552,7 @@ module.exports = {
     },
     {
       "name": "Nokia 1.3 16 GB carbón 1 GB RAM",
-      "price": 16.999,
+      "price": 16999,
       "condition": "Nuevo",
       "description": "<p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Reconocimiento facial para mayor seguridad</p><p>Acercá el dispositivo a tu rostro para desbloquearlo instantáneamente. Su precisa tecnología de reconocimiento facial te garantiza un acceso al equipo rápido y seguro.</p><br><p>Batería para todo el día</p><p>Su batería de 3000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>Llevá lo esencial</p><p>Si buscás un dispositivo que te permita almacenar fotos, videos y archivos indispensables, este celular con 16 GB de memoria interna es para vos.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_872997-MLA45639668213_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_770365-MLA45639668214_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_687722-MLA45639620430_042021-R.webp",
@@ -3649,7 +3649,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A32 128 GB awesome black 4 GB RAM",
-      "price": 49.999,
+      "price": 49999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 6.4\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_922219-MLA48428094384_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_656533-MLA45658735353_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_890194-MLA48428092451_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_783912-MLA48428094385_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_882770-MLA48428092452_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_807332-MLA45658735355_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_797628-MLA48428117151_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_685090-MLA48428117152_122021-R.webp",
@@ -3765,7 +3765,7 @@ module.exports = {
     },
     {
       "name": "TCL 20 SE 256 GB nuit black 6 GB RAM",
-      "price": 38.999,
+      "price": 38999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_623923-MLA48764808772_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_929387-MLA48764860676_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_951278-MLA48764861677_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_980206-MLA48764808996_012022-R.webp;https://http2.mlstatic.com/D_Q_NP_702215-MLA48764860532_012022-R.webp",
@@ -3866,7 +3866,7 @@ module.exports = {
     },
     {
       "name": "iPro A20 Dual SIM 32 MB negro 32 MB RAM",
-      "price": 4.718,
+      "price": 4718,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono A20 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.8 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu A20 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_985914-MLA43684142766_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_969386-MLA43684320381_102020-R.webp",
@@ -3936,7 +3936,7 @@ module.exports = {
     },
     {
       "name": "Positivo Q20 Dual SIM 128 GB pearl white 4 GB RAM",
-      "price": 27.999,
+      "price": 27999,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 8 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 4 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_684266-MLA47575345101_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_859217-MLA47575333119_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_706939-MLA47574845956_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_942549-MLA47575158417_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_945038-MLA47575105515_092021-R.webp",
@@ -4041,7 +4041,7 @@ module.exports = {
     },
     {
       "name": "Apple iPhone SE (2da generación) 128 GB - Negro",
-      "price": 139.119,
+      "price": 139119,
       "condition": "Nuevo",
       "description": "<p>El iPhone SE es el iPhone de 4,7 pulgadas más potente hasta ahora (1). Tiene el chip A13 Bionic, que ofrece un rendimiento increíble en apps, juegos y fotos. Viene con modo Retrato y seis efectos de iluminación para tomar retratos con calidad de estudio, HDR Inteligente de última generación que ofrece un nivel de detalle sorprendente en las luces y las sombras de las fotos, video 4K de calidad cinematográfica y todas las funcionalidades avanzadas de iOS. Además de una batería de larga duración (2) y resistencia al agua (3). Tiene todo lo que te gusta del iPhone en un diseño compacto que te encantará.</p><br><br><p>Avisos Legales</p><p>(1) El tamaño de la pantalla se mide en diagonal.</p><p>(2) La duración de la batería varía según el uso y la configuración.</p><p>(3) El iPhone SE es resistente a las salpicaduras, al agua y al polvo, y fue probado en condiciones de laboratorio controladas; el iPhone SE tiene una clasificación IP67 según la norma IEC 60529 (hasta 30 minutos a una profundidad máxima de 1 metro). La resistencia a las salpicaduras, al agua y al polvo no es una condición permanente, y podría disminuir como consecuencia del uso normal. No intentes cargar un iPhone mojado; consulta el manual del usuario para ver las instrucciones de limpieza y secado. La garantía no cubre daños producidos por líquidos.</p><p>(4) Los cargadores inalámbricos Qi se venden por separado.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_615774-MLA46552695388_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_749027-MLA46552660643_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_848699-MLA46552695509_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_738329-MLA46552695510_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_760689-MLA46552695394_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_976277-MLA46552660518_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_822964-MLA46552660517_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_787647-MLA46552660520_062021-R.webp",
@@ -4158,7 +4158,7 @@ module.exports = {
     },
     {
       "name": "Sky Devices F2 G Dual SIM 32 MB yellow 32 MB RAM",
-      "price": 3.999,
+      "price": 3999,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono F2 G es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.08 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu F2 G podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_716771-MLA48554541083_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_913402-MLA48554474210_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_968102-MLA48554474062_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_698497-MLA48471354767_122021-R.webp",
@@ -4222,7 +4222,7 @@ module.exports = {
     },
     {
       "name": "TCL L9S 32 GB negro 2 GB RAM",
-      "price": 18.999,
+      "price": 18999,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/5 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_611781-MLA42035384957_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_885514-MLA42035384872_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_735580-MLA42035603084_062020-R.webp;https://http2.mlstatic.com/D_Q_NP_779954-MLA42035384511_062020-R.webp",
@@ -4318,7 +4318,7 @@ module.exports = {
     },
     {
       "name": "ZTE Blade A51 32 GB gris 2 GB RAM",
-      "price": 20.49,
+      "price": 2049,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 6.52\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería para todo el día</p><p>Su batería de 3200 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_838768-MLA48282695987_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_963751-MLA48283099414_112021-R.webp",
@@ -4416,7 +4416,7 @@ module.exports = {
     },
     {
       "name": "Moto E6i 32 GB gris metálico 2 GB RAM",
-      "price": 20.098,
+      "price": 20098,
       "condition": "Nuevo",
       "description": "<p>Doble cámara y más detalles</p><p>Sus 2 cámaras traseras de 13 Mpx/2 Mpx te permitirán tomar imágenes con más detalles y lograr efectos únicos como el famoso modo retrato de poca profundidad de campo.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 6.1\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería para todo el día</p><p>Su batería de 3000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_618420-MLA45656016205_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_625208-MLA45655898523_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_830025-MLA45656014227_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_934036-MLA45656016220_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_857864-MLA45656014213_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_813118-MLA45656014214_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_805354-MLA45656016221_042021-R.webp",
@@ -4519,7 +4519,7 @@ module.exports = {
     },
     {
       "name": "iPro V10 Dual SIM 32 MB negro 32 MB RAM",
-      "price": 6.229,
+      "price": 6229,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono V10 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 3 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu V10 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_854896-MLA43642924029_102020-R.webp;https://http2.mlstatic.com/D_Q_NP_756778-MLA43470072710_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_684505-MLA43470221904_092020-R.webp;https://http2.mlstatic.com/D_Q_NP_971081-MLA43642739964_102020-R.webp",
@@ -4608,7 +4608,7 @@ module.exports = {
     },
     {
       "name": "Energizer Energy E10+ Dual SIM 32 MB negro 32 MB RAM",
-      "price": 4.599,
+      "price": 4599,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono E10+ es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.08 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu E10+ podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_652578-MLA42643407037_072020-R.webp;https://http2.mlstatic.com/D_Q_NP_977452-MLA42642847986_072020-R.webp",
@@ -4710,7 +4710,7 @@ module.exports = {
     },
     {
       "name": "Quantum UP32 Dual SIM 32 GB negro 1 GB RAM",
-      "price": 14.299,
+      "price": 14299,
       "condition": "Nuevo",
       "description": "<p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.</p><br><p>Además, con la cámara frontal con flash preparate para compartir selfies más iluminadas en tus redes sociales.</p><br><p>Más para ver</p><p>Con su pantalla IPS de 5.5\", disfrutá de colores intensos y mayor nitidez en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería para todo el día</p><p>Su batería de 2500 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_927888-MLA46273160288_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_687174-MLA46273160287_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_844278-MLA46273160289_062021-R.webp",
@@ -4810,7 +4810,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Redmi Note 10 Pro (Global) Dual SIM 64 GB bronce 6 GB RAM",
-      "price": 91.843,
+      "price": 91843,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5020 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_658537-MLA46490094717_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_643112-MLA46490094718_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_612648-MLA46490106698_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_869188-MLA46490094715_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_925832-MLA46490092714_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_948227-MLA46490094713_062021-R.webp;https://http2.mlstatic.com/D_Q_NP_736373-MLA46490106697_062021-R.webp",
@@ -4925,7 +4925,7 @@ module.exports = {
     },
     {
       "name": "Philco P241 Dual SIM 512 MB negro 256 MB RAM",
-      "price": 7.433,
+      "price": 7433,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono P241 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.3 Mpx.</p><br><p>Contenidos compartidos</p><p>Conectá tu celular con otros dispositivos a través del bluetooth y transmití fotos, música, contactos y mucho más sin estar conectado a Internet.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu P241 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><p>Tecnología Dual SIM</p><p>Con tu equipo Dual SIM sentirás la comodidad de tener dos líneas en un solo aparato. Llevá tu información personal y laboral, instalá aplicaciones independientes y optá por una línea u otra en función de tus necesidades.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_672837-MLA40668754262_022020-R.webp;https://http2.mlstatic.com/D_Q_NP_666473-MLA40668788132_022020-R.webp;https://http2.mlstatic.com/D_Q_NP_614075-MLA40668754362_022020-R.webp",
@@ -5006,7 +5006,7 @@ module.exports = {
     },
     {
       "name": "Quantum Switch Dual SIM 32 GB negro 1 GB RAM",
-      "price": 13.499,
+      "price": 13499,
       "condition": "Nuevo",
       "description": "<p>Momentos únicos, capturas reales</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 8 Mpx.</p><br><p>Además, con la cámara frontal con flash preparate para compartir selfies más iluminadas en tus redes sociales.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 1 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería para todo el día</p><p>Su batería de 2000 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>El espacio que necesitás</p><p>Con su memoria interna de 32 GB descargá tus aplicaciones favoritas y guardá todas las fotos y videos que quieras.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_688568-MLA48065013641_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_806214-MLA48064965939_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_627464-MLA48065013606_102021-R.webp",

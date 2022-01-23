@@ -228,7 +228,7 @@ module.exports = {
     },
     {
       "name": "Celular Moto G8 Play Liberado De Fabrica Como Nuevo Rojo",
-      "price": 33.5,
+      "price": 335,
       "condition": "Usado",
       "description": "<p>Smartphone Motorola Moto G8 play</p><p>Rojo, prácticamente nuevo. Sin ningún detalle.</p><p>Con caja, funda y cargador original.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_691881-MLA46042551510_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_732516-MLA46042221285_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_828711-MLA46042538672_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_831377-MLA46042123835_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_938391-MLA46042631035_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_873828-MLA46042500865_052021-R.webp",
@@ -457,7 +457,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi 11t 128gb + 8gb Ram Meteorite Gray _ap",
-      "price": 171.186,
+      "price": 171186,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 16 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla AMOLED de 6.67\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_773760-MLA48036640242_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_728842-MLA48010015941_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_630218-MLA48036425810_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_774316-MLA48036425877_102021-R.webp",
@@ -684,7 +684,7 @@ module.exports = {
     },
     {
       "name": "Alcatel 3h 64 Gb Elegant Black 3 Gb Ram",
-      "price": 23.5,
+      "price": 235,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Además, el dispositivo cuenta con cámara frontal de 5 Mpx para que puedas sacarte divertidas selfies o hacer videollamadas.</p><br><p>Mayor rendimiento</p><p>Su memoria RAM de 3 GB permite que tu smartphone funcione de manera fluida y sin demoras al realizar distintas tareas, jugar o navegar.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 4000 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_705727-MLA47762780436_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_666595-MLA47752720383_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_862968-MLA47752638548_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_940163-MLA47752638549_102021-R.webp",
@@ -1014,7 +1014,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung Galaxy Note 10 Impecable Estado",
-      "price": 89.5,
+      "price": 895,
       "condition": "Usado",
       "description": "<p>Vendo Samsung Galaxy Note 10 en impecable estado.</p><br><p>Siempre utilizado con funda, único dueño.</p><br><p>Tiene 256 gb de memoria y 8 gb de RAM.</p><br><p>Se entrega:</p><br><p>- caja original</p><br><p>- film protector para pantalla sin abrir (siempre se usó con el film que trajo de fábrica)</p><br><p>- cargador</p><br><p>- auriculares</p><br><p>- 3 fundas protectoras.</p><br><p>El S-Pen funciona a la perfección y es muy práctico para la edición de fotos y la creación de contenidos (además de que para tomar notas).</p><br><p>El teléfono se usaba con la línea Personal pero esta liberado para todas las compañías.</p><br><p>Su consulta no molesta.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_777869-MLA48376418661_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_786270-MLA48376437605_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_938274-MLA48376516012_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_959611-MLA48376444537_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_752217-MLA48376424625_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_677663-MLA48376411694_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_745715-MLA48376424627_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_725572-MLA48376418668_112021-R.webp",
@@ -1136,7 +1136,7 @@ module.exports = {
     },
     {
       "name": "Apple iPhone 13 Pro Max (128 Gb) - Plata",
-      "price": 463.999,
+      "price": 463999,
       "condition": "Nuevo",
       "description": "<p>iPhone 13 Pro Max. El mayor avance en el sistema de cámaras Pro hasta ahora. Pantalla Super Retina XDR con ProMotion que brinda una respuesta más rápida y fluida. Chip A15 Bionic para un rendimiento fuera de serie. Diseño resistente y la mayor duración de batería jamás vista en un iPhone</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_814517-MLA47909842635_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_631947-MLA47909859228_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_975247-MLA47909872031_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_726132-MLA47909855374_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_808097-MLA47909867127_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_616797-MLA47909839761_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_808228-MLA47909834833_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_699799-MLA47909850534_102021-R.webp",
@@ -1367,7 +1367,7 @@ module.exports = {
     },
     {
       "name": "S6 Samsung Liberado Pantalla Rota, El Resto Semi Nuevo",
-      "price": 6.999,
+      "price": 6999,
       "condition": "Usado",
       "description": "<p>S6 pantalla rota. No se ve nada pero las luz violeta y la iluminación del segmento de botones indica que el resto enciende. Se usó 2 meses nomás. El resto impecable. Ideal repuestos, batería, etc Liberado.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_714626-MLA45716785404_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_964763-MLA45716798336_042021-R.webp",
@@ -1470,7 +1470,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung Galaxy A9 2016 (Reacondicionado)",
-      "price": 6.5,
+      "price": 65,
       "condition": "Reacondicionado",
       "description": "<p>Celular para liberar y arreglar flex tiene la parte trasera rota pero no afecta en nada, todo lo demas anda perfecto</p><p>No hay devoluciones.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_712864-MLA45118569169_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_791956-MLA45118562609_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_871269-MLA45279348479_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_603420-MLA45279361016_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_936122-MLA45279347543_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_648239-MLA45279334959_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_696739-MLA45279358073_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_728708-MLA45279355253_032021-R.webp",
@@ -1618,7 +1618,7 @@ module.exports = {
     },
     {
       "name": "Huawei Gw Metal 16 Gb Gris 2 Gb Ram Libre Leer Bien",
-      "price": 11.99,
+      "price": 1199,
       "condition": "Usado",
       "description": "<p>TE ACERCAMOS OTRA OFERTA DE HRV</p><br><p>HUAWEI GW METAL</p><br><p>MODELO TRT-LX3</p><br><p>COLOR GRIS ( FRENTE NEGRO)</p><br><p>2 GB RAM</p><br><p>16 GB DE MEMORIA INTERNA</p><br><p>LIBRE PARA CUALQUIER EMPRESA</p><br><p>VERSION ANDROID 7.0</p><br><br><br><p>POR FAVOR LEA ANTENTAMENTE:</p><br><p>EQUIPO USADO, TIENE UNAS MANCHAS AMARILLAS EN EL LCD ( NO AFECTAN EL USO, VER FOTO 2), EÑ MARCO CON ALGUNAS MARCAS DE USO ( FOTO 4 Y 5)</p><p>EQUIPO 100% FUNCIONANDO, Y OPERATIVO, FUNCIONA CORRECTAMENTE , LIBRE PARA CUALQUIER EMPRESA, BATERIA AL 70%, SOLO ES ESTETICO POR ESO SE BAJO EL PRECIO</p><br><p>FOTOS REALES</p><br><br><br><p>SE ENTREGA CON CARGADOR GENERICO NUEVO, SIN AURICULARES Y SIN NINGUN OTRO ACCESORIO</p><br><p>GARANTIA 30 DIAS ( NO INCLUYE LA PANTALLA)</p><br><p>FACTURA A O B</p><br><br><p>GARANTIA 30 DIAS</p><br><br><p>Formas de Retiro o envio:</p><p>Por mercado envios: se envia x correo a todo el pais (menos tierra del fuego), si la compra es antes de las 15 hs se despacha en el dia si no pasa para el otro dia, si queres saber plazos y costos podes poner tu codigo postal donde dice envios y lo calcula.</p><p>Por envios Flex: seria x moto privada, las compras hasta las 14 hs salen en el dia, si no pasan al dia siguiente.</p><p>Podes retirar personalmente por el barrio de Villa general Mitre a 2 cuadras de juan b justo y boyaca.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_619782-MLA48050880474_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_973061-MLA48050879454_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_601660-MLA48050868563_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_630845-MLA48050928063_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_851084-MLA48050912218_102021-R.webp",
@@ -1818,7 +1818,7 @@ module.exports = {
     },
     {
       "name": "Moto G7 Power 32 Gb Ice Violet (leer Descripcion)",
-      "price": 16.999,
+      "price": 16999,
       "condition": "Usado",
       "description": "<p>MOTOROLA G7 POWER. REQUIERE CAMBIO DE MÓDULO Y TIENE DETALLES ESTETICOS EN LA PARTE DE ATRÁS. ES LIBERADO Y CON 32 GB DE MEMORIA. SE ENTREGA CON CARGADOR ORIGINAL.</p><p>SE RETIRA UNICAMENTE POR WILDE.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_759993-MLA47993901482_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_842071-MLA47993900465_102021-R.webp",
@@ -1962,7 +1962,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy S6 Edge Oro Platino Accesorios Y Respuestos",
-      "price": 8.5,
+      "price": 85,
       "condition": "Usado",
       "description": "<p>LEER BIEN LOS DETALLES</p><p>\"para reparar o usar de repuesto\"</p><br><p>+ Es personal</p><p>+ No es Liberado</p><p>+ Necesita un cambio de batería</p><p>+ Tiene pantalla un poco rota, pasa justo por</p><p>la cámara delantera (no influye en el funcionamiento)</p><p>+ Tiene una raya verde en el costado Izquierdo (no influye en el funcionamiento)</p><p>+ Incluye Pantalla de Repuesto</p><p>+ Incluye Cargador</p><p>+ Incluye Vidrio Protector</p><p>+ Incluye Llave para el chip</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_896081-MLA47677618322_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_661966-MLA47677525876_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_693454-MLA47677558763_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_663808-MLA47677618482_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_656552-MLA47677581837_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_816531-MLA47677705211_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_774080-MLA47677719194_092021-R.webp",
@@ -2065,7 +2065,7 @@ module.exports = {
     },
     {
       "name": "iPhone 6 16 Gb Prende Reparar O Repuesto",
-      "price": 5.3,
+      "price": 53,
       "condition": "Usado",
       "description": "<p>Iphone 6 1549 gris queda en modo DFU no enra a modo recovery, el display si prende pero no se si anda el tactil pues lo probe con otro iphone 6 igual , la placa de carga usb carga bien, Mercadoenvios gratis</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_789501-MLA47459760042_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_675881-MLA47461576574_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_602240-MLA47461589595_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_665407-MLA47461605556_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_859440-MLA47461606588_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_783167-MLA47461576634_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_898515-MLA47461620630_092021-R.webp",
@@ -2287,7 +2287,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung A20s Azul 3gb, 32gb",
-      "price": 27.5,
+      "price": 275,
       "condition": "Nuevo",
       "description": "<p>El celular tiene 1 mes de uso, lo vendo porque ya me compré otro. Ningún detalle, lo que se ve ahí medio rasgado es solo el film. Precio negociable</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_884853-MLA44228282264_122020-R.webp;https://http2.mlstatic.com/D_Q_NP_714458-MLA44228275535_122020-R.webp;https://http2.mlstatic.com/D_Q_NP_966738-MLA44228282271_122020-R.webp",
@@ -2408,7 +2408,7 @@ module.exports = {
     },
     {
       "name": "Celular Libre A52 Azul 6,5 128 Gb Samsung",
-      "price": 66.999,
+      "price": 66999,
       "condition": "Nuevo",
       "description": "<p>CELULAR A52 SM-A525M SAMSUNG</p><p>- Pantalla Infinity-O 6.5 FHD+ (1080x2400) Super AMOLED, 90Hz</p><p>- Procesador SDM720G Octa Core 2.3Ghz</p><p>- Memoria RAM 6GB</p><p>- Memoria interna 128GB</p><p>- Expandible hasta 1TB con tarjeta MicroSD</p><p>- Android 11.0</p><p>- Cámara Trasera Cuadruple 64MP + 12MP (UW) + 5MP (M) + 5MP (D)</p><p>- Cámara Frontal 32MP</p><p>- Resolución de video UHD 4K (3840x2160)@30fps</p><p>- NFC, One UI 3.1</p><p>- WiFi 802.11 a/b/g/n/ac 2.4G+5GHz, VHT80</p><p>- Bluetooth v5.0</p><p>- USB 2.0</p><p>- Earjack 3.5mm Stereo</p><p>- Radio</p><p>- GPS, Glonass, Beidou, Galileo</p><p>- Sensores: Accelerometer, Fingerprint Sensor, Gyro Sensor, Geomagnetic Sensor, Hall Sensor, Light Sensor, Virtual Proximity Sensing</p><p>- Sonido potente con Dobly Atmos (2 parlantes integrados)</p><p>- Resistencia al agua; Protección IP67, Resiste hasta 1 tm de profundidad en agua dulce durante 30 minutos</p><p>- Desbloqueo con huella dactilar en pantalla (FOD)</p><p>- Formatos de reproducción de Audio: MP3, M4A, 3GA, AAC, OGG, OGA, WAV, AMR, AWB, FLAC, MID, MIDI, XMF, MXMF, IMY, RTTTL, RTX, OTA</p><p>- Formatos de reproducción de Video: MP4, M4V, 3GP, 3G2, AVI, FLV, MKV, WEBM</p><p>- Batería 4500mAh para mayor duración y 25W Super Fast charging</p><p>- Medidas: 159.9x75.1x8.4mm</p><p>- Peso: 189gr</p><p>- Color Azul</p><p>- Modelo A52 SM-A525M</p><p>- Garantía fabricante 12 meses</p><p>- Origen Argentina</p><br><p>---------------------------------</p><br><p>¿CÓMO COMPRAR EN LA TIENDA?</p><br><p>1) Revisá las características del producto y hacenos todas las consultas que creas necesarias antes de comprar.</p><br><p>2) Efectuá la compra siguiendo los pasos que te indica Mercado Libre. Procurá revisar producto, cantidad, forma de pago y dirección de envío antes de confirmarla.</p><p>Al momento de recibir tus datos, reservaremos el producto para vos. Tené en cuenta que tendrás 7 días para concretar el correspondiente pago. Pasado ese lapso de tiempo, nos veremos obligados a cancelar la reserva del producto y a calificar la operación como \"no concretada\".</p><br><p>---------------------------------</p><br><p>FORMAS DE ENTREGA</p><br><p>Podes optar por retirar tu producto en cualquiera de nuestras sucursales o puntos de retiro disponibles de manera gratuita, o elegir la opción de envío a domicilio (puede tener costo).</p><br><p>ENVÍOS A DOMICILIO</p><br><p>¿Cuáles son las formas de envío disponibles?</p><p>Los productos adquiridos en nuestra tienda se envían exclusivamente a domicilio, a través del servicio provisto por varias empresas de logística privadas.</p><br><p>¿Cuál es el costo del envío?</p><p>Dependiendo de la oferta de que se trate, el costo de envío podrá serte bonificado. Esto se indicará en la publicación, de manera destacada. De lo contrario, el mismo se calculará de acuerdo con el peso / tamaño del producto, y de la localidad a la que deba ser enviado. Podes estimarlo ingresando tu código postal en la parte superior de esta publicación. De todas maneras, en el proceso de compra, el monto correspondiente a este concepto te será claramente informado.</p><br><p>¿Cómo realizo el seguimiento del envío de mi producto?</p><p>Una vez que confirmes tu compra, recibirás un email con un detalle de la misma, más un link para que puedas hacer el seguimiento.</p><br><p>El cumplimiento de la fecha de entrega, puede verse afectado por cuestiones de fuerza mayor que exceden a la compañía.</p><br><p>---------------------------------</p><br><p>RETIRO EN SUCURSAL MEGATONE (sujeto a disponibilidad de stock)</p><br><p>Podes retirar tu producto 24 hs después de haber recibido tu factura de compra!</p><br><p>------ BUENOS AIRES</p><p>* LA PLATA</p><p>* MAR DEL PLATA</p><p>* NECOCHEA</p><br><p>------ CATAMARCA</p><br><p>------ CHACO</p><p>* RESISTENCIA</p><br><p>------ CÓRDOBA</p><p>* ALTA GRACIA</p><p>* CARLOS PAZ</p><p>* CÓRDOBA</p><p>* COSQUÍN</p><p>* JESÚS MARÍA</p><p>* LA FALDA</p><p>* RÍO CEBALLOS</p><p>* RÍO CUARTO</p><p>* RÍO SEGUNDO</p><p>* RÍO TERCERO</p><p>* SAN FRANCISCO</p><p>* SANTA ROSA DE CALAMUCHITA</p><p>* VILLA DOLORES</p><p>* VILLA MARÍA</p><br><p>------ CORRIENTES</p><br><p>------ LA PAMPA</p><p>* GENERAL PICO</p><br><p>------ LA RIOJA</p><p>* AIMOGASTA</p><p>* CHILECITO</p><p>* LA RIOJA</p><p>* CHAMICAL</p><br><p>------ NEUQUÉN</p><br><p>------ RÍO NEGRO</p><p>* CIPOLLETTI</p><br><p>------ SALTA</p><br><p>------ SAN LUIS</p><p>* SAN LUIS</p><p>* VILLA MERCEDES</p><br><p>------ SANTA FE</p><p>* CAPITÁN BERMÚDEZ</p><p>* CERES</p><p>* RAFAELA</p><p>* ROSARIO</p><p>* SAN LORENZO</p><p>* SUNCHALES</p><br><p>------ SANTIAGO DEL ESTERO</p><p>* AÑATUYA</p><p>* FERNANDEZ</p><br><p>------ TUCUMÁN</p><br><p>---------------------------------</p><br><p>PREGUNTAS FRECUENTES</p><br><p>PRODUCTOS</p><br><p>¿Hay stock de todos los productos publicados en la Tienda Oficial?</p><p>Sí. Todos los productos que publicamos en nuestra Tienda Oficial cuentan con stock para realizar el envío de manera inmediata.</p><br><p>¿Los productos tienen garantía?</p><p>Sí. Todos los productos que comercializamos son originales y cuentan con la garantía de su fabricante o importador. Además, podes elegir extender la cobertura por hasta 5 años, con nuestro servicio Mega Protección.</p><br><p>¿El envío lo pago junto con el producto?</p><p>Si, pagás todo junto (producto + envío).</p><br><p>¿Hacen envíos a todo el país?</p><p>Si, excepto Tierra del Fuego.</p><br><p>¿En Cuánto tiempo se acredita una devolución?</p><p>Una vez que el producto esté nuevamente en Megatone, en un plazo de 72 hs hábiles aproximadamente, se realizará la devolución correspondiente a la tarjeta de crédito con la que pagaste.</p><br><p>PAGOS</p><br><p>¿Cómo puedo pagar mi compra?</p><p>Podés abonar tu compra a través de Mercado Pago, con cualquiera de las opciones que este sistema te ofrece</p><p>- Con tu tarjeta de crédito.</p><p>- En efectivo en puntos de pago.</p><p>- Con saldo pre-cargado en tu cuenta de MercadoPago.</p><br><p>¿Qué tipo de factura realizan?</p><p>Realizamos factura A o B, según corresponda.</p><p>En el caso de que necesites factura A, tené en cuenta que, por ser agentes de retención, puede ocurrir que debamos generar una percepción de Ingresos Brutos.</p><br><p>CAMBIOS Y DEVOLUCIONES POR FALLA DEL PRODUCTO</p><br><p>La devolución se acepta dentro de los DIEZ (10) días corridos contados a partir de la fecha de recibida la mercadería, sin costo alguno de devolución. Pasado este período debe contactarse con el service correspondiente.</p><p>No se aceptan cambios y devoluciones de productos usados o sin su envoltorio original. Los cambios se encuentran sujetos a disponibilidad de stock. Para recibir el nuevo producto o el reembolso correspondiente, primero deberás devolver el producto original.</p><br><p>IMPORTANTE</p><br><p>Solicitamos, en caso de tener algún inconveniente con tu compra, contactarnos por mensajería privada de Mercado Libre, esto nos permitirá solucionar tu problema de forma más rápida sin intermediarios. Estamos disponibles para resolver sus dudas y brindarle la mejor atención posible.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_665080-MLA45638462585_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_778664-MLA45638462580_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_951405-MLA45638462583_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_642514-MLA45638462584_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_880910-MLA45638462582_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_789660-MLA45638462581_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_871308-MLA26572415598_122017-R.webp;https://http2.mlstatic.com/D_Q_NP_680133-MLA26572415664_122017-R.webp",
@@ -2529,7 +2529,7 @@ module.exports = {
     },
     {
       "name": "Celular Samsung Galaxy S8 64 Gb Plata Ártico 4gb Punto Pant",
-      "price": 29.999,
+      "price": 29999,
       "condition": "Usado",
       "description": "<p>——————————————————————</p><p>SOMOS CAMUS ELECTRÓNICA</p><p>MercadoLíder Platinum</p><p>——————————————————————</p><p>PUNTO EN PANTALLA</p><br><p>ATENCION DETALLE: el producto posee un pixel muerto en pantalla.</p><br><p>CARACTERISTICAS:</p><br><p>El Samsung Galaxy S8 es el nuevo flagship de Samsung que apuesta fuerte en un frente sin bordes de pantalla. Entre sus características se destaca la pantalla Infinity Super AMOLED dual-edge de 5.8 pulgadas y resolución QHD+, procesador Snapdragon 835 o Exynos 8895, 4GB de RAM, 64GB de almacenamiento interno, resistencia al agua IP68, carga inalámbrica, cámara Dual Pixel de 12 megapixels, cámara frontal de 8 megapixels, lector de huellas dactilares, lector de iris y Android 7.0 Nougat.</p><br><p>Pantalla: 5.8 pulgadas, 1440 x 2960 pixels</p><p>Procesador: Snapdragon 835 / Exynos 8895</p><p>RAM: 4GB</p><p>Almacenamiento: 64GB</p><p>Expansión: microSD</p><p>Cámara: 12 MP</p><p>Batería: 3000 mAh</p><p>OS: Android 7.0</p><p>Perfil: 8 mm</p><p>Peso: 155 g</p><p>==================================================</p><br><p>—> ENTREGAS</p><br><p>OFICINAS DE MÁXIMA SEGURIDAD CAMUS ELECTRÓNICA</p><br><p>Ubicada en el barrio de Belgrano a cuadras de Av. Cabildo y Juramento.</p><p>Horarios: Lunes a Viernes 10 a 18hs.</p><br><p>ENVÍO POR MENSAJERÍA EN CAPITAL Y GBA</p><br><p>Al momento de realizar la compra, colocar el envio rapido para que te llegue en el dia.</p><br><p>ENVÍOS A TODO EL PAÍS</p><br><p>ACEPTAMOS MERCADO ENVÍOS</p><br><p>—> FORMAS DE PAGO</p><br><p>MecadoPago (todas las tarjetas de crédito, rapipago, pagofacil, trasferencia)</p><br><p>—> EMITIMOS FACTURA A o B</p><br><p>—> UBICACIÓN Y HORARIOS</p><p>Oficinas de máxima seguridad ubicada en el barrio de Belgrano a cuadras de Av. Cabildo y Juramento.</p><p>Horarios: Lunes a Viernes 10 a 18hs.</p><br><p>—> GARANTÍA</p><p>Todos nuestros productos se entregan con certificados de garantía escrito.</p><br><p>—> NO ACEPTAMOS CANJES NI TOMAMOS ARTÍCULOS EN FORMA DE PAGO</p><p>——————————————————————</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_867963-MLA47479082722_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_660283-MLA47479005901_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_913453-MLA47479244192_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_607364-MLA47479249209_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_820291-MLA47479081727_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_771996-MLA47479260152_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_873531-MLA47479232203_092021-R.webp;https://http2.mlstatic.com/D_Q_NP_750378-MLA47479292056_092021-R.webp",
@@ -2745,7 +2745,7 @@ module.exports = {
     },
     {
       "name": "Nokia 3.1 Plus 32 Gb Azul 3 Gb Ram Libre Leer Bien",
-      "price": 9.999,
+      "price": 9999,
       "condition": "Usado",
       "description": "<p>TE ACERCAMOS OTRA OFERTA DE HRV</p><br><p>NOKIA 3.1 PLUS</p><br><p>MODELO TA-1115</p><br><p>COLOR AZUL</p><br><p>3 GB RAM</p><br><p>32 GB DE MEMORIA INTERNA</p><br><p>LIBRE PARA CUALQUIER EMPRESA</p><br><p>VERSION ANDROID 10</p><br><br><p>LEA ANTENTAMENTE:</p><p>EQUIPO USADO,TACTIL DAÑADO ( ES SOLO ESTETICO FUNCIONA CORERCTAMENTE) LE FALTA EL PROTECTOR DE CAMARA TRASERO. LIBRE PARA CUALQUIER EMPRESA,</p><p>100% OPERATIVO A PESAR DEL DAÑO</p><br><p>FOTOS REALES</p><br><br><br><p>SE ENTREGA CON CARGADOR GENERICO NUEVO, SIN AURICULARES Y SIN NINGUN OTRO ACCESORIO</p><br><p>GARANTIA 30 DIAS ( NO INCLUYE LA PANTALLA)</p><br><p>FACTURA A O B</p><br><br><p>GARANTIA 30 DIAS</p><br><br><p>Formas de Retiro o envio:</p><p>Por mercado envios: se envia x correo a todo el pais (menos tierra del fuego), si la compra es antes de las 15 hs se despacha en el dia si no pasa para el otro dia, si queres saber plazos y costos podes poner tu codigo postal donde dice envios y lo calcula.</p><p>Por envios Flex: seria x moto privada, las compras hasta las 14 hs salen en el dia, si no pasan al dia siguiente.</p><p>Podes retirar personalmente por el barrio de Villa general Mitre a 2 cuadras de juan b justo y boyaca.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_667393-MLA48329897233_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_908816-MLA48329877382_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_865600-MLA48329886301_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_809031-MLA48329791952_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_642600-MLA48329817827_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_692482-MLA48329877396_112021-R.webp",
@@ -2853,7 +2853,7 @@ module.exports = {
     },
     {
       "name": "Alcatel 1066 4 MB negro 4 MB RAM",
-      "price": 6.9,
+      "price": 69,
       "condition": "Nuevo",
       "description": "<p>Si buscás un dispositivo que te permita estar en contacto siempre, este teléfono 1066 es una opción excelente. Vas a poder comunicarte de manera inmediata con amigas y amigos, o con las personas de tu familia. Y además, si estás trabajando, vas a alcanzar una mayor colaboración con tu equipo.</p><br><p>Fotografías al instante</p><p>Capturá tus mejores momentos y revivilos cuando quieras con la cámara trasera de 0.08 Mpx.</p><br><p>Entretenimiento que te acompaña</p><p>Con tu 1066 podrás sintonizar radio, mantenerte al tanto de las últimas noticias y escuchar tus programas favoritos.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_803884-MLA44161670026_112020-R.webp;https://http2.mlstatic.com/D_Q_NP_836916-MLA44161670027_112020-R.webp",
@@ -3171,7 +3171,7 @@ module.exports = {
     },
     {
       "name": "iPhone 7 Plus 32gb Negro! Libre! Con Garantía!",
-      "price": 109.99,
+      "price": 10999,
       "condition": "Usado",
       "description": "<p>iPhone 7 Plus de 32gb</p><p>Libre para cualquier empresa del mundo.</p><p>Se entrega con accesorios nuevos originales (cable de carga y cargador)</p><p>Los equipos se entregan con 3 meses de garantía.</p><p>Si desea abonar al retirar un 20% de descuento!</p><p>Consulte lo que necesite</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_963563-MLA45243657417_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_696921-MLA45243674090_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_783499-MLA45243657433_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_974440-MLA45243641837_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_938940-MLA45243672145_032021-R.webp",
@@ -3510,7 +3510,7 @@ module.exports = {
     },
     {
       "name": "iPhone 5c. Funcionando Con Detalles.",
-      "price": 6.69,
+      "price": 669,
       "condition": "Usado",
       "description": "<p>El celular funciona bien.</p><p>Enciende pero le falta el boton, como se ve en la foto.</p><p>Se entrega sin cargador.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_655329-MLA48270678382_112021-R.webp;https://http2.mlstatic.com/D_Q_NP_695936-MLA48271432675_112021-R.webp",
@@ -3614,7 +3614,7 @@ module.exports = {
     },
     {
       "name": "Oppo Find X2 Lite 8/128gb Nuevo",
-      "price": 7.777,
+      "price": 7777,
       "condition": "Nuevo",
       "description": "<p>OPPO Find X2 Lite 8/128GB.</p><br><p>Es celular está nuevo, soy de Mendoza entrego de manera presencial, no hago envíos</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_738667-MLA45585057100_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_668967-MLA45585051129_042021-R.webp;https://http2.mlstatic.com/D_Q_NP_943569-MLA45585041266_042021-R.webp",
@@ -3650,7 +3650,7 @@ module.exports = {
     },
     {
       "name": "iPhone 12 Pro Max 256 Gb Azul Pacífico Caja Sellada",
-      "price": 437.8,
+      "price": 4378,
       "condition": "Nuevo",
       "description": "<p>OFERTA INIGUALABLE !</p><br><p>************************************ MISIONLIVE - MERCADOLIDER PLATINUM - +300.000 VENTAS EXITOSAS</p><br><p>¡Comprá seguro, comprá con confianza!*********************************************************************************</p><br><br><p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 3 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Perfecta para los amantes del plano detalle. Su zoom óptico te ofrecerá la posibilidad de realizar acercamientos sin que tus capturas pierdan calidad.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 6 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Reconocimiento facial para mayor seguridad</p><p>Acercá el dispositivo a tu rostro para desbloquearlo instantáneamente. Su precisa tecnología de reconocimiento facial te garantiza un acceso al equipo rápido y seguro.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 3687 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><p>PAGO: todas la publicaciones cuentan con Mercado Pago, el sistema que permite abonar según tu conveniencia con:</p><br><p>• Tarjetas de crédito en hasta 12 cuotas (según promos en cada momento)</p><p>• Tarjeta de débito</p><p>• Efectivo en Rapipago, Pago Fácil o Provincia Net</p><p>• Efectivo con depósito bancario</p><p>• Transferencia Bancaria</p><p>• Dinero disponible en tu cuenta en Mercado Pago</p><br><p>ENVÍOS :</p><br><p>• Publicaciones con Mercado Envíos: Recibí el producto en tu casa o en una sucursal de correo. Calculás el costo de envío desde la publicación y pagás todo junto por MercadoPago. En adelante, podés hacer el seguimiento del envío desde tu compras. Presta atención, el costo de envío se calcula en la publicación, debajo del precio.</p><br><p>PREGUNTAS FRECUENTES</p><br><br><p>HACEN FACTURA?</p><br><p>Si, A o B según corresponda</p><br><br><p>SI TENGO UN PROBLEMA CON EL PRODUCTO, ME LLEGO ROTO, NO FUNCIONA, COMO LO SOLUCIONO?</p><br><p>Todos nuestros productos cuentan con garantía oficial del fabricante. Cualquier tipo de consulta al respecto la pueden realizar ingresando al detalle de la compra por medio del servicio de mensajería que ofrece mercado libre y lo estaremos solucionando con la mayor rapidez posible</p><p>Es importante que el contacto sea directo vía este servicio de mensajería ya que abrir un reclamo o informar a Mercado Libre que no se recibió el producto implica la intervención directa del sitio y ahí los tiempos de respuesta y solución ya no dependen de nosotros.</p><br><br><p>************************************* MISIONLIVE - MERCADOLIDER PLATINUM - +300.000 VENTAS EXITOSAS</p><br><p>¡Comprá seguro, comprá con confianza!*********************************************************************************</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_617125-MLA43976066463_112020-R.webp;https://http2.mlstatic.com/D_Q_NP_752528-MLA43975720923_112020-R.webp;https://http2.mlstatic.com/D_Q_NP_928577-MLA43976066480_112020-R.webp;https://http2.mlstatic.com/D_Q_NP_744319-MLA44825113408_022021-R.webp;https://img.youtube.com/vi/OXJXnzUhuhA/hqdefault.jpg",
@@ -3766,7 +3766,7 @@ module.exports = {
     },
     {
       "name": "Reacondicionado Samsung Galaxy J2 Prime 8 Gb Negro (Reacondicionado)",
-      "price": 1.388,
+      "price": 1388,
       "condition": "Reacondicionado",
       "description": "<p>el estado es muy bueno, usado, envio con cargador y auriculares.</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_803774-MLA45080548253_032021-R.webp;https://http2.mlstatic.com/D_Q_NP_751451-MLA45080519580_032021-R.webp",
@@ -3872,7 +3872,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy A20 32 Gb Azul 3 Gb Ram - Liberado",
-      "price": 26.9,
+      "price": 269,
       "condition": "Usado",
       "description": "<p>El vendedor no incluyó una descripción del producto</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_687099-MLA46009540141_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_674710-MLA46009520178_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_715712-MLA46009418575_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_791124-MLA46009481085_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_889773-MLA46009472187_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_938061-MLA46009470177_052021-R.webp;https://http2.mlstatic.com/D_Q_NP_720818-MLA46009404577_052021-R.webp",
@@ -4088,7 +4088,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy J7 (2016) 16 GB blanco 2 GB RAM",
-      "price": 29.999,
+      "price": 29999,
       "condition": "Nuevo",
       "description": "<p>Experiencia visual increíble</p><p>Mirá tus series y películas favoritas con la mejor definición a través de su pantalla Super AMOLED de 5.5\". Disfrutá de colores brillantes y detalles precisos en todos tus contenidos.</p><br><p>Todo lo que necesitás</p><p>Su memoria RAM de 2 GB es justo lo que necesitás para utilizar las funciones más importantes como llamar, enviar mensajes, navegar y ejecutar aplicaciones de uso frecuente como redes sociales o multimedia.</p><br><p>Batería para todo el día</p><p>Su batería de 3300 mAh se adapta a tu ritmo de vida y te garantiza energía para toda una jornada con una sola carga.</p><br><p>Llevá lo esencial</p><p>Si buscás un dispositivo que te permita almacenar fotos, videos y archivos indispensables, este celular con 16 GB de memoria interna es para vos.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_798830-MLA31543955414_072019-R.webp;https://http2.mlstatic.com/D_Q_NP_983073-MLA31543386477_072019-R.webp;https://http2.mlstatic.com/D_Q_NP_881971-MLA31543386479_072019-R.webp;https://http2.mlstatic.com/D_Q_NP_769933-MLA31544901671_072019-R.webp",
@@ -4296,7 +4296,7 @@ module.exports = {
     },
     {
       "name": "Xiaomi Poco X3 Dual Sim 128 Gb Cobalt Blue 6 Gb Ram _s",
-      "price": 80.64,
+      "price": 8064,
       "condition": "Nuevo",
       "description": "<p>Pensado para vos</p><p>El Xiaomi Poco X3 posee el novedoso sistema operativo Android 10 que incorpora respuestas inteligentes y acciones sugeridas para todas tus aplicaciones. Entre sus diversas funcionalidades encontrarás el tema oscuro, navegación por gestos y modo sin distracciones, para que completes tus tareas mientras disfrutás al máximo tu dispositivo.</p><br><p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Desbloqueo veloz con tu huella dactilar</p><p>Con el sensor de huella dactilar, el acceso es seguro y podrás desbloquearlo automáticamente con un toque.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 5160 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><p>----------------------------------------</p><p>IMPORTANTE:</p><p>* Entrega Inmediata</p><p>* Su oferta es compromiso de compra</p><p>* Hacemos envíos a todo el país</p><p>* Nuestros productos cuentan con Garantía</p><p>* Nuestros datos los obtendra luego de ofertar</p><br><p>MEDIOS DE PAGO:</p><p>Por nueva disposición de Mercado Libre las compras realizadas tienen que ser únicamente por MERCADOPAGO.</p><p>Acepta todas las tarjetas de Crédito (Visa, Mastercad, Amex de cualquier banco, consultá a tu banco por cuotas sin interés y promociones), la acreditación es inmediata.</p><p>También podés abonar por Rapipago, Pagofacil, ProvinciaNet o Red Link, la acreditación demora hasta 48hs hábiles.</p><br><p>ENVÍOS:</p><p>Hacemos envios a todo el país, a través de MercadoEnvíos. Podés calcular el costo del envío y su demora haciendo click en \"Calcular Costo\"</p><br><p>¡ESPERAMOS TU COMPRA!</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_883956-MLA44697641963_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_766210-MLA44698052398_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_932358-MLA44697641965_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_766499-MLA44698052396_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_743092-MLA44698052397_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_676221-MLA44697641964_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_657126-MLA44698052400_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_811826-MLA46245530213_062021-R.webp",
@@ -4409,7 +4409,7 @@ module.exports = {
     },
     {
       "name": "Ulefone Armor 9E Dual SIM 128 GB negro 8 GB RAM",
-      "price": 109.9,
+      "price": 1099,
       "condition": "Nuevo",
       "description": "<p>Fotografía profesional en tu bolsillo</p><p>Descubrí infinitas posibilidades para tus fotos con las 4 cámaras principales de tu equipo. Poné a prueba tu creatividad y jugá con la iluminación, diferentes planos y efectos para obtener grandes resultados.</p><br><p>Capacidad y eficiencia</p><p>Con su potente procesador y memoria RAM de 8 GB tu equipo alcanzará un alto rendimiento con gran velocidad de transmisión de contenidos y ejecutará múltiples aplicaciones a la vez sin demoras.</p><br><p>Desbloqueo facial y dactilar</p><p>Máxima seguridad para que solo vos puedas acceder al equipo. Podrás elegir entre el sensor de huella dactilar para habilitar el teléfono en un toque, o el reconocimiento facial que permite un desbloqueo hasta un 30% más rápido.</p><br><p>Batería de duración superior</p><p>¡Desenchufate! Con la súper batería de 6600 mAh tendrás energía por mucho más tiempo para jugar, ver series o trabajar sin necesidad de realizar recargas.</p><br><br><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_940708-MLA48623540118_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_746942-MLA48623455738_122021-R.webp;https://http2.mlstatic.com/D_Q_NP_651741-MLA48623494482_122021-R.webp",
@@ -4527,7 +4527,7 @@ module.exports = {
     },
     {
       "name": "Celular Alcatel 1 Open Metallic 16gb",
-      "price": 13.779,
+      "price": 13779,
       "condition": "Nuevo",
       "description": "<p>SKU 404992</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_803163-MLA32720486030_102019-R.webp",
@@ -4987,7 +4987,7 @@ module.exports = {
     },
     {
       "name": "Celular Apple iPhone 7 128gb 2gb Ram 12mpx Liberado Cuotas (Reacondicionado)",
-      "price": 7.777,
+      "price": 7777,
       "condition": "Reacondicionado",
       "description": "<p>=========================================</p><p>SOMOS GAMESTATION.</p><p>MercadoLíder Platinum. Más de 20.000 calificaciones positivas.</p><p>=========================================</p><br><p>====================================================</p><p>ATENCION ATENCION LEER ANTES DE COMPRAR</p><br><p>EL PRODUCTO AL SER REACONDICIONADO PUEDE TENER GOLPES O MARCAS DE USO QUE NO AFECTAN A SU FUNCIONAMIENTO</p><br><p>SI TIENE DUDAS DE ESTO CONSULTE ANTES DE COMPRAR</p><br><p>==================================================</p><p>************************************************************</p><p>¿Qué significa refabricado?</p><p>Se trata de un proceso mundialmente conocido orientado a la puesta a nuevo de equipos. El origen de los celulares puede ser: por haber estado en exhibición, por presentar una falla al momento de la venta, por tener el embalaje golpeado o dañado, por ser devuelto en el tiempo que las grandes tiendas dan de cambio y devolución o simplemente porque la caja fue abierta y no puede venderse como nuevo.</p><p>La puesta a nuevo de estos equipos lo realiza el Service Oficial de la marca, reemplazando las piezas falladas con repuestos originales, dejando el equipo apto para la venta, respetando los estándares y pruebas de calidad del fabricante.</p><p>De esta manera, podés contar con productos de primeras marcas a precios sumamente competitivos.</p><p>La condicion de la bateria ocilan entre el 80% y el 90%.</p><br><p>Se entregan en caja genérica con cargador y cable USB.</p><br><p>DESCRIPCION</p><br><p>GENERAL</p><p>Red GSM 850 / 900 / 1800 / 1900 - HSDPA 850 / 900 / 1700 / 1900 / 2100 (según modelo) - LTE (1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 27, 28, 29, 30) (según modelo)</p><p>Anunciado 2016, Septiembre</p><p>Status Disponible</p><br><p>TAMAÑO</p><p>Dimensiones 138.3 x 67.1 x 7.1 mm</p><p>Peso 138 g</p><br><p>DISPLAY</p><p>Tipo LCD IPS con luz LED de fondo, touchscreen capacitivo, 16M colores</p><p>Tamaño 750 x 1334 pixels, 4.7 pulgadas</p><p>- Pantalla ion-x a prueba de golpes</p><p>- Superficie oleofóbica resistente a rayones</p><p>- Soporte multitouch</p><p>- Sensor de huellas dactilares Touch ID</p><p>- Sensor acelerómetro para auto rotación</p><p>- Sensor giróscopico</p><p>- Sensor de proximidad para auto apagado</p><p>- Barómetro - Certificación IP67: resistente al agua y polvo</p><p>- Tecla de inicio táctil</p><br><p>RINGTONES</p><p>Tipo Polifónico, MP3</p><p>Customización Descargas</p><p>Vibración Si</p><p>- Parlantes Stereo</p><p>- Adaptador Lightning a ficha de 3.5mm incluido</p><br><p>MEMORIA</p><p>Agenda telefónica Entradas y campos prácticamente ilimitados, Foto de llamada</p><p>Registro de llamadas Si</p><p>Slot de tarjeta No</p><p>- 32/128/256GB memoria interna, 2GB RAM</p><p>- Procesador Apple A10 Fusion quad-core 64 bits</p><br><p>CARACTERÍSTICAS</p><p>GPRS Si</p><p>Velocidad de datos</p><p>OS iOS 10</p><p>Mensajería SMS, MMS, Email, Push Email, IM, iMessage</p><p>Navegador HTML (Safari)</p><p>Reloj Si</p><p>Alarma Si</p><p>Puerto infrarrojo No</p><p>Juegos Descargables</p><p>Cámara 12 MP, apertura ƒ/1.8, pixels 1.22µ, autofocus por detección de fase, flash LED quad tono dual, HDR, estabilización óptica de imagen, geo-tagging, foco táctil, reconocimiento de rostro, panorama, video 2160p@30fps, 1080p@30fps, 720p@240fps slo-mo, luz de video, cámara frontal 7 MP 1080p@30fps, ƒ/2.2, HDR</p><p>- GPS con soporte A-GPS, GLONASS</p><p>- Soporte nanoSIM</p><p>- Cancelación activa de ruido con micrófono dedicado</p><p>- Brújula digital</p><p>- EDGE</p><p>- 3G HSDPA 42 Mbps/ HSUPA 5.76 Mbps</p><p>- 4G LTE Cat. 9</p><p>- Wi-Fi 802.11 a/b/g/n/ac; banda dual; MIMO</p><p>- Bluetooth v4.2 A2DP, LE</p><p>- Puerto Lightning</p><p>- NFC</p><p>- Manoslibres incorporado</p><p>- Reproductor y editor de audio y video</p><p>- Comandos/memo/discado por voz</p><p>- Asistente personal Siri</p><p>- Almacenamiento iCloud</p><p>- Salida TV</p><p>- Editor de fotos</p><p>- Ingreso predictivo de texto</p><br><p>BATERÍA</p><p>Standard, Li-Ion 1960 mAh</p><p>Stand-by Hasta 336 h</p><p>Tiempo de conversación Hasta 14 hs.</p><br><p>************************************************************</p><p>=========================================</p><p>>> ENTREGAS</p><br><p>- OFICINAS DE MÁXIMA SEGURIDAD GAMESTATION</p><p>Ubicada en el barrio de Belgrano a cuadras de Av. Cabildo y Juramento.</p><p>Horarios: Lunes a Viernes 10 a 18hs.</p><br><p>- ENVÍO POR MENSAJERÍA EN CAPITAL Y GBA</p><p>Al momento de realizar la compra tenés que elegir la opción de entrega “lo retiro en domicilio del vendedor” y luego coordinar la entrega.</p><br><p>- ENVÍOS A TODO EL PAÍS</p><br><p>- ACEPTAMOS MERCADO ENVÍOS</p><br><p>>> FORMAS DE PAGO</p><br><p>- MecadoPago (todas las tarjetas de crédito, rapipago, pagofacil, trasferencia)</p><br><p>>> EMITIMOS FACTURA A o B</p><br><p>>> UBICACIÓN Y HORARIOS</p><p>Oficinas de máxima seguridad ubicada en el barrio de Belgrano a cuadras de Av. Cabildo y Juramento.</p><p>Horarios: Lunes a Viernes 10 a 18hs.</p><br><p>>> GARANTÍA</p><p>Todos nuestros productos se entregan con certificados de garantía escrito.</p><br><p>>> NO ACEPTAMOS CANJES NI TOMAMOS ARTÍCULOS EN FORMA DE PAGO</p><p>=========================================</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_874316-MLA32195226053_092019-R.webp;https://http2.mlstatic.com/D_Q_NP_626621-MLA47861467791_102021-R.webp;https://http2.mlstatic.com/D_Q_NP_770949-MLA32195207252_092019-R.webp;https://http2.mlstatic.com/D_Q_NP_988067-MLA32195184983_092019-R.webp;https://http2.mlstatic.com/D_Q_NP_893109-MLA32195206244_092019-R.webp;https://http2.mlstatic.com/D_Q_NP_698490-MLA32195236656_092019-R.webp;https://http2.mlstatic.com/D_Q_NP_689329-MLA32195231228_092019-R.webp;https://http2.mlstatic.com/D_Q_NP_877865-MLA32195223311_092019-R.webp",
@@ -5106,7 +5106,7 @@ module.exports = {
     },
     {
       "name": "Samsung Galaxy J7 2016 En Perfectas Condiciones (Reacondicionado)",
-      "price": 1.388,
+      "price": 1388,
       "condition": "Reacondicionado",
       "description": "<p>Celular en exelentes condiciones,sin rayaduras</p><br>",
       "images": "https://http2.mlstatic.com/D_Q_NP_739772-MLA44654553844_012021-R.webp;https://http2.mlstatic.com/D_Q_NP_856153-MLA44654569549_012021-R.webp",
