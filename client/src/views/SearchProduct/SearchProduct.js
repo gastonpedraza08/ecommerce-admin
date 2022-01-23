@@ -48,14 +48,8 @@ const useStyles = makeStyles(theme => ({
 
 
 export default function SearchProduct() {
-	//const location = useLocation();
-	//const dispatch = useDispatch();
 	const classes = useStyles();
 	const { productsSearch } = useSelector(state => state.products);
-
-	/*useEffect(() => {
-		dispatch(productsSearchProducts(location.search));
-	}, [dispatch, location.search]);*/
 
 	return (
 		<div className={classes.root}>
