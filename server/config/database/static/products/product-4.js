@@ -456,7 +456,7 @@ module.exports = {
         }
       }),
       "sku": "a6fd293e-5e09-4dc1-af94-ae1a6b0b81a8",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_821892-MLA45926405824_052021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-916232928-quantum-up32-dual-sim-32gb-1gb-negro-_JM?searchVariation=81819516809#searchVariation=81819516809&position=37&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -574,7 +574,7 @@ module.exports = {
         }
       }),
       "sku": "26cd2608-d7dd-4e35-8665-81201269aa44",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_871371-MLA47530480755_092021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1103678642-celular-samsung-a12-negro-64gb-4gb-ram-techcel-9-cuotas-si-_JM?searchVariation=173664985475#searchVariation=173664985475&position=38&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -684,7 +684,7 @@ module.exports = {
         }
       }),
       "sku": "ef16e242-973b-4ac5-afe3-a549b8d277b0",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_967982-MLA46105490244_052021-R.webp",
       "link": "https://www.mercadolibre.com.ar/apple-iphone-12-mini-64-gb-morado/p/MLA17935594?pdp_filters=category:MLA1055#searchVariation=MLA17935594&position=4&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -797,7 +797,7 @@ module.exports = {
         }
       }),
       "sku": "d84e09f5-6d31-4b95-8fd3-62966f130b52",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_672553-MLA46924832493_072021-R.webp",
       "link": "https://www.mercadolibre.com.ar/xiaomi-pocophone-poco-m3-pro-5g-dual-sim-128-gb-amarillo-poco-6-gb-ram/p/MLA18061593?pdp_filters=category:MLA1055#searchVariation=MLA18061593&position=5&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -872,7 +872,7 @@ module.exports = {
         }
       }),
       "sku": "10cdd7e7-2b00-4a45-b485-c4e68dc05b98",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_941058-MLA48173252592_112021-R.webp",
       "link": "https://click1.mercadolibre.com.ar/mclics/clicks/external/MLA/count?a=j5r6NlWUOGGu9u2R6zYKR%2BNXXLUoNZCkUALIpg0ZUzSPw%2ByeZ1LrIqBneXiok%2FKsQ6hT7KBN3glid30SnpeZLZW43UGyuMDsq8FbioTGM4sTtkXUHtYFD4QQGUL69oCqjjcpDHW1YW9RlbF0enBfm6MSf%2B%2BRPSaO0lc91n9piFdLq6IGR1VhbjQb50DqbzgoKhHA8K2EJofMI7WecHPEu25DRNQtzfZqJ32SBezy9aism6sCRGI3GjIAoESRRY%2BnvUvfoiEk2L6UhsMrHbfznWynlSnD6iTk5Ll20D4J7KLerEeZbr2q%2BPmMh0Fnee80iD8VfsKvz2QlaqQ9CLmKv8EInJOMd%2FQ2wZrTuNXfDoh6IVgn3e4cHZ%2B9DiAwn7SImxpZyW%2Bjc9l8WxZpCNUs0TSu5hljzJVtv5%2F%2F%2FQgNIRNP7a6X4l0HPdqKwS8s141NwjEosR7W25Np%2BRsOBF7feuH27xEzb%2BwDRnNduphBZtXpQQ5IF2JQVA%2FaGmrD3YCTqOgl5yDmgkDx%2Bk1ixCFH2%2FW2JVAblFhyrskGkgueQGZnC3mx%2FPM2n1%2BX0PPah3LDxQwgHgpRd1urhzpBt9FY0%2BgzwtrTyiyLDH3PYO6xA8Gj5Q7OM5ttfJcSXXOV%2FLHmOBeWjJWCbA0ifbaatOmoLH7ehz6fKWxuyjKhfA2gQu4KlRCfVvrc%2BhEC8lcU8zkP%2F9G7lSTHXrN7F67WODtHIHM%2Bn7zFB8bhhPffUACSMCj%2B9At8BsB3BBwdt1Yv1XVDEb5GIqLkRe8G2ClxvQHQzz3yi2xs5xHM8oUzeSen2qmTdiA0Gfm99ySrdIJAnMLnBaqoKxlEkvOqMZz7BDngz%2B6xfLz8OUCkXGgmjBpERpPcPZpoIcd7x1tLDBTWGkyDHPPlPCttzB1OkGJkglHk5vy%2FrHddUNKtA%2F94n5IGEl9jEhfRxvadr9GuYNkD2gif8mGOkK7MX4VSRidef%2F19a7%2FBcgg6B8NeBYW%2Fd583aMXKSuuY%2FIkl11U46gQYQNZzYNv%2FoxIV%2FmRa1vtvj5FmDxiP4wxdm3oTalit%2BSUkktnRPjzNNqhRKaguwIg6kjwiEzywBSb4D4dZrPwkwi8uTcyc4TU9Jk%2F%2BQvRTOe1cqezsRU3orkmAcMcEj61HxnY%2F5OKaKeJ2uTXA8mvzrEmED1UavwatxtYY2KF%2Bz3lG%2BuB4J%2B1pV2zneUmsdcLk3IHn%2Fjvw4hr%2BkMhC7YO4z21RaTFw3is%2FHSIrYt2s2mv41HXkG9HndHSKo4vt3aWUNvDazUhVwP9zTY0leCxcXgqtDIbLdgjqlK82C6tkUi7VGjehro2phLemLVXpOzhb8q%2FPzzhzWLTPpdc4NsZL%2Bv2lJmb1tUHbL1doOSfnS5y6Ls6dSlWPoHT0Zy1xecoTqW0dDAHzXYnQr4daFazUPHbl8gnjfl3jIZszgbu8HVn0XBjVPN7nlQESS3dSW%2BgraWmov%2FdoC74RFUVCaSly7coEe1tIwV%2BWGyAxe7Baek%2Bs5N5wcuF2v6dXC%2BGEVG%2B%2FjtSmREzid5xeYfWBx7%2FVlc19zp7Tfpl0p91mrVU8Rr%2BHWQWqt6aaYM%2FtSoixYaI39Gmt9gC9LMm9mbZ%2B1cQKXsuxW6jOHNjyd1pXoKeY0OxjANoUq6JChZj6%2F9%2BuYsbYT7c5esIKvRW2vfyhViY6TOpgzxmu87e7RLraTqt9iwahOtKGoMxjRAinoneYpiLZ3AQ3Hze4eqjsofYAkkMVcSrnXqBcm2FsTuD9WFFNBIKyOnzheDu2Ux7eBHBkt41pWEci%2BjdoOJzGKz%2BVPin8a1kOkWT1DT0%2FJIiYrSmOSk%2BGDaIY1ispitdid4jpT6MqgDwNWK1PhnOex8IdaX9DQIQ85E9%2FRIUDrHWJ63yEwXFtxZsAHfaB%2FPSGEXOu%2FSfNz7qomVQHEFPe1RzqYQoR%2FbwOZbQnoSsImPlZOtEx0m%2F7aLfVF%2F9r"
     },
     {
@@ -994,7 +994,7 @@ module.exports = {
         }
       }),
       "sku": "b0d5fd7f-61ee-47dc-9d02-d9374dcd4584",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_718459-MLA45878256417_052021-R.webp",
       "link": "https://click1.mercadolibre.com.ar/mclics/clicks/external/MLA/count?a=6au4hyqXpGAHx1EFedDHu3gJJT8UK9xqnD6nlmkKp%2FlLuMnx8WX%2Bzfuucl1wPuBZbFbL0xFBkFEKbYQSUj7WR59OmhFwiIvEe9dpBq7eLRA0r5GAsS49pD%2FS7Vl9A6sZpRh%2BqaYtEEyWCePbORKQFegDjl8%2F3YSyHyBj888rPlsrwux2L2%2BdMtWYCFTGmSiGT%2Fh35GetQkvtSiUBs6CP%2F8drWfc%2BL2wsWeLQ3wvz%2FDnFJf55HXNcygBjFoBfkqmJ1%2BJhkX3XY8TqYkOq1SVUguYQMT9gBS%2FWD7JsX30%2FqzqH7zJC5x8UEhbAL9prg1OKyNmVlf501W02MaBiku4JVgIwUTghX0Gs8dpmgruTC0sTmf5m7%2F77ZsZZKTFg2ew%2FU6ZoxEtMmhAsAsnaGrkEhUyZQLR8%2F3r1Xvka5enskXVxBzlF0V4pKIgnkq556ZoF0L0ZaqXmiCnmwpy1G1xbO55B0M7i6TobZWBEm9EX27jb2QLMeYjMxZQjYtV7kljQHQBYpF7qYQiRqGeyIvbBOpCF8%2FdWwNhzqnozRwP3EsZsAUT%2FZ%2BFqxqfxL53TlEVRsKJFZH4ilnRz98x5LpIZAsXAewjmt45j9BQMfUOLOTj%2BHZo5eM%2BVKknknMexNJRIBgXTfMCIRtSIVb0lQORd%2F3JA8dvDAq8n7BHjGK7wVPOchIKOKP5NgJQJFiKrowp41tQ7sAIC%2FiYq76Qr%2Bq6AqLlAM873ze%2BMzYipSlcRC9BXCwKpaFEIAC4F3UkcOdt9JSaF23p9hmteeOmEPZ21UjJBhxYb8yJJf8x8xu9QWRd3COIX9Kf29j2zahqNNObGyfpjsFwbzQpLug9pkZLsPf5vLEmUYGNtV%2FNJLW8lmIiIwxcXAHKSvE68fNWlQLPdw%2BJOsOXiIffH4SspLgx2N7LRnbp57tg0IYx6J98mnVqAlhBfQcKRIOmiWneHsU6LD6eFy8kJwfS%2F7PBLTLPiiQMco4GFUVYJ0bIOlYqFhueiXxGs5%2BbiUosjYMr8RLBraVo14vtn2dWTyFj%2B235vm283QPLExw22casZuP7IKE8etSkMPTThzZWaLdDwNpqAGlLa5LyOWvXGtmKttG97Tv1PjMdLpOt39pZATb0tP5Yxk4wwEUfygTLIXJbA1sttn5DTITJzBl0vTXjethDFJxb0XDofi7T7q9YazGhtww0XH5smhdnlO1I1OdVENZsyOJaZsrh49JSMUp4jdZOiB9dbAwqQJoi%2BA%2FdHt%2BiFDS8dk%2F3mDnpqnLs%2FAVkOaLVRZts7Np6MMcZ309%2FVHe1LIAwezRAHUuw7UvkhTq8VqdNDb%2BgNAim%2BBr%2Fzo472bbIHu76CNSMtuFbQODNr6IeSjfCpuzuoSPs5HFHt5bCNezd%2FGLOh0r2RAIcQdnw4YukhEzANpVIPQHZKRC1Tr2pMPHiMOd2c4TkCcXlU2kBRN4e9R%2FvsyG8lzb1XnUA1V5qLZbRdZNOU6JvFsOR%2Bi52JfrzZFMFCQmpx7lliVPDj83VskFTsXwZF4OwCsPGwH5mWP6FM1t%2F675Bz1RZ2GyqieBoKlmeBwnXP9r9ga5TG4EpKT%2FmKeF%2B0ZAas63GX4%2F775rholGvBHJ9MY07YB%2BhHK1JhcnkPYF4AbHYrmY8VqxYoYGO6Nd0HV6C0uE2LOBQf97HkDsN0sNgjPm0H%2FEwXmxhqI0qtu%2BMiBqiCh3%2BWeRlf3rAwJC6ppTgMei21n6%2F5%2BhOC%2FW%2BYWXIOqTvuKrWp1xvXq%2BoCKiFwoXMxdxPaZvju2%2FbigNnTnVUIsvm%2FpGU5gr9RBq5qRWhNBeo%2Bko22Zt4Zxh9wCxZ910KVYPwTfYoshmiLIpIBJhRb4NZVvb7pQ6Q3nc1fDFhA2OQPvJk4vmon97BDRr9WMFANVCSPhuXxvj99qYB4M72g891DmTidtpce55AqGgjyMCoKP64ZBw06%2BKgVAZ0dPN8WOym%2BUr3zAhpf8S%2Bx4sZS5nG0uM3qXFrS%2F%2Bfw2SqvVSFOpBHEfVLmPWOEsH6aHWUemb2KiZWFXHWm4RvXGfZCqL5HFJDG%2F%2BavX3zy5lGfoEXDobyLHnzk4%2BNqGw%3D%3D"
     },
     {
@@ -1109,7 +1109,7 @@ module.exports = {
         }
       }),
       "sku": "2073d12a-061d-4578-90a2-2f16e565029e",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_627008-MLA46481261873_062021-R.webp",
       "link": "https://www.mercadolibre.com.ar/xiaomi-poco-f3-5g-dual-sim-128-gb-azul-oceano-profundo-6-gb-ram/p/MLA17875202?pdp_filters=category:MLA1055#searchVariation=MLA17875202&position=6&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1226,7 +1226,7 @@ module.exports = {
         }
       }),
       "sku": "d488fbd4-4cc1-4c78-b183-b7967393e968",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_891435-MLA32613434435_102019-R.webp",
       "link": "https://www.mercadolibre.com.ar/iphone-11-pro-64-gb-plata/p/MLA15150714?pdp_filters=category:MLA1055#searchVariation=MLA15150714&position=7&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1342,7 +1342,7 @@ module.exports = {
         }
       }),
       "sku": "b040e2e2-d25c-4a72-83c8-50ac4113c018",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_971748-MLA45826983251_052021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-919311617-celular-motorola-moto-e7i-power-322gb-naranja-cuotas-si-_JM?searchVariation=94105574639#searchVariation=94105574639&position=39&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1456,7 +1456,7 @@ module.exports = {
         }
       }),
       "sku": "f49ccaba-4b3c-4fca-b764-b563a84495c6",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_964564-MLA48475468368_122021-R.webp",
       "link": "https://www.mercadolibre.com.ar/blackview-bv4900-pro-dual-sim-64-gb-black-4-gb-ram/p/MLA17326985?pdp_filters=category:MLA1055#searchVariation=MLA17326985&position=10&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1522,7 +1522,7 @@ module.exports = {
         }
       }),
       "sku": "5399d3c1-1120-49b8-bc02-ec2d1c40bacc",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_776298-MLA45305432613_032021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-869775762-celular-teclas-camara-2-sim-mp3-radio-cuota-adulto-economico-_JM?searchVariation=60624923304#searchVariation=60624923304&position=40&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1642,7 +1642,7 @@ module.exports = {
         }
       }),
       "sku": "89d3d2f4-b80e-47e1-8c3b-d79e88ee1079",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_613267-MLA45345189367_032021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-914908697-celular-samsung-galaxy-a52-128gb-6gb-ram-liberado-_JM?searchVariation=81045448566#searchVariation=81045448566&position=41&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1737,7 +1737,7 @@ module.exports = {
         }
       }),
       "sku": "9ae21d4c-8257-41ee-a8d9-0cfbd0f6de0a",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_690649-MLA47574390009_092021-R.webp",
       "link": "https://www.mercadolibre.com.ar/kodak-smartway-m2-dual-sim-32-gb-azul-3-gb-ram/p/MLA17848036?pdp_filters=category:MLA1055#searchVariation=MLA17848036&position=11&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1858,7 +1858,7 @@ module.exports = {
         }
       }),
       "sku": "8f74fd0a-db8e-46f8-9ad2-f19d0d1cf8cd",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_689826-MLA48124126753_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1111190418-celular-motorola-moto-e20-32gb-2gb-ram-gris-techcel-nuevo-_JM?searchVariation=173879807455#searchVariation=173879807455&position=42&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -1954,7 +1954,7 @@ module.exports = {
         }
       }),
       "sku": "c89a0707-16fd-4868-8e8c-ae7c57be7126",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_648963-MLA47680576520_092021-R.webp",
       "link": "https://www.mercadolibre.com.ar/kodak-smartway-f1-dual-sim-64-gb-azulrosa-4-gb-ram/p/MLA18010644?pdp_filters=category:MLA1055#searchVariation=MLA18010644&position=12&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2070,7 +2070,7 @@ module.exports = {
         }
       }),
       "sku": "50d70a1b-0981-4ecd-bade-e7aa094ed68b",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_848391-MLA45012216882_022021-R.webp",
       "link": "https://click1.mercadolibre.com.ar/mclics/clicks/external/MLA/count?a=4S93z6GnpzKNjoy7R5igDUXrGlwL5M1GwktHtEP7lkNclQLT%2BYdY9e88IVQnPNHCHCJ7rFwqkZWKsciZlIy9b9DhiHw86hJkOZCtc6hhGYHhERoACXwSV%2FFsKbacaPsIGNf75S0JVzdFRsqLEKduiacgWO2y9oxuKoSbJiil%2F18V9CyzePeeeBiqxmMmjOd4zpsQHY1v85Wz3fTOdVaNQOYVuMw9SWQQ6ZlYDfnmYQ9S4rnn1zv94CnZegUyksM02hgno0FknXPC0E6T%2FFuhoKgAoP28sfZrT%2BkyhC5JTeGXcvaEIHDLC7JcMCZZU3HShzASIaVBHGJW%2Bf%2FLAg618uGKp3LKhPoQd0Y0NfloT6%2FRRaGvfjWYholBiC9iDbUEINWbELZ8Xawx1goArA8r5ISZd%2F42mZqPeW9kEtvyHAoXhm4ukfSkxuF1Qm45CW9M4DSZ0hXS6Z3keN7nS6XedOWkJT%2Fmjq2QxUvTUe1FlM3cDgmtyAp2ECAvz%2B4qBMVBzEgQU4vbMVDVEQDWFKqdq6zrEliJcnB%2FyH6ryu9CWZ0eZLEm%2BaMve4zvMs29DPvKVPIHkH9%2BnpNoesbwj6cr9lZfHteoM2QoYRImTQpIZYpFCrvgIA1WeO0CXv5Ah%2BKFtVjR9cWBe5vgL5cbvPiFltAOZTNr%2BOLnAsa86Lm7rihYL2sf%2BCjAcfKgRqW77q%2FkX2MrBEKDLAbjPtSyVgZfY1wF5Rbyhtdqj40krCzssclUDMtm0EitjhdmXOdcJZ1BMgkTk92NDP6MBOw%2BeBbGfaHzQFPRbL9HKF0G%2Fm0NgAimJzm4MEgF%2Fdaf9%2FpMNPlKkjxwJd4leJqULA3S9L0S9vBgcT9%2FQkri40zD3ZMKxyAdmepjNhkPZ61HkiwgMXwQKWosQPvv%2By2xgUImnntiiMdtcuGnn0K7NUeJtXQYCKA8waqrl8PImWJcdg9D%2BWHc6lw8mxaG%2BiibEv7zDIPAoudrQHNWkBSCsoB4qTB1LvETb7kV3Ubj%2FIZSq8yvzyg2%2Bz3ZjG%2BfC0cP7MWRHatdNUJktIWT5AzsPpQtAaVrkG5idy31BdIq6nwdx0%2FhppEB0R1gdnzRnjZHPh7S2vozLxbY3kjIXJtp9AoOxcO9RvivpiKeCjudtPyej8et8gQsH5a4ENtr8x7sBEuzLJggNFOJHAW66Qi7TfSWntbkYV1C3Tvf3VpAL8OVwN%2B0odruzZH5M7g0MW7Pd08MrO%2FHgzu7WH63DfcyQAwiDVrIu3%2FHNe5FzVvcJf8z52H9NRnCQZQVud4y448JQWgglg4Xyk1tmAHT5dGYG4NCbXc4Pf35vsGjOFXRy4zoh5WVwEYIsXUsAtXiiOop5GmZIIWDa%2FoK%2Fej2EOPcEgZZcnhJa81sjPCvUejgU%2F40TK5axqZxzvhfr3GB71PI%2BvJpQYmgTcea78xYG5WC7zL8TGcrr6POAMqcKOrC1%2BV7A0GgmI1iA0fYZVGG9%2FkL%2F81vGkCUqkUrfjLqJ8b%2Bh5%2BTNtft%2FapfAYFSxZOkVvlFY86gSeCt%2BU2ShCTqjYgIMMqv%2BPM3g1aeds9HZO7MC7rRWnwNgPcvrTxoSsJAnfiYHV8rlD75KXpAAwGFvmb%2B6SzbMqI3WoKq6%2FJe%2Ft%2B%2FMLEBwnBc5WJ%2BpsfjY76dkdHpdqezvnJL4K6TTjPaSt8EsLXShIuIuLq4BJ4GR%2B3pwTf4bTfMgf55HTvixYB0iMGsJ9YpC%2FurlLxhG%2FJHv%2FSKFq5NwLwnAUwdwUCLQIRdxFUTkG18bnEPUf%2FcI%2BQoGiAPjRkPvPxCZte8jTuWiCzIVYDbVGLOQ2nJFu3pn0z1KZaobE7kLgWgJ4neDlNQ9VPTdWVer4Uh6beSpRtD6MADhdy0AO9semQrqY%2B2lxaawqErboiHsUHKTrqsyXg4v5WNSZ0U7FvUOODPA85rksg%2BWzuJNV2rCEBs77B52StU5mm%2Bw3lVFWu1kqKYO51j8A%2FgZmyyB2hbvKUUePHKPy%2B8ZSuVLpggsaPRJQ%2FFAsK87msRisVr2BUeoVr4SxCL9EdAqP9uXJjGVtM%3D"
     },
     {
@@ -2186,7 +2186,7 @@ module.exports = {
         }
       }),
       "sku": "927d2919-2b99-4a66-af18-d2079ce27ca9",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_768134-MLA48496137270_122021-R.webp",
       "link": "https://click1.mercadolibre.com.ar/mclics/clicks/external/MLA/count?a=l5xl3zJ%2FqAKEBvbBu5ERX2QO4ktfMGlcnuJT7G4msA4sOnq%2FEyAlEdK31vPrRZoT6trial%2FianbT0wDvJ93AGlpNxYQDpzJ%2F3onwyH9CdB3U2j0S0hgKbbGebfv3DQOyk8eAUobq5j8AZCboUq%2BCGxZXJVDCRrL25ClxnrGAFBenL85VMGVFKjl2ulQ5nTW3%2F4SFn0qGf7tCZNeA6bSE09kOe%2FpKZthmBS6Q5WmA7IJxJGsJvaP0N4VkmYHN9z5Fcd1zhVlMNEDa1euSfPE8R3zK%2FSGY1cp43fGNcN73o6fH%2F4VfyUplUYavjS%2B2u0LLx%2Fx5nTZ0wzJaHFjfzoQpShlGPnlKe2jJYzlilZlcvHLivh9zXG31Qo9SFpVhLSyhD279ykzhgezunMKps%2F7yZ8myCicV5QeXlqqKhNi03SvBEmp3mXg1IbIPnIwgETXd4t1JqYLVPESwQ%2FAmJINu6eHxGdnb15fZgpazzpXuhky29u9KPVgKkL6QPBQLzBihxDscRYgUi76zie%2F9k3EskN8Tb7AVFeEdEx3wID4M3njDDrz5ATmQ6gkELSValytGZSNg9KD5GhJczr6GrepPrh45eFQgOQJ%2FBd51a5UfUTPQ7D1DL52Ik9qhpFpxmFpOi9fHDcAmzHcj9%2BFj8l%2BzzqAnzubiUpj%2B%2FRmRsTmx%2FVGRgBwzTuGCWldLFSlV7ttWXWtaDNRCtHOxrSj1u2W8UienDY9wSAtMfrTbkh0VhPshcZpV4NRPgM0y%2FF8py671WoUofgexHWK2KdtMcnXV5r4DHlBRmrYHJMo08yGVh8ThznMM3FRBt58TN8xb1v5UixMn1fZ5%2FGBKd5A6Wg6yVjtzuxuESrJwchSLl8oOoRhielDOScByqZ2HKuyKh1Ki4djN1RJLUdSiLCROhfrk%2Bcd90ilqROA30JAKLu9QGFgDsRUoRF7CacmnzzVL20Qz9pBi8r2FtNMeRkvvfDl2eF907%2FKWfXE%2FU9u2%2BY5BhzO%2BJKKKP3%2BW2paJZvd1J%2BZQ%2Fp1tEHd4kMH8r662yco5lpcoYtIudc6p0MfBw2f5lqBthg7l5RVUn3%2FxDmT3l1NkssSjbSN6T9QyivO9lcybMqC3nFoZf%2FqjnQsEKvX564BnIp0BsIpsZ3z3NIX%2FYlOkLSrg%2FnJ9lCfjknHXu2brLc7IkwlCOR9yX3swfYH59cjjfuPwYbNnxQdiJ%2Ftd3BtsyKpqFPI%2FMpbEmQOoQjefOkTuerOvk8zey%2BAxZBkpuh58psnf9ipAqURQEkhdns2mwYOqZvq1qoSPYGE1WtEcLyXce2bR%2BMtqljdNAdJXYZeVa8YZ5wm87cXLrxgMRVPUK08YXufIqtjV0s655M7D2XZeVr4QS7dOLVqV3EftusXhAHDHJYmiWk5w5rSSREykme6kZTQ7X8Up08vK7dSluIV%2FCMjVWm%2FVDpgPjSmWDpShJhvSTqi0QQ%2FcNGACvWnDJIMwtnV8Ca8A8%2F%2FFmBQYamtfs4Fhdrxs37%2FDfRa2KptlZHobj96SUCN2nH%2B5lRPGZDorJyPzjaRiqnSSeHWt9Z3FmTP085CS4ekdjlJkRv8JbICKQHALNKmvVt%2F8A%2BDsz%2FcAJIFIyWb4xZl9egx4Taz%2FscdK5uv49GtEVA186CcEKZ%2BDTgC9uu5NSd%2FVb6dhB6kGeNey%2BYs4%2BoziFT%2FCmB9lpPFW3HrtltzMYyrSj07%2BF8AUdFXE8s9M7xRmZanm%2BthvQp2s6BNJ8gBGiWg2J%2FLaFIG8ONeM13ewG5jFQu349tJYvr1rynv17zwhI2gCW1ryLYV9mREybm7iyRJmTJJcIUT2u32jm6bfh08%2Fq6TNgmd4w%2FN%2FmY7IYFhEokVC58ofNV7aQ3mP5YGpEyeyVnzPjpNtdgxPQySfdMfwvn7UJ6iNMU%2BF0XwQs6VaRqUYSY%2FMJHQ7r8dHjPDe3yfCbSaTDHgDirOcCX8LnQf6d5Np2n5XeAAPzn3hjTLh4TnV2K8Jzc%2F0rkGF86OY%2FKyPvy03F2A8SrxzVEdscNwNduc%2BISx5ZtE9I2oc5tpiS4F7Y8623JN%2FT0dEPg%3D%3D"
     },
     {
@@ -2294,7 +2294,7 @@ module.exports = {
         }
       }),
       "sku": "eae7e1a2-89ef-4559-841c-12067fa9bcf8",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_842056-MLA46651798889_072021-R.webp",
       "link": "https://www.mercadolibre.com.ar/moto-e7-32-gb-azul-aqua-2-gb-ram/p/MLA17332935?pdp_filters=category:MLA1055#searchVariation=MLA17332935&position=13&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2379,7 +2379,7 @@ module.exports = {
         }
       }),
       "sku": "57558f8d-7afe-4617-826a-37a000071893",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_645201-MLA48679388629_122021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-901991696-celular-kodak-smartway-l1-pro-azul-_JM?searchVariation=71226077284#searchVariation=71226077284&position=43&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2484,7 +2484,7 @@ module.exports = {
         }
       }),
       "sku": "fbc53330-cf03-448a-8f7a-5f597d6eb78c",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_869803-MLA41419033415_042020-R.webp",
       "link": "https://www.mercadolibre.com.ar/ulefone-armor-x5-dual-sim-32-gb-negro-3-gb-ram/p/MLA15534754?pdp_filters=category:MLA1055#searchVariation=MLA15534754&position=14&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2609,7 +2609,7 @@ module.exports = {
         }
       }),
       "sku": "64f4097b-b882-4984-bd5d-3cf7c3323798",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_799764-MLA46418075647_062021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-923456270-celular-samsung-galaxy-s20-fe-1286-gb-azul-3-cuotas-si-_JM?searchVariation=86558902484#searchVariation=86558902484&position=44&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2725,7 +2725,7 @@ module.exports = {
         }
       }),
       "sku": "20422d0b-e891-42c1-bc8a-3afd43501efb",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_702604-MLA31002342896_062019-R.webp",
       "link": "https://www.mercadolibre.com.ar/iphone-xs-64-gb-gris-espacial/p/MLA12866564?pdp_filters=category:MLA1055#searchVariation=MLA12866564&position=15&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2839,7 +2839,7 @@ module.exports = {
         }
       }),
       "sku": "57be7f6b-62ca-4b73-a447-fed511a16ca4",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_965373-MLA47161746473_082021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-934997873-celular-samsung-a22-blanco-128gb-4gb-ram-_JM?searchVariation=173991995436#searchVariation=173991995436&position=45&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -2955,7 +2955,7 @@ module.exports = {
         }
       }),
       "sku": "7975a12b-b3b1-44b0-a173-9d0cdfc5ed17",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_663384-MLA31003091114_062019-R.webp",
       "link": "https://www.mercadolibre.com.ar/iphone-7-32-gb-plata/p/MLA6240115?pdp_filters=category:MLA1055#searchVariation=MLA6240115&position=16&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3030,7 +3030,7 @@ module.exports = {
         }
       }),
       "sku": "93f6c3d8-b837-4a81-96de-40aed80db2a9",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_727590-MLA47189157492_082021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-917991528-celular-liberado-uso-facil-2-sim-teclas-fm-linterna-cargador-_JM?searchVariation=82874847066#searchVariation=82874847066&position=46&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3155,7 +3155,7 @@ module.exports = {
         }
       }),
       "sku": "dbb0594c-9c2c-411b-b1d9-bcebb662d5fd",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_647463-MLA46418141478_062021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-923462534-celular-samsung-galaxy-s20-fe-1286-gb-azul-nuevo-alclick-_JM?searchVariation=86559635385#searchVariation=86559635385&position=47&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3268,7 +3268,7 @@ module.exports = {
         }
       }),
       "sku": "51ad8789-a9bc-4603-90ff-0ed218fee1d4",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_655003-MLA44170061074_112020-R.webp",
       "link": "https://click1.mercadolibre.com.ar/mclics/clicks/external/MLA/count?a=LgyoSDovBdQJLoD8ec4WNv87YbbXMEFt2t9N0h9eSqqsu2nrwYPMktwKEZ2I5V8c6crkfy0WfG66D7UyDwwOH2%2FzHn4qn4Wk46VHC2N3%2BNrjst2JudfV%2Fj%2FK%2BoflgEcvp2NmxCBQJbY6LTLYRq3q95%2B23aHEDt7djBc%2B2zChh%2BRM4dVD9c3Q7A%2Bk9TOV7eXoLlfQ4EM2oa2nurjq2kUmY%2ByrjZd8Gq%2Fd0mcUvrydDYn%2BB1lx84mnijkhnug1yZCg12G0cMnaGKFsfE9Y8oCkGuL2SMoQNRuCdddYXM93tD3e03TJpAD9bLBwXkv5YfA%2BLA57XJf7RgLJnjPMm1z33Yt6vx5qSmZ7AkQMwcMH2WOQ%2BwwPzaTxQQvtJJJuDxRPTFWolE5vtpbTm0uPkrBNJ70bZ8mxU7PfdNeKybvUdaqbFk7qwGuQ%2FgXcfUy%2Bft1Zoq4SPAu175GB3C8kF7hEu5PiysksDvGHGvZhxAFeow2MVKxevztn8stX0eYNfVtty20e6025m8a2ydvnnL7YNK7zhYTah0HwPBrAYlO%2BmMR1rAv9qQSMUmUIofaaSiSaNnUVB6FXj1HahqLmfpB3CQVv4ivV2OClHSWHTiHl2xPoJTex8Z%2BB5ejJO3Fvjd8U83Me1FEvAaTwH%2BCGSnVvgc2R4iVEueJYMEHTMzWJlDTKXi%2FDbqu4nnqhAV%2F5D5C9kdgAy60EyHo2sePYy%2FmhOKSQYcINGKfaT%2BG30wq756y3wB4oqcTeH8JW9%2FhTNVE3tJf8z0hdoYNm3vZOwWKeq6TUTWpTbL8la3OwHnKbwls%2Fwzs0i7pZizUWDuLDENK9oSFk7QP%2FbiqSTgm2mn8BJprBFDfQ1cy9RF8TtBzeqn1qw0IFN5lVgS%2FyOO3wrag%2BHBaiiPT7UxGjK7nNETPAMQjj%2BLaWnKBEVg3UgHRU2dXTKBFjvUTnkhbEbEImNXPASYx3goWWKFoFQNf4DHPQN4F09vnxjtdmD46tg0t3DTYIH4ZOovfZrsK%2BS8SgobF7z3asjJWMZS6Om0nkH1lCWsT%2FkTKICJuqQaJNqSBEeMyV1bTdQjgx71hU3bVjNrPIgsmaW5XpzGTbdBIqoPNqD%2FNz0envSjRMvQI9pqCr4KSO4UceYDQ3%2Bw4I8cCrlnG6OOYO5qQurQ%2BbiqfnBeAGecOohW%2FicV5wRTIb%2BztB9gZ254Ih5zl%2BZO5b3xEigCCrMIY0ITDXN6QE%2B8rsHDYZNPwJvL7ZZJEZIoGq2PuEjXD9FJ%2BT8q%2FTdfYKbm7lrEcjsTCeoyjjEGRbTGKExm05HNd2WA1KOI48%2BUlP%2FohPFJT2JPskrNl%2F0KdXrO9dKtVXt3pNk6yFsABNWXZXkCOSc24E1Utg%2BDYRJDk6gWB8R9aiF0MguVL8sVY4fonAwbXr64SyKJoTB5p%2Fsn8I3qWvYuetU2fxuqFpjMYO%2FnaYTdwwnuFGHQlm7uORzWwhuc1DCKbhVNe14KCv5l%2B8KtfdsMczu4mTq3Cu43pRW2PqO9MrrSRm9oLjrhGq0qKdEUkGKx%2Fx4RB3QCHGK2pv51prXVG1BaezXDjmlnox%2FVvucsALwbmq5ocUH%2BLxv6DvOed8I2cbUUtlHJHJ6SfmsjQ5J3uJTelYQCTdJTo688FSUUyx%2BsLPF1pfhFxuF2hEJ7bWIqOJuA3pfYUmXTUwvG1%2Fu9gm7NOPR64uKeAT%2BmbnlgtnKoyUpz62DWEFbdYvdRgDRmDASeHVgnPRSLH5feRkfkWwowxHI1yGGIWZNd0lr%2BHvj7F7gpH5D8H2qvD2hV7xcEsTBgbt%2BB3ttJ417xt8XEnE9BpQn22MKj7oTL1kR7q5uwzAWpjGVEeh0OtyjmkrEL3FXIOkHoy4mYwskTN%2FS8QyMZYknVS9%2FSswFkTixmLUAHa94C3kFVW2%2BN5KUhfso91baFZgns42VUt9Q6RNmhsc7KOKnYl3pEYm%2BZCo2Uwm%2B5Hiyp61nxrpf5uJFqRBLWsxNMZve8O1GmLbqAhgY1qOf8ShMm9jDh1VyjavSP3I9A%3D%3D"
     },
     {
@@ -3321,7 +3321,7 @@ module.exports = {
         }
       }),
       "sku": "784f9c63-6f55-4272-923d-e272d8ddcfed",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_783384-MLA46306625453_062021-R.webp",
       "link": "https://click1.mercadolibre.com.ar/mclics/clicks/external/MLA/count?a=sety4Z4uaAbzs9y9P9ILLSFnnyzzBx%2FSWD%2BSGMtXRqP0b%2Fo9z3Z0%2FNsmxJ6BBqFpX7LIZ3NXiRu4v5VvUl8BZQSmwgZ1IoVEgp%2FgWpEpOAtaOwlmqkUUV9e3VQ7aBCZ2VaVPxa%2B2SUPai6m6mSGO5S55v6mySzS9LNKcrYSm9VABqECrVp1WWNW1PsLY6mhXe707htHG57i9Rl1xYW6dTlnR%2FiaHGe%2Bf%2F58SCDPSTCo07nwfT20b1%2BRnmcChsmWovYGa1%2FEO2tJbCFqD6g3wixUFJ9r2SHnxKJSqfSfeqNiPYIxIv9KYygURgpTjoRpozhRv%2F75ALI1%2FiyKBO1vxuITrgB7M8VKvJCKjcwG9j8YVpvKJrcFWcb0%2BZ5he7ac6UBDgFvvI0%2FAtugaMwfBaBtO2JDBe%2FJmD1j6UUlB7CwhItBA7WIku4wdYat8U%2BCoEBfXBa3fmBUkEUL%2BP9nAN5NY4LnUEHtpsZ9und4YAb27m0GLwXGcH8I5DjxN2haLUTmxHkSp%2BBZti%2Fz3Ev1RfIuxmdfRaPvC5Ukl2xJoVTApYh2Pa%2FaXKC5IF%2BBazIq1buC3aYfZCWx8mOtjnZgqQHD4eUO6Vk%2BQ%2FMdx8JRwBj2CWLiC%2FV8cGgkAn3vmrtvfV%2B%2FiQzOPZax%2B8%2Fuoyhcs%2BOkNpV3vQOvWxj7yhxKOT9clamrOCUqA8vgkUk5CmSmnow7Zs6J7qvzQhbJiEa1b3K9rPt%2FUkavALJPcZ%2FWNVirIW4AFOn4jZTTQPMOPugfFYIkxdg6wDz46mKiD%2B53lHSXBTQN21hZT0cgOw9i9Fsrrz42CLj9vagZxzeWWXfxcq3uyuVzA9FcZGT2iVepLGMdEEBKQ0WsX64o5Rv4I%2FfEJOHUCtBjpJGzAqyXFCfcecNdIPWnFCEK63j9XJju0zzRaa3bZfxsic9ldFMdvRXXn3%2BJhmAfTaHBaFObIvGDVszkzUigJyVM1F0%2F%2Fxj1BuK1OI%2B3HG2H%2F9P4XDxIo272keI8uwYEgNBlcIhD6vkJuAZW6d%2ByJoBQCA%2Bzp0yjKBXTYTigoOM6IS0dKRYKBnqpJn%2FUTVgz4L%2BxOWyemj4Trff8mjWZtVHPeF%2FxrdAEQqqyH48Zogqn22Azvgvxkqm3lZ10iduW7F1rw78ZaNck1J1ycpg%2FXbUriDcV1tN8Bo80TDFyv4AMSwjxng5Wt9vAL%2F%2F230nUlyZ6f0wEwZeFYoA5hhwv3U7NqkT%2FK06VsKRhbJ%2BkTLEyO2W%2B6HgJpqZGjdrnmRccTmbtzEAoo1EjxXS3PHzotNq8EWUj88Q%2FdiQ2KUg%2BzYgCdzhwS892MoObcvmkntyBR%2BhKNN3TR3VocWbSsFxkfyCJohHu7tsDYGxnW%2Fyrh3TfuAAufuPeqB4qvb%2BP1Og5zxLMbDNH6ek6NCGZlZJI0oKJZDLCNWKVDA6piuJOk%2Fn5E2xJmeD%2F7CnRLKuFCz5alEjau2m7INN6TlIdUtvFrtLi3QBFZz6cZbKLjzQmdO22m76B%2ByDueDk90Yxr2PHcV%2BZBgjCl5JF2Ghl3d3tqW1AaRLlGIv0ijwO3lwJDcZ5hLpXou0I6BF4ckqo6U95qTYUeFcR0SUVwkSIluyzLG5e%2FsvB1Ph%2FOsoKqFXEyqOL9RrNBdL1fq13s73nCmyYsSNE15S9pWAZcTNXo1RCQW5Ee7G7CrPH1q8J%2BmqEoIENJQI70SfUHp7HwkF40IuKXqYbpnJmxZFDR3QjSBXGmGuMuUHqUtc3JjtCq7yh48%2B4HASbc9xGUem2fk6UWkGdKe5nqYUfN%2Fgr%2FCU5ZPZbdQzfhTvui29wgwcrnGalZgNcRTmPf0PQsI2Co0OosN0mF91mN9%2FpD5Nkr9iLga6bvt2AH19URRHNekBiZ1dGl0b1uifeEzdoS1ubwIeS%2BhP8g7Evf6r378UpzgrCitVuDTa3w%2FU5JXVl%2FQL08KYxOh1lmXSzXYqvcQoIPymbCGJ"
     },
     {
@@ -3442,7 +3442,7 @@ module.exports = {
         }
       }),
       "sku": "443ef477-3aff-4d73-9c48-159b16cfecd8",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_982076-MLA48124226564_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1111203324-celular-motorola-moto-e20-32gb-2gb-ram-gris-9-cuotas-si-_JM?searchVariation=173879783058#searchVariation=173879783058&position=48&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3544,7 +3544,7 @@ module.exports = {
         }
       }),
       "sku": "2b01963f-c56e-46cb-90e7-156a2359e291",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_959374-MLA31965675172_082019-R.webp",
       "link": "https://www.mercadolibre.com.ar/moto-e4-plus-16-gb-gris-oscuro-2-gb-ram/p/MLA7964831?pdp_filters=category:MLA1055#searchVariation=MLA7964831&position=17&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3663,7 +3663,7 @@ module.exports = {
         }
       }),
       "sku": "2b0d653f-64ca-4b56-a2b8-baf4cbe62d4f",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_922219-MLA48428094384_122021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1116853202-celular-samsung-galaxy-a32-128-gb-awesome-black-4-gb-ram-_JM?searchVariation=174032953032#searchVariation=174032953032&position=49&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3762,7 +3762,7 @@ module.exports = {
         }
       }),
       "sku": "ed983ffe-8fdb-44b6-91b6-9fd3b881f949",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_692926-MLA48873955855_012022-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1111733618-tcl-celular-l9s-libre-32-gb-negro-2-gb-ram-octacore-android-_JM?searchVariation=173896213138#searchVariation=173896213138&position=50&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3868,7 +3868,7 @@ module.exports = {
         }
       }),
       "sku": "cab2d645-6278-4cc4-895b-2fb3d5c203e8",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_913104-MLA41487029341_042020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-933564718-alcatel-1-16-gb-negro-metalico-1-gb-ram-con-funda-_JM?searchVariation=93791526804#searchVariation=93791526804&position=51&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -3976,7 +3976,7 @@ module.exports = {
         }
       }),
       "sku": "ae47f21f-0609-4f9b-887b-9c0fbbcf3d08",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_867340-MLA47517884594_092021-R.webp",
       "link": "https://www.mercadolibre.com.ar/xiaomi-black-shark-4-dual-sim-256-gb-mirror-black-12-gb-ram/p/MLA18011127?pdp_filters=category:MLA1055#searchVariation=MLA18011127&position=18&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4086,7 +4086,7 @@ module.exports = {
         }
       }),
       "sku": "0d1e41af-a7a5-4f1e-9513-10babdb8f917",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_760330-MLA46041863429_052021-R.webp",
       "link": "https://www.mercadolibre.com.ar/apple-iphone-12-mini-128-gb-azul/p/MLA16163670?pdp_filters=category:MLA1055#searchVariation=MLA16163670&position=21&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4199,7 +4199,7 @@ module.exports = {
         }
       }),
       "sku": "0ab06b6c-36aa-40c0-8a8e-780d9cb84f5c",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_901959-MLA46081340276_052021-R.webp",
       "link": "https://www.mercadolibre.com.ar/apple-iphone-12-pro-512-gb-azul-pacifico/p/MLA16163690?pdp_filters=category:MLA1055#searchVariation=MLA16163690&position=22&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4255,7 +4255,7 @@ module.exports = {
         }
       }),
       "sku": "6305e4c4-27fa-49d7-9d4f-7a4be8f72f1f",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_636647-MLA48484800763_122021-R.webp",
       "link": "https://www.mercadolibre.com.ar/ipro-f183-dual-sim-32-mb-negro-32-mb-ram/p/MLA18591752?pdp_filters=category:MLA1055#searchVariation=MLA18591752&position=23&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4364,7 +4364,7 @@ module.exports = {
         }
       }),
       "sku": "a21ba994-cbb5-47b3-8201-10fc94d3cd49",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_864553-MLA43531375165_092020-R.webp",
       "link": "https://www.mercadolibre.com.ar/xiaomi-black-shark-3-dual-sim-128-gb-knight-gray-8-gb-ram/p/MLA15748748?pdp_filters=category:MLA1055#searchVariation=MLA15748748&position=24&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4467,7 +4467,7 @@ module.exports = {
         }
       }),
       "sku": "9895428f-87a4-4847-95ac-cb78fb9fed79",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_894343-MLA47518438171_092021-R.webp",
       "link": "https://www.mercadolibre.com.ar/oneplus-9-dual-sim-256-gb-astral-black-12-gb-ram/p/MLA18214161?pdp_filters=category:MLA1055#searchVariation=MLA18214161&position=25&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4577,7 +4577,7 @@ module.exports = {
         }
       }),
       "sku": "e4794120-7168-4ca4-a227-40e97b28d7ca",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_865047-MLA47529594656_092021-R.webp",
       "link": "https://www.mercadolibre.com.ar/oneplus-9-pro-dual-sim-256-gb-stellar-black-12-gb-ram/p/MLA17796240?pdp_filters=category:MLA1055#searchVariation=MLA17796240&position=26&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4654,7 +4654,7 @@ module.exports = {
         }
       }),
       "sku": "1402b74e-cdf3-48cb-8247-a7584ba88ee4",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_626394-MLA44099561210_112020-R.webp",
       "link": "https://www.mercadolibre.com.ar/noblex-n405-dual-sim-8-gb-negro-2-gb-ram/p/MLA16179752?pdp_filters=category:MLA1055#searchVariation=MLA16179752&position=27&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4774,7 +4774,7 @@ module.exports = {
         }
       }),
       "sku": "5517f2ad-3828-4758-a1e7-c9bacb476e08",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_847676-MLA46765507900_072021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1110785617-xiaomi-pocophone-poco-x3-pro-256-gb-bronce-metalico-8-gb-ram-_JM?searchVariation=173872203717#searchVariation=173872203717&position=52&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4880,7 +4880,7 @@ module.exports = {
         }
       }),
       "sku": "6b2823f2-6b9f-4389-92e6-1cd1ff0da324",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_740290-MLA43194671741_082020-R.webp",
       "link": "https://www.mercadolibre.com.ar/xiaomi-mi-note-10-lite-dual-sim-64-gb-negro-medianoche-6-gb-ram/p/MLA15977276?pdp_filters=category:MLA1055#searchVariation=MLA15977276&position=28&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -4976,7 +4976,7 @@ module.exports = {
         }
       }),
       "sku": "546c30a8-4202-4f7a-8dae-81a2483037d5",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_660724-MLA48591993193_122021-R.webp",
       "link": "https://www.mercadolibre.com.ar/kodak-smartway-t3-dual-sim-32-gb-negro-2-gb-ram/p/MLA17451157?pdp_filters=category:MLA1055#searchVariation=MLA17451157&position=29&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5092,7 +5092,7 @@ module.exports = {
         }
       }),
       "sku": "ecb0b456-5e7b-4ab7-a8e9-ab9ef614954d",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_986228-MLA45826858638_052021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-919311225-celular-motorola-moto-e7i-power-322gb-naranja-3-cuotas-si-_JM?searchVariation=89168858237#searchVariation=89168858237&position=53&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5184,7 +5184,7 @@ module.exports = {
         }
       }),
       "sku": "55ad80dd-594d-4662-8047-970193628959",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_880396-MLA48183137504_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1111814599-celular-ipro-v10-con-tapa-para-adultos-teclas-radio-sos-_JM?searchVariation=173897157747#searchVariation=173897157747&position=54&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5271,7 +5271,7 @@ module.exports = {
         }
       }),
       "sku": "1eab0afa-6f43-4d66-baed-de3644e64eea",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_822663-MLA41813920064_052020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-929243123-nokia-106-2018-celular-con-teclado-para-personas-adultas-_JM?searchVariation=90892619559#searchVariation=90892619559&position=55&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5405,7 +5405,7 @@ module.exports = {
         }
       }),
       "sku": "cd003250-c72a-425b-b944-cc935a212926",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_784589-MLA43569097347_092020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1109777467-celular-xiaomi-redmi-note-9-pro-6gb-128gb-64mpx-667-grey-_JM?searchVariation=173845053675#searchVariation=173845053675&position=56&search_layout=stack&type=item&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5521,7 +5521,7 @@ module.exports = {
         }
       }),
       "sku": "e1641f49-f7bb-464c-8e16-c1877e8aa479",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_999541-MLA48495893000_122021-R.webp",
       "link": "https://www.mercadolibre.com.ar/xiaomi-mi-11-lite-5g-ne-dual-sim-256-gb-rosa-melocoton-8-gb-ram/p/MLA18612460?pdp_filters=category:MLA1055#searchVariation=MLA18612460&position=32&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5637,7 +5637,7 @@ module.exports = {
         }
       }),
       "sku": "5e2ebdc6-648e-4572-9716-0168a4f01f4f",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_845674-MLA45142312038_032021-R.webp",
       "link": "https://www.mercadolibre.com.ar/samsung-galaxy-a21s-128-gb-azul-4-gb-ram/p/MLA17426238?pdp_filters=category:MLA1055#searchVariation=MLA17426238&position=33&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5747,7 +5747,7 @@ module.exports = {
         }
       }),
       "sku": "ded5f270-a0a5-467e-b3e6-04567ced7764",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_945667-MLA43170185105_082020-R.webp",
       "link": "https://www.mercadolibre.com.ar/umidigi-a7-pro-dual-sim-64-gb-negro-cosmico-4-gb-ram/p/MLA15933607?pdp_filters=category:MLA1055#searchVariation=MLA15933607&position=34&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5864,7 +5864,7 @@ module.exports = {
         }
       }),
       "sku": "5af48ccc-e78d-4e6b-8ac9-004783377627",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_807889-MLA31002342928_062019-R.webp",
       "link": "https://www.mercadolibre.com.ar/iphone-xs-max-64-gb-gris-espacial/p/MLA12866626?pdp_filters=category:MLA1055#searchVariation=MLA12866626&position=35&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     },
     {
@@ -5962,7 +5962,7 @@ module.exports = {
         }
       }),
       "sku": "bdd19658-aade-473f-9fd3-820202b5a8d3",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_762385-MLA31003118577_062019-R.webp",
       "link": "https://www.mercadolibre.com.ar/iphone-se-64-gb-gris-espacial/p/MLA6174083?pdp_filters=category:MLA1055#searchVariation=MLA6174083&position=36&search_layout=stack&type=product&tracking_id=02cd45ec-3bae-4974-a118-0c1cda6a22a4"
     }
   ]

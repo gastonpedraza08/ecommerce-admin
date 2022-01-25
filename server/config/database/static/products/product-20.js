@@ -374,7 +374,7 @@ module.exports = {
         }
       }),
       "sku": "44a7e586-e80b-457f-b4d8-34af17fdcffb",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_728233-MLA47677355520_092021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1105661931-apple-iphone-13-pro-max-256gb-varios-colores-caja-sellada-_JM?searchVariation=173735149666#searchVariation=173735149666&position=4&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -449,7 +449,7 @@ module.exports = {
         }
       }),
       "sku": "8e16b5f8-9465-455e-93ab-cc13caf6e048",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_760466-MLA48699577297_122021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1116314155-blu-z4-music-azul-oferta-teclado-adultos-dual-sim-barato-_JM?searchVariation=174016558605#searchVariation=174016558605&position=5&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -558,7 +558,7 @@ module.exports = {
         }
       }),
       "sku": "4e84e0a3-8609-4e2a-8e09-681bd33f4e02",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_632982-MLA48114077007_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1113079074-samsung-galaxy-a03s-64-gb-negro-4-gb-ram-_JM?searchVariation=173927761324#searchVariation=173927761324&position=6&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -673,7 +673,7 @@ module.exports = {
         }
       }),
       "sku": "b7500562-f4c0-4129-af88-0230c3bfa2df",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_654697-MLA43321098303_082020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-928765935-lg-k41s-32gb-titan-3gb-liberado-soft-claro-tienda-lg-_JM?searchVariation=90406021237#searchVariation=90406021237&position=7&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -792,7 +792,7 @@ module.exports = {
         }
       }),
       "sku": "8474efa9-9daa-4d20-a276-6d49e3a69f8c",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_936747-MLA47935265540_102021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1108712289-celular-apple-iphone-7-de-128gb-nuevo-sin-caja-_JM?searchVariation=173820872385#searchVariation=173820872385&position=8&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -916,7 +916,7 @@ module.exports = {
         }
       }),
       "sku": "66e62e69-c2ca-470d-9a39-fa8b17fc5aa3",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_621098-MLA47516945821_092021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1103533059-iphone-8-plus-64-gb-gold-_JM?searchVariation=173658630409#searchVariation=173658630409&position=9&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1017,7 +1017,7 @@ module.exports = {
         }
       }),
       "sku": "75b4e5cd-5602-45df-b9a5-def6c30d2e8b",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_733530-MLA31822173838_082019-R.webp",
       "link": "https://www.mercadolibre.com.ar/samsung-galaxy-j6-64-gb-azul-4-gb-ram/p/MLA10094097?pdp_filters=category:MLA1055#searchVariation=MLA10094097&position=48&search_layout=stack&type=product&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1143,7 +1143,7 @@ module.exports = {
         }
       }),
       "sku": "d2e26f65-ff47-409b-b3fb-70077febffc2",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_879516-MLA43816597150_102020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-928493948-samsung-galaxy-z-flip-256-gb-mirror-black-8-gb-ram-promo-_JM?searchVariation=90147914117#searchVariation=90147914117&position=10&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1248,7 +1248,7 @@ module.exports = {
         }
       }),
       "sku": "b5d80fcb-af85-48e1-b55b-600e0093c8c7",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_956010-MLA46709999252_072021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-929133332-celular-antibacterial-cat-s42-salud-personal-medico-_JM?searchVariation=90777058658#searchVariation=90777058658&position=11&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1367,7 +1367,7 @@ module.exports = {
         }
       }),
       "sku": "56155614-8373-47b0-9803-7e2fffe20697",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_810218-MLA46833451896_072021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-930456884-celular-industrial-blackview-bv-4900-pro-4gb-64gb-cuotas-_JM?searchVariation=91877487234#searchVariation=91877487234&position=12&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1416,7 +1416,7 @@ module.exports = {
         }
       }),
       "sku": "c6a7a98f-8e43-4eaf-a3a2-ad5141f27c97",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_613493-MLA46561971104_062021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-927637455-blackberry-curve-9320-black-libres-3g-wifi-teclado-qwerty-_JM?searchVariation=89491119724#searchVariation=89491119724&position=13&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1457,7 +1457,7 @@ module.exports = {
         }
       }),
       "sku": "41044839-fd2f-44c2-aff0-d0855c85bc13",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_703311-MLA48684434248_122021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1117380601-celular-alcatel-pixi-3-ot-5017a-8gb-negro-liberado-ref-_JM?searchVariation=174049354617#searchVariation=174049354617&position=14&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1569,7 +1569,7 @@ module.exports = {
         }
       }),
       "sku": "bb9091f6-1428-4a93-a29b-8ad56c1ce927",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_639088-MLA48319298981_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1113443605-sony-xperia-1-mark-iii-12gbs-512gbs-celular-smartphone-_JM?searchVariation=173939374984#searchVariation=173939374984&position=15&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1665,7 +1665,7 @@ module.exports = {
         }
       }),
       "sku": "17dab1da-c624-42a4-bb68-d604d0c250dd",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_638698-MLA48102592487_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1110893255-huawei-p9-lite-16gb-blanco-libre-impecable-gtia-_JM?searchVariation=173872883419#searchVariation=173872883419&position=16&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1778,7 +1778,7 @@ module.exports = {
         }
       }),
       "sku": "da4eea99-245f-40eb-8430-afad24acb504",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_829848-MLA44849379166_022021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1120052023-samsung-galaxy-s21-ultra-5g-_JM?searchVariation=174116223313#searchVariation=174116223313&position=17&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1845,7 +1845,7 @@ module.exports = {
         }
       }),
       "sku": "d42de1ec-b251-44e5-a0ab-3dc022346b5d",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_717187-MLA48762475759_012022-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1109549152-celular-libre-3g-2g-teclas-y-pantalla-grande-panacom-adultos-_JM?searchVariation=173838226840#searchVariation=173838226840&position=18&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -1957,7 +1957,7 @@ module.exports = {
         }
       }),
       "sku": "a7072bbf-000e-4526-ae0e-13d838b11fe6",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_763362-MLA45268484945_032021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-912564083-nuevo-modelo-xiaomi-note-9t-5g-_JM?searchVariation=79218381845#searchVariation=79218381845&position=19&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2082,7 +2082,7 @@ module.exports = {
         }
       }),
       "sku": "e93f0204-959f-4468-9b89-ff5465ab874c",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_995741-MLA47861036467_102021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1118400851-samsung-galaxy-s20-fe-128-gb-cloud-navy-6-gb-ram-_JM?searchVariation=174067786230#searchVariation=174067786230&position=20&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2204,7 +2204,7 @@ module.exports = {
         }
       }),
       "sku": "49024b39-ac0a-441f-b572-7515bf656589",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_924158-MLA45254398324_032021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-912002750-celular-kodak-smartway-t3-2gb-ram-32gb-gris-fact-a-b-_JM#position=21&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2310,7 +2310,7 @@ module.exports = {
         }
       }),
       "sku": "783e8040-a8fb-47b7-bdbc-f0697c0d04da",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_817907-MLA47635639249_092021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1105026333-motorola-moto-g3-8gb-libre-arg-factura-a-o-b-en-notredame-_JM?searchVariation=173709714509#searchVariation=173709714509&position=22&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2415,7 +2415,7 @@ module.exports = {
         }
       }),
       "sku": "a79cbb5c-c366-4959-922e-d15574e9c01b",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_818747-MLA46721546673_072021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-929244017-celular-industrial-robusto-militar-cat-s42-4gb-64gb-camping-_JM?searchVariation=90891951488#searchVariation=90891951488&position=23&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2533,7 +2533,7 @@ module.exports = {
         }
       }),
       "sku": "8eaaa6f2-488d-4b9c-8765-9631c8d21455",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_639855-MLA45385147182_032021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-917238623-samsung-galaxy-a12-64-gb-azul-4-gb-ram-_JM?searchVariation=82462893705#searchVariation=82462893705&position=24&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2652,7 +2652,7 @@ module.exports = {
         }
       }),
       "sku": "e327037d-fc94-4317-8658-74df001a8574",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_615079-MLA46479868328_062021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-926634865-samsung-galaxy-a32-128gb-rom-4gb-ram-awesome-black-_JM?searchVariation=88784959351#searchVariation=88784959351&position=25&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2778,7 +2778,7 @@ module.exports = {
         }
       }),
       "sku": "d53d7a26-e540-455c-b63f-838c2fd73d2c",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_879516-MLA43816597150_102020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1114103485-celular-samsung-galaxy-z-flip-3-_JM?searchVariation=173957800406#searchVariation=173957800406&position=26&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2896,7 +2896,7 @@ module.exports = {
         }
       }),
       "sku": "e12085d8-5df2-42fc-99ea-6bbb571c1f7c",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_985127-MLA48323022283_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1113525647-iphone-x-_JM?searchVariation=173940357037#searchVariation=173940357037&position=27&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -2972,7 +2972,7 @@ module.exports = {
         }
       }),
       "sku": "d576be6c-caa1-46ce-bf39-79f69f302573",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_684283-MLA41829384256_052020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-855742569-celular-libre-5-pulgadas-4g-lte-1gb-16gb-funda-film-mandy-_JM?searchVariation=68948416465#searchVariation=68948416465&position=28&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3026,7 +3026,7 @@ module.exports = {
         }
       }),
       "sku": "e01d78e9-4114-4b02-b143-23e602214bf9",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_625852-MLA31129074638_062019-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-898733972-celular-blu-tank-24-torch-t-550-dual-sim-bluetooth-radio-_JM?searchVariation=69189715796#searchVariation=69189715796&position=29&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3122,7 +3122,7 @@ module.exports = {
         }
       }),
       "sku": "3a360703-60d5-45e2-9156-9d031143f273",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_935488-MLA45549655389_042021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-916008198-reparacion-de-red-samsung-_JM?searchVariation=81680943135#searchVariation=81680943135&position=30&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3228,7 +3228,7 @@ module.exports = {
         }
       }),
       "sku": "6adef5c1-737d-4d14-84e7-b24a7cd3573b",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_658883-MLA45656014852_042021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-931418117-moto-e6i-32-gb-rosa-coral-2-gb-ram-_JM?searchVariation=92481703396#searchVariation=92481703396&position=31&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3318,7 +3318,7 @@ module.exports = {
         }
       }),
       "sku": "413b1f58-cb8e-4f3b-958d-40a6a90a7217",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_943501-MLA44296119764_122020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-900567945-celular-nokia-110-dual-sim-radio-fm-teclas-camara-oferta-_JM?searchVariation=70388374243#searchVariation=70388374243&position=32&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3440,7 +3440,7 @@ module.exports = {
         }
       }),
       "sku": "353e715b-8c47-436f-a108-eba91624b025",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_700296-MLA46285557619_062021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-924049080-iphone-8-plus-64gb-rose-libre-de-icloud-_JM?searchVariation=87014679360#searchVariation=87014679360&position=33&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3546,7 +3546,7 @@ module.exports = {
         }
       }),
       "sku": "4a8c5139-2a1a-4eb9-b071-2f799b40c655",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_956695-MLA47261056200_082021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1100154174-celular-samsung-galaxy-j1-ace-sm-j111m-4g-8gb-1gb-ram-claro-_JM?searchVariation=173546696374#searchVariation=173546696374&position=34&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3630,7 +3630,7 @@ module.exports = {
         }
       }),
       "sku": "520e0187-7744-4aea-91dc-8f76158bd119",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_672837-MLA40668754262_022020-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1117002650-celular-philco-p241-dual-sim-256512mb-negro-9-cuotas-si-_JM?searchVariation=174036001990#searchVariation=174036001990&position=35&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3753,7 +3753,7 @@ module.exports = {
         }
       }),
       "sku": "235aa998-a1e6-4e13-b436-44a6fbc210b7",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_719986-MLA32445355466_102019-R.webp",
       "link": "https://www.mercadolibre.com.ar/samsung-galaxy-note10-256-gb-aura-glow-12-gb-ram/p/MLA15145873?pdp_filters=category:MLA1055#searchVariation=MLA15145873&position=49&search_layout=stack&type=product&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3872,7 +3872,7 @@ module.exports = {
         }
       }),
       "sku": "e88a8f77-a6c1-4e63-8da2-ebad6abcc3d2",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_765234-MLA43642739406_102020-R.webp",
       "link": "https://www.mercadolibre.com.ar/samsung-galaxy-note20-ultra-256-gb-bronce-mistico-8-gb-ram/p/MLA16103194?pdp_filters=category:MLA1055#searchVariation=MLA16103194&position=50&search_layout=stack&type=product&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -3924,7 +3924,7 @@ module.exports = {
         }
       }),
       "sku": "c69a3927-2f0c-4e0c-a603-78b8b20b07f8",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_925087-MLA47060654303_082021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-933970073-celular-philips-e-108-negro-dual-sim-radio-linterna-3-edad-_JM?searchVariation=94104166874#searchVariation=94104166874&position=36&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4028,7 +4028,7 @@ module.exports = {
         }
       }),
       "sku": "fadad36a-e336-446c-a12b-49f9581ca636",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_683733-MLA48115758255_112021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1111098013-xiaomi-mi-a2-4g-lte-4gb-ram-64gb-almacenamiento-_JM?searchVariation=173877233137#searchVariation=173877233137&position=37&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4149,7 +4149,7 @@ module.exports = {
         }
       }),
       "sku": "efec79aa-e578-4bfb-9cba-cf1ee4eaaf7f",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_746344-MLA47155554425_082021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-934926002-iphone-7-plus-128-gb-liberado-_JM?searchVariation=94792175353#searchVariation=94792175353&position=38&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4271,7 +4271,7 @@ module.exports = {
         }
       }),
       "sku": "d1000627-545e-4b49-8fea-40887a711040",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_639441-MLA31003118785_062019-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1100701057-iphone-8-64gb-nuevo-en-caja-sellado-_JM?searchVariation=173561531588#searchVariation=173561531588&position=39&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4361,7 +4361,7 @@ module.exports = {
         }
       }),
       "sku": "980a3b46-9c2c-4c57-a110-a2736aa4dab5",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_747801-MLA46769611199_072021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-929781825-celular-libre-quantum-yolo-rojo-_JM?searchVariation=91289867124#searchVariation=91289867124&position=40&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4485,7 +4485,7 @@ module.exports = {
         }
       }),
       "sku": "31683ad5-9644-437d-b43b-ca80d45f16e2",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_684230-MLA46292005565_062021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1106184700-iphone-11-pro-max-64gb-usado-como-nuevo-_JM?searchVariation=173751116504#searchVariation=173751116504&position=41&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4600,7 +4600,7 @@ module.exports = {
         }
       }),
       "sku": "7d839309-7b3c-436a-bfb5-bb8018aea159",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_984249-MLA47782359300_102021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1111173816-iphone-13-mini-128gb-todos-los-colores-_JM?searchVariation=173880468228#searchVariation=173880468228&position=42&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4721,7 +4721,7 @@ module.exports = {
         }
       }),
       "sku": "11bbaee6-2f21-4ad0-8e22-1ed4a3514153",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_815499-MLA45244274049_032021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-912342020-celular-libre-zte-a5-color-negro-_JM?searchVariation=79026615037#searchVariation=79026615037&position=43&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4754,7 +4754,7 @@ module.exports = {
         }
       }),
       "sku": "2cdd5d93-621a-4215-8c2e-3d9afee608c5",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_904762-MLA47326567421_092021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1100869065-celular-alcatel-teclado-y-tapa-gente-mayor-_JM?searchVariation=173566892772#searchVariation=173566892772&position=44&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4789,7 +4789,7 @@ module.exports = {
         }
       }),
       "sku": "c46ade9f-9346-4fe8-bb44-bfb53cecf676",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_959978-MLA48792369969_012022-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1118947914-celular-konka-phoenix-kc516-16gb-1gb-52mpx-android-11-_JM?searchVariation=174084461065#searchVariation=174084461065&position=45&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -4916,7 +4916,7 @@ module.exports = {
         }
       }),
       "sku": "682e6711-2ce9-4e00-960e-02f1dd4f4275",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_865864-MLA46114990464_052021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1101511146-apple-iphone-11-128-gb-negro-_JM?searchVariation=173582746701#searchVariation=173582746701&position=46&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     },
     {
@@ -5040,7 +5040,7 @@ module.exports = {
         }
       }),
       "sku": "a32f7a32-7b3b-4891-93ff-362d1e42c59b",
-      "thumbnail": "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7",
+      "thumbnail": "https://http2.mlstatic.com/D_Q_NP_767498-MLA48455281872_122021-R.webp",
       "link": "https://articulo.mercadolibre.com.ar/MLA-1114938144-blackview-bv-9900e-todo-terreno-ip69-liberado-4g-lte-_JM?searchVariation=173983104513#searchVariation=173983104513&position=47&search_layout=stack&type=item&tracking_id=62c46d01-4ae5-4430-9466-cb43152a086f"
     }
   ]
