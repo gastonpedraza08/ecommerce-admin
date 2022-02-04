@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { makeStyles } from "@material-ui/styles";
 import Grid from '@material-ui/core/Grid';
 
-import Filter from './Filter';
+import Filter from 'components/SearchProducts/Filter';
 import Product from './Product';
 import Pagination from './Pagination';
 

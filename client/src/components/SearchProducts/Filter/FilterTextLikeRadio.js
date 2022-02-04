@@ -6,9 +6,11 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+import InputRadio from './InputRadio';
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '100%',
   },
   heading: {
     fontSize: theme.typography.pxToRem(15),
@@ -50,38 +52,23 @@ const AccordionSummary = withStyles({
   expanded: {},
 })(MuiAccordionSummary);
 
-export default function SimpleAccordion() {
+export default function FilterTextLike(props) {
   const classes = useStyles();
+	const [accordion, setAccordion] = useState(true)
+  const { filterItem } = props;
 
   return (
     <div className={classes.root}>
-      <FilterGrid />
-      <FilterGrid />
-      <FilterGrid />
-      <FilterGrid />
-      <FilterGrid />
-      <FilterGrid />
-      <FilterGrid />
-    </div>
-  );
-}
-
-function FilterGrid() {
-	const classes = useStyles();
-	const [accordion, setAccordion] = useState(true)
-	return (
-		<Accordion expanded={accordion} onChange={() => setAccordion(prev => !prev)}>
+		  <Accordion expanded={accordion} onChange={() => setAccordion(prev => !prev)}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
         >
-          <Typography className={classes.heading}>Accordion 1</Typography>
+          <Typography className={classes.heading}>{filterItem.name}</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
-          </Typography>
+          <InputRadio values={filterItem.values}/>
         </AccordionDetails>
       </Accordion>
-	);
+    </div>
+  );
 }
