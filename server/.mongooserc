@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   'config': path.resolve('config-mongoose', 'config.json'),
-  'models-path': path.resolve('config-mongoose', 'models'),
+  'models-path': path.resolve('src', 'models-mongoose'),
   'seeders-path': path.resolve('config-mongoose', 'seeders'),
   'migrations-path': path.resolve('config-mongoose', 'migrations')
 }

@@ -1,4 +1,4 @@
-const { Product, Category, sequelize, Sequelize } = require('../../models');
+const { Product, sequelize, Sequelize } = require('../../models-sequelize');
 const { getFilterLine } = require('../../utils/commons');
 
 const persist = async productToPersist => {

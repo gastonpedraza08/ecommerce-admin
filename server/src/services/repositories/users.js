@@ -1,4 +1,4 @@
-const { User, Role } = require('../../models');
+const { User, Role } = require('../../models-sequelize');
 
 const getByEmail = async email => {
 	const result = await User.findOne({

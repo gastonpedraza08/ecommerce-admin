@@ -1,5 +1,5 @@
-const { Slide } = require('../../models');
-const { sequelize } = require('../../models');
+const { Slide } = require('../../models-sequelize');
+const { sequelize } = require('../../models-sequelize');
 
 const getSlides = async (params, conditions) => {
 	const result = await Slide.findAndCountAll({

@@ -1,4 +1,4 @@
-const { ProductsSection, Product, Products_ProductsSection, Category, sequelize, Sequelize } = require('../../models');
+const { ProductsSection, Product, Products_ProductsSection, Category, sequelize, Sequelize } = require('../../models-sequelize');
 
 const persist = async (productsSectionToPersist, productsId) => {
 	let productsSection = await ProductsSection.create(productsSectionToPersist);
