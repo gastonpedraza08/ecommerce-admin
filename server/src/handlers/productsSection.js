@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
-const repository = require('../services/repositories/productsSection');
-const productsRepository = require('../services/repositories/products');
+//const repository = require('../services/repositories/productsSection');
+//const productsRepository = require('../services/repositories/products');
 
 const getProductsSection = async params => {
 	const productsSection = await repository.getProductsSection(params);
