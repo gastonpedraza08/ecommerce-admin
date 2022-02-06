@@ -23,9 +23,11 @@ router.put('/:id', async (req, res) => {
 	const fieldsToUpdate = req.body.fieldsToUpdate;
 	try {
 		const result = await handler.updateProduct(productTopUpdate, fieldsToUpdate);
-		if (result[0] === 1) {
-			res.json({
+
+		if (result) {
+			res.status(200).json({
 				ok: true,
+				oldProduct: result
 			});
 		} else {
 			res.status(400).json({
@@ -45,20 +47,21 @@ router.delete('/:id', async (req, res) => {
 	const productToDelete = req.params.id;
 	try {
 		const result = await handler.deleteProduct(productToDelete);
-		if (result[0] === 1) {
-			res.json({
-				ok: true,
+
+		if (result.deletedCount === 1) {
+			res.status(200).json({
+				ok: true
 			});
 		} else {
 			res.status(400).json({
-				ok: false,
-			})
+				ok: false
+			});
 		}
 	} catch (error) {
+		console.log(error);
 		res.status(500).json({
 			ok: false,
 		})
-		console.log(error);
 	}
 });
 
@@ -67,7 +70,7 @@ router.get('/', async (req, res) => {
 		const params = {
 			limit: parseInt(req.query.limit) || 1000,
 			order: req.query.order || 'DESC',
-			orderBy: req.query.orderBy || 'id',
+			orderBy: req.query.orderBy || 'createdAt',
 			from: parseInt(req.query.from) - 1 || 0
 		};
 		const result = await handler.getProducts(params);
@@ -76,32 +79,34 @@ router.get('/', async (req, res) => {
 			products: result
 		});
 	} catch (error) {
+		console.log(error);
 		res.status(500).json({
 			ok: false,
 		});
-		console.log(error);
 	}
 });
 
 router.get('/search', async (req, res) => {
+	let search = { limit: 30, ...req.query };
+
 	try {
-		const result = await handler.searchProducts(req.query);
+		const result = await handler.searchProducts(search);
 		res.json({
 			ok: true,
 			count: result ? result.length : 0,
 			products: result,
 		});
 	} catch (error) {
+		console.log(error);
 		res.status(500).json({
 			ok: false,
 		});
-		console.log(error);
 	}
 });
 
 router.get('/:id', async (req, res) => {
 	try {
-		const productId = parseInt(req.params.id);
+		const productId = req.params.id;
 		const product = await handler.getProductById(productId);
 		if (product) {
 			res.json({
@@ -115,10 +120,10 @@ router.get('/:id', async (req, res) => {
 			});
 		}
 	} catch (error) {
+		console.log(error);
 		res.status(500).json({
 			ok: false,
 		});
-		console.log(error);
 	}
 });
 

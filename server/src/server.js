@@ -29,7 +29,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/slides', slidesRouter);
 app.use('/api/products', productsRouter);
-app.use('/api/products-section', productsSectionRouter);
+//app.use('/api/products-section', productsSectionRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

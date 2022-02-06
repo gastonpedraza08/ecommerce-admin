@@ -31,7 +31,7 @@ module.exports = mongoose => {
       required: true
     },
     images: {
-      type: [],
+      type: [String],
       required: true
     },
     categoryId: {
@@ -56,6 +56,19 @@ module.exports = mongoose => {
       updatedAt: 'updatedAt'
     }
   });
+  newSchema.index(
+    { 
+      name: 'text',
+      description: 'text',
+    },
+    {
+     weights: {
+       name: 10,
+       description: 5
+     }
+   }
+  )
+
   const Product = mongoose.model('Product', newSchema);
   return Product;
 };
