@@ -18,13 +18,8 @@ module.exports = {
 				onDelete: 'SET NULL',
 			},
 			productId: {
-				type: Sequelize.INTEGER,
-				references: {
-					model: 'Products',
-					key: 'id',
-				},
-				onUpdate: 'CASCADE',
-				onDelete: 'SET NULL',
+				type: Sequelize.STRING,
+				allowNull: false,
 			},
 			price: {
 				type: Sequelize.DECIMAL,

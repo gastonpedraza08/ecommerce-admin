@@ -15,13 +15,13 @@ module.exports = (sequelize, DataTypes) => {
 	};
 	orderDetail.init({
 		orderId: DataTypes.INTEGER,
-		productId: DataTypes.INTEGER,
+		productId: DataTypes.STRING,
 		price: DataTypes.DECIMAL,
 		sku: DataTypes.STRING,
 		quantity: DataTypes.INTEGER,
 		createdAt: DataTypes.DATE(6),
-    updatedAt: DataTypes.DATE(6),
-    deletedAt: DataTypes.DATE(6),
+	    updatedAt: DataTypes.DATE(6),
+	    deletedAt: DataTypes.DATE(6),
 	}, {
 		sequelize,
 		modelName: 'OrderDetail',
