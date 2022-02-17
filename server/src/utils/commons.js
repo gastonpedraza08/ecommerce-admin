@@ -24,10 +24,14 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'marca':
-			return `AND infoHelper->>"$.características_generales.marca" LIKE "${params[prop]}"`
+			return {
+				marca: params[prop]
+			};
 			break;
 		case 'línea':
-			return `AND infoHelper->>"$.características_generales.línea" LIKE "${params[prop]}"`
+			return {
+				línea: params[prop]
+			};
 			break;
 
 		/*
@@ -38,48 +42,15 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'nombre_del_sistema_operativo':
-			return `AND infoHelper->>"$.sistema_operativo.nombre_del_sistema_operativo" LIKE "${params[prop]}"`
+			return {
+				nombre_del_sistema_operativo: params[prop]
+			};
 			break;
 		case 'versión_original_del_sistema_operativo':
-			return `AND infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo"=${params[prop]}`
+			return {
+				versión_original_del_sistema_operativo: params[prop]
+			};
 			break;
-		case 'min_versión_original_del_sistema_operativo': {
-			let arr = params[prop].split('.');
-			arr.length = 3;
-			arr = arr.map(num => {
-				if(num) {
-					return `LPAD(${num},10,'0')`
-				} else {
-					return `LPAD(0,10,'0')`
-				}
-			});
-			let str = arr.join(', ');
-			return `AND CONCAT(
-        LPAD(SUBSTRING_INDEX(SUBSTRING_INDEX(infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo", '.', 1), '.', -1), 10, '0'),
-        LPAD(SUBSTRING_INDEX(SUBSTRING_INDEX(infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo", '.', 2), '.', -1), 10, '0'),
-        LPAD(SUBSTRING_INDEX(SUBSTRING_INDEX(infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo", '.', 3), '.', -1), 10, '0') 
-       ) >= CONCAT(${str})`
-			break;
-		}
-
-		case 'max_versión_original_del_sistema_operativo': {
-			let arr = params[prop].split('.');
-			arr.length = 3;
-			arr = arr.map(num => {
-				if(num) {
-					return `LPAD(${num},10,'0')`
-				} else {
-					return `LPAD(0,10,'0')`
-				}
-			});
-			let str = arr.join(', ');
-			return `AND CONCAT(
-        LPAD(SUBSTRING_INDEX(SUBSTRING_INDEX(infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo", '.', 1), '.', -1), 10, '0'),
-        LPAD(SUBSTRING_INDEX(SUBSTRING_INDEX(infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo", '.', 2), '.', -1), 10, '0'),
-        LPAD(SUBSTRING_INDEX(SUBSTRING_INDEX(infoHelper->>"$.sistema_operativo.versión_original_del_sistema_operativo", '.', 3), '.', -1), 10, '0') 
-       ) <= CONCAT(${str})`
-			break;
-		}
 
 		/*
 		*
@@ -89,17 +60,25 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'tamaño_de_la_pantalla':
-			return `AND infoHelper->>"$.pantalla.tamaño_de_la_pantalla"=${params[prop]}`
+			return {
+				tamaño_de_la_pantalla: params[prop]
+			};
 			break;
 		case 'min_tamaño_de_la_pantalla':
-			return `AND infoHelper->>"$.pantalla.tamaño_de_la_pantalla">=${params[prop]}`
+			return {
+				tamaño_de_la_pantalla: { $gt: params[prop] }
+			};
 			break;
 		case 'max_tamaño_de_la_pantalla':
-			return `AND infoHelper->>"$.pantalla.tamaño_de_la_pantalla"<=${params[prop]}`
+			return {
+				tamaño_de_la_pantalla: { $lt: params[prop] }
+			};
 			break;
 
 		case 'con_pantalla_táctil':
-			return `AND infoHelper->>"$.pantalla.con_pantalla_táctil" LIKE "${params[prop]}"`
+			return {
+				con_pantalla_táctil: params[prop]
+			};
 			break;
 			
 		/*
@@ -110,27 +89,41 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'capacidad_de_la_batería':
-			return `AND infoHelper->>"$.batería.capacidad_de_la_batería"=${params[prop]}`
+			return {
+				capacidad_de_la_batería: params[prop]
+			};
 			break;
 		case 'min_capacidad_de_la_batería':
-			return `AND infoHelper->>"$.batería.capacidad_de_la_batería">=${params[prop]}`
+			return {
+				capacidad_de_la_batería: { $gt: params[prop] }
+			};
 			break;
 		case 'max_capacidad_de_la_batería':
-			return `AND infoHelper->>"$.batería.capacidad_de_la_batería"<=${params[prop]}`
+			return {
+				capacidad_de_la_batería: { $lt: params[prop] }
+			};
 			break;
 
 		case 'tiempo_de_conversación':
-			return `AND infoHelper->>"$.batería.tiempo_de_conversación"=${params[prop]}`
+			return {
+				tiempo_de_conversación: params[prop]
+			};
 			break;
 		case 'min_tiempo_de_conversación':
-			return `AND infoHelper->>"$.batería.tiempo_de_conversación">=${params[prop]}`
+			return {
+				tiempo_de_conversación: { $gt: params[prop] }
+			};
 			break;
 		case 'max_tiempo_de_conversación':
-			return `AND infoHelper->>"$.batería.tiempo_de_conversación"<=${params[prop]}`
+			return {
+				tiempo_de_conversación: { $lt: params[prop] }
+			};
 			break;
 
 		case 'con_batería_removible':
-			return `AND infoHelper->>"$.batería.con_batería_removible" LIKE "${params[prop]}"`
+			return {
+				con_batería_removible: params[prop]
+			};
 			break;
 
 		/*
@@ -141,13 +134,19 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'es_dual_sim':
-			return `AND infoHelper->>"$.tarjeta_sim.es_dual_sim" LIKE "${params[prop]}"`
+			return {
+				es_dual_sim: params[prop]
+			};
 			break;
 		case 'tamaños_de_tarjeta_sim_compatibles':
-			return `AND infoHelper->>"$.tarjeta_sim.tamaños_de_tarjeta_sim_compatibles" LIKE "${params[prop]}"`
+			return {
+				tamaños_de_tarjeta_sim_compatibles: params[prop]
+			};
 			break;
 		case 'con_esim':
-			return `AND infoHelper->>"$.tarjeta_sim.con_esim" LIKE "${params[prop]}"`
+			return {
+				con_esim: params[prop]
+			};
 			break;
 
 		/*
@@ -158,37 +157,57 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'memoria_interna':
-			return `AND infoHelper->>"$.memoria.memoria_interna"=${params[prop]}`
+			return {
+				memoria_interna: params[prop]
+			};
 			break;
 		case 'min_memoria_interna':
-			return `AND infoHelper->>"$.memoria.memoria_interna">=${params[prop]}`
+			return {
+				memoria_interna: { $gt: params[prop] }
+			};
 			break;
 		case 'max_memoria_interna':
-			return `AND infoHelper->>"$.memoria.memoria_interna"<=${params[prop]}`
+			return {
+				memoria_interna: { $lt: params[prop] }
+			};
 			break;
 
 		case 'memoria_ram':
-			return `AND infoHelper->>"$.memoria.memoria_ram_gb"=${params[prop]}`
+			return {
+				memoria_ram: params[prop]
+			};
 			break;
 		case 'min_memoria_ram':
-			return `AND infoHelper->>"$.memoria.memoria_ram_gb">=${params[prop]}`
+			return {
+				memoria_ram: { $gt: params[prop] }
+			};
 			break;
 		case 'max_memoria_ram':
-			return `AND infoHelper->>"$.memoria.memoria_ram_gb"<=${params[prop]}`
+			return {
+				memoria_ram: { $lt: params[prop] }
+			};
 			break;
 
 		case 'tipos_de_tarjeta_de_memoria':
-			return `AND infoHelper->>"$.memoria.tipos_de_tarjeta_de_memoria" LIKE "${params[prop]}"`
+			return {
+				tipos_de_tarjeta_de_memoria: params[prop]
+			};
 			break;
 
 		case 'capacidad_máxima_de_la_tarjeta_de_memoria':
-			return `AND infoHelper->>"$.memoria.capacidad_máxima_de_la_tarjeta_de_memoria"=${params[prop]}`
+			return {
+				capacidad_máxima_de_la_tarjeta_de_memoria: params[prop]
+			};
 			break;
 		case 'min_capacidad_máxima_de_la_tarjeta_de_memoria':
-			return `AND infoHelper->>"$.memoria.capacidad_máxima_de_la_tarjeta_de_memoria">=${params[prop]}`
+			return {
+				capacidad_máxima_de_la_tarjeta_de_memoria: { $gt: params[prop] }
+			};
 			break;
 		case 'max_capacidad_máxima_de_la_tarjeta_de_memoria':
-			return `AND infoHelper->>"$.memoria.capacidad_máxima_de_la_tarjeta_de_memoria"<=${params[prop]}`
+			return {
+				capacidad_máxima_de_la_tarjeta_de_memoria: { $lt: params[prop] }
+			};
 			break;
 
 		/*
@@ -199,30 +218,46 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'resolución_de_la_cámara_trasera_principal':
-			return `AND infoHelper->>"$.cámara.resolución_de_la_cámara_trasera_principal"=${params[prop]}`
+			return {
+				resolución_de_la_cámara_trasera_principal: params[prop]
+			};
 			break;
 		case 'min_resolución_de_la_cámara_trasera_principal':
-			return `AND infoHelper->>"$.cámara.resolución_de_la_cámara_trasera_principal">=${params[prop]}`
+			return {
+				resolución_de_la_cámara_trasera_principal: { $gt: params[prop] }
+			};
 			break;
 		case 'max_resolución_de_la_cámara_trasera_principal':
-			return `AND infoHelper->>"$.cámara.resolución_de_la_cámara_trasera_principal"<=${params[prop]}`
+			return {
+				resolución_de_la_cámara_trasera_principal: { $lt: params[prop] }
+			};
 			break;
 
 		case 'resolución_de_la_cámara_frontal_principal':
-			return `AND infoHelper->>"$.cámara.resolución_de_la_cámara_frontal_principal"=${params[prop]}`
+			return {
+				resolución_de_la_cámara_frontal_principal: params[prop]
+			};
 			break;
 		case 'min_resolución_de_la_cámara_frontal_principal':
-			return `AND infoHelper->>"$.cámara.resolución_de_la_cámara_frontal_principal">=${params[prop]}`
+			return {
+				resolución_de_la_cámara_frontal_principal: { $gt: params[prop] }
+			};
 			break;
 		case 'max_resolución_de_la_cámara_frontal_principal':
-			return `AND infoHelper->>"$.cámara.resolución_de_la_cámara_frontal_principal"<=${params[prop]}`
+			return {
+				resolución_de_la_cámara_frontal_principal: { $lt: params[prop] }
+			};
 			break;
 
 		case 'con_cámara':
-			return `AND infoHelper->>"$.cámara.con_cámara" LIKE "${params[prop]}"`
+			return {
+				con_cámara: params[prop]
+			};
 			break;
 		case 'con_flash_en_la_cámara_frontal':
-			return `AND infoHelper->>"$.cámara.con_flash_en_la_cámara_frontal" LIKE "${params[prop]}"`
+			return {
+				con_flash_en_la_cámara_frontal: params[prop]
+			};
 			break;
 
 		/*
@@ -233,28 +268,44 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'red':
-			return `AND infoHelper->>"$.conectividad.red" LIKE "${params[prop]}"`
+			return {
+				red: params[prop]
+			};
 			break;
 		case 'con_conector_usb':
-			return `AND infoHelper->>"$.conectividad.con_conector_usb" LIKE "${params[prop]}"`
+			return {
+				con_conector_usb: params[prop]
+			};
 			break;
-		case 'con_wi-fi':
-			return `AND infoHelper->>"$.conectividad.con_wi-fi" LIKE "${params[prop]}"`
+		case 'con_wi_fi':
+			return {
+				con_wi_fi: params[prop]
+			};
 			break;
 		case 'con_gps':
-			return `AND infoHelper->>"$.conectividad.con_gps" LIKE "${params[prop]}"`
+			return {
+				con_gps: params[prop]
+			};
 			break;
 		case 'con_bluetooth':
-			return `AND infoHelper->>"$.conectividad.con_bluetooth" LIKE "${params[prop]}"`
+			return {
+				con_bluetooth: params[prop]
+			};
 			break;
 		case 'con_nfc':
-			return `AND infoHelper->>"$.conectividad.con_nfc" LIKE "${params[prop]}"`
+			return {
+				con_nfc: params[prop]
+			};
 			break;
 		case 'con_radio':
-			return `AND infoHelper->>"$.conectividad.con_radio" LIKE "${params[prop]}"`
+			return {
+				con_radio: params[prop]
+			};
 			break;
 		case 'con_sintonizador_de_tv':
-			return `AND infoHelper->>"$.conectividad.con_sintonizador_de_tv" LIKE "${params[prop]}"`
+			return {
+				con_sintonizador_de_tv: params[prop]
+			};
 			break;
 
 		/*
@@ -265,7 +316,9 @@ function getFilterLine(prop, params) {
 		*
 		*/
 		case 'categoryId':
-			return `AND categoryId=${params[prop]}`
+			return {
+				categoryId: params[prop]
+			};
 			break;
 
 

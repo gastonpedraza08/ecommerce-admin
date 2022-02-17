@@ -1,4 +1,5 @@
 const { models: { Product } } = require('../../models-mongoose');
+const { getFilterLine } = require('../../utils/commons');
 
 const getProducts = async params => {
 	const { orderBy, limit, from, order } = params;
@@ -35,13 +36,27 @@ const persist = async product => {
 }
 
 const searchProducts = async params => {
-	const { search, limit } = params;
+	const { search, limit, ...rest } = params;
+
+	console.log(params);
+
+	let fullConditions = {};	
+
+	for (let prop in rest) {
+		let newObj = getFilterLine(prop, rest);
+		fullConditions = {
+			...fullConditions,
+			...newObj
+		}
+	}
+
 
 	const result = await Product
-		.find({ $text : { $search : search }, }, { score: { $meta: "textScore" } })
+		.find({ $text : { $search : search }, ...fullConditions }, { score: { $meta: "textScore" } })
 		.select({ name: 1, description: 1 })
 		.sort( { score: { $meta: "textScore" } } )
 		.limit(limit);
+
 	return result;
 }
 
