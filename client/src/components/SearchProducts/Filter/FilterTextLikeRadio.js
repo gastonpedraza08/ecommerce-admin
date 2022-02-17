@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import queryString from 'query-string';
+import { useHistory, useLocation } from 'react-router-dom';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import MuiAccordion from '@material-ui/core/Accordion';
 import MuiAccordionSummary from '@material-ui/core/AccordionSummary';
@@ -61,11 +62,17 @@ const AccordionSummary = withStyles({
 })(MuiAccordionSummary);
 
 export default function FilterTextLike(props) {
+  const { filterItem } = props;
   const classes = useStyles();
   const history = useHistory();
+  const location = useLocation();
+
 	const [accordion, setAccordion] = useState(true);
-  const [selected, setSelected] = useState('Todos');
-  const { filterItem } = props;
+  const [selected, setSelected] = useState(() => {
+    const parsed = queryString.parse(location.search);
+
+    return 'Todos';
+  });
 
   const onFilter = () => {
     let fullLocation = history.location.pathname + history.location.search;

@@ -86,7 +86,7 @@ export default function InputRadio(props) {
 
   return (
     <FormControl component="fieldset">
-      <RadioGroup onChange={handleChange} defaultValue="Todos" name="customized-radios">
+      <RadioGroup onChange={handleChange} defaultValue={selected} name="customized-radios">
       <FormControlLabel value="Todos" control={<StyledRadio />} label="Todos" />
       {
         values.slice(0, show ? values.length : 10).map((value, i) => {
