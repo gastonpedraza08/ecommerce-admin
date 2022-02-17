@@ -46,6 +46,10 @@ module.exports = mongoose => {
       type: String,
       required: true
     },
+    productsSection: {
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: 'ProductsSection'
+    },
 
     //smartphone props
     ...smartphoneProps

@@ -11,7 +11,10 @@ const getProductsSections = async params => {
 		.sort({[orderBy]: ord})
 		.limit(limit)
 		.skip(from)
-		.select({ name: 1, [orderBy]: 1});
+		.populate({
+			path: 'products',
+			select: 'name description price _id thumbnail'
+		});
 	return result;
 }
 

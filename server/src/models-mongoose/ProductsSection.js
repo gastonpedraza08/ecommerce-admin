@@ -10,10 +10,10 @@ module.exports = mongoose => {
       type: Number,
       required: true
     },
-    products: {
-      type: [String],
-      required: true
-    },
+    products: [{
+      type: mongoose.Schema.Types.ObjectId, 
+      ref: 'Product'
+    }]
   }, {
     timestamps: {
       createdAt: 'createdAt',
