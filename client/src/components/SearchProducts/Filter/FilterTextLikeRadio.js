@@ -70,9 +70,14 @@ export default function FilterTextLike(props) {
 	const [accordion, setAccordion] = useState(true);
   const [selected, setSelected] = useState(() => {
     const parsed = queryString.parse(location.search);
-
-    return 'Todos';
+    let isOnUrl = Object.hasOwnProperty.bind(parsed)(filterItem.name.toLowerCase());
+    if (isOnUrl) {
+      return parsed[filterItem.name.toLowerCase()];
+    } else {
+      return 'Todos';
+    }
   });
+
 
   const onFilter = () => {
     let fullLocation = history.location.pathname + history.location.search;
