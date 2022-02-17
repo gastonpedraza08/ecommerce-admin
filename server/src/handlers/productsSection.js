@@ -1,7 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-//const repository = require('../services/repositories/productsSection');
-//const productsRepository = require('../services/repositories/products');
+const repository = require('../services/repositories/productsSection');
 
 const getProductsSection = async params => {
 	const productsSection = await repository.getProductsSection(params);
@@ -13,8 +12,8 @@ const getProductsSectionById = async productsSectionId => {
 	return productsSection;
 };
 
-const createProductsSection = async (productsSectionToPersist, productsId) => {
-	const productsSection = await repository.persist(productsSectionToPersist, productsId);
+const createProductsSection = async productsSectionToPersist => {
+	const productsSection = await repository.persist(productsSectionToPersist);
 	return productsSection;
 };
 

@@ -4,9 +4,8 @@ const handler = require('../handlers/productsSection');
 
 router.post('/', async (req, res) => {
 	const productsSectionToPersist = req.body.productsSection;
-	const productsId = req.body.productsId;
 	try {
-		const productsSection = await handler.createProductsSection(productsSectionToPersist, productsId);
+		const productsSection = await handler.createProductsSection(productsSectionToPersist);
 		if (productsSection) {
 			res.json({
 				ok: true,
