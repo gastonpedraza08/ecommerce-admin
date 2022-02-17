@@ -1,4 +1,5 @@
 import arrMarcas from './marcas.js';
+import arrLineas from './lineas.js';
 
 let objToExport = {
 	categoryId: [
@@ -14,7 +15,7 @@ let objToExport = {
 						{
 							name: 'Línea',
 							identifier: 'linea',
-							values: ["claro", "personal"]
+							values: arrLineas.list
 						}
 					]
 				}

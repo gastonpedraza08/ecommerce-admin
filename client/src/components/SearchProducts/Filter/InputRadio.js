@@ -77,7 +77,7 @@ function StyledRadio(props) {
 
 export default function InputRadio(props) {
   const classes = useStyles();
-  const [show, setShow] = useState(10);
+  const [show, setShow] = useState(false);
   const { values, setSelected, selected } = props;
 
   const handleChange = e => {

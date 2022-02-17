@@ -67,7 +67,7 @@ export default function FilterTextLike(props) {
   const history = useHistory();
   const location = useLocation();
 
-	const [accordion, setAccordion] = useState(true);
+	const [accordion, setAccordion] = useState(false);
   const [selected, setSelected] = useState(() => {
     const parsed = queryString.parse(location.search);
     let isOnUrl = Object.hasOwnProperty.bind(parsed)(filterItem.name.toLowerCase());
