@@ -21,6 +21,21 @@ let objToExport = {
 							name: 'SO',
 							identifier: 'nombre_del_sistema_operativo',
 							values: ["Android", "iOS"]
+						},
+						{
+							name: 'RAM (gb)',
+							identifier: 'memoria_ram',
+							values: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+						},
+						{
+							name: 'Memoria Interna (gb)',
+							identifier: 'memoria_interna',
+							values: ["1", "2", "4", "8", "16", "32", "64", "128", "256", "512"]
+						},
+						{
+							name: 'Red',
+							identifier: 'red',
+							values: ["4G/LTE", "5G", "2G", "3G", "GSM"]
 						}
 					]
 				}
