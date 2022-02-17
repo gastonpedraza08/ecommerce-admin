@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory, useLocation } from 'react-router-dom';
 import Toolbar from "@material-ui/core/Toolbar";
@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 export default function MenuAppBar() {
   const dispatch = useDispatch();
   const history = useHistory();
+  const location = useLocation();
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -49,6 +50,11 @@ export default function MenuAppBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  useEffect(() => {
+    const searchString = location.search.replace(/\s+/g, '+');
+    dispatch(productsSearchProducts(searchString));
+  }, [location]);
 
   return (
     <Toolbar className={classes.toolBar}>
@@ -80,7 +86,6 @@ export default function MenuAppBar() {
         onSubmit={(e) => {
         	e.preventDefault();
         	const searchString = e.target.search.value.replace(/\s+/g, '+');
-        	dispatch(productsSearchProducts(`?search=${searchString}`));
         	history.push(`/results?search=${searchString}`);
         }}
       />
