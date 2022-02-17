@@ -53,7 +53,7 @@ const searchProducts = async params => {
 
 	const result = await Product
 		.find({ $text : { $search : search }, ...fullConditions }, { score: { $meta: "textScore" } })
-		.select({ name: 1, description: 1 })
+		.select({ name: 1, description: 1, _id: 1, price: 1, thumbnail: 1 })
 		.sort( { score: { $meta: "textScore" } } )
 		.limit(limit);
 
