@@ -63,7 +63,7 @@ export default function SearchProduct() {
 					<div className={classes.main}>
 					{productsSearch.map(product => {
 						return (
-							<Product product={product} key={product.id} />
+							<Product product={product} key={product._id} />
 						);
 					})}
 					</div>
