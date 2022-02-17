@@ -20,7 +20,7 @@ import TableSortLabel from "@material-ui/core/TableSortLabel";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
 import mockData from "./data";
-import { StatusBullet } from "../../../../components";
+import { StatusBullet } from "components";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
