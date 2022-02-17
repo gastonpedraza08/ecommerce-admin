@@ -78,11 +78,15 @@ function StyledRadio(props) {
 export default function InputRadio(props) {
   const classes = useStyles();
   const [show, setShow] = useState(10);
-  const { values } = props;
+  const { values, setSelected, selected } = props;
+
+  const handleChange = e => {
+    setSelected(e.target.value);
+  }
 
   return (
     <FormControl component="fieldset">
-      <RadioGroup defaultValue="Todos" name="customized-radios">
+      <RadioGroup onChange={handleChange} defaultValue="Todos" name="customized-radios">
       <FormControlLabel value="Todos" control={<StyledRadio />} label="Todos" />
       {
         values.slice(0, show ? values.length : 10).map((value, i) => {
