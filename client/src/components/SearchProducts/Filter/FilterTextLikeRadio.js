@@ -58,17 +58,15 @@ export default function FilterTextLike(props) {
   const { filterItem } = props;
 
   return (
-    <div className={classes.root}>
-		  <Accordion expanded={accordion} onChange={() => setAccordion(prev => !prev)}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-        >
-          <Typography className={classes.heading}>{filterItem.name}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <InputRadio values={filterItem.values}/>
-        </AccordionDetails>
-      </Accordion>
-    </div>
+	  <Accordion expanded={accordion} onChange={() => setAccordion(prev => !prev)}>
+      <AccordionSummary
+        expandIcon={<ExpandMoreIcon />}
+      >
+        <Typography className={classes.heading}>{filterItem.name}</Typography>
+      </AccordionSummary>
+      <AccordionDetails>
+        <InputRadio values={filterItem.values}/>
+      </AccordionDetails>
+    </Accordion>
   );
 }
