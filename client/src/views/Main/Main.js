@@ -143,7 +143,7 @@ export default function MainApp() {
 				<Container>
 					{productsSections.map((productsSection, i) => {
 						return (
-							<div className={classes.productsSection} key={productsSection.id}>
+							<div className={classes.productsSection} key={productsSection._id}>
 								<Typography
 									className={
 										i === middleIndex
@@ -158,8 +158,8 @@ export default function MainApp() {
 								<SlideProducts
 									className={i === middleIndex ? classes.middleSection : null}
 								>
-									{productsSection.Products.map((product) => {
-										return <Product key={product.id} product={product} />;
+									{productsSection.products.map((product) => {
+										return <Product key={product._id} product={product} />;
 									})}
 								</SlideProducts>
 							</div>
