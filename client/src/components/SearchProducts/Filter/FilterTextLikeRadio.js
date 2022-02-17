@@ -82,7 +82,7 @@ export default function FilterTextLike(props) {
   const onFilter = () => {
     let fullLocation = history.location.pathname + history.location.search;
 
-    const nameProp = filterItem.name.toLowerCase();
+    const nameProp = filterItem.identifier;
     const newQuery = nameProp + '=' + selected;
 
     let regexp = new RegExp('&' + nameProp + '=');

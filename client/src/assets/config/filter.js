@@ -14,8 +14,13 @@ let objToExport = {
 						},
 						{
 							name: 'Línea',
-							identifier: 'linea',
+							identifier: 'línea',
 							values: arrLineas.list
+						},
+						{
+							name: 'SO',
+							identifier: 'nombre_del_sistema_operativo',
+							values: ["Android", "iOS"]
 						}
 					]
 				}
