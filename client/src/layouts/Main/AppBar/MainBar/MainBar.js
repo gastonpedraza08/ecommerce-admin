@@ -54,7 +54,7 @@ export default function MenuAppBar() {
   useEffect(() => {
     const searchString = location.search.replace(/\s+/g, '+');
     dispatch(productsSearchProducts(searchString));
-  }, [location]);
+  }, [location, dispatch]);
 
   return (
     <Toolbar className={classes.toolBar}>
