@@ -23,6 +23,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     justifyContent: 'center',
     paddingBottom: theme.spacing(2)
+  },
+  container: {
+    marginLeft: theme.spacing(1),
+    marginTop: theme.spacing(1)
   }
 }));
 
@@ -81,7 +85,7 @@ export default function FilterSwitch(props) {
       </AccordionSummary>
       <AccordionDetails>
         <FormControl component="fieldset">
-          <FormGroup>
+          <FormGroup className={classes.container} >
             {
               filterItem.values.map(item => {
                 return (
