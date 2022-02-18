@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Switch from '@material-ui/core/Switch';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -47,12 +47,11 @@ const MySwitch = withStyles(theme => ({
 
 export default function FormControlLabelPosition(props) {
 
-  const { filter } = props;
-  const [checked, setChecked] = useState(true);
+  const { filter, onSwitch, checked, enabled } = props;
   const classes = useStyles();
 
-  const handleChange = e => {
-    setChecked(prev => !prev);
+  const handleChange = () => {
+    onSwitch(filter.identifier);
   }
 
   return (
@@ -61,6 +60,7 @@ export default function FormControlLabelPosition(props) {
       value={filter.identifier}
       control={
         <MySwitch
+          disabled={enabled}
           color="primary" 
           onChange={handleChange} 
           checked={checked}
