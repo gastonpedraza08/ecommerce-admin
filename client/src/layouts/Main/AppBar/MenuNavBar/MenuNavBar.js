@@ -1,4 +1,5 @@
 import React from "react";
+import Swal from 'sweetalert2';
 import Toolbar from "@material-ui/core/Toolbar";
 import MenuItem from "@material-ui/core/MenuItem";
 
@@ -33,8 +34,8 @@ export default function MenuAppBar() {
   return (
     <Toolbar className={classes.toolBar}>
       <ListItemBottom label="Celulares y Teléfonos">
-        <MenuItemLink href="/some">Celulares y Smartphones</MenuItemLink>
-        <MenuItemLink href="/some">Accesorios para Celulares</MenuItemLink>
+        <MenuItemLink>Celulares y Smartphones</MenuItemLink>
+        <MenuItemLink>Accesorios para Celulares</MenuItemLink>
       </ListItemBottom>
       <ListItemBottom label="Cámaras y Accesorios">
         <MenuItemLink>Cámaras Digitales</MenuItemLink>
@@ -64,9 +65,14 @@ export default function MenuAppBar() {
 }
 
 function MenuItemLink(props) {
+
+  const showAlert = () => {
+    Swal.fire('Esta función está en proceso.')
+  }
+
   const classes = useStyles();
   return (
-    <MenuItem className={classes.menuItemLink} component="a" {...props}>
+    <MenuItem onClick={showAlert} className={classes.menuItemLink} component="a" {...props}>
       {props.children}
     </MenuItem>
   );
