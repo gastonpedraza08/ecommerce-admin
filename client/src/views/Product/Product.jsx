@@ -5,6 +5,8 @@ import { fetchWithoutToken } from "helpers/fetch";
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
+import CarouselImagesPrev from './CarouselImagesPrev';
+
 const useStyles = makeStyles(theme => ({
 	root: {
 		marginTop: theme.spacing(3),
@@ -34,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 	},
 	imagesContainer: {
 		backgroundColor: 'white',
-		height: 500
+		height: 400
 	},
 	infoContainer: {
 		backgroundColor: 'transparent',
@@ -44,10 +46,23 @@ const useStyles = makeStyles(theme => ({
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'contain',
 		width: '100%',
-		height: '90%',
+		height: '85%'
 	},
-	buttonChangeImage: {
-		height: '10%'
+	imageButton: {
+		backgroundPosition: 'center',
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'contain',
+		width: 50,
+		height: 50,
+		cursor: 'pointer',
+		border: '1px solid transparent',
+		'&:hover': {
+			border: '1px solid #ccc',
+			filter: 'brightness(80%)'
+		},
+	},
+	buttonChangeImageContainer: {
+		height: 'auto',
 	}
 }));
 
@@ -72,12 +87,8 @@ export default function SearchProduct() {
 		);
 	}
 
-	const changeImage = () => {
-		if (product.images.length-1 === currentImage) {
-			setCurrentImage(0);
-		} else {
-			setCurrentImage(prev => prev+1);
-		}
+	const changeImage = (indice) => {
+		setCurrentImage(indice);
 	}
 
 	return (
@@ -85,19 +96,38 @@ export default function SearchProduct() {
 			<Grid container>
 				{/*main*/}
 				<Grid item xs={12} sm={12} md={9}>
-					<Grid container spacing={10}>
-						<Grid className={classes.imagesContainer} item xs={12} sm={6} md={6}>
-							<div 
-								className={classes.image}
-								style={{
-									backgroundImage: `url(${product.images[currentImage]})`
-								}}
-							/>
-							<div className={classes.buttonChangeImage}>
-								<button onClick={changeImage}>Cambiar imagen</button>
+					<Grid container justifyContent="center">
+						<Grid item xs={12} sm={5} md={5}>
+							<div className={classes.imagesContainer} >
+								<div 
+									className={classes.image}
+									style={{
+										backgroundImage: `url(${product.images[currentImage]})`
+									}}
+								/>
+								<div className={classes.buttonChangeImageContainer}>
+									<CarouselImagesPrev>
+										{
+											product.images.map((image, i) => {
+												return (
+													<div 
+														key={i}
+														className={classes.imageButton} 
+														style={{
+															backgroundImage: `url(${image})`
+														}}
+														onClick={() => changeImage(i)}
+													>
+													</div>
+												);
+											})
+										}
+									</CarouselImagesPrev>
+								</div>
 							</div>
 						</Grid>
-						<Grid className={classes.infoContainer} item xs={12} sm={6} md={6}>
+						<Grid item sm={1}></Grid>
+						<Grid className={classes.infoContainer} item xs={12} sm={5} md={5}>
 							<div>
 								<Typography variant="h2" component="h1">
 								  {product.name}
