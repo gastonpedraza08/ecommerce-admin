@@ -63,6 +63,16 @@ const useStyles = makeStyles(theme => ({
 	},
 	buttonChangeImageContainer: {
 		height: 'auto',
+		[theme.breakpoints.down('sm')]: {
+			width: '80%',
+			margin: 'auto'
+		},
+	},
+	secondaryInfo: {
+		marginTop: theme.spacing(3)
+	},
+	infoList: {
+		marginTop: theme.spacing(2)
 	}
 }));
 
@@ -97,7 +107,7 @@ export default function SearchProduct() {
 				{/*main*/}
 				<Grid item xs={12} sm={12} md={9}>
 					<Grid container justifyContent="center">
-						<Grid item xs={12} sm={5} md={5}>
+						<Grid item xs={10} sm={5} md={5}>
 							<div className={classes.imagesContainer} >
 								<div 
 									className={classes.image}
@@ -127,32 +137,42 @@ export default function SearchProduct() {
 							</div>
 						</Grid>
 						<Grid item sm={1}></Grid>
-						<Grid className={classes.infoContainer} item xs={12} sm={5} md={5}>
+						<Grid className={classes.infoContainer} item xs={11} sm={5} md={5}>
 							<div>
 								<Typography variant="h2" component="h1">
 								  {product.name}
 								</Typography>
-							</div>							
-							<div>
-								<Typography variant="h4" component="h2">
-								  {product.price}
-								</Typography>
-							</div>								
-							<div>
-								<Typography variant="body1">
-								  {product.sku}
-								</Typography>
-							</div>								
-							<div>
-								<Typography variant="body1">
-								  {product.condition}
-								</Typography>
-							</div>								
-							<div>
-								<Typography variant="body1">
-								  {product.stock}
-								</Typography>
-							</div>								
+							</div>
+							<div className={classes.secondaryInfo}>
+								<div>
+									<Typography variant="h3" component="h2">
+									 $ {product.price}
+									</Typography>
+								</div>
+								<ul className={classes.infoList}>
+									<li>
+										<div>
+											<Typography variant="body1">
+											  Condición: {product.condition}
+											</Typography>
+										</div>								
+									</li>
+									<li>
+										<div>
+											<Typography variant="body1">
+											  Stock: {product.stock}
+											</Typography>
+										</div>								
+									</li>
+									<li>
+										<div>
+											<Typography variant="body1">
+											  Marca: {product.marca}
+											</Typography>
+										</div>								
+									</li>
+								</ul>
+							</div>
 						</Grid>
 					</Grid>
 				</Grid>
