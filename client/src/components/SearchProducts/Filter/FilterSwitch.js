@@ -82,17 +82,23 @@ export default function FilterSwitch(props) {
 	const [accordion, setAccordion] = useState(false);
   const [valuesState, setValuesState] = useState(() => {
     const obj = {};
+    const parsed = queryString.parse(history.location.search);
     let val = filterItem.values;
     for (let i=0; i<val.length; i++) {
-      obj[val[i].identifier] = val[i].defaultSelected;
+
+      if (parsed[val[i].identifier] === 'Sí') {
+        obj[val[i].identifier] = true;
+      } else {
+        obj[val[i].identifier] = false;
+      }
     }
     return obj;
   });
 
 
   const onFilter = () => {
+    const parsed = queryString.parse(history.location.search);
     if (enabled) {
-      const parsed = queryString.parse(history.location.search);
       for (let prop in valuesState) {
         parsed[prop] = undefined;
       }
@@ -100,14 +106,13 @@ export default function FilterSwitch(props) {
       return history.push(history.location.pathname + '?' + query);
     }    
 
-    let fullLocation = history.location.pathname + history.location.search;
-    let newParams = '';
+    
     for (let prop in valuesState) {
       let value = valuesState[prop] ? 'Sí' : 'No';
-      newParams += '&' + prop + '=' + value;
+      parsed[prop] = value;
     }
-
-    history.push(fullLocation + newParams);
+    let query = queryString.stringify(parsed);
+    history.push(history.location.pathname + '?' + query);
   }
 
   const onSwitch = identifier => {
