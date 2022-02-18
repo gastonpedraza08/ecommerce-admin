@@ -38,6 +38,20 @@ let objToExport = {
 							values: ["4G/LTE", "5G", "2G", "3G", "GSM"]
 						}
 					]
+				},
+				filterSwitch: {
+					list: [
+						{
+							name: 'Conectores',
+							values: [
+								{
+									name: 'Con Conector USB',
+									identifier: 'con_conector_usb',
+									values: ["Si", "No"]
+								}
+							]
+						}
+					]
 				}
 			}
 		}
