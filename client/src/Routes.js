@@ -21,6 +21,7 @@ import {
   SignIn as SignInView,
   NotFound as NotFoundView,
   SearchProduct as SearchProductView,
+  Product as ProductView,
 } from "./views";
 
 const Routes = () => {
@@ -89,6 +90,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/results"
+      />
+      <RouteWithLayout
+        component={ProductView}
+        exact
+        layout={MainLayout}
+        path="/product/:id"
       />
       <RouteWithLayout
         component={Main}

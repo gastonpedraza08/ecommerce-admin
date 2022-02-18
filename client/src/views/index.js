@@ -9,3 +9,4 @@ export { default as SignUp } from "./Admin/SignUp";
 export { default as Typography } from "./Admin/Typography";
 export { default as UserList } from "./Admin/UserList";
 export { default as SearchProduct } from "./SearchProduct";
+export { default as Product } from "./Product";
