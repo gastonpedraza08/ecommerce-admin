@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory, useLocation } from 'react-router-dom';
+import Swal from 'sweetalert2';
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -54,6 +55,10 @@ export default function MenuAppBar() {
     setAnchorEl(null);
   };
 
+  const showAlert = () => {
+    Swal.fire('Esta función está en proceso.')
+  }
+
   useEffect(() => {
     const searchString = location.search.replace(/\s+/g, '+');
     dispatch(productsSearchProducts(searchString));
@@ -96,31 +101,13 @@ export default function MenuAppBar() {
       />
       <div className={classes.grow} />
       <Hidden smDown>
-        <IconButton onClick={handleMenu} color="inherit">
+        <IconButton onClick={showAlert} color="inherit">
           <PermIdentityIcon />
         </IconButton>
-        <Menu
-          id="menu-appbar"
-          anchorEl={anchorEl}
-          anchorOrigin={{
-            vertical: "top",
-            horizontal: "right",
-          }}
-          keepMounted
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "right",
-          }}
-          open={open}
-          onClose={handleClose}
-        >
-          <MenuItem onClick={handleClose}>Profile</MenuItem>
-          <MenuItem onClick={handleClose}>My account</MenuItem>
-        </Menu>
-        <IconButton onClick={handleMenu} color="inherit">
+        <IconButton onClick={showAlert} color="inherit">
           <FavoriteBorderIcon />
         </IconButton>
-        <IconButton onClick={handleMenu} color="inherit">
+        <IconButton onClick={showAlert} color="inherit">
           <StorefrontIcon />
         </IconButton>
       </Hidden>
