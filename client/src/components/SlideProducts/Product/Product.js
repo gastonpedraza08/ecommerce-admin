@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import CustomRouterLink from 'components/CustomRouterLink';
 
 //delete
 import celular from 'assets/celular.jpg';
@@ -73,12 +74,12 @@ export default function Product(props) {
 	const { product } = props;
 
 	return (
-		<Card className={classes.root}>
+		<Card className={classes.root} component={CustomRouterLink} to={`product/${product._id}`} >
 			<div 
 			className={classes.media}
 			style={{
-				//backgroundImage: `url(${product.thumbnail})`,
-				backgroundImage: `url(${celular})`,
+				backgroundImage: `url(${product.thumbnail})`,
+				//backgroundImage: `url(${celular})`,
 			}}
 			></div>
 			<CardContent className={classes.cardContent}>
