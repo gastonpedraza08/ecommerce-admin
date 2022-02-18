@@ -65,7 +65,13 @@ export default function FilterSwitch(props) {
   });
 
   const onFilter = () => {
-    console.log("filter")
+    const parsed = queryString.parse(history.location.search);
+
+    parsed.min_price = prices.min;
+    parsed.max_price = prices.max;
+
+    let query = queryString.stringify(parsed);
+    return history.push(history.location.pathname + '?' + query);
   };
 
   const handleChange = prop => event => {

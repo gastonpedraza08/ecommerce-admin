@@ -25,14 +25,27 @@ function getFilterLine(prop, params) {
 		*/
 
 		case 'min_price':
-			return {
-				price: { $gt: params[prop] }
-			};
+			if (params['max_price']) {
+				return {
+					price: { $gt: Number(params[prop]), $lt: Number(params['max_price']) }
+				};
+			} else {
+				return {
+					price: { $gt: Number(params[prop]) }
+				};
+			}
 			break;
+
 		case 'max_price':
-			return {
-				price: { $lt: params[prop] }
-			};
+			if (params['min_price']) {
+				return {
+					price: { $gt: Number(params['min_price']), $lt: Number(params[prop]) }
+				};
+			} else {
+				return {
+					price: { $lt: Number(params[prop]) }
+				};
+			}
 			break;
 
 		/*
@@ -342,7 +355,7 @@ function getFilterLine(prop, params) {
 
 
 		default:
-			return '';
+			return {};
 	}
 }
 
