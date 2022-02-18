@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory, useLocation } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import MenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
 import Hidden from "@material-ui/core/Hidden";
 
 import MenuIcon from "@material-ui/icons/Menu";
@@ -42,18 +40,8 @@ export default function MenuAppBar() {
   const history = useHistory();
   const location = useLocation();
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
   let query = useQuery();
   const searchedValue = query.get('search');
-
-  const handleMenu = (e) => {
-    setAnchorEl(e.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
 
   const showAlert = () => {
     Swal.fire('Esta función está en proceso.')
