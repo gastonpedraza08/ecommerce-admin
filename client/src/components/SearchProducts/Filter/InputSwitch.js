@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Switch from '@material-ui/core/Switch';
-import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormControl from '@material-ui/core/FormControl';
 
-export default function FormControlLabelPosition() {
+export default function FormControlLabelPosition(props) {
+
+  const { filter } = props;
+  const [checked, setChecked] = useState(true);
+
+  const handleChange = e => {
+    setChecked(prev => !prev);
+  }
+
   return (
-    <FormControl component="fieldset">
-      <FormGroup aria-label="position" row>
-        <FormControlLabel
-          value="top"
-          control={<Switch color="primary" />}
-          label="Top"
-          labelPlacement="top"
+    <FormControlLabel
+      value={filter.identifier}
+      control={
+        <Switch 
+          color="primary" 
+          onChange={handleChange} 
+          checked={checked}
         />
-      </FormGroup>
-    </FormControl>
+      }
+      label={filter.name}
+      labelPlacement="left"
+    />
   );
 }

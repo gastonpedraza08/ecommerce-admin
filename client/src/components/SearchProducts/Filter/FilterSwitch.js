@@ -6,6 +6,8 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControl from '@material-ui/core/FormControl';
 
 import InputSwitch from './InputSwitch';
 
@@ -61,8 +63,6 @@ const AccordionSummary = withStyles({
 export default function FilterSwitch(props) {
   const { filterItem } = props;
 
-  console.log(filterItem);
-
   const classes = useStyles();
 
 	const [accordion, setAccordion] = useState(false);
@@ -80,12 +80,17 @@ export default function FilterSwitch(props) {
         <Typography className={classes.heading}>{filterItem.name}</Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <InputSwitch />
-        {/*
-          values={filterItem.values}
-          selected={selected}
-          setSelected={setSelected}
-        */}
+        <FormControl component="fieldset">
+          <FormGroup>
+            {
+              filterItem.values.map(item => {
+                return (
+                  <InputSwitch filter={item} key={item.identifier} />
+                );
+              })
+            }
+          </FormGroup>
+        </FormControl>
       </AccordionDetails>
         <div className={classes.buttonFilterContainer}>
           <Button 

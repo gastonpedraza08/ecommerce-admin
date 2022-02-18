@@ -46,8 +46,31 @@ let objToExport = {
 							values: [
 								{
 									name: 'Con Conector USB',
-									identifier: 'con_conector_usb',
-									values: ["Si", "No"]
+									identifier: 'con_conector_usb'
+								},
+								{
+									name: 'Con Sintonizador de TV',
+									identifier: 'con_sintonizador_de_tv'
+								},
+								{
+									name: 'Con Radio',
+									identifier: 'con_radio'
+								},
+								{
+									name: 'Con NFC',
+									identifier: 'con_nfc'
+								},
+								{
+									name: 'Con Bluetooth',
+									identifier: 'con_bluetooth'
+								},
+								{
+									name: 'Con GPS',
+									identifier: 'con_gps'
+								},
+								{
+									name: 'Con Wi-fi',
+									identifier: 'con_wi_fi'
 								}
 							]
 						}
