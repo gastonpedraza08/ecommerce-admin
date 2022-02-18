@@ -44,26 +44,19 @@ export default function FilterTextLike(props) {
 
 
   const onFilter = () => {
-    let fullLocation = history.location.pathname + history.location.search;
 
+    const parsed = queryString.parse(history.location.search);
     const nameProp = filterItem.identifier;
-    const newQuery = nameProp + '=' + selected;
 
-    let regexp = new RegExp('&' + nameProp + '=');
-    let isFiltered = regexp.test(history.location.search);
-
-    let regexpValue = new RegExp('&' + nameProp + '=[^&]+');
     
     if (selected !== 'Todos') {
-      if (!isFiltered) {
-        history.push(fullLocation + '&' + newQuery);
-      } else {
-        fullLocation = fullLocation.replace(regexpValue, '&' + nameProp + '=' + selected);   
-        history.push(fullLocation);
-      }
+      parsed[nameProp] = selected;
+      let query = queryString.stringify(parsed);
+      history.push(history.location.pathname + '?' + query);
     } else {
-      fullLocation = fullLocation.replace(regexpValue, '');   
-      history.push(fullLocation);
+      parsed[nameProp] = undefined;
+      let query = queryString.stringify(parsed);
+      history.push(history.location.pathname + '?' + query);
     }
   }
 
