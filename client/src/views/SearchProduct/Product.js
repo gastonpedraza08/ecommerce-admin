@@ -4,6 +4,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
+import CustomRouterLink from 'components/CustomRouterLink';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -56,7 +58,7 @@ export default function ComplexGrid(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <Box component={CustomRouterLink} to={"/product/" + product._id}>
       <div className={classes.paper}>
         <Grid container spacing={2}>
           <Grid item>
@@ -90,6 +92,6 @@ export default function ComplexGrid(props) {
           </Grid>
         </Grid>
       </div>
-    </div>
+    </Box>
   );
 }
