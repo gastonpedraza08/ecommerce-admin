@@ -76,7 +76,6 @@ export default function Product(props) {
 			className={classes.media}
 			style={{
 				backgroundImage: `url(${product.thumbnail})`,
-				//backgroundImage: `url(${celular})`,
 			}}
 			></div>
 			<CardContent className={classes.cardContent}>
