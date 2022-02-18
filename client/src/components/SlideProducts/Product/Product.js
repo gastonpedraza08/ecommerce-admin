@@ -8,9 +8,6 @@ import Typography from '@material-ui/core/Typography';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CustomRouterLink from 'components/CustomRouterLink';
 
-//delete
-import celular from 'assets/celular.jpg';
-
 const useStyles = makeStyles((theme) => ({
 	root: {
 		maxWidth: 300, //345
