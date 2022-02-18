@@ -27,6 +27,12 @@ const useStyles = makeStyles(theme => ({
 			marginLeft: theme.spacing(6)
 		},
 	},
+	imagesContainer: {
+		backgroundColor: 'red'
+	},
+	infoContainer: {
+		backgroundColor: 'green'
+	}
 }));
 
 
@@ -37,35 +43,20 @@ export default function SearchProduct() {
 	return (
 		<div className={classes.root}>
 			<Grid container>
-				<Grid item xs={12} sm={8} md={9}>
-					<div>
-						<h1>{id}</h1>
-						<br />
-						<span>
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-							lorem ipsum dolor sit amet consecuit lorem ipsum dolor sit amet
-						</span>
-					</div>
+				{/*main*/}
+				<Grid item xs={12} sm={12} md={9}>
+					<Grid container>
+						<Grid className={classes.imagesContainer} item xs={12} sm={6} md={6}>
+							imagenes
+						</Grid>
+						<Grid className={classes.infoContainer} item xs={12} sm={6} md={6}>
+							info aqui
+						</Grid>
+					</Grid>
 				</Grid>
-				<Grid item xs={12} sm={4} md={3}>
+
+				{/*sidebar*/}
+				<Grid item xs={12} sm={12} md={3}>
 				    contenido
 				</Grid>
 			</Grid>
