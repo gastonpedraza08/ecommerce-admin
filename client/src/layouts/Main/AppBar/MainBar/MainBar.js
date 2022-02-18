@@ -69,12 +69,12 @@ export default function MenuAppBar() {
         </IconButton>
       </Hidden>
       <Hidden smDown>
-        <IconButton edge="start" className={classes.menuButton} color="inherit">
+        <IconButton edge="start" component="a" href="/" className={classes.menuButton} color="inherit">
           <StorefrontIcon />
         </IconButton>
       </Hidden>
       <Hidden xsDown>
-        <Typography variant="h6" className={classes.title}>
+        <Typography variant="h6" component="a" href="/" className={classes.title}>
           MAGAZINCA
         </Typography>
       </Hidden>
