@@ -19,6 +19,25 @@ function getFilterLine(prop, params) {
 		/*
 		*
 		*
+			principales
+		*
+		*
+		*/
+
+		case 'min_price':
+			return {
+				price: { $gt: params[prop] }
+			};
+			break;
+		case 'max_price':
+			return {
+				price: { $lt: params[prop] }
+			};
+			break;
+
+		/*
+		*
+		*
 			características_generales
 		*
 		*
