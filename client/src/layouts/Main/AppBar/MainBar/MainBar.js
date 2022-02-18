@@ -61,7 +61,9 @@ export default function MenuAppBar() {
 
   useEffect(() => {
     const searchString = location.search.replace(/\s+/g, '+');
-    dispatch(productsSearchProducts(searchString));
+    if (location.pathname === '/results') {
+      dispatch(productsSearchProducts(searchString));
+    }
   }, [location, dispatch]);
 
   return (
