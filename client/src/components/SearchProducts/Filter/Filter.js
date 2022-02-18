@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import FilterTextLikeRadio from './FilterTextLikeRadio';
 import FilterSwitch from './FilterSwitch';
+import FilterPrice from './FilterPrice';
 import filter from 'assets/config/filter.js';
 
 const useStyles = makeStyles((theme) => ({
@@ -21,6 +22,9 @@ export default function SimpleAccordion() {
 
   return (
     <div className={classes.root}>
+      <>
+        <FilterPrice />
+      </>
       <>
         {
           filter.categoryId.map(categoryId => {
