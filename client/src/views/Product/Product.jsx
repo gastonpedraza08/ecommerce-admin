@@ -192,7 +192,11 @@ export default function SearchProduct() {
 				    contenido
 				</Grid>
 			</Grid>
-			<AdvancedInfo product={product} />
+			<Grid container>
+				<Grid item xs={12} sm={12} md={9}>
+					<AdvancedInfo product={product} />
+				</Grid>
+			</Grid>
 			<Grid container>
 				<Grid item xs={12} sm={12} md={9}>
 					<div 
