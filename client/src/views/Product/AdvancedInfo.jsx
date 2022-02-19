@@ -7,7 +7,6 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 import config from 'assets/config/productView';
@@ -52,7 +51,6 @@ const useStyles = makeStyles(theme => ({
     cursor: 'pointer',
     color: '#3483fa!important',
     display: '-webkit-inline-flex',
-    display: 'inline-flex',
     fontSize: '14px',
     fontWeight: '400',
   },
