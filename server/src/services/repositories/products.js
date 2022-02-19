@@ -11,7 +11,18 @@ const getProducts = async params => {
 		.sort({[orderBy]: ord})
 		.limit(limit)
 		.skip(from)
-		.select({ name: 1, [orderBy]: 1});
+		.select({ 
+			_id: 1,
+			sku: 1,
+			name: 1,
+			price: 1,
+			condition: 1,
+			description: 1,
+			categoryId: 1,
+			stock: 1,
+			state: 1,
+			createdAt: 1,
+		});
 	return result;
 }
 
