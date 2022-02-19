@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 import CarouselImagesPrev from './CarouselImagesPrev';
+import AdvancedInfo from './AdvancedInfo';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -182,11 +183,13 @@ export default function SearchProduct() {
 				    contenido
 				</Grid>
 			</Grid>
+			<AdvancedInfo product={product} />
 			<Grid container>
 				<Grid item xs={12} sm={12} md={9}>
 					<div dangerouslySetInnerHTML={{ __html: product.description }}></div>
 				</Grid>
 			</Grid>
+			<div>SEPARADOR</div>
 		</div>
 	);
 }
