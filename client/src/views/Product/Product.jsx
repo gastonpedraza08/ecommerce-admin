@@ -74,6 +74,15 @@ const useStyles = makeStyles(theme => ({
 	},
 	infoList: {
 		marginTop: theme.spacing(2)
+	},
+	description: {
+		'& *': {
+			color: '#666',
+			fontSize: '20px',
+			fontWeight: 400,
+			wordBreak: 'break-word',
+			lineHeight: '1.35',
+		}
 	}
 }));
 
@@ -186,7 +195,12 @@ export default function SearchProduct() {
 			<AdvancedInfo product={product} />
 			<Grid container>
 				<Grid item xs={12} sm={12} md={9}>
-					<div dangerouslySetInnerHTML={{ __html: product.description }}></div>
+					<div 
+						dangerouslySetInnerHTML={{ 
+							__html: product.description
+						}}
+						className={classes.description}
+					></div>
 				</Grid>
 			</Grid>
 			<div>SEPARADOR</div>
