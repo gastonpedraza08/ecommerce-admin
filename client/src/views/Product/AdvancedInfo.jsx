@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Masonry from 'react-masonry-css'
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import Table from '@material-ui/core/Table';
@@ -34,52 +34,77 @@ const useStyles = makeStyles({
   table: {
     minWidth: 100,
   },
+  root: {
+    overflow: 'hidden'
+  }
 });
 
 export default function CustomizedTables(props) {
 
   const { product } = props;
+  const [height, setHeight] = useState(250);
+  const [showButton, setShowButton] = useState(true);
   const classes = useStyles();
 
   return (
     <div>
-      <Masonry
-        breakpointCols={2}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
+      <div
+        className={classes.root}
+        style={{
+          height
+        }}
       >
-        {
-          Object.keys(config).map(infotype => {
-            return (
-              <div>
-                <h3>{config[infotype].name}</h3>
-                <TableContainer component={Paper}>
-                  <Table className={classes.table}>
-                    <TableBody>
-                      {Object.keys(config[infotype].list).map((n) => {
-                        if (product[n]) {
-                          return (
-                            <StyledTableRow key={n}>
-                              <StyledTableCell component="th" scope="row">
-                                {config[infotype].list[n].name}
-                              </StyledTableCell>
-                              <StyledTableCell align="right">
-                                {product[n]}
-                              </StyledTableCell>
-                            </StyledTableRow>
-                          )
-                        } else {
-                          return null;
-                        }
-                      })}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </div>
-            )
-          })
-        }
-      </Masonry>
+        <Masonry
+          breakpointCols={2}
+          className="my-masonry-grid"
+          columnClassName="my-masonry-grid_column"
+        >
+          {
+            Object.keys(config).map(infotype => {
+              return (
+                <div>
+                  <h3>{config[infotype].name}</h3>
+                  <TableContainer component={Paper}>
+                    <Table className={classes.table}>
+                      <TableBody>
+                        {Object.keys(config[infotype].list).map((n) => {
+                          if (product[n]) {
+                            return (
+                              <StyledTableRow key={n}>
+                                <StyledTableCell component="th" scope="row">
+                                  {config[infotype].list[n].name}
+                                </StyledTableCell>
+                                <StyledTableCell align="right">
+                                  {product[n]}
+                                </StyledTableCell>
+                              </StyledTableRow>
+                            )
+                          } else {
+                            return null;
+                          }
+                        })}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </div>
+              )
+            })
+          }
+        </Masonry>
+      </div>
+      {
+        showButton ?
+        (
+          <button
+            onClick={() => {
+              setHeight('auto');
+              setShowButton(false);
+            }}
+          >
+            VER MAS
+          </button>
+        ) : (null)
+      }
     </div>
   );
 }
