@@ -71,7 +71,7 @@ export default function Product(props) {
 	const { product } = props;
 
 	return (
-		<Card className={classes.root} component={CustomRouterLink} to={`product/${product._id}`} >
+		<Card className={classes.root} component={CustomRouterLink} to={`/product/${product._id}`} >
 			<div 
 			className={classes.media}
 			style={{
