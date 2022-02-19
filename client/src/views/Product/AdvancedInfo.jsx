@@ -90,7 +90,7 @@ export default function CustomizedTables(props) {
             Object.keys(config).map(infotype => {
               return (
                 <div key={infotype}>
-                  <h3>{config[infotype].name}</h3>
+                  <h3 style={{marginBottom: 8}}>{config[infotype].name}</h3>
                   <TableContainer component={Paper}>
                     <Table className={classes.table}>
                       <TableBody>
