@@ -7,6 +7,8 @@ import TableCell from '@material-ui/core/TableCell';
 import TableContainer from '@material-ui/core/TableContainer';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
+import Link from '@material-ui/core/Link';
+import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 import config from 'assets/config/productView';
 
@@ -30,14 +32,39 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   table: {
     minWidth: 100,
   },
   root: {
     overflow: 'hidden'
+  },
+  seeMoreButtonContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: theme.spacing(5),
+    paddingBottom: theme.spacing(5),
+    '& svg': {
+      color: '#3483fa!important'
+    }
+  },
+  seeMoreButton: {
+    cursor: 'pointer',
+    color: '#3483fa!important',
+    display: '-webkit-inline-flex',
+    display: 'inline-flex',
+    fontSize: '14px',
+    fontWeight: '400',
+  },
+  arrowDown: {
+    border: `solid #3483fa`,
+    borderWidth: "0 2px 2px 0",
+    display: "inline-block",
+    padding: "2px",
+    transform: "rotate(45deg)",
+    marginLeft: "3px",
   }
-});
+}));
 
 export default function CustomizedTables(props) {
 
@@ -95,14 +122,19 @@ export default function CustomizedTables(props) {
       {
         showButton ?
         (
-          <button
-            onClick={() => {
-              setHeight('auto');
-              setShowButton(false);
-            }}
+          <div
+            className={classes.seeMoreButtonContainer}
           >
-            VER MAS
-          </button>
+            <span 
+              onClick={() => {
+                setHeight('auto');
+                setShowButton(false);
+              }}
+              className={classes.seeMoreButton}
+            >
+              Ver más características
+            </span><ArrowDownwardIcon fontSize="small" />
+          </div>
         ) : (null)
       }
     </div>

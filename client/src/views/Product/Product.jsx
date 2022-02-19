@@ -31,9 +31,6 @@ const useStyles = makeStyles(theme => ({
 			width: '85%',
 			marginLeft: theme.spacing(6)
 		},
-		'& *': {
-			color: 'black'
-		}
 	},
 	imagesContainer: {
 		backgroundColor: 'white',
