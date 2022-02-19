@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 import { fetchWithoutToken } from "helpers/fetch";
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Divider from '@material-ui/core/Divider';
 
 import CarouselImagesPrev from './CarouselImagesPrev';
 import AdvancedInfo from './AdvancedInfo';
@@ -80,6 +81,12 @@ const useStyles = makeStyles(theme => ({
 			wordBreak: 'break-word',
 			lineHeight: '1.35',
 		}
+	},
+	divider: {
+		height: 2,
+		color: '#ccc',
+		marginTop: theme.spacing(8),
+		marginBottom: theme.spacing(8),
 	}
 }));
 
@@ -182,13 +189,20 @@ export default function SearchProduct() {
 							</div>
 						</Grid>
 					</Grid>
+					<Divider className={classes.divider} />
 					<AdvancedInfo product={product} />
-					<div 
-						dangerouslySetInnerHTML={{ 
-							__html: product.description
-						}}
-						className={classes.description}
-					></div>
+					<Divider className={classes.divider} />
+					<div>
+						<Typography variant="h3" style={{marginBottom: 32}}>
+						  Descripción
+						</Typography>
+						<div 
+							dangerouslySetInnerHTML={{ 
+								__html: product.description
+							}}
+							className={classes.description}
+						></div>
+					</div>
 				</Grid>
 
 				{/*sidebar*/}
