@@ -120,87 +120,88 @@ export default function FormProduct(props) {
 								products: productsId
 							}, history, productsId));
 						}}
-						render={(formikProps) => (
-							<Form className={classes.form}>
-								<FormControl fullWidth variant="outlined">
-									<FastField name="name">
+					>
+					{(formikProps) => (
+						<Form className={classes.form}>
+							<FormControl fullWidth variant="outlined">
+								<FastField name="name">
+									{({ field }) => (
+										<TextField
+											label="Nombre de la Sección"
+											variant="outlined"
+											{...field}
+										/>
+									)}
+								</FastField>
+							</FormControl>
+							<Grid
+								container
+								spacing={2}
+								alignItems="center"
+								className={clsx(classes.marginTop)}
+							>
+								<Grid item xs={12} sm={4}>
+									<FastField name="_id">
 										{({ field }) => (
 											<TextField
-												label="Nombre de la Sección"
+												fullWidth
+												label="ID del producto"
 												variant="outlined"
 												{...field}
 											/>
 										)}
 									</FastField>
-								</FormControl>
-								<Grid
-									container
-									spacing={2}
-									alignItems="center"
-									className={clsx(classes.marginTop)}
+								</Grid>
+							</Grid>
+							<div className={clsx(classes.marginTop)}>
+								<Button
+									color="primary"
+									variant="contained"
+									disabled={sectionProducts.isLoading ? true : false}
+									onClick={() => addProduct(formikProps.values._id)}
 								>
-									<Grid item xs={12} sm={4}>
-										<FastField name="_id">
-											{({ field }) => (
-												<TextField
-													fullWidth
-													label="ID del producto"
-													variant="outlined"
-													{...field}
-												/>
-											)}
-										</FastField>
-									</Grid>
-								</Grid>
-								<div className={clsx(classes.marginTop)}>
-									<Button
-										color="primary"
-										variant="contained"
-										disabled={sectionProducts.isLoading ? true : false}
-										onClick={() => addProduct(formikProps.values._id)}
-									>
-										Agregar Producto
-									</Button>
-								</div>
-								{sectionProducts.error ? (
-									<Grid container className={clsx(classes.marginTop)}>
-										<Alert severity="error">
-											<AlertTitle>Error</AlertTitle>
-											<strong>{sectionProducts.error}</strong>
-										</Alert>
-									</Grid>
-								) : null}
-								{sectionProducts.success ? (
-									<Grid container className={clsx(classes.marginTop)}>
-										<Alert severity="success">
-											<AlertTitle>Correcto</AlertTitle>
-											<strong>Se agrego el producto correctamente</strong>
-										</Alert>
-									</Grid>
-								) : null}
+									Agregar Producto
+								</Button>
+							</div>
+							{sectionProducts.error ? (
 								<Grid container className={clsx(classes.marginTop)}>
-									{Object.values(formikProps.errors).map((msg) => (
-										<Typography variant="body1" color="error" key={msg}>
-											{msg}
-										</Typography>
-									))}
+									<Alert severity="error">
+										<AlertTitle>Error</AlertTitle>
+										<strong>{sectionProducts.error}</strong>
+									</Alert>
 								</Grid>
-								<div className={clsx(classes.marginTop)}>
-									{isLoading ? (
-										<CircularProgress />
-									) : (
-										<Button 
-										color="primary" 
-										variant="contained" 
-										type="submit"
-										>
-											Crear Sección
-										</Button>
-									)}
-								</div>
-							</Form>
-						)}
-					/>
+							) : null}
+							{sectionProducts.success ? (
+								<Grid container className={clsx(classes.marginTop)}>
+									<Alert severity="success">
+										<AlertTitle>Correcto</AlertTitle>
+										<strong>Se agrego el producto correctamente</strong>
+									</Alert>
+								</Grid>
+							) : null}
+							<Grid container className={clsx(classes.marginTop)}>
+								{Object.values(formikProps.errors).map((msg) => (
+									<Typography variant="body1" color="error" key={msg}>
+										{msg}
+									</Typography>
+								))}
+							</Grid>
+							<div className={clsx(classes.marginTop)}>
+								{isLoading ? (
+									<CircularProgress />
+								) : (
+									<Button 
+									color="primary" 
+									variant="contained" 
+									type="submit"
+									>
+										Crear Sección
+									</Button>
+								)}
+							</div>
+						</Form>
+					)}
+					</Formik>
 				</Grid>
 			</Grid>
 		</div>
