@@ -52,7 +52,7 @@ router.delete('/:id', async (req, res) => {
 	const productsSectionToDelete = req.params.id;
 	try {
 		const result = await handler.deleteProductsSection(productsSectionToDelete);
-		if (result === 1) {
+		if (result.deletedCount === 1) {
 			res.json({
 				ok: true,
 			});
