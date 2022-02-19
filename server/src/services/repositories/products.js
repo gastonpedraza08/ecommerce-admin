@@ -9,7 +9,7 @@ const getProducts = async params => {
 	const result = await Product
 		.find({})
 		.sort({[orderBy]: ord})
-		.limit(limit)
+		//.limit(limit)
 		.skip(from)
 		.select({ 
 			_id: 1,
