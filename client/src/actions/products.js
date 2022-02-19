@@ -27,7 +27,7 @@ export const productsLoadAllproducts = () => {
 		if (!result.error) {
 			let products = result.data.products;
 			for (let i = 0; i < products.length; i++) {
-				products[i].category = categories[products[i].categoryId];
+				products[i].categoryId = categories[products[i].categoryId];
 			}
 			dispatch({
 				type: types.productsLoadAllproducts,
