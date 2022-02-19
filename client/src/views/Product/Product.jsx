@@ -185,26 +185,38 @@ export default function SearchProduct() {
 							</div>
 						</Grid>
 					</Grid>
-				</Grid>
-
-				{/*sidebar*/}
-				<Grid item xs={12} sm={12} md={3}>
-				    contenido
-				</Grid>
-			</Grid>
-			<Grid container>
-				<Grid item xs={12} sm={12} md={9}>
 					<AdvancedInfo product={product} />
-				</Grid>
-			</Grid>
-			<Grid container>
-				<Grid item xs={12} sm={12} md={9}>
 					<div 
 						dangerouslySetInnerHTML={{ 
 							__html: product.description
 						}}
 						className={classes.description}
 					></div>
+				</Grid>
+
+				{/*sidebar*/}
+				<Grid item xs={12} sm={12} md={3}>
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
+			    <p>Hola mundo</p><br /><br /><br /><br /><br />
 				</Grid>
 			</Grid>
 			<div>SEPARADOR</div>
