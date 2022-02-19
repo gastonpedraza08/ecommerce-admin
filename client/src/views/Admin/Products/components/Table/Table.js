@@ -264,7 +264,7 @@ export default function AppTable() {
 		() => [
 			{
 				Header: 'ID',
-				accessor: 'id',
+				accessor: '_id',
 				filter: 'fuzzyText',
 			},
 			{
@@ -284,6 +284,11 @@ export default function AppTable() {
 				filter: 'between',
 			},
 			{
+				Header: 'Condición',
+				accessor: 'condition',
+				filter: 'fuzzyText',
+			},
+			{
 				Header: 'Descripción',
 				Cell: ({ value }) => {
 					return <div style={{height: 100, width: 200, overflowY: 'scroll'}} dangerouslySetInnerHTML={{ __html: value }} />
@@ -293,7 +298,7 @@ export default function AppTable() {
 			},
 			{
 				Header: 'Categoria',
-				accessor: 'category',
+				accessor: 'categoryId',
 				Filter: SelectColumnFilter,
 				filter: 'includes',
 			},
