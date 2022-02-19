@@ -62,7 +62,7 @@ export default function FormProduct(props) {
 	});
 
 	const addProduct = async (id) => {
-		if (products.some((product) => product.id === Number(id))) {
+		if (products.some((product) => product._id === Number(id))) {
 			return setSectionProducts({
 				isLoading: false,
 				error: `El producto con el id ${id} ya se encuentra en la seccion`,
@@ -101,21 +101,23 @@ export default function FormProduct(props) {
 						validateOnBlur={false}
 						initialValues={{
 							name: '',
-							id: '',
+							_id: '',
 						}}
 						validate={(values) => {
 							let errors = {};
 							if(values.name.length < 4) {
 								errors.name = 'El nombre debe contener al menos 4 caracteres';
 							} else if(products.length < 4 || products.length > 12) {
-								errors.id = 'La sección debe tener entre 4 y 12 productos';
+								errors._id = 'La sección debe tener entre 4 y 12 productos';
 							}
 							return errors;
 						}}
 						onSubmit={(values) => {
-							const productsId = products.map(product => product.id);
+							const productsId = products.map(product => product._id);
 							dispatch(productAddProductsSection({
 								name: values.name,
+								order: 10,
+								products: productsId
 							}, history, productsId));
 						}}
 						render={(formikProps) => (
@@ -138,7 +140,7 @@ export default function FormProduct(props) {
 									className={clsx(classes.marginTop)}
 								>
 									<Grid item xs={12} sm={4}>
-										<FastField name="id">
+										<FastField name="_id">
 											{({ field }) => (
 												<TextField
 													fullWidth
@@ -155,7 +157,7 @@ export default function FormProduct(props) {
 										color="primary"
 										variant="contained"
 										disabled={sectionProducts.isLoading ? true : false}
-										onClick={() => addProduct(formikProps.values.id)}
+										onClick={() => addProduct(formikProps.values._id)}
 									>
 										Agregar Producto
 									</Button>

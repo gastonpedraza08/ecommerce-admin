@@ -80,14 +80,14 @@ export const productCreateProduct = (product) => {
 	};
 };
 
-export const productAddProductsSection = (productsSection, history, productsId) => {
+export const productAddProductsSection = (productsSection, history) => {
 	return async (dispatch) => {
 		Swal.fire({
 			title: "Cargando",
 			text: "Creando Sección de Productos",
 			didOpen: async () => {
 				Swal.showLoading();
-				const result = await fetchWithoutToken('products-section', { productsSection, productsId }, 'POST');
+				const result = await fetchWithoutToken('products-section', { productsSection }, 'POST');
 				console.log(result)
 				if (!result.error) {
 					dispatch({

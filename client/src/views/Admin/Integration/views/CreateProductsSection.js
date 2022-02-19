@@ -78,7 +78,7 @@ export default function CreateProductsSection(props) {
 				{products.length > 0 ? (
 					<SlideProducts>
 						{products.map((product) => {
-							return <Product key={product.id} product={product} />;
+							return <Product key={product._id} product={product} />;
 						})}
 					</SlideProducts>
 				) : (

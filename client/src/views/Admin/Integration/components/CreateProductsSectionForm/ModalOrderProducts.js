@@ -60,7 +60,7 @@ export default function ModalOrderProducts({ open, handleClose, products, setPro
       </Box>
       <ReactSortable animation={150} list={products} setList={setProducts} style={{borderTop: '1px solid black'}}>
 				{products.map((product) => (
-					<ListItem key={product.id} className={classes.listItem}>
+					<ListItem key={product._id} className={classes.listItem}>
 						<ListItemIcon>
 							<ControlCameraIcon />
 						</ListItemIcon>
