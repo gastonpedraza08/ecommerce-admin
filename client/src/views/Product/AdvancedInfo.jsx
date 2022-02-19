@@ -62,7 +62,7 @@ export default function CustomizedTables(props) {
           {
             Object.keys(config).map(infotype => {
               return (
-                <div>
+                <div key={infotype}>
                   <h3>{config[infotype].name}</h3>
                   <TableContainer component={Paper}>
                     <Table className={classes.table}>
