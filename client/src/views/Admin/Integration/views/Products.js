@@ -71,14 +71,14 @@ export default function Products(props) {
 							return (
 								<div
 									className={classes.productsSection}
-									key={productsSection.id}
+									key={productsSection._id}
 								>
 									<Typography variant="h3" gutterBottom>
 										{productsSection.name}
 									</Typography>
 									<SlideProducts>
-										{productsSection.Products.map((product) => {
-											return <Product key={product.id} product={product} />;
+										{productsSection.products.map((product) => {
+											return <Product key={product._id} product={product} />;
 										})}
 									</SlideProducts>
 								</div>
