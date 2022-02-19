@@ -90,7 +90,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
 	try {
-		const productsSectionId = parseInt(req.params.id);
+		const productsSectionId = req.params.id;
 		const productsSection = await handler.getProductsSectionById(productsSectionId);
 		if (productsSection) {
 			res.json({

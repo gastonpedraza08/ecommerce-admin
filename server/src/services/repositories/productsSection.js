@@ -19,7 +19,12 @@ const getProductsSections = async params => {
 }
 
 const getProductsSectionById = async productsSectionId => {
-	const productsSection = await ProductsSection.findOne({ _id: productsSectionId });
+	const productsSection = await ProductsSection
+		.findOne({ _id: productsSectionId })
+		.populate({
+			path: 'products',
+			select: 'name description price _id thumbnail'
+		});
 	return productsSection;
 }
 
@@ -34,7 +39,13 @@ const update = async (productsSectionId, fieldsToUpdate) => {
 }
 
 const persist = async productsSection => {
-	const result = await new ProductsSection(productsSection).save();
+	const productsSectionOnDB = await new ProductsSection(productsSection).save();		
+	const result = await ProductsSection
+	.findOne({ _id: productsSectionOnDB._id })
+	.populate({
+		path: 'products',
+		select: 'name description price _id thumbnail'
+	});
 	return result;
 }
 

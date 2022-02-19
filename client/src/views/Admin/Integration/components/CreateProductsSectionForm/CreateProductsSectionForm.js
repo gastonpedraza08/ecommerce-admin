@@ -62,7 +62,7 @@ export default function FormProduct(props) {
 	});
 
 	const addProduct = async (id) => {
-		if (products.some((product) => product._id === Number(id))) {
+		if (products.some((product) => product._id === id)) {
 			return setSectionProducts({
 				isLoading: false,
 				error: `El producto con el id ${id} ya se encuentra en la seccion`,

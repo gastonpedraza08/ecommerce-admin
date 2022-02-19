@@ -88,7 +88,6 @@ export const productAddProductsSection = (productsSection, history) => {
 			didOpen: async () => {
 				Swal.showLoading();
 				const result = await fetchWithoutToken('products-section', { productsSection }, 'POST');
-				console.log(result)
 				if (!result.error) {
 					dispatch({
 						type: types.productAddProductsSection,
