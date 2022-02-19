@@ -66,7 +66,7 @@ export const productCreateProduct = (product) => {
 		const result = await fetchWithoutToken("products", { product }, "POST");
 		if (!result.error) {
 			let product = result.data.product;
-			product.category = categories[product.categoryId];
+			product.categoryId = categories[product.categoryId];
 			dispatch({
 				type: types.productCreateProduct,
 				payload: {
