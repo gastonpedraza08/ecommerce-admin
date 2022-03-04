@@ -1,0 +1,12 @@
+export { default as Account } from "./admin/Account";
+export { default as Dashboard } from "./admin/Dashboard";
+export { default as Integration } from "./admin/Integration";
+export { default as NotFound } from "./admin/NotFound";
+export { default as Products } from "./admin/Products";
+export { default as Settings } from "./admin/Settings";
+export { default as SignIn } from "./admin/SignIn";
+export { default as SignUp } from "./admin/SignUp";
+export { default as Typography } from "./admin/Typography";
+export { default as UserList } from "./admin/UserList";
+export { default as SearchProduct } from "./results";
+export { default as Product } from "./product";

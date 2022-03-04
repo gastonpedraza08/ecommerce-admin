@@ -7,7 +7,7 @@ import {
 	Minimal as MinimalLayout,
 	Main as MainLayout
 	} from "./layouts";
-import Main from "./views/Main/Main";
+import Main from "./pages/main/Main";
 
 import {
   Dashboard as DashboardView,
@@ -22,7 +22,7 @@ import {
   NotFound as NotFoundView,
   SearchProduct as SearchProductView,
   Product as ProductView,
-} from "./views";
+} from "./pages";
 
 const Routes = () => {
   return (
