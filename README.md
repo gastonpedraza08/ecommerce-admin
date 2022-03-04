@@ -8,7 +8,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/gastonpedraza08/magazinca">
+    <a href="https://github.com/gastonpedraza08/ecommerce-admin">
       Code
     </a>
   </h3>
@@ -55,6 +55,8 @@ $ cd ..
 $ cd server
 $ yarn
 $ cd ..
+
+Cambian el nombre de .env.example por .env y llenan con las variables de entorno que sean necesarias
 
 # Corre la app
 $ cd server
