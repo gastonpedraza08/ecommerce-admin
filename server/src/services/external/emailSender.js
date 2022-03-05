@@ -1,20 +1,28 @@
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.MAIL_KEY);
 
-const sendEmailAccountActivation = async (email, token) => {
-	const emailData = {
-		from: process.env.EMAIL_FROM,
-		to: email,
-		subject: 'Account activation link',
-		html: `
-				<h1>Please use the following to activate your account</h1>
-				<p>${process.env.CLIENT_URL}/users/activate/${token}</p>
-				<hr />
-				<p>This email may containe sensetive information</p>
-				<p>${process.env.CLIENT_URL}</p>
-			`
-	};
-	await sgMail.send(emailData);
+const sendEmailAccountActivation = (email, token) => {
+	return new Promise((res, rej) => {
+		const emailData = {
+			from: process.env.EMAIL_FROM,
+			to: email,
+			subject: 'Account activation link',
+			html: `
+					<h1>Please use the following to activate your account</h1>
+					<p>${process.env.CLIENT_URL}/users/activate/${token}</p>
+					<hr />
+					<p>This email may containe sensetive information</p>
+					<p>${process.env.CLIENT_URL}</p>
+				`
+		};
+		sgMail.send(emailData)
+			.then(result => {
+				res(true);
+			})
+			.catch(err => {
+				rej(err)
+			});
+	});
 };
 
 const sendEmailResetPassword = async (email, token) => {

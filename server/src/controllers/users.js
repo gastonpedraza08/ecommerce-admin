@@ -9,7 +9,7 @@ const { requireSignin, adminMiddleware } = require('./middlewares/auth');
 const { updateUser } = require('./middlewares/express-validator/auth');
 const { validate } = require('../utils/commons');
 
-router.get('/:id', requireSignin, async (req, res) => {
+router.get('/:id', async (req, res) => {
 	const userId = req.params.id;
 	const user = await getUserById(userId);
 	if (!user) {

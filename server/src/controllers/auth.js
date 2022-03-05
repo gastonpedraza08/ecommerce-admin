@@ -23,25 +23,6 @@ const {
 const { errorHandler } = require('../utils/errorHandler');
 const { requireSignin } = require('./middlewares/auth');
 
-const fnSendEmailAccountActivation = (res, email, token) => {
-	sendEmailAccountActivation(email, token)
-		.then(response => {
-			res.status(200).json({
-				ok: true,
-				message: `email has been sent to ${email}`,
-				//delete
-				token
-			});
-		})
-		.catch(async error => {
-			await handler.deleteUserByEmail(email);
-			res.status(401).json({
-				ok: false,
-				message: 'error while creating user'
-			});
-		});
-};
-
 const createTokenAccountActivation = (data) => {
 	return jwt.sign({ ...data },
 		process.env.JWT_ACCOUNT_ACTIVATION,
@@ -54,8 +35,8 @@ const updateUser = async (user, updatedFields) => {
 	return user.save();
 };
 
-router.post('/register', validSign, validate, async (req, res) => {
-	const { name, email, password } = req.body;
+router.post('/register', async (req, res) => {
+	const { firstName, lastName, email, password } = req.body;
 	try {
 		let user = await handler.getUserByEmailWithSoftdelete(email);
 		if (user) {
@@ -65,23 +46,38 @@ router.post('/register', validSign, validate, async (req, res) => {
 					error: 'email is taken'
 				});
 			} else {
-				const hash = bcrypt.hashSync(password, 10);
-				await updateUser(user, { name, password: hash })
-				const token = createTokenAccountActivation({ name, email });
-				fnSendEmailAccountActivation(res, email, token);
-				return;
+				return res.status(400).json({
+					ok: false,
+					error: 'the activation code has already been sent to the email provided',
+				});
 			}
 		}
+		
 		const currentDateFormatted = moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
-		const token = createTokenAccountActivation({ name, email });
+		const token = createTokenAccountActivation({ firstName, lastName, email });
+
 		const hash = bcrypt.hashSync(password, 10);
-		const result = await handler.createUser({
-			name,
+		let newUser = {
+			firstName,
+			lastName,
 			email,
 			password: hash,
 			deletedAt: currentDateFormatted
-		});
-		fnSendEmailAccountActivation(res, email, token);
+		};
+
+		const result = await handler.createUser(newUser, token);
+
+		if (result) {
+			return res.status(200).json({
+				ok: true,
+				user: result
+			});
+		} else {
+			return res.status(400).json({
+				ok: false,
+				error: 'can not create the user'
+			});
+		}
 	} catch (error) {
 		const errorToReturn = errorHandler(error);
 		res.status(errorToReturn.status).json({
@@ -121,18 +117,10 @@ router.post('/activation', async (req, res) => {
 						error: 'user with that email does not exist'
 					});
 				}
-				await user.restore();
-				const token = createAccessToken(user.id, user.name, email, user.role.name);
+				await user.restore();				
 				res.status(200).json({
 					ok: true,
-					message: 'activation success',
-					token,
-					user: {
-						id: user.id,
-						name: user.name,
-						email: user.email,
-						role: user.role.name
-					}
+					message: 'activation success'					
 				});
 			}
 		});

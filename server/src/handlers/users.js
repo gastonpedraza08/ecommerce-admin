@@ -1,6 +1,16 @@
 const jwt = require('jsonwebtoken');
+const {
+	sendEmailAccountActivation,
+	sendEmailResetPassword
+} = require('../services/external/emailSender');
 
 const repository = require('../services/repositories/users');
+
+
+const register = async (email, token) => {
+	let isSendedEmail = await sendEmailAccountActivation(email, token);
+	return isSendedEmail;
+}
 
 const getUserByEmail = async email => {
 	const user = await repository.getByEmail(email);
@@ -22,8 +32,9 @@ const getUserByEmailWithSoftdelete = async email => {
 	return user;
 };
 
-const createUser = async data => {
-	const user = await repository.persist(data);
+const createUser = async (newUser, token) => {
+	const user = await repository.persist(newUser);
+	await sendEmailAccountActivation(newUser.email, token);
 	return user;
 };
 
