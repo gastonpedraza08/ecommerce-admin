@@ -43,12 +43,12 @@ router.post('/register', async (req, res) => {
 			if (!user.deletedAt) {
 				return res.status(400).json({
 					ok: false,
-					error: 'email is taken'
+					error: 'Email is taken'
 				});
 			} else {
 				return res.status(400).json({
 					ok: false,
-					error: 'the activation code has already been sent to the email provided',
+					error: 'The activation code has already been sent to the email provided',
 				});
 			}
 		}
@@ -70,12 +70,11 @@ router.post('/register', async (req, res) => {
 		if (result) {
 			return res.status(200).json({
 				ok: true,
-				user: result
 			});
 		} else {
 			return res.status(400).json({
 				ok: false,
-				error: 'can not create the user'
+				error: 'Can not create the user'
 			});
 		}
 	} catch (error) {
@@ -97,7 +96,7 @@ router.post('/activation', async (req, res) => {
 		if (!authorization) {
 			return res.status(400).json({
 				ok: false,
-				error: 'missing token'
+				error: 'Missing token'
 			});
 		}
 		const token = authorization.split(' ')[1];
@@ -106,7 +105,7 @@ router.post('/activation', async (req, res) => {
 				console.log(err)
 				return res.status(401).json({
 					ok: false,
-					error: 'expired link'
+					error: 'Expired link'
 				});
 			} else {
 				const { email } = decoded;
@@ -114,13 +113,13 @@ router.post('/activation', async (req, res) => {
 				if (!user) {
 					return res.status(400).json({
 						ok: false,
-						error: 'user with that email does not exist'
+						error: 'User with that email does not exist'
 					});
 				}
 				await user.restore();				
 				res.status(200).json({
 					ok: true,
-					message: 'activation success'					
+					message: 'Activation success'					
 				});
 			}
 		});

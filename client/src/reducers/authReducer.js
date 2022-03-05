@@ -3,20 +3,34 @@ import { types } from "../types/types";
 const initialState = {
   isLoggedIn: false,
   user: {},
-  isRegistered: false
+  register: {
+    success: false,
+    isLoading: false,
+    error: null,
+    isTouched: false,
+  }
 };
 
 export const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case types.authRegister:
+    case types.authStartRegister:
       return {
         ...state,
-        isRegistered: true
+        register: {
+          ...state.register,
+          isLoading: true,
+          isTouched: true,
+        }
       };
-
-    case types.authLogout:
+    case types.authEndRegister:
       return {
-        checking: false,
+        ...state,
+        register: {
+          success: action.payload.success,
+          error: action.payload.error,
+          isLoading: false,
+          isTouched: true,
+        }
       };
 
     default:

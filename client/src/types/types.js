@@ -24,12 +24,8 @@ export const types = {
   slideLoadCurrentSlides: "[slides] Load Current Slide",
   slideDelete: "[slides] Delete Slide",
 
-  authCheckingFinish: "[auth] Finish checking login state",
-  authStartLogin: "[auth] Start login",
-  authLogin: "[auth] Login",
   authStartRegister: "[auth] Start Register",
-  authStartStartTokenRenew: "[auth] Start token renew",
-  authLogout: "[auth] Logout",
+  authEndRegister: "[auth] End Register",
 
   productsLoadAllproducts: "[products] Load All Products",
   productsDeleteAllProducts: "[products] Delete All Products",

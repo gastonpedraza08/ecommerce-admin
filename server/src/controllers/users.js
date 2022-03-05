@@ -15,7 +15,7 @@ router.get('/:id', async (req, res) => {
 	if (!user) {
 		return res.status(400).json({
 			ok: false,
-			error: 'user not found'
+			error: 'User not found'
 		});
 	}
 	res.status(200).json({
