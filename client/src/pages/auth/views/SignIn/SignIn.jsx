@@ -138,7 +138,7 @@ export default function SignIn(props) {
                 </Button>
                 <Typography color="textSecondary" variant="body1">
                   ¿No tienes una cuenta?
-                  <Link component={RouterLink} to="/admin/sign-up" variant="h6">
+                  <Link component={RouterLink} to="/auth/register" variant="h6">
                     Crear Cuenta
                   </Link>
                 </Typography>
