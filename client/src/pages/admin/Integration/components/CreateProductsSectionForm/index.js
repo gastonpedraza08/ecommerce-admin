@@ -1,1 +1,1 @@
-export { default } from './CreateProductsSectionForm';
+export { default } from './CreateProductsSectionForm.jsx';

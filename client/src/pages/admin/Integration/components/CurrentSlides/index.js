@@ -1,1 +1,1 @@
-export { default } from "./CurrentSlides";
+export { default } from "./CurrentSlides.jsx";

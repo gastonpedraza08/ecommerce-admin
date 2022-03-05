@@ -6,8 +6,8 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 
-import CarouselImagesPrev from './CarouselImagesPrev';
-import AdvancedInfo from './AdvancedInfo';
+import CarouselImagesPrev from './components/CarouselImagesPrev';
+import AdvancedInfo from './components/AdvancedInfo';
 
 const useStyles = makeStyles(theme => ({
 	root: {

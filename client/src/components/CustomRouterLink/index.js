@@ -1,1 +1,1 @@
-export { default } from "./CustomRouterLink";
+export { default } from "./CustomRouterLink.jsx";

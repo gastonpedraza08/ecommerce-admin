@@ -1,1 +1,1 @@
-export { default } from './SearchProduct';
+export { default } from './Results.jsx';

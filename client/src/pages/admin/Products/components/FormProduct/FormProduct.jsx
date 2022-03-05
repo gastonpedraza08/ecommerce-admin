@@ -19,7 +19,7 @@ import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
 import UploadAlbum from '../UploadAlbum';
-import DescriptionEditor from './CKEditor';
+import DescriptionEditor from './CKEditor.jsx';
 
 import { validateFormProduct } from 'helpers/validateForms';
 import { productCreateProduct } from 'actions/products';

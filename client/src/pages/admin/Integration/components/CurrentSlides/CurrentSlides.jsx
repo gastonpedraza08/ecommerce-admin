@@ -8,7 +8,7 @@ import { Alert, AlertTitle } from "@material-ui/lab";
 
 import { slideLoadCurrentSlides } from "actions/slides";
 import { Carousel } from "components";
-import ModalOrderSlide from "./ModalOrderSlide";
+import ModalOrderSlide from "./ModalOrderSlide.jsx";
 
 const useStyles = makeStyles((theme) => ({
   root: {},

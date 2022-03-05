@@ -1,9 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import FilterTextLikeRadio from './FilterTextLikeRadio';
-import FilterSwitch from './FilterSwitch';
-import FilterPrice from './FilterPrice';
+import FilterTextLikeRadio from './components/FilterTextLikeRadio';
+import FilterSwitch from './components/FilterSwitch';
+import FilterPrice from './components/FilterPrice';
 import filter from 'assets/config/filter.js';
 
 const useStyles = makeStyles((theme) => ({

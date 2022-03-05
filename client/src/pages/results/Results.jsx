@@ -3,9 +3,9 @@ import { useSelector } from 'react-redux';
 import { makeStyles } from "@material-ui/styles";
 import Grid from '@material-ui/core/Grid';
 
-import Filter from 'components/SearchProducts/Filter';
-import Product from './Product';
-import Pagination from './Pagination';
+import Filter from './components/Filter';
+import Product from './components/Product';
+import Pagination from './components/Pagination';
 
 const useStyles = makeStyles(theme => ({
 	root: {

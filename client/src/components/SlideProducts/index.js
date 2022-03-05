@@ -1,1 +1,1 @@
-export { default } from "./SlideProducts";
+export { default } from "./SlideProducts.jsx";

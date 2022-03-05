@@ -1,1 +1,1 @@
-export { default } from "./UploadAlbum";
+export { default } from "./UploadAlbum.jsx";

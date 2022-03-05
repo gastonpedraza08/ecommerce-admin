@@ -7,7 +7,7 @@ import {
 	Minimal as MinimalLayout,
 	Main as MainLayout
 	} from "./layouts";
-import Main from "./pages/main/Main";
+import Main from "./pages/main/Main.jsx";
 
 import {
   Dashboard as DashboardView,

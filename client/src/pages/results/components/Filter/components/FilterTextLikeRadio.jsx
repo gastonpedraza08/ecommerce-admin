@@ -8,7 +8,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Button from '@material-ui/core/Button';
 
 import InputRadio from './InputRadio';
-import { Accordion, AccordionSummary } from './components';
+import { Accordion, AccordionSummary } from './shared.jsx';
 
 const useStyles = makeStyles((theme) => ({
   root: {

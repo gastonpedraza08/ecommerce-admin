@@ -1,1 +1,1 @@
-export { default } from "./BenefitsSection";
+export { default } from "./BenefitsSection.jsx";

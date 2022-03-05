@@ -5,7 +5,7 @@ import { Alert, AlertTitle } from "@material-ui/lab";
 import { useDispatch, useSelector } from "react-redux";
 
 import Album from "../Album";
-import UploadSlidesButton from "./UploadSlidesButton";
+import UploadSlidesButton from "./UploadSlidesButton.jsx";
 
 import { slideLoadAllSlides } from "actions/slides";
 

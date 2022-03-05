@@ -35,7 +35,6 @@ export default function Routes() {
 		if(products.length===0) {
 			dispatch(productsLoadAllproducts());
 		}
-		//return () => dispatch(productsDeleteAllProducts());
 	}, [products.length, dispatch]);
 
 	return (

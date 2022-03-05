@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
-import Container from './Container';
+import Container from './Container.jsx';
 import { Carousel } from 'components';
 import BenefitsSection from './Content/BenefitsSection';
 import SlideProducts from 'components/SlideProducts';

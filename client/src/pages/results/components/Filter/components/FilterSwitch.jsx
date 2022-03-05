@@ -13,7 +13,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 import InputSwitch from './InputSwitch';
-import { Accordion, AccordionSummary } from './components';
+import { Accordion, AccordionSummary } from './shared.jsx';
 
 const useStyles = makeStyles((theme) => ({
   root: {
