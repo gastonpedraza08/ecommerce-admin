@@ -156,7 +156,7 @@ const SignUp = (props) => {
                 </Button>
                 <Typography color="textSecondary" variant="body1">
                   ¿Ya tienes una cuenta?{" "}
-                  <Link component={RouterLink} to="/sign-in" variant="h6">
+                  <Link component={RouterLink} to="/auth/login" variant="h6">
                     Iniciar Sesion
                   </Link>
                 </Typography>
