@@ -171,7 +171,7 @@ router.post('/login', async (req, res) => {
 	}
 });
 
-router.post('/renewtoken', requireSignin, (req, res) => {
+router.post('/renewtoken', (req, res) => {
 	const { id, name, email, role } = req.user;
 	const token = createAccessToken(id, name, email, role);
 	return res.status(200).json({
