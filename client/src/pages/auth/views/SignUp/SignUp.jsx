@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import {
@@ -63,11 +63,38 @@ const useStyles = makeStyles((theme) => ({
 const SignUp = (props) => {
   const { history } = props;
 
-  const classes = useStyles();  
+  const [formValues, setFormValues] = useState({
+    firstName: 'gaston',
+    lastName: 'pedraza',
+    email: 'gastonpedraza.developer@gmail.com',
+    password: 'abcd1234',
+    checked: true
+  });
+
+  const classes = useStyles();
+
+  const handleChange = e => {
+    setFormValues(prev => {
+      return {
+        ...prev,
+        [e.target.name]: e.target.value
+      }
+    });
+  }
+
+  const handleCheck = e => {
+    setFormValues(prev => {
+      return {
+        ...prev,
+        checked: !prev.checked
+      }
+    })
+  }
 
   const handleSignUp = (event) => {
     event.preventDefault();
-    history.push("/");
+    console.log(formValues)
+    //history.push("/");
   };
 
   return (
@@ -88,8 +115,9 @@ const SignUp = (props) => {
                   fullWidth
                   label="Nombre"
                   name="firstName"
+                  onChange={handleChange}
+                  value={formValues.firstName}
                   type="text"
-                  value=""
                   variant="outlined"
                 />
                 <TextField
@@ -97,8 +125,9 @@ const SignUp = (props) => {
                   fullWidth
                   label="Apellido"
                   name="lastName"
+                  onChange={handleChange}
+                  value={formValues.lastName}
                   type="text"
-                  value=""
                   variant="outlined"
                 />
                 <TextField
@@ -106,8 +135,9 @@ const SignUp = (props) => {
                   fullWidth
                   label="Email"
                   name="email"
+                  onChange={handleChange}
+                  value={formValues.email}
                   type="text"
-                  value=""
                   variant="outlined"
                 />
                 <TextField
@@ -115,13 +145,15 @@ const SignUp = (props) => {
                   fullWidth
                   label="Contraseña"
                   name="password"
+                  onChange={handleChange}
+                  value={formValues.password}
                   type="password"
-                  value=""
                   variant="outlined"
                 />
                 <div className={classes.policy}>
                   <Checkbox
-                    checked={true}
+                    checked={formValues.checked}
+                    onChange={handleCheck}
                     className={classes.policyCheckbox}
                     color="primary"
                     name="policy"                    
