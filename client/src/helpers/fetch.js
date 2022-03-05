@@ -39,26 +39,46 @@ export const fetchWithoutToken = async (endpoint, data, method = "GET") => {
   }
 };
 
-export const fetchWithToken = (endpoint, data, method = "GET") => {
-  const url = `${baseUrl}/${endpoint}`;
-  const token = localStorage.getItem("token") || "";
-  if (method === "GET") {
-    return axios({
-      headers: {
-        "x-token": token,
-      },
-      method,
-      url,
-    });
-  } else {
-    return axios({
-      headers: {
-        "content-type": "application/json",
-        "x-token": token,
-      },
-      method,
-      url,
-      data,
-    });
+export const fetchWithToken = async (endpoint, data, method = "GET", tokenFn) => {
+  try {
+    const url = `${baseUrl}/${endpoint}`;
+    let token;
+
+    if (tokenFn) {
+      token = tokenFn;
+    } else {
+      token = localStorage.getItem("token") || "";
+    }
+
+    if (method === "GET") {
+      const result = await axios({
+        headers: {
+          "x-token": token,
+        },
+        method,
+        url,
+      });
+      return result;
+    } else {
+      const result = await axios({
+        headers: {
+          "content-type": "application/json",
+          "Authorization": 'Bearer ' + token,
+        },
+        method,
+        url,
+        data,
+      });
+      return result;
+    }
+  } catch (error) {
+    if (error.response) {
+      return {
+        error: error.response.data.error
+          ? error.response.data.error
+          : "Error en el servidor",
+      };
+    }
+    return { error: "Error en el servidor " };
   }
 };

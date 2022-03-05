@@ -100,6 +100,7 @@ router.post('/activation', async (req, res) => {
 			});
 		}
 		const token = authorization.split(' ')[1];
+		console.log(token)
 		jwt.verify(token, process.env.JWT_ACCOUNT_ACTIVATION, async (err, decoded) => {
 			if (err) {
 				console.log(err)
