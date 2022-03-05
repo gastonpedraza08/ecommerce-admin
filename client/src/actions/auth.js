@@ -34,14 +34,14 @@ export const authLogin = (values) => {
     });
     const result = await fetchWithoutToken("auth/login", values, "POST");
     if (!result.error) {
-      localStorage.setItem('access_token', result.token);
+      localStorage.setItem('access_token', result.data.token);
 
       dispatch({
         type: types.authEndLogin,
         payload: {
           success: true,
           error: null,
-          user: result.user,
+          user: result.data.user,
           isLoggedIn: true,
         },
       });
@@ -50,7 +50,7 @@ export const authLogin = (values) => {
         type: types.authEndLogin,
         payload: {
           success: false,
-          error: result.error,
+          error: result.data.error,
           user: null,
           isLoggedIn: false,
         },
