@@ -35,7 +35,6 @@ export const authLogin = (values) => {
     const result = await fetchWithoutToken("auth/login", values, "POST");
     if (!result.error) {
       localStorage.setItem('access_token', result.token);
-      localStorage.setItem('user', result.user);
 
       dispatch({
         type: types.authEndLogin,
