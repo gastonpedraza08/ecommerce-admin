@@ -26,6 +26,8 @@ export const types = {
 
   authStartRegister: "[auth] Start Register",
   authEndRegister: "[auth] End Register",
+  authStartLogin: "[auth] Start Login",
+  authEndLogin: "[auth] End Login",
 
   productsLoadAllproducts: "[products] Load All Products",
   productsDeleteAllProducts: "[products] Delete All Products",

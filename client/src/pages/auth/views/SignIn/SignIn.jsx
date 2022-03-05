@@ -1,15 +1,10 @@
 import React from "react";
-import { Link as RouterLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import {
   Grid,
-  Button,
-  TextField,
-  Link,
-  Typography,
 } from "@material-ui/core";
 
-import { Facebook as FacebookIcon, Google as GoogleIcon } from "icons";
+import FormLogin from './Form.jsx';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -81,68 +76,7 @@ export default function SignIn(props) {
         <Grid className={classes.content} item lg={7} xs={12}>
           <div className={classes.content}>
             <div className={classes.contentBody}>
-              <form className={classes.form}>
-                <Typography className={classes.title} variant="h2">
-                  Inicia Sesion
-                </Typography>
-                <Typography color="textSecondary" gutterBottom>
-                  Con una red social
-                </Typography>
-                <Grid className={classes.socialButtons} container spacing={1}>
-                  <Grid item>
-                    <Button color="primary" size="large" variant="contained">
-                      <FacebookIcon className={classes.socialIcon} />
-                      Entrar con facebook
-                    </Button>
-                  </Grid>
-                  <Grid item>
-                    <Button size="large" variant="contained">
-                      <GoogleIcon className={classes.socialIcon} />
-                      Entrar con Google
-                    </Button>
-                  </Grid>
-                </Grid>
-                <Typography
-                  align="center"
-                  className={classes.sugestion}
-                  color="textSecondary"
-                  variant="body1"
-                >
-                  o con una direccion de correo electronico
-                </Typography>
-                <TextField
-                  className={classes.textField}
-                  fullWidth
-                  label="Correo Electronico"
-                  name="email"
-                  type="text"
-                  variant="outlined"
-                />
-                <TextField
-                  className={classes.textField}
-                  fullWidth
-                  label="Contraseña"
-                  name="password"
-                  type="password"
-                  variant="outlined"
-                />
-                <Button
-                  className={classes.signInButton}
-                  color="primary"
-                  fullWidth
-                  size="large"
-                  type="submit"
-                  variant="contained"
-                >
-                  Iniciar Sesion
-                </Button>
-                <Typography color="textSecondary" variant="body1">
-                  ¿No tienes una cuenta?
-                  <Link component={RouterLink} to="/auth/register" variant="h6">
-                    Crear Cuenta
-                  </Link>
-                </Typography>
-              </form>
+              <FormLogin />
             </div>
           </div>
         </Grid>

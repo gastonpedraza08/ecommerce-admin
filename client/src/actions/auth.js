@@ -26,3 +26,36 @@ export const authRegister = (values) => {
     }
   }
 }
+
+export const authLogin = (values) => {
+  return async dispatch => {
+    dispatch({
+      type: types.authStartLogin
+    });
+    const result = await fetchWithoutToken("auth/login", values, "POST");
+    if (!result.error) {
+      localStorage.setItem('access_token', result.token);
+      localStorage.setItem('user', result.user);
+
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: true,
+          error: null,
+          user: result.user,
+          isLoggedIn: true,
+        },
+      });
+    } else {
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: false,
+          error: result.error,
+          user: null,
+          isLoggedIn: false,
+        },
+      });
+    }
+  }
+}

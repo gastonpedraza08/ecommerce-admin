@@ -55,7 +55,7 @@ export default function ActivationScreen(props) {
 				});
 			}
 		})();
-	}, []);
+	}, [token]);
 
 
 	return (

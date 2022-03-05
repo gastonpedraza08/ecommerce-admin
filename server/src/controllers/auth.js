@@ -134,7 +134,7 @@ router.post('/activation', async (req, res) => {
 });
 
 
-router.post('/login', validLogin, validate, async (req, res) => {
+router.post('/login', async (req, res) => {
 	try {
 		const { email, password } = req.body;
 		const user = await handler.getUserByEmail(email);
@@ -152,17 +152,15 @@ router.post('/login', validLogin, validate, async (req, res) => {
 				error: 'invalid credentials'
 			});
 		}
-		const { id, name, role } = user;
-		const token = createAccessToken(id, name, email, role.name);
+		const { id } = user;
+		const token = createAccessToken(id, email);
+
+		user.password = undefined;
+
 		return res.status(200).json({
 			ok: true,
 			token,
-			user: {
-				id,
-				name,
-				email,
-				role: role.name
-			}
+			user
 		});
 	} catch (error) {
 		const errorToReturn = errorHandler(error);
