@@ -9,7 +9,7 @@ import NotFoundView from './NotFound';
 import ProductsView from './Products';
 import SettingsView from './Settings';
 import TypographyView from './Typography';
-import UserListView from './UserList';
+import UserListView from './Users';
 
 export default function Routes() {
 
