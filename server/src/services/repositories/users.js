@@ -58,6 +58,14 @@ const deleteByEmail = async email => {
 	});
 };
 
+const getUsers = async (params) => {
+	const result = await User.findAndCountAll({
+		limit: params.limit,
+		offset: params.from,
+		order: [[params.orderBy, params.order]],
+	});
+	return result;
+};
 
 module.exports = {
 	getByEmailWithSoftdelete,
@@ -65,5 +73,6 @@ module.exports = {
 	persist,
 	getByResetPasswordLink,
 	getById,
-	deleteByEmail
+	deleteByEmail,
+	getUsers,
 };

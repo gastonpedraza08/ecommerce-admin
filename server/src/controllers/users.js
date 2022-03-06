@@ -4,14 +4,14 @@ const bcrypt = require('bcrypt');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.MAIL_KEY);
 
-const { getUserById } = require('../handlers/users');
+const handler = require('../handlers/users');
 const { requireSignin, adminMiddleware } = require('./middlewares/auth');
 const { updateUser } = require('./middlewares/express-validator/auth');
 const { validate } = require('../utils/commons');
 
 router.get('/:id', async (req, res) => {
 	const userId = req.params.id;
-	const user = await getUserById(userId);
+	const user = await handler.getUserById(userId);
 	if (!user) {
 		return res.status(400).json({
 			ok: false,
@@ -29,9 +29,31 @@ router.get('/:id', async (req, res) => {
 	});
 });
 
+router.get('/', async (req, res) => {
+	try {
+		const params = {
+			limit: parseInt(req.query.limit) || 1000,
+			order: req.query.order || 'DESC',
+			orderBy: req.query.orderBy || 'createdAt',
+			from: parseInt(req.query.from) - 1 || 0
+		};
+		const result = await handler.getUsers(params);
+		res.json({
+			ok: true,
+			count: result.count,
+			users: result.rows,
+		});
+	} catch (error) {
+		console.log(error);
+		res.status(500).json({
+			ok: false,
+		});
+	}
+});
+
 router.put('/update/:id', updateUser, validate, requireSignin, async (req, res) => {
 	const { name, email, password } = req.body;
-	const user = await getUserById(req.params.id);
+	const user = await handler.getUserById(req.params.id);
 	if (!user) {
 		return res.status(400).json({
 			ok: false,

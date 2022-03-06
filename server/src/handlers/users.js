@@ -46,6 +46,11 @@ const deleteUserByEmail = async email => {
 	const result = await repository.deleteByEmail(email);
 }
 
+const getUsers = async params => {
+	const users = await repository.getUsers(params);
+	return users;
+};
+
 module.exports = {
 	getUserByEmailWithSoftdelete,
 	getUserByEmail,
@@ -53,5 +58,6 @@ module.exports = {
 	createUser,
 	updateUser,
 	getUserById,
-	deleteUserByEmail
+	deleteUserByEmail,
+	getUsers
 };
