@@ -32,9 +32,13 @@ const getUserByEmailWithSoftdelete = async email => {
 	return user;
 };
 
-const createUser = async (newUser, token) => {
+const createUser = async (newUser, token, enabled) => {
 	const user = await repository.persist(newUser);
-	await sendEmailAccountActivation(newUser.email, token);
+
+	if (!enabled) {
+		await sendEmailAccountActivation(newUser.email, token);
+	}
+
 	return user;
 };
 
@@ -59,5 +63,5 @@ module.exports = {
 	updateUser,
 	getUserById,
 	deleteUserByEmail,
-	getUsers
+	getUsers,
 };

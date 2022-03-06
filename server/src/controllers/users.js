@@ -2,12 +2,73 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const sgMail = require('@sendgrid/mail');
+const moment = require('moment');
+const jwt = require('jsonwebtoken');
+
 sgMail.setApiKey(process.env.MAIL_KEY);
 
 const handler = require('../handlers/users');
 const { requireSignin, adminMiddleware } = require('./middlewares/auth');
 const { updateUser } = require('./middlewares/express-validator/auth');
 const { validate } = require('../utils/commons');
+const { errorHandler } = require('../utils/errorHandler');
+
+const createTokenAccountActivation = (data) => {
+	return jwt.sign({ ...data },
+		process.env.JWT_ACCOUNT_ACTIVATION,
+		{ expiresIn: '7d' }
+	);
+};
+
+/* CREATE USER */
+router.post('/', async (req, res) => {
+	const { firstName, lastName, email, password, enabled } = req.body;
+	try {
+		let user = await handler.getUserByEmailWithSoftdelete(email);
+		if (user) {
+			return res.status(400).json({
+				ok: false,
+				error: 'Email is taken'
+			});
+		}
+		
+		const currentDateFormatted = enabled ? null : moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
+		const token = createTokenAccountActivation({ firstName, lastName, email });
+
+		const hash = bcrypt.hashSync(password, 10);
+		let newUser = {
+			firstName,
+			lastName,
+			email,
+			password: hash,
+			deletedAt: currentDateFormatted
+		};
+
+		const result = await handler.createUser(newUser, token, enabled);
+
+		let userToReturn = result;
+		userToReturn.password = undefined;
+
+		if (result) {
+			return res.status(200).json({
+				ok: true,
+				user: userToReturn
+			});
+		} else {
+			return res.status(400).json({
+				ok: false,
+				error: 'Can not create the user'
+			});
+		}
+	} catch (error) {
+		const errorToReturn = errorHandler(error);
+		res.status(errorToReturn.status).json({
+			ok: false,
+			error: errorToReturn.message
+		});
+	}
+});
+
 
 router.get('/:id', async (req, res) => {
 	const userId = req.params.id;
@@ -80,39 +141,6 @@ router.put('/update/:id', updateUser, validate, requireSignin, async (req, res) 
 			role: user.role.name,
 		}
 	});
-});
-
-
-router.put('/admin/update', requireSignin, adminMiddleware, async (req, res) => {
-	console.log("pasa")
-	res.json({
-		ok: 'si llego hasta aca'
-	})
-});
-
-router.post('/send-email', async (req, res) => {
-	const { name, email, message } = req.body.mail;
-	const emailData = {
-		from: process.env.EMAIL_FROM,
-		to: process.env.EMAIL_TO,
-		subject: name,
-		html: `
-				<h1>Contacto por el portafolio</h1>
-				<p>${message}</p>
-				<p>Email de contacto: ${email}</p>
-			`
-	};
-	try {
-		await sgMail.send(emailData);
-		res.json({
-			ok: true,
-		});
-	} catch (error) {
-		res.status(500).json({
-			ok: false,
-			error: 'No se pudo enviar el email'
-		});
-	}
 });
 
 module.exports = router;
