@@ -29,7 +29,7 @@ const UserList = () => {
 
   return (
     <div className={classes.root}>
-      <UsersToolbar />
+      <UsersToolbar users={users} />
       <div className={classes.content}>
         <UsersTable users={users} />
       </div>
