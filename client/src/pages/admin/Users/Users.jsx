@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import { makeStyles } from "@material-ui/styles";
 
 import { UsersToolbar, UsersTable } from "./components";
-import mockData from "./data";
+
+import { usersLoadAllusers } from 'actions/users';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -15,8 +17,15 @@ const useStyles = makeStyles((theme) => ({
 
 const UserList = () => {
   const classes = useStyles();
+  const dispatch = useDispatch();
 
-  const [users] = useState(mockData);
+  const { users } = useSelector(state => state.users);
+
+  useEffect(() => {
+    if (users.length === 0) {
+      dispatch(usersLoadAllusers());
+    }
+  }, [dispatch, users.length])
 
   return (
     <div className={classes.root}>

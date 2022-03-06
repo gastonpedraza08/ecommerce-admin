@@ -35,4 +35,7 @@ export const types = {
   productAddProductsSection: "[products] Add Products Section",
   productsLoadProductsSections: "[products] Load All Products Sections",
   productsSearchProducts: "[products] Search Products",
+
+  usersLoadAllusers: "[users] Load All Users",
+  usersCreateUser: "[users] Create User",
 };

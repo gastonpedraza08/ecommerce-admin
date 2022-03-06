@@ -14,7 +14,6 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  Typography,
   TablePagination,
 } from "@material-ui/core";
 
@@ -110,11 +109,13 @@ const UsersTable = (props) => {
                       onChange={handleSelectAll}
                     />
                   </TableCell>
-                  <TableCell>Name</TableCell>
+                  <TableCell>Id</TableCell>
+                  <TableCell>Avatar</TableCell>
+                  <TableCell>Nombre</TableCell>
+                  <TableCell>Apellido</TableCell>
                   <TableCell>Email</TableCell>
-                  <TableCell>Location</TableCell>
-                  <TableCell>Phone</TableCell>
-                  <TableCell>Registration date</TableCell>
+                  <TableCell>Role</TableCell>
+                  <TableCell>Fecha de registro</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -133,20 +134,18 @@ const UsersTable = (props) => {
                         value="true"
                       />
                     </TableCell>
+                    <TableCell>{user.id}</TableCell>
                     <TableCell>
                       <div className={classes.nameContainer}>
                         <Avatar className={classes.avatar} src={user.avatarUrl}>
-                          {getInitials(user.name)}
+                          {getInitials(user.firstName + ' ' + user.lastName)}
                         </Avatar>
-                        <Typography variant="body1">{user.name}</Typography>
                       </div>
                     </TableCell>
+                    <TableCell>{user.firstName}</TableCell>
+                    <TableCell>{user.lastName}</TableCell>
                     <TableCell>{user.email}</TableCell>
-                    <TableCell>
-                      {user.address.city}, {user.address.state},{" "}
-                      {user.address.country}
-                    </TableCell>
-                    <TableCell>{user.phone}</TableCell>
+                    <TableCell>{user.role.name}</TableCell>
                     <TableCell>
                       {moment(user.createdAt).format("DD/MM/YYYY")}
                     </TableCell>
