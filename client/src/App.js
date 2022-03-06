@@ -11,7 +11,10 @@ import "react-perfect-scrollbar/dist/css/styles.css";
 import "./assets/scss/index.scss";
 import Routes from "./Routes";
 
+import { Auth } from 'components';
+
 const browserHistory = createBrowserHistory();
+
 
 export default function App() {
   return (
@@ -19,7 +22,9 @@ export default function App() {
       <Provider store={store}>
         <CssBaseline />
         <Router history={browserHistory}>
-          <Routes />
+          <Auth>
+            <Routes />          
+          </Auth>
         </Router>
       </Provider>
     </ThemeProvider>

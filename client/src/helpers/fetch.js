@@ -53,7 +53,7 @@ export const fetchWithToken = async (endpoint, data, method = "GET", tokenFn) =>
     if (method === "GET") {
       const result = await axios({
         headers: {
-          "x-token": token,
+          "Authorization": 'Bearer' + token,
         },
         method,
         url,

@@ -86,8 +86,8 @@ router.post('/register', async (req, res) => {
 	}
 });
 
-const createAccessToken = (id, name, email, role) => {
-	return jwt.sign({ id, name, email, role }, process.env.JWT_SECRET, { expiresIn: '7d' });
+const createAccessToken = (user) => {
+	return jwt.sign(user.dataValues, process.env.JWT_SECRET, { expiresIn: '7d' });
 }
 
 router.post('/activation', async (req, res) => {
@@ -153,9 +153,9 @@ router.post('/login', async (req, res) => {
 			});
 		}
 		const { id } = user;
-		const token = createAccessToken(id, email);
-
 		user.password = undefined;
+
+		const token = createAccessToken(user);
 
 		return res.status(200).json({
 			ok: true,
@@ -172,16 +172,29 @@ router.post('/login', async (req, res) => {
 });
 
 router.post('/renewtoken', (req, res) => {
-	const { id, name, email, role } = req.user;
-	const token = createAccessToken(id, name, email, role);
-	return res.status(200).json({
-		ok: true,
-		token,
-		user: {
-			id: req.user.id,
-			name: req.user.name,
-			email: req.user.email,
-			role: req.user.role
+
+	const authorization = req.get('Authorization');
+	if (!authorization) {
+		return res.status(400).json({
+			ok: false,
+			error: 'missing token'
+		});
+	}
+
+	const token = authorization.split(' ')[1];
+
+	jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+		if (err) {
+			return res.status(401).json({
+				ok: false,
+				error: 'invalid token'
+			});
+		} else {
+			return res.status(200).json({
+				ok: true,
+				token,
+				user: decoded
+			});
 		}
 	});
 });
