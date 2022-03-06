@@ -80,10 +80,12 @@ export default function ComplexGrid(props) {
 								>
 									{product.name}
 								</Box>
-								<Box component="div" classes={{ root: classes.subtitle }}>
-									<div dangerouslySetInnerHTML={{ __html: product.description }} >
-									</div>
-								</Box>
+								{/*
+									<Box component="div" classes={{ root: classes.subtitle }}>
+										<div dangerouslySetInnerHTML={{ __html: product.description }} >
+										</div>
+									</Box>
+								*/}
                 <Typography className={classes.price} display="block" gutterBottom>
 									$ {product.price}
 								</Typography>
