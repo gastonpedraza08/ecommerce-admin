@@ -37,7 +37,8 @@ export default function ActivationScreen(props) {
 	useEffect(() => {
 		(async () => {
 			const result = await fetchWithToken("auth/activation", {}, "POST", token);
-			if (result.data.ok) {
+			console.log(result)
+			if (!result.error) {
 				setActivationData(prev => {
 					return {
 						...prev,
@@ -50,7 +51,7 @@ export default function ActivationScreen(props) {
 					return {
 						...prev,
 						isLoading: false,
-						error: result.data.error || true
+						error: result.error || true
 					}
 				});
 			}

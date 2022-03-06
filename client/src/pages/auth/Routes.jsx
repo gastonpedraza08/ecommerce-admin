@@ -1,5 +1,6 @@
-import React from "react";
-import { Switch, Redirect, Route } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Switch, Redirect, Route, useHistory } from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 //views
 import {
@@ -9,6 +10,14 @@ import {
 } from './views';
 
 export default function Routes() {
+  const history = useHistory();
+  const { login } = useSelector(state => state.auth);
+
+  useEffect(() => {
+    if (login.success) {
+      history.push('/');
+    }
+  }, [login.success, history]);
 
   return (
     <Switch>

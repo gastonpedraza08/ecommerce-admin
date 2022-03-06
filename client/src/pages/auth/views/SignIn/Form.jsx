@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
-import { Link as RouterLink, useHistory } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import {
   Grid,
@@ -58,7 +58,6 @@ export default function SignIn(props) {
 
 	const dispatch = useDispatch();
   const classes = useStyles();
-  const history = useHistory();
 
   const { login } = useSelector(state => state.auth);
 
@@ -66,12 +65,6 @@ export default function SignIn(props) {
   	email: 'gastonpedraza.developer@gmail.com',
   	password: 'abcd1234'
   });
-
-  useEffect(() => {
-  	if (login.success) {
-  		history.push('/');
-  	}
-  }, [login.success, history]);
 
   const handleChange = e => {
   	setFormValues(prev => {
