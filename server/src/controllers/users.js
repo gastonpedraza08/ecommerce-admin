@@ -22,7 +22,7 @@ const createTokenAccountActivation = (data) => {
 
 /* CREATE USER */
 router.post('/', async (req, res) => {
-	const { firstName, lastName, email, password, enabled } = req.body;
+	const { enabled, email, password, ...rest } = req.body;
 	try {
 		let user = await handler.getUserByEmailWithSoftdelete(email);
 		if (user) {
@@ -33,12 +33,11 @@ router.post('/', async (req, res) => {
 		}
 		
 		const currentDateFormatted = enabled ? null : moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
-		const token = createTokenAccountActivation({ firstName, lastName, email });
+		const token = createTokenAccountActivation({ email });
 
 		const hash = bcrypt.hashSync(password, 10);
 		let newUser = {
-			firstName,
-			lastName,
+			...rest,
 			email,
 			password: hash,
 			deletedAt: currentDateFormatted
