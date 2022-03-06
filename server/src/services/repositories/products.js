@@ -1,5 +1,5 @@
 const { models: { Product } } = require('../../models-mongoose');
-const { getFilterLine } = require('../../utils/commons');
+const { getFilterLine } = require('../../utils/productsFilters');
 
 const getProducts = async params => {
 	const { orderBy, limit, from, order } = params;
