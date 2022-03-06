@@ -10,6 +10,7 @@ const usersRouter = require('./controllers/users');
 const slidesRouter = require('./controllers/slides');
 const productsRouter = require('./controllers/products');
 const productsSectionRouter = require('./controllers/productsSection');
+const sharedRouter = require('./controllers/shared');
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use('/api/users', usersRouter);
 app.use('/api/slides', slidesRouter);
 app.use('/api/products', productsRouter);
 app.use('/api/products-section', productsSectionRouter);
+app.use('/api/shared', sharedRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
