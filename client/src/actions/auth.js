@@ -59,7 +59,7 @@ export const authLogin = (values) => {
   }
 }
 
-export const renewToken = token => {
+export const authRenewToken = token => {
   return async dispatch => {
     const result = await fetchWithToken("auth/renewtoken", {}, "POST", token);
     if (!result.error) {
@@ -86,4 +86,17 @@ export const renewToken = token => {
       });
     }
   }
+}
+
+export const authLogout = token => {
+  localStorage.removeItem('access_token');
+  return {
+    type: types.authEndLogin,
+    payload: {
+      success: false,
+      error: null,
+      user: null,
+      isLoggedIn: false,
+    },
+  };  
 }

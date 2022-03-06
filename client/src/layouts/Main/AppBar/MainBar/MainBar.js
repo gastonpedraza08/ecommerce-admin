@@ -10,7 +10,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import IconButton from "@material-ui/core/IconButton";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 
 import CustomRouterLink from 'components/CustomRouterLink';
 import { makeStyles } from "@material-ui/core/styles";
@@ -19,6 +18,7 @@ import { uiHandleDrawerToggle } from "actions/ui";
 import { productsSearchProducts } from "actions/products";
 
 import { SearchInput } from "components";
+import AuthButton from './components/AuthButton';
 
 const useStyles = makeStyles((theme) => ({
   menuButton: {
@@ -91,9 +91,7 @@ export default function MenuAppBar() {
       />
       <div className={classes.grow} />
       <Hidden smDown>
-        <IconButton onClick={showAlert} color="inherit">
-          <PermIdentityIcon />
-        </IconButton>
+        <AuthButton />
         <IconButton onClick={showAlert} color="inherit">
           <FavoriteBorderIcon />
         </IconButton>
