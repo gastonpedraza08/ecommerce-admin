@@ -17,9 +17,9 @@ export default function Routes() {
     <Switch>
       <Route exact path="/admin/account" component={AccountView} />
       <Route exact path="/admin/dashboard" component={DashboardView} />
-      <Route exact path="/admin/integration" component={IntegrationView} />
+      <Route path="/admin/integration" component={IntegrationView} />
       <Route exact path="/admin/not-found" component={NotFoundView} />
-      <Route exact path="/admin/products" component={ProductsView} />
+      <Route path="/admin/products" component={ProductsView} />
       <Route exact path="/admin/settings" component={SettingsView} />
       <Route exact path="/admin/typography" component={TypographyView} />
       <Route exact path="/admin/users" component={UserListView} />
