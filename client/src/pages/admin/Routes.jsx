@@ -22,7 +22,7 @@ export default function Routes() {
       <Route path="/admin/products" component={ProductsView} />
       <Route exact path="/admin/settings" component={SettingsView} />
       <Route exact path="/admin/typography" component={TypographyView} />
-      <Route exact path="/admin/users" component={UserListView} />
+      <Route path="/admin/users" component={UserListView} />
       <Redirect to="/not-found" />
     </Switch>
   );

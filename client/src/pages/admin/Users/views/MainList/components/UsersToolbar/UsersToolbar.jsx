@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 import { Button } from "@material-ui/core";
 import Tooltip from '@material-ui/core/Tooltip';
 
-import { SearchInput } from "components";
+import { SearchInput, CustomRouterLink } from "components";
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -78,7 +78,12 @@ const UsersToolbar = (props) => {
             Export
           </Button>
         </Tooltip>
-        <Button color="primary" variant="contained">
+        <Button 
+          color="primary" 
+          variant="contained"
+          component={CustomRouterLink}
+          to="/admin/users/create"
+        >
           Add user
         </Button>
       </div>
