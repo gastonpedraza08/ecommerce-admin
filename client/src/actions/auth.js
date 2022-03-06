@@ -50,7 +50,7 @@ export const authLogin = (values) => {
         type: types.authEndLogin,
         payload: {
           success: false,
-          error: result.data.error,
+          error: result.error,
           user: null,
           isLoggedIn: false,
         },
@@ -79,7 +79,7 @@ export const authRenewToken = token => {
         type: types.authEndLogin,
         payload: {
           success: false,
-          error: result.data.error,
+          error: result.error,
           user: null,
           isLoggedIn: false,
         },
