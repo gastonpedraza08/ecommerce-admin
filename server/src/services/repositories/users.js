@@ -63,6 +63,11 @@ const getUsers = async (params) => {
 		limit: params.limit,
 		offset: params.from,
 		order: [[params.orderBy, params.order]],
+		include: [{
+			model: Role,
+			required: true,
+			as: 'role'
+		}],
 	});
 	return result;
 };
