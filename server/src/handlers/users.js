@@ -42,6 +42,11 @@ const createUser = async (newUser, token, enabled) => {
 	return user;
 };
 
+const bulkCreateUsers = async users => {
+	const result = await repository.bulkCreateUsers(users);
+	return result;	
+}
+
 const updateUser = async data => {
 	const result = await repository.update(data);
 }
@@ -64,4 +69,5 @@ module.exports = {
 	getUserById,
 	deleteUserByEmail,
 	getUsers,
+	bulkCreateUsers,
 };

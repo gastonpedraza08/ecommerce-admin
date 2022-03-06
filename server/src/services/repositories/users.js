@@ -72,6 +72,11 @@ const getUsers = async (params) => {
 	return result;
 };
 
+const bulkCreateUsers = async users => {
+	const result = await User.bulkCreate(users);
+	return result;
+}
+
 module.exports = {
 	getByEmailWithSoftdelete,
 	getByEmail,
@@ -80,4 +85,5 @@ module.exports = {
 	getById,
 	deleteByEmail,
 	getUsers,
+	bulkCreateUsers
 };
