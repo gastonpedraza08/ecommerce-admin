@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import clsx from "clsx";
-import PropTypes from "prop-types";
 import moment from "moment";
 import PerfectScrollbar from "react-perfect-scrollbar";
 import { makeStyles } from "@material-ui/styles";
@@ -171,11 +170,6 @@ const UsersTable = (props) => {
       </CardActions>
     </Card>
   );
-};
-
-UsersTable.propTypes = {
-  className: PropTypes.string,
-  users: PropTypes.array.isRequired,
 };
 
 export default UsersTable;
