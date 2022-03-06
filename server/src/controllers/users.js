@@ -10,15 +10,8 @@ sgMail.setApiKey(process.env.MAIL_KEY);
 const handler = require('../handlers/users');
 const { requireSignin, adminMiddleware } = require('./middlewares/auth');
 const { updateUser } = require('./middlewares/express-validator/auth');
-const { validate } = require('../utils/commons');
+const { validate, createTokenAccountActivation } = require('../utils/commons');
 const { errorHandler } = require('../utils/errorHandler');
-
-const createTokenAccountActivation = (data) => {
-	return jwt.sign({ ...data },
-		process.env.JWT_ACCOUNT_ACTIVATION,
-		{ expiresIn: '7d' }
-	);
-};
 
 /* CREATE USER */
 router.post('/', async (req, res) => {

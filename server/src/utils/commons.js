@@ -13,6 +13,14 @@ const validate = (req, res, next) => {
 	});
 };
 
+const createTokenAccountActivation = (data) => {
+	return jwt.sign({ ...data },
+		process.env.JWT_ACCOUNT_ACTIVATION,
+		{ expiresIn: '7d' }
+	);
+};
+
 module.exports = {
 	validate,
+	createTokenAccountActivation,
 };

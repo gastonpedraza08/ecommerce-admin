@@ -13,7 +13,10 @@ const {
 	sendEmailAccountActivation,
 	sendEmailResetPassword
 } = require('../services/external/emailSender');
-const { validate } = require('../utils/commons');
+const { 
+	validate, 
+	createTokenAccountActivation
+} = require('../utils/commons');
 const {
 	validSign,
 	validLogin,
@@ -23,12 +26,6 @@ const {
 const { errorHandler } = require('../utils/errorHandler');
 const { requireSignin } = require('./middlewares/auth');
 
-const createTokenAccountActivation = (data) => {
-	return jwt.sign({ ...data },
-		process.env.JWT_ACCOUNT_ACTIVATION,
-		{ expiresIn: '7d' }
-	);
-};
 
 const updateUser = async (user, updatedFields) => {
 	user = _.extend(user, updatedFields);
