@@ -118,6 +118,7 @@ const UsersTable = (props) => {
                   <TableCell>Email</TableCell>
                   <TableCell>Role</TableCell>
                   <TableCell>Fecha de registro</TableCell>
+                  <TableCell>Estado</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -151,6 +152,7 @@ const UsersTable = (props) => {
                     <TableCell>
                       {moment(user.createdAt).format("DD/MM/YYYY")}
                     </TableCell>
+                    <TableCell>{user.deletedAt ? 'Deshabilitado' : 'Verificado'}</TableCell>
                   </TableRow>
                 ))}
               </TableBody>
