@@ -41,8 +41,8 @@ module.exports = {
 				type: Sequelize.STRING,
 				defaultValue: ''
 			},
-			state: {
-				type: Sequelize.STRING,
+			isEnabled: {
+				type: Sequelize.BOOLEAN,
 				allowNull: false,
 			},
 			createdAt: {

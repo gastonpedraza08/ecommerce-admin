@@ -58,6 +58,7 @@ router.post('/register', async (req, res) => {
 			firstName,
 			lastName,
 			email,
+			isEnabled: false,
 			password: hash,
 			deletedAt: currentDateFormatted
 		};
