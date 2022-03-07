@@ -81,3 +81,16 @@ export const uiStopSearchingProducts = (error, success) => ({
 		success
 	},
 });
+
+/* USERS */
+export const uiStartCreateUser = () => ({
+	type: types.uiStartCreateUser,
+});
+
+export const uiStopCreateUser = (error, success) => ({
+	type: types.uiStopCreateUser,
+	payload: {
+		error,
+		success
+	},
+});

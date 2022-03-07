@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+let roleIds = { 1: 'Admin', 2: 'Subscriber'}
+
 const UsersTable = (props) => {
   const { className, users, ...rest } = props;
 
@@ -145,7 +147,7 @@ const UsersTable = (props) => {
                     <TableCell>{user.firstName}</TableCell>
                     <TableCell>{user.lastName}</TableCell>
                     <TableCell>{user.email}</TableCell>
-                    <TableCell>{user.role.name}</TableCell>
+                    <TableCell>{roleIds[user.roleId]}</TableCell>
                     <TableCell>
                       {moment(user.createdAt).format("DD/MM/YYYY")}
                     </TableCell>

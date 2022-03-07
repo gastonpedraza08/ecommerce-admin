@@ -45,7 +45,13 @@ const getByEmailWithSoftdelete = async email => {
 };
 
 const persist = async user => {
-	const result = await User.create(user);
+	const result = await User.create(user, {
+		include: [{
+			model: Role,
+			required: true,
+			as: 'role'
+		}],
+	});
 	return result;
 };
 

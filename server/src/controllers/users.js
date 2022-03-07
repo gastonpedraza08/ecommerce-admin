@@ -41,6 +41,8 @@ router.post('/', async (req, res) => {
 		let userToReturn = result;
 		userToReturn.password = undefined;
 
+		console.log(userToReturn)
+
 		if (result) {
 			return res.status(200).json({
 				ok: true,

@@ -23,6 +23,11 @@ const initialState = {
 		error: null,
 		success: null
 	},
+	uiCreateUser: {
+		isLoading: false,
+		error: null,
+		success: null
+	},
 	uiAddProductsSection: {
 		isLoading: false,
 		error: null,
@@ -179,6 +184,24 @@ export const uiReducer = (state = initialState, action) => {
 			return {
 				...state,
 				uiSearchingProducts: {
+					isLoading: false,
+					error: action.payload.error,
+					success: action.payload.success
+				}
+			};
+		case types.uiStartCreateUser:
+			return {
+				...state,
+				uiCreateUser: {
+					isLoading: true,
+					error: null,
+					success: null
+				}
+			};
+		case types.uiStopCreateUser:
+			return {
+				...state,
+				uiCreateUser: {
 					isLoading: false,
 					error: action.payload.error,
 					success: action.payload.success

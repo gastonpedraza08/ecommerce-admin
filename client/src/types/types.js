@@ -16,6 +16,8 @@ export const types = {
   uiStopAddProductsSection: "[ui] Stop Add Products Section",
   uiStartSearchingProducts: "[ui] Start Searching Products",
   uiStopSearchingProducts: "[ui] Stop Searching Products",
+  uiStartCreateUser: "[ui] Start Create User",
+  uiStopCreateUser: "[ui] Stop Create User",
 
   slideLoadAllSlides: "[slides] Load All Slides",
   slideAddMoreAllSlides: "[slides] Add More All Slides",
