@@ -7,6 +7,8 @@ import Tooltip from '@material-ui/core/Tooltip';
 
 import { SearchInput, CustomRouterLink } from "components";
 
+import { roleIds } from 'assets/config/users';
+
 const useStyles = makeStyles((theme) => ({
   root: {},
   row: {
@@ -42,7 +44,7 @@ const UsersToolbar = (props) => {
         { label: 'First Name', value: row => (row.firstName) }, // Run functions
         { label: 'Last  Name', value: 'lastName' }, // Top level data
         { label: 'Email', value: 'email' }, // Top level data
-        { label: 'Role', value: 'role.name' }, // Top level data
+        { label: 'Role', value: row => (roleIds[row.roleId]) }, // Top level data
         { label: 'Created At', value: 'createdAt' }, // Top level data
       ],
       content: users,
