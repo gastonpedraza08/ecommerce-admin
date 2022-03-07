@@ -46,7 +46,7 @@ const UsersToolbar = (props) => {
         { label: 'Email', value: 'email' }, // Top level data
         { label: 'Role', value: row => (roleIds[row.roleId]) }, // Top level data
         { label: 'Foto de perfil', value: 'avatarUrl' }, // Top level data
-        { label: 'Fecha de registro', value: 'createdAt' }, // Top level data
+        { label: 'Fecha de creación', value: 'createdAt' }, // Top level data
         { label: 'Estado', value: row => row.deletedAt ? 'Deshabilitado' : 'Verificado' }, // Top level data
       ],
       content: users,
