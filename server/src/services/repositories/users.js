@@ -74,6 +74,7 @@ const getUsers = async (params) => {
 			required: true,
 			as: 'role'
 		}],
+		paranoid: false,
 	});
 	return result;
 };
