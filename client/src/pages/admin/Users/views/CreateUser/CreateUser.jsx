@@ -86,7 +86,8 @@ export default function FormProduct() {
 							dispatch(usersCreateUser(user));
 							setIsTouched(true);
 						}}
-						render={(formikProps) => (
+					>
+						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl 
 									fullWidth
@@ -150,7 +151,7 @@ export default function FormProduct() {
 								</FormControl>
 								<Grid container spacing={2} className={clsx(classes.marginBottom)}>
 									<Grid item xs={12} sm={6} md={4}>
-										<FastField name="roleId" as="select">
+										<FastField name="roleId">
 											{({ field }) => (
 												<TextField
 													style={{ width: '100%' }}
@@ -169,7 +170,7 @@ export default function FormProduct() {
 										</FastField>
 									</Grid>
 									<Grid item xs={12} sm={6} md={4}>
-										<FastField name="enabled" as="select">
+										<FastField name="enabled">
 											{({ field }) => (
 												<TextField
 													style={{ width: '100%' }}
@@ -230,7 +231,7 @@ export default function FormProduct() {
 								</div>
 							</Form>
 						)}
-					/>
+					</Formik>
 				</Grid>
 			</Grid>
 		</div>
