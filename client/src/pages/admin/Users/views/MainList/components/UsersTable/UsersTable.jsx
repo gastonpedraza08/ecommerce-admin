@@ -18,6 +18,7 @@ import {
 } from "@material-ui/core";
 
 import { getInitials } from "helpers";
+import { roleIds } from 'assets/config/users';
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -38,8 +39,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-end",
   },
 }));
-
-let roleIds = { 1: 'Admin', 2: 'Subscriber'}
 
 const UsersTable = (props) => {
   const { className, users, ...rest } = props;
