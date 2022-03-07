@@ -41,11 +41,13 @@ const UsersToolbar = (props) => {
       sheet: 'Adults',
       columns: [
         { label: 'Id', value: 'id' }, // Top level data
-        { label: 'First Name', value: row => (row.firstName) }, // Run functions
-        { label: 'Last  Name', value: 'lastName' }, // Top level data
+        { label: 'Nombre', value: row => (row.firstName) }, // Run functions
+        { label: 'Apellido', value: 'lastName' }, // Top level data
         { label: 'Email', value: 'email' }, // Top level data
         { label: 'Role', value: row => (roleIds[row.roleId]) }, // Top level data
-        { label: 'Created At', value: 'createdAt' }, // Top level data
+        { label: 'Foto de perfil', value: 'avatarUrl' }, // Top level data
+        { label: 'Fecha de registro', value: 'createdAt' }, // Top level data
+        { label: 'Estado', value: row => row.deletedAt ? 'Deshabilitado' : 'Verificado' }, // Top level data
       ],
       content: users,
     }
