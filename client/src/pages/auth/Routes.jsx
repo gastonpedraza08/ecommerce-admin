@@ -10,6 +10,20 @@ import {
 } from './views';
 
 export default function Routes() {
+
+  return (
+    <Switch>
+      <Route exact path="/auth/activate/:token" component={ActivationView} />
+      <AuthProtect>
+        <Route exact path="/auth/login" component={SignInView} />
+        <Route exact path="/auth/register" component={SignUpView} />
+      </AuthProtect>
+      <Redirect to="/not-found" />
+    </Switch>
+  );
+}
+
+function AuthProtect(props) {
   const history = useHistory();
   const { login } = useSelector(state => state.auth);
 
@@ -20,11 +34,8 @@ export default function Routes() {
   }, [login.success, history]);
 
   return (
-    <Switch>
-      <Route exact path="/auth/login" component={SignInView} />
-      <Route exact path="/auth/register" component={SignUpView} />
-      <Route exact path="/auth/activate/:token" component={ActivationView} />
-      <Redirect to="/not-found" />
-    </Switch>
+    <>
+      {props.children}
+    </>
   );
 }
