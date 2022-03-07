@@ -7,6 +7,8 @@ import NativeSelect from "@material-ui/core/NativeSelect";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import RotateLeftIcon from "@material-ui/icons/RotateLeft";
 
+import { SearchInput } from 'components';
+
 const useStyles = makeStyles((theme) => ({
   root: {},
   globalFilterTitle: {
@@ -17,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   globalFilterInput: {
     backgroundColor: "white",
     paddingLeft: 5,
+    marginRight: theme.spacing(1),
   },
   defaultTextFilter: {
     display: "flex",
@@ -40,11 +43,8 @@ export const GlobalFilter = ({
   }, 1500);
 
   return (
-    <div>
-      <Typography variant="subtitle1" className={classes.globalFilterTitle}>
-        Buscar
-      </Typography>
-      <Input
+    <>
+      <SearchInput
         className={classes.globalFilterInput}
         value={value || ""}
         onChange={(e) => {
@@ -53,7 +53,7 @@ export const GlobalFilter = ({
         }}
         placeholder={`${count} records...`}
       />
-    </div>
+    </>
   );
 };
 

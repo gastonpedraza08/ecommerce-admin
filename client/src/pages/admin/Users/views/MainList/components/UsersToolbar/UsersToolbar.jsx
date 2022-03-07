@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/styles";
 import { Button } from "@material-ui/core";
 import Tooltip from '@material-ui/core/Tooltip';
 
-import { SearchInput, CustomRouterLink } from "components";
+import { CustomRouterLink } from "components";
 
 import { roleIds } from 'assets/config/users';
 
@@ -92,12 +92,6 @@ const UsersToolbar = (props) => {
         >
           Add user
         </Button>
-      </div>
-      <div className={classes.row}>
-        <SearchInput
-          className={classes.searchInput}
-          placeholder="Search user"
-        />
       </div>
     </div>
   );

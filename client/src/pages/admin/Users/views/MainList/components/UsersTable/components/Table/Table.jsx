@@ -22,7 +22,7 @@ import { TablePagination } from '../index.js';
 import {
   GlobalFilter,
   DefaultColumnFilter,
-} from '../../filters';
+} from '../../../filters';
 
 import AccordionSection from 'components/AccordionSection';
 
