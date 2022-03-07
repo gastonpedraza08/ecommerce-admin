@@ -67,13 +67,15 @@ const UsersToolbar = (props) => {
     <div {...rest} className={clsx(classes.root, className)}>
       <div className={classes.row}>
         <span className={classes.spacer} />
-        <Tooltip title="Importar XLSX">
-          <Button 
-            className={classes.importButton}
-          >
-            Import
-          </Button>
-        </Tooltip>
+        {/*
+          <Tooltip title="Importar XLSX">
+            <Button 
+              className={classes.importButton}
+            >
+              Import
+            </Button>
+          </Tooltip>
+        */}
         <Tooltip title="Descargar XLSX">
           <Button 
             className={classes.exportButton}
