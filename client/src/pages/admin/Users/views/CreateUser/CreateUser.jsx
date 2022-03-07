@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	error: {
 		marginTop: theme.spacing(2),
+		width: '100%'
 	},
 }));
 
