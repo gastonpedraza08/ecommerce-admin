@@ -1,24 +1,46 @@
-import React, { useState } from "react";
-import clsx from "clsx";
-import moment from "moment";
-import PerfectScrollbar from "react-perfect-scrollbar";
-import { makeStyles } from "@material-ui/styles";
+import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import {
-  Card,
-  CardActions,
-  CardContent,
-  Avatar,
-  Checkbox,
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableRow,
-  TablePagination,
-} from "@material-ui/core";
+  useTable,
+  useSortBy,
+  useFilters,
+  useGlobalFilter,
+  usePagination,
+} from 'react-table';
+import { matchSorter } from 'match-sorter';
+import { makeStyles } from '@material-ui/core/styles';
+import Table from '@material-ui/core/Table';
+import Input from '@material-ui/core/Input';
+import Typography from '@material-ui/core/Typography';
+import NativeSelect from '@material-ui/core/NativeSelect';
+import TableBody from '@material-ui/core/TableBody';
+import TableCell from '@material-ui/core/TableCell';
+import TableContainer from '@material-ui/core/TableContainer';
+import TableHead from '@material-ui/core/TableHead';
+import TableRow from '@material-ui/core/TableRow';
+import Paper from '@material-ui/core/Paper';
+import IconButton from '@material-ui/core/IconButton';
+import Checkbox from '@material-ui/core/Checkbox';
+import Avatar from '@material-ui/core/Avatar';
+import KeyboardArrowLeftIcon from '@material-ui/icons/KeyboardArrowLeft';
+import FirstPageIcon from '@material-ui/icons/FirstPage';
+import LastPageIcon from '@material-ui/icons/LastPage';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
 import { getInitials } from "helpers";
-import { roleIds } from 'assets/config/users';
+
+
+import {
+  GlobalFilter,
+  DefaultColumnFilter,
+  SelectColumnFilter,
+} from './filters';
+
+import AccordionSection from 'components/AccordionSection';
+
+function fuzzyTextFilterFn(rows, id, filterValue) {
+  return matchSorter(rows, filterValue, { keys: [(row) => row.values[id]] });
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -40,22 +62,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const UsersTable = (props) => {
-  const { className, users, ...rest } = props;
+fuzzyTextFilterFn.autoRemove = (val) => !val;
 
-  const classes = useStyles();
-
+function MyTable({ columns, data }) {
   const [selectedUsers, setSelectedUsers] = useState([]);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [page, setPage] = useState(0);
+    const classes = useStyles();
 
   const handleSelectAll = (event) => {
-    const { users } = props;
 
     let selectedUsers;
 
     if (event.target.checked) {
-      selectedUsers = users.map((user) => user.id);
+      selectedUsers = data.map((user) => user.id);
     } else {
       selectedUsers = [];
     }
@@ -83,95 +101,281 @@ const UsersTable = (props) => {
     setSelectedUsers(newSelectedUsers);
   };
 
-  const handlePageChange = (event, page) => {
-    setPage(page);
-  };
+  const filterTypes = React.useMemo(
+    () => ({
+      fuzzyText: fuzzyTextFilterFn,
+      text: (rows, id, filterValue) => {
+        return rows.filter((row) => {
+          const rowValue = row.values[id];
+          return rowValue !== undefined
+            ? String(rowValue)
+                .toLowerCase()
+                .startsWith(String(filterValue).toLowerCase())
+            : true;
+        });
+      },
+    }),
+    []
+  );
 
-  const handleRowsPerPageChange = (event) => {
-    setRowsPerPage(event.target.value);
-  };
+  const defaultColumn = React.useMemo(
+    () => ({
+      Filter: DefaultColumnFilter,
+    }),
+    []
+  );
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    page,
+    prepareRow,
+    state,
+    visibleColumns,
+    preGlobalFilteredRows,
+    setGlobalFilter,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    getToggleHideAllColumnsProps,
+    allColumns,
+    setPageSize,
+  } = useTable(
+    {
+      columns,
+      data,
+      defaultColumn,
+      filterTypes,
+      initialState: { pageIndex: 0 },
+      onFilteredChange: filtered => {
+           console.log(filtered)
+       }
+    },
+    useFilters,
+    useGlobalFilter,
+    useSortBy,
+    usePagination
+  );
 
   return (
-    <Card {...rest} className={clsx(classes.root, className)}>
-      <CardContent className={classes.content}>
-        <PerfectScrollbar>
-          <div className={classes.inner}>
-            <Table>
-              <TableHead>
-                <TableRow>
-                  <TableCell padding="checkbox">
+    <>
+      <AccordionSection
+        getToggleHideAllColumnsProps={getToggleHideAllColumnsProps}
+        allColumns={allColumns}
+        headerGroups={headerGroups}
+      />
+      <TableContainer
+        style={{ margin: '20px auto' }}
+        component={Paper}
+        {...getTableProps()}
+      >
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell
+                colSpan={visibleColumns.length}
+                style={{
+                  textAlign: 'left',
+                }}
+              >
+                <GlobalFilter
+                  preGlobalFilteredRows={preGlobalFilteredRows}
+                  globalFilter={state.globalFilter}
+                  setGlobalFilter={setGlobalFilter}
+                />
+              </TableCell>
+            </TableRow>
+            {headerGroups.map((headerGroup) => (
+              <TableRow {...headerGroup.getHeaderGroupProps()}>
+                <TableCell padding="checkbox">
                     <Checkbox
-                      checked={selectedUsers.length === users.length}
+                      checked={selectedUsers.length === data.length}
                       color="primary"
                       indeterminate={
                         selectedUsers.length > 0 &&
-                        selectedUsers.length < users.length
+                        selectedUsers.length < data.length
                       }
                       onChange={handleSelectAll}
                     />
                   </TableCell>
-                  <TableCell>Id</TableCell>
-                  <TableCell>Avatar</TableCell>
-                  <TableCell>Nombre</TableCell>
-                  <TableCell>Apellido</TableCell>
-                  <TableCell>Email</TableCell>
-                  <TableCell>Role</TableCell>
-                  <TableCell>Fecha de registro</TableCell>
-                  <TableCell>Estado</TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {users.slice(0, rowsPerPage).map((user) => (
-                  <TableRow
-                    className={classes.tableRow}
-                    hover
-                    key={user.id}
-                    selected={selectedUsers.indexOf(user.id) !== -1}
+                {headerGroup.headers.map((column) => (
+                  <TableCell
+                    {...column.getHeaderProps(column.getSortByToggleProps())}
+                  >
+                    {column.render('Header')}
+                    <span>
+                      {column.isSorted
+                        ? column.isSortedDesc
+                          ? ' 🔽'
+                          : ' 🔼'
+                        : ''}
+                    </span>
+                  </TableCell>
+                ))}
+              </TableRow>
+            ))}
+          </TableHead>
+          <TableBody {...getTableBodyProps()}>
+            {page.map((row, i) => {
+              prepareRow(row);
+              return (
+                <TableRow  
+                  {...row.getRowProps()}
+                  className={classes.tableRow}
+                  hover
+                  key={row.original.id}
+                  selected={selectedUsers.indexOf(row.original.id) !== -1}
                   >
                     <TableCell padding="checkbox">
                       <Checkbox
-                        checked={selectedUsers.indexOf(user.id) !== -1}
+                        checked={selectedUsers.indexOf(row.original.id) !== -1}
                         color="primary"
-                        onChange={(event) => handleSelectOne(event, user.id)}
+                        onChange={(event) => handleSelectOne(event, row.original.id)}
                         value="true"
                       />
                     </TableCell>
-                    <TableCell>{user.id}</TableCell>
-                    <TableCell>
-                      <div className={classes.nameContainer}>
-                        <Avatar className={classes.avatar} src={user.avatarUrl}>
-                          {getInitials(user.firstName + ' ' + user.lastName)}
-                        </Avatar>
-                      </div>
-                    </TableCell>
-                    <TableCell>{user.firstName}</TableCell>
-                    <TableCell>{user.lastName}</TableCell>
-                    <TableCell>{user.email}</TableCell>
-                    <TableCell>{roleIds[user.roleId]}</TableCell>
-                    <TableCell>
-                      {moment(user.createdAt).format("DD/MM/YYYY")}
-                    </TableCell>
-                    <TableCell>{user.deletedAt ? 'Deshabilitado' : 'Verificado'}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </PerfectScrollbar>
-      </CardContent>
-      <CardActions className={classes.actions}>
-        <TablePagination
-          component="div"
-          count={users.length}
-          onPageChange={handlePageChange}
-          onRowsPerPageChange={handleRowsPerPageChange}
-          page={page}
-          rowsPerPage={rowsPerPage}
-          rowsPerPageOptions={[5, 10, 25]}
-        />
-      </CardActions>
-    </Card>
+                  {row.cells.map((cell) => {
+                      return <TableCell align="left" {...cell.getCellProps()}>
+                        {cell.render('Cell')}
+                      </TableCell>
+                  })}
+                </TableRow >
+              );
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <div style={{ display: 'flex' }}>
+        <IconButton
+          size="small"
+          onClick={() => gotoPage(0)}
+          disabled={!canPreviousPage}
+        >
+          <FirstPageIcon fontSize="medium" />
+        </IconButton>
+        <IconButton
+          size="small"
+          onClick={() => previousPage()}
+          disabled={!canPreviousPage}
+        >
+          <KeyboardArrowLeftIcon fontSize="medium" />
+        </IconButton>
+        <IconButton
+          size="small"
+          onClick={() => nextPage()}
+          disabled={!canNextPage}
+        >
+          <KeyboardArrowRightIcon fontSize="medium" />
+        </IconButton>
+        <IconButton
+          size="small"
+          onClick={() => gotoPage(pageCount - 1)}
+          disabled={!canNextPage}
+        >
+          <LastPageIcon fontSize="medium" />
+        </IconButton>
+        <Typography variant="subtitle1" style={{ margin: '0 10px' }}>
+          Page:{' '}
+          <strong>
+            {state.pageIndex} of {pageOptions.length}
+          </strong>
+        </Typography>
+        <Typography variant="subtitle1">
+          | Go to page:
+          <Input
+            value={state.pageIndex}
+            onChange={(e) => {
+              const page = e.target.value ? Number(e.target.value) - 1 : 0;
+              gotoPage(page);
+            }}
+            inputProps={{ type: 'number' }}
+            style={{ width: 100, marginLeft: 10 }}
+          />
+        </Typography>
+        <NativeSelect
+          style={{ marginLeft: 10 }}
+          value={state.pageSize}
+          onChange={(e) => {
+            setPageSize(Number(e.target.value));
+          }}
+        >
+          {[10, 20, 30, 40, 50].map((pageSize) => (
+            <option key={pageSize} value={pageSize}>
+              Show {pageSize}
+            </option>
+          ))}
+        </NativeSelect>
+      </div>
+    </>
   );
-};
+}
 
-export default UsersTable;
+export default function AppTable() {
+  const { users } = useSelector((state) => state.users);
+  const classes = useStyles();
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: 'Id',
+        accessor: 'id',
+        filter: 'fuzzyText',
+      },
+      {
+        Header: 'Foto de perfil',
+        Cell: ({ cell }) => {
+          return (
+            <div className={classes.nameContainer}>
+              <Avatar className={classes.avatar} src={cell.row.original.avatarUrl}>
+                {getInitials(cell.row.original.firstName + ' ' + cell.row.original.lastName)}
+              </Avatar>
+            </div>
+          );
+        },
+        accessor: 'avatarUrl',
+      },
+      {
+        Header: 'Nombre',
+        accessor: 'firstName',
+        filter: 'fuzzyText',
+      },
+      {
+        Header: 'Apellido',
+        accessor: 'lastName',
+        filter: 'fuzzyText',
+      },
+      {
+        Header: 'Email',
+        accessor: 'email',
+        filter: 'fuzzyText',
+      },
+      {
+        Header: 'Role',
+        Cell: ({ value }) => {
+          return (<div>{value}</div>)
+        },
+        accessor: 'roleId',
+        filter: 'fuzzyText',
+      },
+      {
+        Header: 'Estado',
+        accessor: 'state',
+        Filter: SelectColumnFilter,
+        filter: 'includes',
+      },
+      {
+        Header: 'Fecha de creación',
+        accessor: 'createdAt',
+      },
+    ],
+    [classes.avatar, classes.nameContainer]
+  );
+
+  const data2 = React.useMemo(() => users, [users]);
+
+  return <MyTable columns={columns} data={data2} />;
+}

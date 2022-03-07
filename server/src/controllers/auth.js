@@ -58,7 +58,7 @@ router.post('/register', async (req, res) => {
 			firstName,
 			lastName,
 			email,
-			isEnabled: false,
+			state: 'Deshabilitado',
 			password: hash,
 			deletedAt: currentDateFormatted
 		};
@@ -115,7 +115,11 @@ router.post('/activation', async (req, res) => {
 						error: 'User with that email does not exist'
 					});
 				}
-				await user.restore();				
+				user.deletedAt = null;			
+				user.state = 'Verificado';
+
+				await user.save();
+
 				res.status(200).json({
 					ok: true,
 					message: 'Activation success'					

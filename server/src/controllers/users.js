@@ -33,7 +33,8 @@ router.post('/', async (req, res) => {
 			...rest,
 			email,
 			password: hash,
-			deletedAt: currentDateFormatted
+			deletedAt: currentDateFormatted,
+			state: enabled ? 'Verificado' : 'Deshabilitado'
 		};
 
 		const result = await handler.createUser(newUser, token, enabled);

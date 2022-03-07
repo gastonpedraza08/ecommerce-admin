@@ -33,7 +33,7 @@ import {
 	NumberGraterThanColumnFilter,
 } from './filters';
 
-import AccordionSection from './AccordionSection.jsx';
+import AccordionSection from 'components/AccordionSection';
 
 const StyledTableCell = withStyles((theme) => ({
 	head: {
