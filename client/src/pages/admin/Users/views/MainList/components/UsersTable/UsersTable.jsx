@@ -9,7 +9,7 @@ import { TableWithFilter } from 'components';
 
 import {
   SelectColumnFilter,
-} from '../filters';
+} from 'components/TableWithFilter/filters.js';
 
 
 const useStyles = makeStyles((theme) => ({
