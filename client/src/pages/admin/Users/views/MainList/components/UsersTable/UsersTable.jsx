@@ -5,7 +5,7 @@ import Avatar from '@material-ui/core/Avatar';
 
 import { getInitials } from "helpers";
 
-import { Table } from './components';
+import { TableWithFilter } from 'components';
 
 import {
   SelectColumnFilter,
@@ -85,6 +85,6 @@ export default function AppTable() {
   const data2 = React.useMemo(() => users, [users]);
 
   return (
-    <Table columns={columns} data={data2}/>
+    <TableWithFilter columns={columns} data={data2}/>
   );
 }

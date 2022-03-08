@@ -17,12 +17,12 @@ import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 import Checkbox from '@material-ui/core/Checkbox';
 
-import { TablePagination } from '../index.js';
+import { TablePagination } from './components';
 
 import {
   GlobalFilter,
   DefaultColumnFilter,
-} from '../../../filters';
+} from './filters';
 
 import AccordionSection from 'components/AccordionSection';
 
