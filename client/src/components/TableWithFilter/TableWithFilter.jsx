@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 
 fuzzyTextFilterFn.autoRemove = (val) => !val;
 
-export default function MyTable({ columns, data }) {
+export default function MyTable({ columns, data, idName }) {
   const [selectedUsers, setSelectedUsers] = useState([]);
     const classes = useStyles();
 
@@ -45,7 +45,7 @@ export default function MyTable({ columns, data }) {
     let selectedUsers;
 
     if (event.target.checked) {
-      selectedUsers = data.map((user) => user.id);
+      selectedUsers = data.map((user) => user[idName]);
     } else {
       selectedUsers = [];
     }
@@ -197,14 +197,14 @@ export default function MyTable({ columns, data }) {
                   {...row.getRowProps()}
                   className={classes.tableRow}
                   hover
-                  key={row.original.id}
-                  selected={selectedUsers.indexOf(row.original.id) !== -1}
+                  key={row.original[idName]}
+                  selected={selectedUsers.indexOf(row.original[idName]) !== -1}
                   >
                     <TableCell padding="checkbox">
                       <Checkbox
-                        checked={selectedUsers.indexOf(row.original.id) !== -1}
+                        checked={selectedUsers.indexOf(row.original[idName]) !== -1}
                         color="primary"
-                        onChange={(event) => handleSelectOne(event, row.original.id)}
+                        onChange={(event) => handleSelectOne(event, row.original[idName])}
                         value="true"
                       />
                     </TableCell>

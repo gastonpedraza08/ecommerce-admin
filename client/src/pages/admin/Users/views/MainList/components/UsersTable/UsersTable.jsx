@@ -85,6 +85,6 @@ export default function AppTable() {
   const data2 = React.useMemo(() => users, [users]);
 
   return (
-    <TableWithFilter columns={columns} data={data2}/>
+    <TableWithFilter columns={columns} data={data2} idName={'id'}/>
   );
 }

@@ -93,7 +93,7 @@ export default function AppTable() {
 	);
 
   return (
-    <TableWithFilter columns={columns} data={data2}/>
+    <TableWithFilter columns={columns} data={data2} idName={'_id'}/>
   );
 }
 
