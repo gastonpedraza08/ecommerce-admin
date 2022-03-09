@@ -1,9 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
-
-import { getInitials } from "helpers";
 
 import { TableWithFilter } from 'components';
 
@@ -13,20 +9,8 @@ import {
   NumberGraterThanColumnFilter,
 } from 'components/TableWithFilter/filters.js';
 
-
-const useStyles = makeStyles((theme) => ({
-  nameContainer: {
-    display: "flex",
-    alignItems: "center",
-  },
-  avatar: {
-    marginRight: theme.spacing(2),
-  },
-}));
-
 export default function AppTable() {
   const { products } = useSelector((state) => state.products);
-  const classes = useStyles();
   
   const data2 = React.useMemo(() => products, [products]);
 
