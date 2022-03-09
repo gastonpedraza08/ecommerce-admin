@@ -28,7 +28,7 @@ export const productsLoadAllproducts = () => {
 			let products = result.data.products;
 			for (let i = 0; i < products.length; i++) {
 				products[i].categoryId = categories[products[i].categoryId];
-			}
+			} 
 			dispatch({
 				type: types.productsLoadAllproducts,
 				payload: {
