@@ -23,12 +23,9 @@ const categories = {
 export const productsLoadAllproducts = () => {
 	return async (dispatch) => {
 		dispatch(uiStartLoadingAllProducts());
-		const result = await fetchWithoutToken("products", "GET");
+		const result = await fetchWithoutToken("products?limit=5000", "GET");
 		if (!result.error) {
 			let products = result.data.products;
-			for (let i = 0; i < products.length; i++) {
-				products[i].categoryId = categories[products[i].categoryId];
-			} 
 			dispatch({
 				type: types.productsLoadAllproducts,
 				payload: {
