@@ -9,6 +9,14 @@ import {
   NumberGraterThanColumnFilter,
 } from 'components/TableWithFilter/filters.js';
 
+const categories = {
+	1: 'Celulares y Teléfonos',
+	2: 'Cámaras y Accesorios',
+	3: 'Consolas y Videojuegos',
+	4: 'Computación',
+	5: 'Electrónica, Audio y Video',
+};
+
 export default function AppTable() {
   const { products } = useSelector((state) => state.products);
   
@@ -42,17 +50,20 @@ export default function AppTable() {
 				accessor: 'condition',
 				filter: 'fuzzyText',
 			},
-			{
+			/*{
 				Header: 'Descripción',
 				Cell: ({ value }) => {
 					return <div style={{height: 100, width: 200, overflowY: 'scroll'}} dangerouslySetInnerHTML={{ __html: value }} />
 				},
 				accessor: 'description',
 				filter: 'fuzzyText',
-			},
+			},*/
 			{
 				Header: 'Categoria',
 				accessor: 'categoryId',
+				Cell: ({ value }) => {
+					return categories[value]
+				},
 				Filter: SelectColumnFilter,
 				filter: 'includes',
 			},

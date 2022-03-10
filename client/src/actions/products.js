@@ -12,14 +12,6 @@ import {
 } from "actions/ui";
 import Swal from "sweetalert2";
 
-const categories = {
-	1: 'Celulares y Teléfonos',
-	2: 'Cámaras y Accesorios',
-	3: 'Consolas y Videojuegos',
-	4: 'Computación',
-	5: 'Electrónica, Audio y Video',
-};
-
 export const productsLoadAllproducts = () => {
 	return async (dispatch) => {
 		dispatch(uiStartLoadingAllProducts());
@@ -63,11 +55,10 @@ export const productCreateProduct = (product) => {
 		const result = await fetchWithoutToken("products", { product }, "POST");
 		if (!result.error) {
 			let product = result.data.product;
-			product.categoryId = categories[product.categoryId];
 			dispatch({
 				type: types.productCreateProduct,
 				payload: {
-					product: result.data.product,
+					product
 				},
 			});
 			dispatch(uiStopCreateProduct(null, true));
