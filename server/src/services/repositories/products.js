@@ -17,7 +17,7 @@ const getProducts = async params => {
 			name: 1,
 			price: 1,
 			condition: 1,
-			//description: 1,
+			description: 1,
 			categoryId: 1,
 			stock: 1,
 			state: 1,

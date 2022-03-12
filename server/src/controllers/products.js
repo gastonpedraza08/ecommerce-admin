@@ -68,7 +68,7 @@ router.delete('/:id', async (req, res) => {
 router.get('/', async (req, res) => {
 	try {
 		const params = {
-			limit: parseInt(req.query.limit) || 1000,
+			limit: parseInt(req.query.limit),
 			order: req.query.order || 'DESC',
 			orderBy: req.query.orderBy || 'createdAt',
 			from: parseInt(req.query.from) - 1 || 0
