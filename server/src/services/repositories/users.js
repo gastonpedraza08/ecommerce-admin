@@ -1,4 +1,4 @@
-const { User, Role } = require('../../models-sequelize');
+const { User, Role, Sequelize } = require('../../models-sequelize');
 
 const getByEmail = async email => {
 	const result = await User.findOne({
@@ -64,7 +64,17 @@ const deleteByEmail = async email => {
 	});
 };
 
-const getUsers = async (params) => {
+const getUsers = async (params, search) => {
+	console.log(search)
+
+	let fullCondition = {};
+
+	for (let prop in search) {
+		fullCondition[prop] = {
+			[Sequelize.Op.like]: `%${search[prop]}%`
+		}
+	}
+
 	const result = await User.findAndCountAll({
 		limit: params.limit,
 		offset: params.from,
@@ -75,6 +85,9 @@ const getUsers = async (params) => {
 			as: 'role'
 		}],
 		paranoid: false,
+		where: {
+      ...fullCondition
+    },
 	});
 	return result;
 };

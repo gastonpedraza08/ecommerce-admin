@@ -55,8 +55,8 @@ const deleteUserByEmail = async email => {
 	const result = await repository.deleteByEmail(email);
 }
 
-const getUsers = async params => {
-	const users = await repository.getUsers(params);
+const getUsers = async (params, search) => {
+	const users = await repository.getUsers(params, search);
 	return users;
 };
 

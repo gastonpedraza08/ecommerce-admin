@@ -128,13 +128,29 @@ router.get('/:id', async (req, res) => {
 
 router.get('/', async (req, res) => {
 	try {
+		const { limit, order, orderBy, from, page, ...rest } = req.query;
 		const params = {
-			limit: parseInt(req.query.limit) || undefined,
-			order: req.query.order || 'DESC',
-			orderBy: req.query.orderBy || 'createdAt',
-			from: parseInt(req.query.from) - 1 || 0
+			limit: parseInt(limit) || undefined,
+			order: order || 'DESC',
+			orderBy: orderBy || 'createdAt',
+			from: parseInt(from) - 1 || 0
 		};
-		const result = await handler.getUsers(params);
+
+		if (page) {
+			if (page === 1) {
+				params.from = 0;
+			} else {
+				params.from = page * params.limit;
+			}
+		}
+
+		//searchs
+		let search = {
+			...rest
+		};
+
+
+		const result = await handler.getUsers(params, search);
 		res.json({
 			ok: true,
 			count: result.count,
