@@ -195,4 +195,23 @@ router.put('/update/:id', updateUser, validate, requireSignin, async (req, res) 
 	});
 });
 
+router.delete('/multiple', async (req, res) => {
+	try {
+		const ids = req.body.ids;
+		const result = await handler.bulkDeleteUsers(ids);
+		
+		res.status(200).json({
+			ok: true,
+			result
+		});
+
+	} catch (error) {
+		res.status(500).json({
+			ok: false,
+			error: 'Error en el servidor'
+		});
+		console.log(error);
+	}
+});
+
 module.exports = router;

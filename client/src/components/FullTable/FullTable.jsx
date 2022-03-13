@@ -16,7 +16,12 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import FormControl from '@material-ui/core/FormControl';
+import InputLabel from '@material-ui/core/InputLabel';
+import Select from '@material-ui/core/Select';
+import DeleteIcon from '@material-ui/icons/Delete';
 
+import { CustomRouterLink } from 'components';
 
 const useStyles = makeStyles(theme => ({
 	root: {},
@@ -25,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 		marginBottom: theme.spacing(2)
 	},
 	filterContainer: {
-		width: '80%',
+		width: '90%',
 		marginBottom: theme.spacing(5)
 	},
 	inputSelect: {
@@ -34,16 +39,24 @@ const useStyles = makeStyles(theme => ({
 		width: 200
 	},
 	row: {
-		marginBottom: theme.spacing(3)
+		marginBottom: theme.spacing(3),
+    alignItems: 'center'
 	},
 	inputPageNumber: {
 		width: 50
-	}
+	},
+  formControl: {
+    minWidth: 120,
+  },
+  buttonDelete: {
+    marginLeft: theme.spacing(2)
+  }
 }))
 
 const UsersList = (props) => {
 
 	const { columns, entity, identifier } = props;
+
 	const classes = useStyles();
 
   const [items, setItems] = useState([]);
@@ -65,6 +78,7 @@ const UsersList = (props) => {
   const [page, setPage] = useState(1);
   const [count, setCount] = useState(0);
   const [pageSize, setPageSize] = useState(10);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   const pageSizes = [10, 25, 50, 100];
 
@@ -167,6 +181,28 @@ const UsersList = (props) => {
     setPage(1);
   };
 
+  const handleDeleteItems = async () => {
+    setIsDeleting(true);
+    const result = await fetchWithoutToken(entity + '/multiple' , { ids: selectedItems }, 'DELETE');
+    if (!result.error) {
+      setItems(prev => {
+        let newArr = [];
+        for (let i=0; i<prev.length; i++) {
+          if (!selectedItems.includes(prev[i].id)) {
+            newArr.push(prev[i]);
+          }
+        }
+        return newArr;
+      });
+      setCount(prev => prev - selectedItems.length);
+      setIsDeleting(false);
+      return null;
+    } else {
+      setIsDeleting(false);
+      return console.log(result.error)
+    }
+  }
+
   const {
     getTableProps,
     getTableBodyProps,
@@ -207,22 +243,35 @@ const UsersList = (props) => {
 						        				/* Filter type select */
 						        				col.filterType === 'select' ?
 						        				(
-										          <NativeSelect
-										            value={filterValues[col.accessor]}
-										            onChange={(e) => onChangeFilterValues(e, col.accessor)}
-										            key={col.accessor}
-										            className={classes.inputSelect}
-										          >
-										          {
-										          	col.optionsSelect.map(option => {
-										          		return (
-											              <option key={option.value} value={option.value}>
-											                {option.name}
-											              </option>
-										          		);
-										          	})
-										          }
-										          </NativeSelect>
+                              <FormControl 
+                                key={col.accessor} 
+                                variant="outlined" 
+                                className={classes.formControl}
+                              >
+                                <InputLabel htmlFor={col.accessor}>{col.Header}</InputLabel>
+  										          <Select
+                                  native
+  										            value={filterValues[col.accessor]}
+  										            onChange={(e) => onChangeFilterValues(e, col.accessor)}
+  										            className={classes.inputSelect}
+                                  label={col.Header}
+                                  inputProps={{
+                                    name: 'age',
+                                    id: col.accessor
+                                  }}
+  										          >
+                                  <option aria-label="None" value="" />
+    										          {
+    										          	col.optionsSelect.map(option => {
+    										          		return (
+    											              <option key={option.value} value={option.value}>
+    											                {option.name}
+    											              </option>
+    										          		);
+    										          	})
+    										          }
+  										          </Select>
+                              </FormControl>
 						        				) : (null)
 						        			)
 				        				}
@@ -291,6 +340,18 @@ const UsersList = (props) => {
 			          />
 			        </div>
           	</Grid>
+            <Grid item>
+              <Button
+                variant="contained"
+                color="secondary"
+                className={classes.buttonDelete}
+                startIcon={<DeleteIcon />}
+                onClick={handleDeleteItems}
+                disabled={isDeleting}
+              >
+                Delete
+              </Button>
+            </Grid>
           </Grid>
         </div>
 
@@ -312,6 +373,9 @@ const UsersList = (props) => {
                       }
                       onChange={handleSelectAll}
                     />
+                  </TableCell>
+                  <TableCell>
+                    Actions
                   </TableCell>
                   {headerGroup.headers.map((column) => (
                     <TableCell {...column.getHeaderProps()}>
@@ -338,6 +402,14 @@ const UsersList = (props) => {
                         onChange={(event) => handleSelectOne(event, row.original[identifier])}
                         value="true"
                       />
+                    </TableCell>
+                    <TableCell>
+                      <Typography 
+                        component={CustomRouterLink} 
+                        to={"/admin/" + entity + "/edit/" + row.original[identifier]}
+                      >
+                        Editar
+                      </Typography>
                     </TableCell>
                     {row.cells.map((cell) => {
                       return (

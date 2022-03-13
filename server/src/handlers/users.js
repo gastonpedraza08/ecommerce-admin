@@ -60,6 +60,11 @@ const getUsers = async (params, search) => {
 	return users;
 };
 
+const bulkDeleteUsers = async ids => {
+	const result = await repository.bulkDeleteUsers(ids);
+	return result;
+} 
+
 module.exports = {
 	getUserByEmailWithSoftdelete,
 	getUserByEmail,
@@ -70,4 +75,5 @@ module.exports = {
 	deleteUserByEmail,
 	getUsers,
 	bulkCreateUsers,
+	bulkDeleteUsers,
 };

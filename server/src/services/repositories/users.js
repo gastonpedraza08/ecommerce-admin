@@ -64,6 +64,15 @@ const deleteByEmail = async email => {
 	});
 };
 
+const bulkDeleteUsers = async ids => {
+	const result = await User.destroy({
+		where: {
+			id: ids
+		},
+		force: true
+	});
+}
+
 const getUsers = async (params, search) => {
 	console.log(search)
 
@@ -105,5 +114,6 @@ module.exports = {
 	getById,
 	deleteByEmail,
 	getUsers,
-	bulkCreateUsers
+	bulkCreateUsers,
+	bulkDeleteUsers,
 };
