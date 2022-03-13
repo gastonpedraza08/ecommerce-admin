@@ -1,90 +1,66 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
+import React, { useMemo } from "react";
 
-import { getInitials } from "helpers";
+import { FullTable } from 'components';
 
-import { TableWithFilter } from 'components';
+const UsersList = (props) => {
 
-import {
-  SelectColumnFilter,
-} from 'components/TableWithFilter/filters.js';
-
-
-const useStyles = makeStyles((theme) => ({
-  nameContainer: {
-    display: "flex",
-    alignItems: "center",
-  },
-  avatar: {
-    marginRight: theme.spacing(2),
-  },
-}));
-
-export default function AppTable() {
-  const { users } = useSelector((state) => state.users);
-  const classes = useStyles();
-  const columns = React.useMemo(
+  const columns = useMemo(
     () => [
       {
-        Header: 'Id',
-        accessor: 'id',
-        filter: 'fuzzyText',
+        Header: "Id",
+        accessor: "id",
       },
       {
-        Header: 'Foto de perfil',
-        Cell: ({ cell }) => {
-          return (
-            <div className={classes.nameContainer}>
-              <Avatar className={classes.avatar} src={cell.row.original.avatarUrl}>
-                {getInitials(cell.row.original.firstName + ' ' + cell.row.original.lastName)}
-              </Avatar>
-            </div>
-          );
-        },
-        accessor: 'avatarUrl',
+        Header: "First name",
+        accessor: "firstName",
+        canFilter: true,
+        filterType: 'text',
+        defaultValue: '',
       },
       {
-        Header: 'Nombre',
-        accessor: 'firstName',
-        filter: 'fuzzyText',
+        Header: "Last name",
+        accessor: "lastName",
+        canFilter: true,
+        filterType: 'text',
+        defaultValue: '',
       },
       {
-        Header: 'Apellido',
-        accessor: 'lastName',
-        filter: 'fuzzyText',
-      },
-      {
-        Header: 'Email',
-        accessor: 'email',
-        filter: 'fuzzyText',
-      },
-      {
-        Header: 'Role',
-        Cell: ({ value }) => {
-          return (<div>{value}</div>)
-        },
-        accessor: 'roleId',
-        filter: 'fuzzyText',
+        Header: "Email",
+        accessor: "email",
+        canFilter: true,
+        filterType: 'text',
+        defaultValue: '',
       },
       {
         Header: 'Estado',
         accessor: 'state',
-        Filter: SelectColumnFilter,
-        filter: 'includes',
-      },
-      {
-        Header: 'Fecha de creación',
-        accessor: 'createdAt',
-      },
+        canFilter: true,
+        filterType: 'select',
+        optionsSelect: [
+          {
+            name: 'All',
+            value: '',
+          },
+          {
+            name: "Deshabilitado",
+            value: "Deshabilitado"
+          },
+          {
+            name: "Verificado",
+            value: "Verificado"
+          } 
+        ],
+        defaultValue: '',
+      }
     ],
-    [classes.avatar, classes.nameContainer]
+    []
   );
-
-  const data2 = React.useMemo(() => users, [users]);
 
   return (
-    <TableWithFilter columns={columns} data={data2} idName={'id'}/>
+    <div>
+      <FullTable columns={columns} entity={"users"} identifier={"id"} />
+    </div>
   );
-}
+};
+
+export default UsersList;

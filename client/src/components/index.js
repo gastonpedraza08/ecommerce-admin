@@ -8,3 +8,4 @@ export { default as SlideProducts } from "./SlideProducts";
 export { default as AccordionSection } from "./AccordionSection";
 export { default as TableWithFilter } from "./TableWithFilter";
 export { default as Auth } from "./Auth";
+export { default as FullTable } from "./FullTable";
