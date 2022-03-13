@@ -46,14 +46,14 @@ const UsersList = (props) => {
       {
         Header: "First name",
         accessor: "firstName",
-        canFilter: true,
+        customCanFilter: true,
         filterType: 'text',
         defaultValue: '',
       },
       {
         Header: "Last name",
         accessor: "lastName",
-        canFilter: true,
+        customCanFilter: true,
         filterType: 'text',
         defaultValue: '',
       },
@@ -67,7 +67,7 @@ const UsersList = (props) => {
             </>
           );
         },
-        canFilter: true,
+        customCanFilter: true,
         filterType: 'select',
         optionsSelect: [
           {
@@ -84,14 +84,14 @@ const UsersList = (props) => {
       {
         Header: "Email",
         accessor: "email",
-        canFilter: true,
+        customCanFilter: true,
         filterType: 'text',
         defaultValue: '',
       },
       {
         Header: 'Estado',
         accessor: 'state',
-        canFilter: true,
+        customCanFilter: true,
         filterType: 'select',
         optionsSelect: [
           {

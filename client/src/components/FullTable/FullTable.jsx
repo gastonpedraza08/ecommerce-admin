@@ -22,6 +22,7 @@ import Select from '@material-ui/core/Select';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 import { CustomRouterLink } from 'components';
+import AccordionSection from 'components/AccordionSection';
 
 const useStyles = makeStyles(theme => ({
 	root: {},
@@ -65,7 +66,7 @@ const UsersList = (props) => {
   	let obj = {};
 
   	for (let i=0; i<columns.length; i++) {
-  		if (columns[i].canFilter) {
+  		if (columns[i].customCanFilter) {
   			obj[columns[i].accessor] = columns[i].defaultValue;
   		}
   	}
@@ -209,6 +210,8 @@ const UsersList = (props) => {
     headerGroups,
     rows,
     prepareRow,
+    getToggleHideAllColumnsProps,
+    allColumns,
   } = useTable({
     columns,
     data: items,
@@ -223,7 +226,7 @@ const UsersList = (props) => {
 	        		return (
 	        			<span key={col.accessor}>
 	        				{
-				        		col.canFilter ?
+				        		col.customCanFilter ?
 				        		(
 				        			<>
 				        				{
@@ -355,6 +358,13 @@ const UsersList = (props) => {
           </Grid>
         </div>
 
+        <div>
+          <AccordionSection 
+            getToggleHideAllColumnsProps={getToggleHideAllColumnsProps} 
+            allColumns={allColumns}
+            headerGroups={headerGroups}
+          />
+        </div>
 
         <TableContainer
           {...getTableProps()}

@@ -68,24 +68,6 @@ export default function AccordionSection(props) {
           </div>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className={classes.heading}>Filtrar</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Grid container spacing={4}>
-            {allColumns.map((column) => (
-              <Grid key={column.id} item {...column.getHeaderProps()}>
-                {column.canFilter ? column.render("Filter") : null}
-              </Grid>
-            ))}
-          </Grid>
-        </AccordionDetails>
-      </Accordion>
     </div>
   );
 }
