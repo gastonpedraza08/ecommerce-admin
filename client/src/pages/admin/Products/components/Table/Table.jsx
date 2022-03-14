@@ -1,10 +1,7 @@
 import React, { useMemo } from "react";
-import { makeStyles } from '@material-ui/core/styles';
 
 import { FullTable } from 'components';
 
-const useStyles = makeStyles((theme) => ({
-}));
 
 const categories = {
 	1: 'Celulares y Teléfonos',
@@ -15,8 +12,6 @@ const categories = {
 };
 
 const ProductsList = (props) => {
-
-  const classes = useStyles();
 
   const columns = useMemo(
     () => [

@@ -178,7 +178,7 @@ const UsersList = (props) => {
     auxRetrrieveItems();
   };
 
-  useEffect(retrieveItems, [page, pageSize]);
+  useEffect(retrieveItems, [page, pageSize, entity]);
 
   const find = () => {
     setPage(1);

@@ -106,7 +106,7 @@ const UsersList = (props) => {
         defaultValue: '',
       }
     ],
-    []
+    [classes.avatar, classes.nameContainer]
   );
 
   return (
