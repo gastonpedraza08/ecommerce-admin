@@ -74,7 +74,6 @@ const bulkDeleteUsers = async ids => {
 }
 
 const getUsers = async (params, search) => {
-	console.log(search)
 
 	let fullCondition = {};
 

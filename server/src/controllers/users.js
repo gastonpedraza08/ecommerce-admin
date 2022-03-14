@@ -195,7 +195,7 @@ router.put('/update/:id', updateUser, validate, requireSignin, async (req, res) 
 	});
 });
 
-router.delete('/multiple', async (req, res) => {
+router.delete('/bulk/delete', async (req, res) => {
 	try {
 		const ids = req.body.ids;
 		const result = await handler.bulkDeleteUsers(ids);

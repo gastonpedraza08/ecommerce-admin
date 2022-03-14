@@ -1,28 +1,46 @@
 const { models: { Product } } = require('../../models-mongoose');
 const { getFilterLine } = require('../../utils/productsFilters');
 
-const getProducts = async params => {
+const getProducts = async (params, search) => {
 	const { orderBy, limit, from, order } = params;
 
 	let ord = order === 'DESC' ? -1 : 1;
 
-	const result = await Product
-		.find({})
+	let fullCondition = {};
+
+	for (let prop in search) {
+		fullCondition[prop] = {
+			$regex: search[prop], 
+			$options: 'i'
+		}
+	}
+
+
+	const rows = await Product
+		.find(fullCondition)
 		.sort({[orderBy]: ord})
 		.limit(limit)
 		.skip(from)
-		.select({ 
+		.select({
 			_id: 1,
 			sku: 1,
 			name: 1,
 			price: 1,
 			condition: 1,
 			description: 1,
+			marca: 1,
 			categoryId: 1,
 			stock: 1,
 			state: 1,
 			createdAt: 1,
 		});
+	const count = await Product
+		.find(fullCondition)
+		.count();
+	const result = {
+		count,
+		rows
+	}
 	return result;
 }
 
@@ -33,6 +51,11 @@ const getProductById = async productId => {
 
 const destroy = async productId => {
 	const result = Product.deleteOne({ _id: productId });
+	return result;
+}
+
+const bulkDeleteProducts = async ids => {
+	const result = await Product.deleteMany({_id:{$in:ids}});
 	return result;
 }
 
@@ -79,4 +102,5 @@ module.exports = {
 	update,
 	persist,
 	searchProducts,
+	bulkDeleteProducts,
 }

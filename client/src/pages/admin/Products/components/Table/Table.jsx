@@ -1,13 +1,10 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useMemo } from "react";
+import { makeStyles } from '@material-ui/core/styles';
 
-import { TableWithFilter } from 'components';
+import { FullTable } from 'components';
 
-import {
-  SelectColumnFilter,
-  NumberRangeColumnFilter,
-  NumberGraterThanColumnFilter,
-} from 'components/TableWithFilter/filters.js';
+const useStyles = makeStyles((theme) => ({
+}));
 
 const categories = {
 	1: 'Celulares y Teléfonos',
@@ -17,78 +14,122 @@ const categories = {
 	5: 'Electrónica, Audio y Video',
 };
 
-export default function AppTable() {
-  const { products } = useSelector((state) => state.products);
-  
-  const data2 = React.useMemo(() => products, [products]);
+const ProductsList = (props) => {
 
-	const columns = React.useMemo(
-		() => [
-			{
-				Header: 'ID',
-				accessor: '_id',
-				filter: 'fuzzyText',
-			},
-			{
-				Header: 'Sku',
-				accessor: 'sku',
-				filter: 'fuzzyText',
-			},
-			{
-				Header: 'Nombre',
-				accessor: 'name',
-				filter: 'fuzzyText',
-			},
-			{
-				Header: 'Precio',
-				accessor: 'price',
-				Filter: NumberRangeColumnFilter,
-				filter: 'between',
-			},
-			{
-				Header: 'Condición',
-				accessor: 'condition',
-				filter: 'fuzzyText',
-			},
-			/*{
-				Header: 'Descripción',
-				Cell: ({ value }) => {
-					return <div style={{height: 100, width: 200, overflowY: 'scroll'}} dangerouslySetInnerHTML={{ __html: value }} />
-				},
-				accessor: 'description',
-				filter: 'fuzzyText',
-			},*/
-			{
-				Header: 'Categoria',
-				accessor: 'categoryId',
-				Cell: ({ value }) => {
-					return categories[value]
-				},
-				Filter: SelectColumnFilter,
-				filter: 'includes',
-			},
-			{
-				Header: 'Stock',
-				accessor: 'stock',
-				Filter: NumberGraterThanColumnFilter,
-				filter: 'between',
-			},
-			{
-				Header: 'Estado',
-				accessor: 'state',
-				Filter: SelectColumnFilter,
-				filter: 'includes',
-			},
-			{
-				Header: 'Creado',
-				accessor: 'createdAt',
-			},
-		],
-		[]
-	);
+  const classes = useStyles();
+
+  const columns = useMemo(
+    () => [
+      {
+        Header: "Id",
+        accessor: "_id",
+        customCanFilter: true,
+        filterType: 'text',
+        defaultValue: '',
+      },
+      {
+        Header: "Sku",
+        accessor: "sku",
+        customCanFilter: true,
+        filterType: 'text',
+        defaultValue: '',
+      },
+      {
+        Header: "Nombre",
+        accessor: "name",
+        customCanFilter: true,
+        filterType: 'text',
+        defaultValue: '',
+      },
+      {
+        Header: "Precio",
+        accessor: "price",
+        customCanFilter: false,
+      },
+      {
+        Header: "Condición",
+        accessor: "condition",
+        customCanFilter: false,
+      },
+      {
+        Header: "Descripción",
+        accessor: "description",
+        customCanFilter: true,
+        filterType: 'text',
+        defaultValue: ''
+      },
+      {
+        Header: "Marca",
+        accessor: "marca",
+        customCanFilter: true,
+        filterType: 'text',
+        defaultValue: ''
+      },
+      {
+        Header: 'Categoria',
+        accessor: 'categoryId',
+        Cell: ({ value }) => {
+          return (
+            <>
+              {categories[value]}
+            </>
+          );
+        },
+        customCanFilter: true,
+        filterType: 'select',
+        optionsSelect: [
+          {
+            name: 'Celulares y Teléfonos',
+            value: 1
+          },
+          {
+            name: 'Cámaras y Accesorios',
+            value: 2
+          },
+          {
+            name: 'Consolas y Videojuegos',
+            value: 3
+          },
+          {
+            name: 'Computación',
+            value: 4
+          },
+          {
+            name: 'Electrónica, Audio y Video',
+            value: 5
+          },
+        ],
+        defaultValue: '',
+      },
+      {
+      	Header: 'Stock',
+      	accessor: 'stock',
+      	customCanFilter: false
+      },
+      {
+      	Header: 'Estado',
+      	accessor: 'state',
+      	customCanFilter: false,
+      },
+      {
+        Header: "Fecha de creación",
+        accessor: "createdAt",
+        customCanFilter: false,
+      },
+    ],
+    []
+  );
 
   return (
-    <TableWithFilter columns={columns} data={data2} idName={'_id'}/>
+    <div>
+      <FullTable 
+        columns={columns} 
+        entity={"products"} 
+        identifier={"_id"}  
+        hasView={false}
+      />
+    </div>
   );
-}
+};
 
+export default ProductsList;

@@ -3,8 +3,8 @@ const jwt = require('jsonwebtoken');
 const repository = require('../services/repositories/products');
 const { uploadFile } = require('../services/external/s3');
 
-const getProducts = async params => {
-	const products = await repository.getProducts(params);
+const getProducts = async (params, search) => {
+	const products = await repository.getProducts(params, search);
 	return products;
 };
 
@@ -33,11 +33,17 @@ const deleteProduct = async productToDelete => {
 	return result;
 };
 
+const bulkDeleteProducts = async ids => {
+	const result = await repository.bulkDeleteProducts(ids);
+	return result;
+} 
+
 module.exports = {
 	getProducts,
 	createProduct,
 	updateProduct,
 	deleteProduct,
 	getProductById,
-	searchProducts
+	searchProducts,
+	bulkDeleteProducts
 };

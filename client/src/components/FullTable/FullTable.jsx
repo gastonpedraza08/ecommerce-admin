@@ -184,12 +184,12 @@ const UsersList = (props) => {
 
   const handleDeleteItems = async () => {
     setIsDeleting(true);
-    const result = await fetchWithoutToken(entity + '/multiple' , { ids: selectedItems }, 'DELETE');
+    const result = await fetchWithoutToken(entity + '/bulk/delete' , { ids: selectedItems }, 'DELETE');
     if (!result.error) {
       setItems(prev => {
         let newArr = [];
         for (let i=0; i<prev.length; i++) {
-          if (!selectedItems.includes(prev[i].id)) {
+          if (!selectedItems.includes(prev[i][identifier])) {
             newArr.push(prev[i]);
           }
         }

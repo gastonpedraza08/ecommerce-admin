@@ -67,16 +67,31 @@ router.delete('/:id', async (req, res) => {
 
 router.get('/', async (req, res) => {
 	try {
+		const { limit, order, orderBy, from, page, ...rest } = req.query;
 		const params = {
-			limit: parseInt(req.query.limit) || undefined,
-			order: req.query.order || 'DESC',
-			orderBy: req.query.orderBy || 'createdAt',
-			from: parseInt(req.query.from) - 1 || 0
+			limit: parseInt(limit) || undefined,
+			order: order || 'DESC',
+			orderBy: orderBy || 'createdAt',
+			from: parseInt(from) - 1 || 0
 		};
-		const result = await handler.getProducts(params);
+
+		if (page) {
+			if (page === 1) {
+				params.from = 0;
+			} else {
+				params.from = page * params.limit;
+			}
+		}
+
+		//searchs
+		let search = {
+			...rest
+		};
+		const result = await handler.getProducts(params, search);
 		res.json({
 			ok: true,
-			products: result
+			count: result.count,
+			products: result.rows
 		});
 	} catch (error) {
 		console.log(error);
@@ -124,6 +139,25 @@ router.get('/:id', async (req, res) => {
 		res.status(500).json({
 			ok: false,
 		});
+	}
+});
+
+router.delete('/bulk/delete', async (req, res) => {
+	try {
+		const ids = req.body.ids;
+		const result = await handler.bulkDeleteProducts(ids);
+		
+		res.status(200).json({
+			ok: true,
+			result
+		});
+
+	} catch (error) {
+		res.status(500).json({
+			ok: false,
+			error: 'Error en el servidor'
+		});
+		console.log(error);
 	}
 });
 
