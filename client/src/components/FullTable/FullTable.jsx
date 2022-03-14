@@ -51,12 +51,24 @@ const useStyles = makeStyles(theme => ({
   },
   marginLeft: {
     marginLeft: theme.spacing(2)
+  },
+  viewButton: {
+    color: theme.palette.primary.main
+  },
+  editButton: {
+    color: theme.palette.secondary.main
   }
 }))
 
 const UsersList = (props) => {
 
-	const { columns, entity, identifier } = props;
+	const { 
+    columns, 
+    entity, 
+    identifier,
+    hasView,
+    pathToView,
+  } = props;
 
 	const classes = useStyles();
 
@@ -425,9 +437,24 @@ const UsersList = (props) => {
                       <Typography 
                         component={CustomRouterLink} 
                         to={"/admin/" + entity + "/edit/" + row.original[identifier]}
+                        className={classes.editButton}
                       >
                         Editar
                       </Typography>
+                      {
+                        hasView ?
+                        (
+                          <Typography 
+                            component={CustomRouterLink} 
+                            to={pathToView + row.original[identifier]}
+                            className={classes.viewButton}
+                          >
+                            Ver
+                          </Typography>   
+                        )
+                        :
+                        (null)
+                      }
                     </TableCell>
                     {row.cells.map((cell) => {
                       return (

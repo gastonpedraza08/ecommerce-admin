@@ -119,7 +119,8 @@ const ProductsList = (props) => {
         columns={columns} 
         entity={"products"} 
         identifier={"_id"}  
-        hasView={false}
+        hasView={true}
+        pathToView={"/product/"}
       />
     </div>
   );
