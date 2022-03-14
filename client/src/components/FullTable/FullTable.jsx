@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme => ({
   formControl: {
     minWidth: 120,
   },
-  buttonDelete: {
+  marginLeft: {
     marginLeft: theme.spacing(2)
   }
 }))
@@ -343,17 +343,25 @@ const UsersList = (props) => {
 			          />
 			        </div>
           	</Grid>
-            <Grid item>
+            <Grid 
+              item
+              className={classes.marginLeft}
+            >
               <Button
                 variant="contained"
                 color="secondary"
-                className={classes.buttonDelete}
                 startIcon={<DeleteIcon />}
                 onClick={handleDeleteItems}
                 disabled={isDeleting}
               >
                 Delete
               </Button>
+            </Grid>
+            <Grid 
+              item
+              className={classes.marginLeft}
+            >
+              <Button variant="contained" onClick={retrieveItems}>Refrescar</Button>            
             </Grid>
           </Grid>
         </div>
