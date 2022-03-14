@@ -49,41 +49,49 @@ export default function Sidebar(props) {
       title: "Dashboard",
       href: "/admin/dashboard",
       icon: <DashboardIcon />,
+      disabled: true,
     },
     {
       title: "Users",
       href: "/admin/users",
       icon: <PeopleIcon />,
+      disabled: false,
     },
     {
       title: "Products",
       href: "/admin/products",
       icon: <ShoppingBasketIcon />,
+      disabled: false,
     },
     {
       title: "Authentication",
       href: "/admin/sign-in",
       icon: <LockOpenIcon />,
+      disabled: true,
     },
     {
       title: "Typography",
       href: "/admin/typography",
       icon: <TextFieldsIcon />,
+      disabled: true,
     },
     {
       title: "Integration",
       href: "/admin/integration",
       icon: <LayersIcon />,
+      disabled: false,
     },
     {
       title: "Account",
       href: "/admin/account",
       icon: <AccountBoxIcon />,
+      disabled: true,
     },
     {
       title: "Settings",
       href: "/admin/settings",
       icon: <SettingsIcon />,
+      disabled: false,
     },
   ];
 
