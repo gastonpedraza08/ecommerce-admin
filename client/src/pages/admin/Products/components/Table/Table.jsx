@@ -52,13 +52,6 @@ const ProductsList = (props) => {
         customCanFilter: false,
       },
       {
-        Header: "Descripción",
-        accessor: "description",
-        customCanFilter: true,
-        filterType: 'text',
-        defaultValue: ''
-      },
-      {
         Header: "Marca",
         accessor: "marca",
         customCanFilter: true,
