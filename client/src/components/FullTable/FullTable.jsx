@@ -57,6 +57,9 @@ const useStyles = makeStyles(theme => ({
   },
   editButton: {
     color: theme.palette.secondary.main
+  },
+  accordionSection: {
+    marginBottom: theme.spacing(3)
   }
 }))
 
@@ -378,7 +381,7 @@ const UsersList = (props) => {
           </Grid>
         </div>
 
-        <div>
+        <div className={classes.accordionSection}>
           <AccordionSection 
             getToggleHideAllColumnsProps={getToggleHideAllColumnsProps} 
             allColumns={allColumns}
