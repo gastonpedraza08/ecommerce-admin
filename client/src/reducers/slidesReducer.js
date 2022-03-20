@@ -57,6 +57,20 @@ export const slidesReducer = (state = initialState, action) => {
           from: state.slideQuery.from - 1,
         },
       };
+    case types.slideRemoveFromCurrentSlides:
+      return {
+        ...state,
+        slideCurrentSlides: state.slideCurrentSlides.filter(
+          (slide) => slide.id !== action.payload.slide.id
+        ),
+        slides: state.slides.concat([
+          action.payload.slide,
+        ]),
+        slideQuery: {
+          ...state.slideQuery,
+          from: state.slideQuery.from + 1,
+        },
+      };
     case types.slideLoadCurrentSlides:
       return {
         ...state,

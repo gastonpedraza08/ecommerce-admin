@@ -190,6 +190,39 @@ export const slideAddToCurrentSlides = (slide) => {
   };
 };
 
+export const slideRemoveFromCurrent = (slide) => {
+  return async (dispatch) => {
+    Swal.fire({
+      title: "Cargando",
+      text: "Eliminando de Slides Actuales",
+      didOpen: async () => {
+        Swal.showLoading();
+        const result = await fetchWithoutToken(
+          `slides/${slide.id}`,
+          { isCurrentSelected: false },
+          "PUT"
+        );
+        if (!result.error) {
+          dispatch({
+            type: types.slideRemoveFromCurrentSlides,
+            payload: {
+              slide,
+            },
+          });
+          Swal.fire("Correcto!", "Eliminado de Slides Actuales", "success");
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "No se pudo eliminar de Slides Actuales",
+            text: result.error,
+          });
+        }
+      },
+      allowOutsideClick: () => !Swal.isLoading(),
+    });
+  };
+};
+
 export const slideDelete = (id) => {
   return async (dispatch) => {
     Swal.fire({

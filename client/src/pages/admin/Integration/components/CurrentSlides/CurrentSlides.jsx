@@ -72,7 +72,10 @@ export default function CurrentSlides() {
           </Alert>
         ) : (
           <div>
-            <Carousel adminPanel={true} slides={slideCurrentSlides} />
+            <Carousel 
+              adminPanel={true} 
+              slides={slideCurrentSlides}
+            />
           </div>
         )}
       </div>

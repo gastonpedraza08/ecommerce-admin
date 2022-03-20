@@ -23,6 +23,7 @@ export const types = {
   slideAddMoreAllSlides: "[slides] Add More All Slides",
   slideUpload: "[slides] Upload Slide",
   slideAddToCurrentSlides: "[slides] Add To Current Slides",
+  slideRemoveFromCurrentSlides: "[slides] Remove From Current Slides",
   slideLoadCurrentSlides: "[slides] Load Current Slide",
   slideDelete: "[slides] Delete Slide",
 
