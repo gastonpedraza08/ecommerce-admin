@@ -44,6 +44,19 @@ const getByEmailWithSoftdelete = async email => {
 	return result;
 };
 
+const getUserByIdWithSoftdelete = async id => {
+	const result = await User.findOne({
+		include: [{
+			model: Role,
+			required: true,
+			as: 'role'
+		}],
+		where: { id },
+		paranoid: false
+	});
+	return result;
+};
+
 const persist = async user => {
 	const result = await User.create(user, {
 		include: [{
@@ -115,4 +128,5 @@ module.exports = {
 	getUsers,
 	bulkCreateUsers,
 	bulkDeleteUsers,
+	getUserByIdWithSoftdelete,
 };

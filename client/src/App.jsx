@@ -9,7 +9,7 @@ import { store } from "./store/store";
 import theme from "./theme";
 import "react-perfect-scrollbar/dist/css/styles.css";
 import "./assets/scss/index.scss";
-import Routes from "./Routes";
+import Routes from "./Routes.jsx";
 
 import { Auth } from 'components';
 

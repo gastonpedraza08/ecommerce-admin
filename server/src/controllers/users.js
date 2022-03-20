@@ -108,21 +108,17 @@ router.post('/multiple', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
 	const userId = req.params.id;
-	const user = await handler.getUserById(userId);
+	const user = await handler.getUserByIdWithSoftdelete(userId);
 	if (!user) {
 		return res.status(400).json({
 			ok: false,
 			error: 'User not found'
 		});
 	}
+	user.password = undefined;
 	res.status(200).json({
 		ok: true,
-		user: {
-			id: user.id,
-			name: user.name,
-			email: user.email,
-			role: user.role.name,
-		}
+		user
 	});
 });
 

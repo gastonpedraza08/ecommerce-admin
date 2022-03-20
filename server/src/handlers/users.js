@@ -32,6 +32,11 @@ const getUserByEmailWithSoftdelete = async email => {
 	return user;
 };
 
+const getUserByIdWithSoftdelete = async id => {
+	const user = await repository.getUserByIdWithSoftdelete(id);
+	return user;
+};
+
 const createUser = async (newUser, token, enabled) => {
 	const user = await repository.persist(newUser);
 
@@ -76,4 +81,5 @@ module.exports = {
 	getUsers,
 	bulkCreateUsers,
 	bulkDeleteUsers,
+	getUserByIdWithSoftdelete,
 };

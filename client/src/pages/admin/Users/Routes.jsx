@@ -7,6 +7,7 @@ import Breadcrumbs from "components/Breadcrumbs";
 import {
 	MainListView,
 	CreateUserView,
+	EditUserView,
 } from './views';
 
 const useStyles = makeStyles((theme) => ({
@@ -45,6 +46,16 @@ export default function Routes() {
 					exact
 					path="/admin/users/create"
 					component={CreateUserView}
+				/>
+				<Route
+					exact
+					path="/admin/users/edit/:id"
+					component={EditUserView}
+				/>
+				<Route
+					exact
+					path="/admin/users/edit/"
+					component={MainListView}
 				/>
 				<Redirect to="/not-found" />
 			</Switch>
