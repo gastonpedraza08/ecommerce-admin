@@ -193,7 +193,7 @@ export const slideAddToCurrentSlides = (slide) => {
 export const slideDelete = (id) => {
   return async (dispatch) => {
     Swal.fire({
-      title: "¿Seguro que quieres eliminar este slide?",
+      title: "¿Eliminar este slide?",
       showCancelButton: true,
       confirmButtonText: "Aceptar",
       showLoaderOnConfirm: true,
