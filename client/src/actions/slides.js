@@ -10,10 +10,11 @@ import {
   uiStopLoadingCurrentSlides,
 } from "actions/ui";
 import Swal from "sweetalert2";
+import { v4 as uuidv4 } from 'uuid';
 
 export const slideUpload = (file) => {
   return async (dispatch) => {
-    const { base64, error } = await validateImage(file, ["jpg", "png", "jpeg"]);
+    const { base64, error, fileType } = await validateImage(file, ["jpg", "png", "jpeg"]);
     if (error) {
       Swal.fire({
         icon: "error",
@@ -28,7 +29,12 @@ export const slideUpload = (file) => {
           Swal.showLoading();
           const result = await fetchWithoutToken(
             "slides",
-            { slide: base64 },
+            { 
+              slide: { 
+                base64, 
+                name: uuidv4() + '.' + fileType
+              } 
+            },
             "POST"
           );
           if (!result.error) {

@@ -14,7 +14,7 @@ const getSlides = async (params, conditions) => {
 };
 
 const persist = async slideToPersist => {
-	const result = await Slide.Create(slideToPersist, { returning: ['id', 'image'] })
+	const result = await Slide.create(slideToPersist, { returning: ['id', 'image'] })
 	return result;
 };
 

@@ -9,9 +9,10 @@ const getSlides = async (params, conditions) => {
 };
 
 const createSlide = async slideToPersist => {
-	const result = await uploadFile(slideToPersist);
-	const slideUrl = result.slide.Location;
-	const slide = await repository.persist(slideUrl);
+	const { base64, name } = slideToPersist;
+	const result = await uploadFile(base64, name);
+	const slideUrl = result.Location;
+	const slide = await repository.persist({ image: slideUrl });
 	return slide;
 };
 
