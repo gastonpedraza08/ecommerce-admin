@@ -35,6 +35,20 @@ export const validateFormUser = (values) => {
 	return errors;
 }
 
+export const validateFormEditUser = (values, changePassword) => {
+	let errors = {};
+	if (values.firstName === '') {
+		errors.name = 'El nombre es obligatorio';
+	} else if (values.email === '') {
+		errors.stock = 'El email es obligatorio';
+	} else if (!validateEmail(values.email)) {
+		errors.stock = 'Formato de email incorrecto';
+	} else if (changePassword && values.password === '') {
+		errors.password = 'La contraseña no puede estar vacia'
+	}
+	return errors;
+}
+
 const validateEmail = (email) => {
   return String(email)
     .toLowerCase()

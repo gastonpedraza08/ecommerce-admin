@@ -15,8 +15,8 @@ import { Alert, AlertTitle } from '@material-ui/lab';
 
 import UploadAlbum from 'components/UploadAlbum';
 
-import { validateFormUser } from 'helpers/validateForms';
-import { usersCreateUser } from 'actions/users';
+import { validateFormEditUser } from 'helpers/validateForms';
+import { usersUpdateUser } from 'actions/users';
 import { fetchWithoutToken } from 'helpers/fetch';
 
 const useStyles = makeStyles((theme) => ({
@@ -55,7 +55,7 @@ export default function FormProduct() {
 	const dispatch = useDispatch();
 	const [isTouched, setIsTouched] = useState(false);
 	const {
-		uiCreateUser: { isLoading, error, success },
+		uiUpdateUser: { isLoading, error, success },
 	} = useSelector((state) => state.ui);
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
@@ -76,7 +76,16 @@ export default function FormProduct() {
 			const result = await fetchWithoutToken("users/" + id, "GET");
 			let user = result.data.user;
 			user.enabled = user.state === "Verificado" ? "true" : "false";
-			setUser({...user, password: ''});
+			setUser({
+				firstName: user.firstName,
+				lastName: user.lastName,
+				email: user.email,
+				password: user.password,
+				roleId: user.roleId,
+				avatarUrl: user.avatarUrl,
+				enabled: user.enabled,
+				password: ''
+			});
 			if (user.avatarUrl) {
 				setImages([
 					{
@@ -97,7 +106,7 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={user}
 						validate={(values) =>
-							validateFormUser(values)
+							validateFormEditUser(values, changePassword)
 						}
 						onSubmit={(values) => {
 
@@ -105,10 +114,11 @@ export default function FormProduct() {
 								...values,
 								avatarUrl: images[0]?.url,
 								enabled: values.enabled === "true" ? true : false,
-								roleId: Number(values.roleId)
+								roleId: Number(values.roleId),
+								password: values.password === '' ? undefined : values.password
 							};
 
-							dispatch(usersCreateUser(user));
+							dispatch(usersUpdateUser(user, id));
 							setIsTouched(true);
 						}}
 					>
@@ -167,7 +177,7 @@ export default function FormProduct() {
 									<Field name="password">
 										{({ field }) => (
 											<TextField
-												label="Password"
+												label={changePassword ? "New Password" : "*******"}
 												variant="outlined"
 												disabled={!changePassword}
 												{...field}
@@ -180,7 +190,10 @@ export default function FormProduct() {
 								        control={
 								          <Switch
 								            checked={changePassword}
-								            onChange={() => setChangePassword(prev => !prev)}
+								            onChange={() => setChangePassword(prev => {
+								            	formikProps.setFieldValue('password', '');
+								            	return !prev
+								            })}
 								            name="checkedB"
 								            color="primary"
 								          />

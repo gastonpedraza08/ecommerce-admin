@@ -94,3 +94,15 @@ export const uiStopCreateUser = (error, success) => ({
 		success
 	},
 });
+
+export const uiStartUpdateUser = () => ({
+	type: types.uiStartUpdateUser,
+});
+
+export const uiStopUpdateUser = (error, success) => ({
+	type: types.uiStopUpdateUser,
+	payload: {
+		error,
+		success
+	},
+});

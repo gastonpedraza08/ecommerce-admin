@@ -16,6 +16,11 @@ export const usersReducer = (state = initialState, action) => {
 				...state,
 				users: [action.payload.user].concat(state.users),
 			};
+		case types.usersUpdateUser:
+			return {
+				...state,
+				users: [action.payload.user].concat(state.users),
+			};
 		default:
 			return state;
 	}

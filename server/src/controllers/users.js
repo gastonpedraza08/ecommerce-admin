@@ -160,8 +160,9 @@ router.get('/', async (req, res) => {
 	}
 });
 
-router.put('/update/:id', updateUser, validate, requireSignin, async (req, res) => {
-	const { name, email, password } = req.body;
+router.put('/:id', async (req, res) => {
+	let fieldsToUpdate = req.body.fieldsToUpdate;
+
 	const user = await handler.getUserById(req.params.id);
 	if (!user) {
 		return res.status(400).json({
@@ -169,25 +170,35 @@ router.put('/update/:id', updateUser, validate, requireSignin, async (req, res) 
 			error: 'user not found'
 		});
 	}
-	const hashed_password = user.password;
-	const isAuthenticated = bcrypt.compareSync(password, hashed_password);
-	if (!isAuthenticated) {
-		return res.status(400).json({
-			ok: false,
-			error: 'invalid credentials'
-		});
+
+	if (fieldsToUpdate.password) {
+		const hash = bcrypt.hashSync(fieldsToUpdate.password, 10);
+		user.password = hash;
+		fieldsToUpdate.password = null;
 	}
-	user.name = name;
-	user.email = email;
+
+	const enabled = fieldsToUpdate.enabled;
+
+	const currentDateFormatted = enabled ? null : moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
+
+	user.deletedAt = currentDateFormatted;
+	user.state = enabled ? 'Verificado' : 'Deshabilitado';
+
+	fieldsToUpdate.enabled = null;
+
+	for (let prop in fieldsToUpdate) {
+		if (fieldsToUpdate[prop]) {
+			user[prop] = fieldsToUpdate[prop];
+		}
+	}
+
 	await user.save();
+
+	user.password = null;
+
 	res.status(200).json({
 		ok: true,
-		user: {
-			id: user.id,
-			name: user.name,
-			email: user.email,
-			role: user.role.name,
-		}
+		user
 	});
 });
 

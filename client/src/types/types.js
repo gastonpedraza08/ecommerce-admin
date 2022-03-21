@@ -18,6 +18,8 @@ export const types = {
   uiStopSearchingProducts: "[ui] Stop Searching Products",
   uiStartCreateUser: "[ui] Start Create User",
   uiStopCreateUser: "[ui] Stop Create User",
+  uiStartUpdateUser: "[ui] Start Update User",
+  uiStopUpdateUser: "[ui] Stop Update User",
 
   slideLoadAllSlides: "[slides] Load All Slides",
   slideAddMoreAllSlides: "[slides] Add More All Slides",
@@ -41,4 +43,5 @@ export const types = {
 
   usersLoadAllusers: "[users] Load All Users",
   usersCreateUser: "[users] Create User",
+  usersUpdateUser: "[users] Update User",
 };
