@@ -80,7 +80,6 @@ export default function FormProduct() {
 				firstName: user.firstName,
 				lastName: user.lastName,
 				email: user.email,
-				password: user.password,
 				roleId: user.roleId,
 				enabled: user.enabled,
 				password: ''
