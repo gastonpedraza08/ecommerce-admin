@@ -38,7 +38,7 @@ export default function MyCarousel(props) {
   } = useSelector((state) => state.ui);
   const [loadedImage, setLoadedImage] = useState(false);
 
-  let contentOptional = null;
+  let contentOptional = function(id) { return null; };
 
   if (adminPanel) {
     contentOptional = function (slide) {
