@@ -174,7 +174,7 @@ router.put('/:id', async (req, res) => {
 	if (fieldsToUpdate.password) {
 		const hash = bcrypt.hashSync(fieldsToUpdate.password, 10);
 		user.password = hash;
-		fieldsToUpdate.password = null;
+		delete fieldsToUpdate.password;
 	}
 
 	const enabled = fieldsToUpdate.enabled;
@@ -184,12 +184,10 @@ router.put('/:id', async (req, res) => {
 	user.deletedAt = currentDateFormatted;
 	user.state = enabled ? 'Verificado' : 'Deshabilitado';
 
-	fieldsToUpdate.enabled = null;
+	delete fieldsToUpdate.enabled;
 
 	for (let prop in fieldsToUpdate) {
-		if (fieldsToUpdate[prop]) {
-			user[prop] = fieldsToUpdate[prop];
-		}
+		user[prop] = fieldsToUpdate[prop];
 	}
 
 	await user.save();

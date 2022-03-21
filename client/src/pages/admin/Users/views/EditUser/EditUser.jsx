@@ -82,7 +82,6 @@ export default function FormProduct() {
 				email: user.email,
 				password: user.password,
 				roleId: user.roleId,
-				avatarUrl: user.avatarUrl,
 				enabled: user.enabled,
 				password: ''
 			});
@@ -112,11 +111,12 @@ export default function FormProduct() {
 
 							const user = {
 								...values,
-								avatarUrl: images[0]?.url,
+								avatarUrl: images[0] ? images[0].url : null,
 								enabled: values.enabled === "true" ? true : false,
 								roleId: Number(values.roleId),
 								password: values.password === '' ? undefined : values.password
 							};
+
 
 							dispatch(usersUpdateUser(user, id));
 							setIsTouched(true);
