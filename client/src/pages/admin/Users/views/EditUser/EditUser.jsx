@@ -75,7 +75,7 @@ export default function FormProduct() {
 		(async () => {
 			const result = await fetchWithoutToken("users/" + id, "GET");
 			let user = result.data.user;
-			user.enabled = user.state === "Verificado" ? "true" : "false";
+			user.enabled = user.deletedAt ? "true" : "false";
 			setUser({
 				firstName: user.firstName,
 				lastName: user.lastName,

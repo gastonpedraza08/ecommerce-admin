@@ -90,11 +90,25 @@ const getUsers = async (params, search) => {
 
 	let fullCondition = {};
 
+
+	if (search.deletedAt === "Deshabilitado") {
+		fullCondition.deletedAt = {
+			[Sequelize.Op.not]: null		
+		}
+	} else if (search.deletedAt === "Verificado") {
+		fullCondition.deletedAt = {
+			[Sequelize.Op.is]: null		
+		}
+	}
+
+	delete search.deletedAt;
+
 	for (let prop in search) {
 		fullCondition[prop] = {
 			[Sequelize.Op.like]: `%${search[prop]}%`
 		}
 	}
+
 
 	const result = await User.findAndCountAll({
 		limit: params.limit,

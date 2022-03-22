@@ -90,7 +90,14 @@ const UsersList = (props) => {
       },
       {
         Header: 'Estado',
-        accessor: 'state',
+        accessor: 'deletedAt',
+        Cell: ({ value }) => {
+          return (
+            <>
+              {value ? "Deshabilitado" : "Verificado"}
+            </>
+          );
+        },
         customCanFilter: true,
         filterType: 'select',
         optionsSelect: [
