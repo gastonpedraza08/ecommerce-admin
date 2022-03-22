@@ -58,7 +58,6 @@ router.post('/register', async (req, res) => {
 			firstName,
 			lastName,
 			email,
-			state: 'Deshabilitado',
 			password: hash,
 			deletedAt: currentDateFormatted
 		};
@@ -98,7 +97,7 @@ router.post('/activation', async (req, res) => {
 			});
 		}
 		const token = authorization.split(' ')[1];
-		console.log(token)
+
 		jwt.verify(token, process.env.JWT_ACCOUNT_ACTIVATION, async (err, decoded) => {
 			if (err) {
 				console.log(err)
@@ -115,10 +114,8 @@ router.post('/activation', async (req, res) => {
 						error: 'User with that email does not exist'
 					});
 				}
-				user.deletedAt = null;			
-				user.state = 'Verificado';
 
-				await user.save();
+				await user.restore();
 
 				res.status(200).json({
 					ok: true,

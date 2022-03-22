@@ -34,15 +34,12 @@ router.post('/', async (req, res) => {
 			email,
 			password: hash,
 			deletedAt: currentDateFormatted,
-			state: enabled ? 'Verificado' : 'Deshabilitado'
 		};
 
 		const result = await handler.createUser(newUser, token, enabled);
 
 		let userToReturn = result;
 		userToReturn.password = undefined;
-
-		console.log(userToReturn)
 
 		if (result) {
 			return res.status(200).json({
@@ -182,7 +179,6 @@ router.put('/:id', async (req, res) => {
 	const currentDateFormatted = enabled ? null : moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
 
 	user.deletedAt = currentDateFormatted;
-	user.state = enabled ? 'Verificado' : 'Deshabilitado';
 
 	delete fieldsToUpdate.enabled;
 
