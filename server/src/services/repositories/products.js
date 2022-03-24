@@ -70,9 +70,7 @@ const persist = async product => {
 }
 
 const searchProducts = async params => {
-	const { search, limit, ...rest } = params;
-
-	console.log(params);
+	const { search, limit, from, ...rest } = params;
 
 	let fullConditions = {};	
 
@@ -88,10 +86,19 @@ const searchProducts = async params => {
 	const result = await Product
 		.find({ $text : { $search : search }, ...fullConditions }, { score: { $meta: "textScore" } })
 		.select({ name: 1, description: 1, _id: 1, price: 1, thumbnail: 1 })
+		.skip(from)
 		.sort( { score: { $meta: "textScore" } } )
 		.limit(limit);
 
-	return result;
+	const count = await Product
+		.find({ $text : { $search : search }, ...fullConditions }, { score: { $meta: "textScore" } })
+		.count();
+
+	return {
+		rows: result,
+		count,
+		numberOfPages: Math.ceil(count / limit)
+	}
 }
 
 

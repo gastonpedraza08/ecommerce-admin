@@ -103,13 +103,23 @@ router.get('/', async (req, res) => {
 
 router.get('/search', async (req, res) => {
 	let search = { limit: 30, ...req.query };
+	let page = req.query.page;
+
+	if (page) {
+		if (page === 1) {
+			search.from = 0;
+		} else {
+			search.from = page * search.limit;
+		}
+	}
 
 	try {
 		const result = await handler.searchProducts(search);
 		res.json({
 			ok: true,
-			count: result ? result.length : 0,
-			products: result,
+			count: result.count,
+			products: result.rows,
+			numberOfPages: result.numberOfPages
 		});
 	} catch (error) {
 		console.log(error);

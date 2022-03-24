@@ -124,6 +124,8 @@ export const productsSearchProducts = search => {
 				type: types.productsSearchProducts,
 				payload: {
 					productsSearch: result.data.products,
+					count: result.data.count,
+					numberOfPages: result.data.numberOfPages,
 				},
 			});
 			dispatch(uiStopSearchingProducts(null, true));

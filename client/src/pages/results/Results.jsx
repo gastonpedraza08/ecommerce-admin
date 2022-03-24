@@ -61,7 +61,7 @@ export default function SearchProduct() {
 				</Grid>
 				<Grid item xs={12} sm={8} md={9}>
 					<div className={classes.main}>
-					{productsSearch.map(product => {
+					{productsSearch.products.map(product => {
 						return (
 							<Product product={product} key={product._id} />
 						);

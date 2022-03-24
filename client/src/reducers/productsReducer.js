@@ -3,7 +3,9 @@ import { types } from "../types/types";
 const initialState = {
 	products: [],
 	productsSections: [],
-	productsSearch: [],
+	productsSearch: {
+		products: []
+	},
 };
 
 export const productsReducer = (state = initialState, action) => {
@@ -33,7 +35,11 @@ export const productsReducer = (state = initialState, action) => {
 		case types.productsSearchProducts:
 			return {
 				...initialState,
-				productsSearch: action.payload.productsSearch
+				productsSearch: {
+					products: action.payload.productsSearch,
+					count: action.payload.count,
+					numberOfPages: action.payload.numberOfPages,
+				}
 			};
 		default:
 			return state;
