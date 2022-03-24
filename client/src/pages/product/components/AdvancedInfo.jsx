@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Masonry from 'react-masonry-css'
 import { withStyles, makeStyles } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -70,6 +71,7 @@ export default function CustomizedTables(props) {
   const [height, setHeight] = useState(250);
   const [showButton, setShowButton] = useState(true);
   const classes = useStyles();
+  const isMobile = useMediaQuery('(max-width:600px)');
 
   return (
     <div>
@@ -80,7 +82,7 @@ export default function CustomizedTables(props) {
         }}
       >
         <Masonry
-          breakpointCols={2}
+          breakpointCols={isMobile ? 1 : 2}
           className="my-masonry-grid"
           columnClassName="my-masonry-grid_column"
         >

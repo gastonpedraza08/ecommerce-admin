@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
 	},
 	infoContainer: {
 		backgroundColor: 'transparent',
+		marginTop: theme.spacing(5)
 	},
 	image: {
 		backgroundPosition: 'center',
@@ -207,30 +208,8 @@ export default function SearchProduct() {
 
 				{/*sidebar*/}
 				<Grid item xs={12} sm={12} md={3}>
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
-			    <p>Hola mundo</p><br /><br /><br /><br /><br />
 				</Grid>
 			</Grid>
-			<div>SEPARADOR</div>
 		</div>
 	);
 }
