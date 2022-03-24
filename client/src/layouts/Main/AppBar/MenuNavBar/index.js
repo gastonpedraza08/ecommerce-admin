@@ -1,1 +1,1 @@
-export { default } from "./MenuNavBar";
+export { default } from "./MenuNavBar.jsx";

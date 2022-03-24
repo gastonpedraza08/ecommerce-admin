@@ -5,8 +5,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 
 import { makeStyles, alpha } from "@material-ui/core/styles";
 
-import ListItemBottom from "./ListItemBottom";
-import ListItemRight from "./ListItemRight";
+import ListItemBottom from "./ListItemBottom.jsx";
+import ListItemRight from "./ListItemRight.jsx";
 
 const useStyles = makeStyles((theme) => ({
   toolBar: {

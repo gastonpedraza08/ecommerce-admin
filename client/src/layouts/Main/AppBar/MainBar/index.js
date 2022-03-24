@@ -1,1 +1,1 @@
-export { default } from "./MainBar";
+export { default } from "./MainBar.jsx";
