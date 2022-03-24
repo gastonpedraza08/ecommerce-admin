@@ -22,7 +22,7 @@
       "password": "abcd1234",
       "name": "database_production",
       "host": "cluster0.qvjuj.mongodb.net",
-      "port": "",
+      "port": "27017",
       "options": {
         "useNewUrlParser": true
       }

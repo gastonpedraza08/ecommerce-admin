@@ -7,7 +7,7 @@ const config = require('../../config-mongoose/config.json')[env];
 
 if (config.database.url) {
   Mongoose.connect(config.database.url, config.database.options);
-} else if (config.database.config.dbName) {
+} else if (config.database) {
   Mongoose.connect(`${config.database.protocol}://${config.database.username}:${config.database.password}@${config.database.host}:${config.database.port}`, config.database.options);
 } else {
   Mongoose.connect(`${config.database.protocol}://${config.database.username}:${config.database.password}@${config.database.host}:${config.database.port}/${config.database.name}`, config.database.options);
