@@ -18,10 +18,10 @@
   "production": {
     "database": {
       "protocol": "mongodb",
-      "username": "root",
-      "password": "password",
+      "username": "gp",
+      "password": "abcd1234",
       "name": "database_production",
-      "host": "localhost:27017",
+      "host": "cluster0.qvjuj.mongodb.net",
       "port": "",
       "options": {
         "useNewUrlParser": true
