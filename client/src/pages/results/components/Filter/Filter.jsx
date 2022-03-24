@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 import FilterTextLikeRadio from './components/FilterTextLikeRadio';
-import FilterSwitch from './components/FilterSwitch';
 import FilterPrice from './components/FilterPrice';
 import filter from 'assets/config/filter.js';
 
@@ -32,19 +31,6 @@ export default function SimpleAccordion() {
               categoryId["1"].filterTextLike.list.map(filterItem => {
                 return (
                   <FilterTextLikeRadio filterItem={filterItem} key={filterItem.identifier} />
-                )
-              })
-            );
-          })
-        }
-      </>
-      <>
-        {
-          filter.categoryId.map(categoryId => {
-            return (
-              categoryId["1"].filterSwitch.list.map(filterItem => {
-                return (
-                  <FilterSwitch filterItem={filterItem} key={filterItem.name} />
                 )
               })
             );
