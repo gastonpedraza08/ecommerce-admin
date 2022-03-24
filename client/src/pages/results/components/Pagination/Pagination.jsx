@@ -1,9 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import queryString from 'query-string';
 import Pagination from '@material-ui/lab/Pagination';
 import PaginationItem from '@material-ui/lab/PaginationItem';
 
 export default function PaginationLink() {
+
+	const location = useLocation();
+
+    const getFullSearch = page => {
+    	if (page === 1) {
+    		const parsed = queryString.parse(location.search);
+    		parsed.page = undefined;    
+    		let query = queryString.stringify(parsed);
+    		return '?' + query;
+    	} else {
+    		const parsed = queryString.parse(location.search);
+    		parsed.page = page;    
+    		let query = queryString.stringify(parsed);
+    		return '?' + query;
+    	}
+    }
+
 	return (
 		<Pagination
 			page={1}
@@ -13,7 +31,7 @@ export default function PaginationLink() {
 			renderItem={(item) => (
 				<PaginationItem
 					component={Link}
-					to={`/inbox${item.page === 1 ? '' : `?page=${item.page}`}`}
+					to={`${location.pathname + getFullSearch(item.page)}`}
 					{...item}
 				/>
 			)}
