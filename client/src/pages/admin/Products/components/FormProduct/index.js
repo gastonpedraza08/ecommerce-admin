@@ -1,1 +1,1 @@
-export { default } from "./FormProduct.jsx";
+export { default } from './FormProduct.jsx';

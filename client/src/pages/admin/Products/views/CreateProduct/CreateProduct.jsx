@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
-import { FormProduct } from "../components";
+import { FormProduct } from "../../components";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -20,6 +20,7 @@ export default function CreateProduct(props) {
   return (
     <div className={classes.root}>
       <Typography variant="h2">Create Product</Typography>
+      {/**<OldFormProduct />**/}
       <FormProduct />
     </div>
   );

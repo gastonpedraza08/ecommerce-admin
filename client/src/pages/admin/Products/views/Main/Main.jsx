@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
 import { CustomRouterLink } from 'components';
-import { Table } from '../components';
+import { Table } from '../../components';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
