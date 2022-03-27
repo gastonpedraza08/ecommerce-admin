@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
 const validImageTypes = ['jpg', 'png', 'jpeg'];
 
 export default function UploadAlbum(props) {
-	const { images, setImages, limit } = props;
+	const { images, setImagesFn, limit } = props;
 	const [isLoadingImages, setIsLoadingImages] = useState(false);
 	const classes = useStyles();
 	const inputRef = useRef(null);
@@ -67,13 +67,7 @@ export default function UploadAlbum(props) {
 
 		const result = await uploadFiles(filesToUpload);
 
-		setImages((prev) => {
-			let fullArr = prev.concat(result);
-			if (fullArr.length > limit) {
-				fullArr = fullArr.slice(-limit);
-			}
-			return fullArr;
-		});
+		setImagesFn(result, 'add');
 		setIsLoadingImages(false);
 	}
 
@@ -113,9 +107,7 @@ export default function UploadAlbum(props) {
 										className={classes.deleteImageButton}
 										onClick={(e) => {
 											e.stopPropagation();
-											setImages(prev => {
-												return prev.filter(image => image.url!==img.url);
-											});
+											setImagesFn(img.url, 'delete');
 										}}
 									>
 										<DeleteIcon />

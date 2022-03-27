@@ -54,6 +54,23 @@ export default function FormProduct() {
 	} = useSelector((state) => state.ui);
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
+	const limitImages = 1;
+
+	const setImagesFn = (payload, type) => {
+		if (type === 'add') {
+			setImages((prev) => {
+				let fullArr = prev.concat(payload);
+				if (fullArr.length > limitImages) {
+					fullArr = fullArr.slice(-limitImages);
+				}
+				return fullArr;
+			});
+		} else if (type === 'delete') {
+			setImages(prev => {
+				return prev.filter(image => image.url!==payload);
+			});
+		}
+	}
 
 	return (
 		<div>
@@ -192,8 +209,8 @@ export default function FormProduct() {
 								<Grid container className={clsx(classes.marginBottom)}>
 									<UploadAlbum
 										images={images}
-										setImages={setImages}
-										limit={1}
+										setImagesFn={setImagesFn}
+										limit={limitImages}
 									/>
 								</Grid>
 								<Grid container className={clsx(classes.marginBottom)}>
