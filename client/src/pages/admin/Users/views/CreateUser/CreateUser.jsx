@@ -207,6 +207,9 @@ export default function FormProduct() {
 									</Grid>
 								</Grid>
 								<Grid container className={clsx(classes.marginBottom)}>
+									<Typography variant="subtitle1" gutterBottom>
+										Foto de perfil
+									</Typography>
 									<UploadAlbum
 										images={images}
 										setImagesFn={setImagesFn}
