@@ -18,7 +18,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
-import { UploadAlbum } from './components';
+import { UploadAlbum } from 'components';
 import DescriptionEditor from './CKEditor.jsx';
 
 import { validateFormProduct } from 'helpers/validateForms';
@@ -229,8 +229,7 @@ export default function FormProduct() {
 									<UploadAlbum
 										images={images}
 										setImages={setImages}
-										setThumbnail={setThumbnail}
-										thumbnail={thumbnail}
+										limit={12}
 									/>
 								</Grid>
 								<Grid container className={clsx(classes.marginTop)}>

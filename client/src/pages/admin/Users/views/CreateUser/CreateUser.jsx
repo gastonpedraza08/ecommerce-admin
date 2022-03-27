@@ -10,7 +10,7 @@ import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
-import UploadAlbum from 'components/UploadAlbum';
+import { UploadAlbum } from 'components';
 
 import { validateFormUser } from 'helpers/validateForms';
 import { usersCreateUser } from 'actions/users';
