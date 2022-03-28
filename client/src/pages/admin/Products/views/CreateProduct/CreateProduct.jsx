@@ -20,7 +20,6 @@ export default function CreateProduct(props) {
   return (
     <div className={classes.root}>
       <Typography variant="h2">Create Product</Typography>
-      {/**<OldFormProduct />**/}
       <FormProduct />
     </div>
   );

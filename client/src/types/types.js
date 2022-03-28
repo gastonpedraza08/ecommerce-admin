@@ -1,8 +1,6 @@
 export const types = {
   uiToggleSidebarMobile: "[ui] Toggle Sidebar Mobile",
   uiStartLoadingAllSlides: "[ui] Start Loading AllSlides",
-  uiStartLoadingAllProducts: "[ui] Start Loading AllProducts",
-  uiStopLoadingAllProducts: "[ui] Stop Loading AllProducts",
   uiStartLoadingProductsSections: "[ui] Start Loading All Products Sections",
   uiStopLoadingProductsSections: "[ui] Stop Loading All Products Sections",
   uiStartAddMoreAllSlides: "[ui] Start Add More AllSlides",
@@ -34,8 +32,6 @@ export const types = {
   authStartLogin: "[auth] Start Login",
   authEndLogin: "[auth] End Login",
 
-  productsLoadAllproducts: "[products] Load All Products",
-  productsDeleteAllProducts: "[products] Delete All Products",
   productCreateProduct: "[products] Create Product",
   productAddProductsSection: "[products] Add Products Section",
   productsLoadProductsSections: "[products] Load All Products Sections",

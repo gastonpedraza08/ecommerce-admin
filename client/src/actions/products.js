@@ -1,8 +1,6 @@
 import { types } from "../types/types";
 import { fetchWithoutToken } from "helpers/fetch";
 import {
-	uiStartLoadingAllProducts,
-	uiStopLoadingAllProducts,
 	uiStartLoadingProductsSections,
 	uiStopLoadingProductsSections,
 	uiStartCreateProduct,
@@ -12,24 +10,6 @@ import {
 } from "actions/ui";
 import Swal from "sweetalert2";
 
-export const productsLoadAllproducts = () => {
-	return async (dispatch) => {
-		dispatch(uiStartLoadingAllProducts());
-		const result = await fetchWithoutToken("products?limit=5000", "GET");
-		if (!result.error) {
-			let products = result.data.products;
-			dispatch({
-				type: types.productsLoadAllproducts,
-				payload: {
-					products
-				},
-			});
-			dispatch(uiStopLoadingAllProducts());
-		} else {
-			dispatch(uiStopLoadingAllProducts(result.error));
-		}
-	};
-};
 
 export const productsLoadProductsSections = () => {
 	return async (dispatch) => {
@@ -107,14 +87,6 @@ export const productAddProductsSection = (productsSection, history) => {
 	};
 };
 
-export const productsDeleteAllProducts = () => {
-	return (dispatch) => {
-		dispatch({
-			type: types.productsDeleteAllProducts,
-		});
-	};
-};
-
 export const productsSearchProducts = search => {
 	return async (dispatch) => {
 		dispatch(uiStartSearchingProducts());
@@ -134,3 +106,4 @@ export const productsSearchProducts = search => {
 		}
 	}
 }
+

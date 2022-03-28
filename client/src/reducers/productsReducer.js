@@ -6,15 +6,16 @@ const initialState = {
 	productsSearch: {
 		products: []
 	},
+	productForm: {
+		activeStep: 0,
+		skipped: [],
+		componentName: 'MainComponent.jsx',
+		steps: ['Select campaign settings', 'Create an ad group', 'Create an ad'],
+	}
 };
 
 export const productsReducer = (state = initialState, action) => {
 	switch (action.type) {
-		case types.productsLoadAllproducts:
-			return {
-				...state,
-				products: action.payload.products,
-			};
 		case types.productCreateProduct:
 			return {
 				...state,
@@ -30,11 +31,9 @@ export const productsReducer = (state = initialState, action) => {
 				...state,
 				productsSections: action.payload.productsSections,
 			};
-		case types.productsDeleteAllProducts:
-			return initialState;
 		case types.productsSearchProducts:
 			return {
-				...initialState,
+				...state,
 				productsSearch: {
 					products: action.payload.productsSearch,
 					count: action.payload.count,

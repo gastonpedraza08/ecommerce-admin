@@ -26,13 +26,6 @@ export const uiStopLoadingCurrentSlides = (error) => ({
 	type: types.uiStopLoadingCurrentSlides,
 	payload: error,
 });
-export const uiStartLoadingAllProducts = () => ({
-	type: types.uiStartLoadingAllProducts,
-});
-export const uiStopLoadingAllProducts = (error) => ({
-	type: types.uiStopLoadingAllProducts,
-	payload: error
-});
 
 export const uiStartCreateProduct = () => ({
 	type: types.uiStartCreateProduct,
