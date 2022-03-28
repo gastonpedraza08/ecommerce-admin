@@ -104,6 +104,7 @@ export default function FormProduct() {
 							category: '',
 							price: '',
 							state: 'active',
+							condition: 'new',
 							stock: '',
 							thumbnail: '',
 							images: '',
@@ -234,6 +235,26 @@ export default function FormProduct() {
 													<option value="active">Activo</option>
 													<option value="disabled">Inactivo</option>
 													<option value="pause">Pausado</option>
+												</TextField>
+											)}
+										</FastField>
+									</Grid>
+									<Grid item xs={12} sm={6} md={4}>
+										<FastField name="condition" as="select">
+											{({ field }) => (
+												<TextField
+													style={{ width: '100%' }}
+													select
+													{...field}
+													label="Condición"
+													variant="outlined"
+													SelectProps={{
+														native: true,
+													}}
+												>
+													<option value="new">Nuevo</option>
+													<option value="used">Usado</option>
+													<option value="reconditioned">Reacondicionado</option>
 												</TextField>
 											)}
 										</FastField>
