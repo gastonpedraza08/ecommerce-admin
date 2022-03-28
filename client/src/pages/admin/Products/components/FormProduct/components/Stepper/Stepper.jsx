@@ -6,10 +6,6 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-import { 
-  BasicInfoForm
-} from './components';
-
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
@@ -30,7 +26,7 @@ function getSteps() {
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <BasicInfoForm />;
+      return 'Select campaign settings...';
     case 1:
       return 'What is an ad group anyways?';
     case 2:
@@ -47,7 +43,7 @@ export default function HorizontalLinearStepper() {
   const steps = getSteps();
 
   const isStepOptional = (step) => {
-    return step !== 0;
+    return step === 1;
   };
 
   const isStepSkipped = (step) => {
@@ -119,7 +115,7 @@ export default function HorizontalLinearStepper() {
           </div>
         ) : (
           <div>
-            <div className={classes.instructions}>{getStepContent(activeStep)}</div>
+            <Typography className={classes.instructions}>{getStepContent(activeStep)}</Typography>
             <div>
               <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
                 Back
