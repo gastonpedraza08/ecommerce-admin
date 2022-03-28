@@ -1,15 +1,16 @@
 import React, { useMemo } from "react";
+import categories from 'assets/config/products/categories';
 
 import { FullTable } from 'components';
 
+const categoriesSelect = [];
 
-const categories = {
-	1: 'Celulares y Teléfonos',
-	2: 'Cámaras y Accesorios',
-	3: 'Consolas y Videojuegos',
-	4: 'Computación',
-	5: 'Electrónica, Audio y Video',
-};
+for (let prop in categories) {
+  categoriesSelect.push({
+    name: categories[prop],
+    value: prop
+  });
+}
 
 const ProductsList = (props) => {
 
@@ -65,28 +66,7 @@ const ProductsList = (props) => {
         },
         customCanFilter: true,
         filterType: 'select',
-        optionsSelect: [
-          {
-            name: 'Celulares y Teléfonos',
-            value: 1
-          },
-          {
-            name: 'Cámaras y Accesorios',
-            value: 2
-          },
-          {
-            name: 'Consolas y Videojuegos',
-            value: 3
-          },
-          {
-            name: 'Computación',
-            value: 4
-          },
-          {
-            name: 'Electrónica, Audio y Video',
-            value: 5
-          },
-        ],
+        optionsSelect: categoriesSelect,
         defaultValue: '',
       },
       {
