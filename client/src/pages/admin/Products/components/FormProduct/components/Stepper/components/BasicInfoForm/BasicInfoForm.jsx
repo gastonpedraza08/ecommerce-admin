@@ -65,6 +65,32 @@ export default function FormProduct() {
 	const [description, setDescription] = useState('');
 	const [thumbnail, setThumbnail] = useState('');
 
+	const limitImages = 12;
+
+	const setImagesFn = (payload, type) => {
+		if (type === 'add') {
+			setImages((prev) => {
+				let fullArr = prev.concat(payload);
+				if (fullArr.length > limitImages) {
+					fullArr = fullArr.slice(-limitImages);
+				}
+				return fullArr;
+			});
+		} else if (type === 'delete') {
+			setImages(prev => {
+				return prev.filter(image => image.url!==payload);
+			});
+		}
+	}
+
+	const setThumbnailFn = (payload, type) => {
+		if (type === 'add') {
+			setThumbnail(payload[0].url);
+		} else if (type === 'delete') {
+			setThumbnail('');
+		}
+	}
+
 	return (
 		<div>
 			<Grid container justifyContent="center">
@@ -226,10 +252,23 @@ export default function FormProduct() {
 									</FormControl>
 								</Grid>
 								<Grid container className={clsx(classes.marginTop)}>
+									<Typography variant="subtitle1" gutterBottom>
+										Imágenes del Producto
+									</Typography>
 									<UploadAlbum
 										images={images}
-										setImages={setImages}
-										limit={12}
+										setImagesFn={setImagesFn}
+										limit={limitImages}
+									/>
+								</Grid>
+								<Grid container className={clsx(classes.marginTop)}>
+									<Typography variant="subtitle1" gutterBottom>
+										Thumbnail
+									</Typography>
+									<UploadAlbum
+										images={thumbnail !== '' ? [{ name: 'thumbnail', url: thumbnail}] : []}
+										setImagesFn={setThumbnailFn}
+										limit={1}
 									/>
 								</Grid>
 								<Grid container className={clsx(classes.marginTop)}>
