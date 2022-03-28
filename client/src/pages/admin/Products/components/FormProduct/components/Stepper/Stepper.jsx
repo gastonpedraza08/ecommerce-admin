@@ -1,10 +1,18 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+
+import { 
+  productCreateHandleNext,
+  productCreateHandleBack,
+  productCreateHandleSkip,
+  productCreateHandleReset,
+} from 'actions/products';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,16 +27,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function getSteps() {
-  return ['Select campaign settings', 'Create an ad group', 'Create an ad'];
-}
 
 export default function HorizontalLinearStepper() {
+  const dispatch = useDispatch();
   const classes = useStyles();
-  const [activeStep, setActiveStep] = React.useState(0);
-  const [skipped, setSkipped] = React.useState([]);
-  const [componentName, setComponentName] = React.useState('MainComponent.jsx');
-  const steps = getSteps();
+  const { productForm } = useSelector(state => state.products);
+
+  const { steps, activeStep, skipped, componentName } = productForm;
 
   const isStepOptional = (step) => {
     return step === 1;
@@ -39,23 +44,19 @@ export default function HorizontalLinearStepper() {
   };
 
   const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    dispatch(productCreateHandleNext());
   };
 
   const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    dispatch(productCreateHandleBack());
   };
 
   const handleSkip = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped((prevSkipped) => {
-      return prevSkipped.concat(activeStep);
-    });
+    dispatch(productCreateHandleSkip());
   };
 
   const handleReset = () => {
-    setActiveStep(0);
-    setSkipped([]);
+    dispatch(productCreateHandleReset());
   };
 
   const ComponentToRender = React.lazy(() => import('./' + componentName));

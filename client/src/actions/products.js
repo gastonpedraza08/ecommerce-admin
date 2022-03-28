@@ -107,3 +107,26 @@ export const productsSearchProducts = search => {
 	}
 }
 
+export const productCreateHandleNext = () => {
+  return {
+    type: types.productCreateHandleNext,
+  };  
+}
+
+export const productCreateHandleBack = () => {
+  return {
+    type: types.productCreateHandleBack,
+  };  
+}
+
+export const productCreateHandleSkip = () => {
+  return {
+    type: types.productCreateHandleSkip,
+  };  
+}
+
+export const productCreateHandleReset = () => {
+  return {
+    type: types.productCreateHandleReset,
+  };  
+}

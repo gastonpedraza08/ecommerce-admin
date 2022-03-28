@@ -36,6 +36,11 @@ export const types = {
   productAddProductsSection: "[products] Add Products Section",
   productsLoadProductsSections: "[products] Load All Products Sections",
   productsSearchProducts: "[products] Search Products",
+  //create product
+  productCreateHandleNext: "[products] Create Product Handle Next",
+  productCreateHandleBack: "[products] Create Product Handle Back",
+  productCreateHandleSkip: "[products] Create Product Handle Skip",
+  productCreateHandleReset: "[products] Create Product Handle Reset",
 
   usersLoadAllusers: "[users] Load All Users",
   usersCreateUser: "[users] Create User",

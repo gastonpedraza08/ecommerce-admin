@@ -40,6 +40,36 @@ export const productsReducer = (state = initialState, action) => {
 					numberOfPages: action.payload.numberOfPages,
 				}
 			};
+		case types.productCreateHandleNext:
+			return {
+				...state,
+				productForm: {
+					...state.productForm,
+					activeStep: state.productForm.activeStep + 1
+				}
+			}
+		case types.productCreateHandleBack:
+			return {
+				...state,
+				productForm: {
+					...state.productForm,
+					activeStep: state.productForm.activeStep - 1
+				}
+			}
+		case types.productCreateHandleSkip:
+			return {
+				...state,
+				productForm: {
+					...state.productForm,
+					activeStep: state.productForm.activeStep + 1,
+					skipped: state.productForm.skipped.concat(state.productForm.activeStep)
+				}
+			}
+		case types.productCreateHandleReset:
+			return {
+				...state,
+				productForm: initialState.productForm
+			}
 		default:
 			return state;
 	}
