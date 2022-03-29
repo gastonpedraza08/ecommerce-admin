@@ -1,6 +1,6 @@
 import { types } from "../types/types";
 import create from 'assets/config/products/create';
-let componentsName = create.componentsName;
+let componentsName = create.categories[0].componentsName;
 
 const initialState = {
 	products: [],
@@ -11,17 +11,8 @@ const initialState = {
 	productForm: {
 		activeStep: 0,
 		skipped: [],
-		componentName: componentsName[0].component,
-		componentsName: [
-			{
-				label: 'Información del producto',
-				component: 'MainComponent.jsx'
-			},
-			{
-				label: 'Hecho',
-				component: 'FinalForm.jsx'
-			}
-		],
+		componentName: 'MainComponent.jsx',
+		componentsName,
 	}
 };
 
@@ -89,6 +80,14 @@ export const productsReducer = (state = initialState, action) => {
 			return {
 				...state,
 				productForm: initialState.productForm
+			}
+		case types.productCreateHandleSetCategory:
+			return {
+				...state,
+				productForm: {
+					...state.productForm,
+					componentsName: create.categories[action.payload.categoryId].componentsName
+				}
 			}
 		default:
 			return state;

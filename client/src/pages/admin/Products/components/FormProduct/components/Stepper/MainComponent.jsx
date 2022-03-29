@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { productCreateHandleSetCategory } from 'actions/products';
 
 export default function FirstComponent(props) {
 
+	const dispatch = useDispatch();
+
+	const [number, setNumber] = useState(0);
 	const handleSubmit = e => {
 		e.preventDefault();
-		let categoryId = Number(document.getElementById('categoria-producto').value);
-		console.log(categoryId)
+		dispatch(productCreateHandleSetCategory(number));
 	}
-
-	console.log("first component")
 
 	return (
 		<div>
 			<h4>Elige la categoria</h4>
 			<form onSubmit={handleSubmit}>
-				<input type="number" id="categoria-producto"/>
+				<input 
+					type="number" 
+					onChange={e => setNumber(Number(e.target.value))}
+				/>
 				<input type="submit"/>
 			</form>
 		</div>

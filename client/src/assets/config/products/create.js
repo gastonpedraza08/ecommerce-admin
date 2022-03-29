@@ -1,17 +1,54 @@
 let objToExport = {
-	componentsName: {
+	categories: {
+		//default for all products
 		0: {
-			label: 'Información del producto',
-			component: 'MainComponent.jsx'
+			componentsName: [
+				{
+					label: 'Información del producto',
+					component: 'MainComponent.jsx'
+				},
+				{
+					label: 'Hecho',
+					component: 'FinalForm.jsx'
+				}
+			]
 		},
 		1: {
-			label: 'Camara',
-			component: 'SecondComponent.jsx'
+			componentsName: [
+				{
+					label: 'Información del producto',
+					component: 'MainComponent.jsx'
+				},
+				{
+					label: 'Camara',
+					component: 'SecondComponent.jsx'
+				},
+				{
+					label: 'Memoria',
+					component: 'ThirdComponent.jsx',
+				},
+				{
+					label: 'Hecho',
+					component: 'FinalForm.jsx'
+				}
+			],
 		},
 		2: {
-			label: 'Memoria',
-			component: 'ThirdComponent.jsx'
-		},
+			componentsName: [
+				{
+					label: 'Información del producto',
+					component: 'MainComponent.jsx'
+				},
+				{
+					label: 'Ruedas',
+					component: 'SecondComponent.jsx'
+				},
+				{
+					label: 'Hecho',
+					component: 'FinalForm.jsx'
+				}
+			]
+		}	
 	}
 };
 

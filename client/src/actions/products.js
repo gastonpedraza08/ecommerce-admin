@@ -130,3 +130,12 @@ export const productCreateHandleReset = () => {
     type: types.productCreateHandleReset,
   };  
 }
+
+export const productCreateHandleSetCategory = categoryId => {
+  return {
+    type: types.productCreateHandleSetCategory,
+    payload: {
+    	categoryId
+    }
+  };  
+}
