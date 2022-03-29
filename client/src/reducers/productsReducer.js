@@ -1,4 +1,6 @@
 import { types } from "../types/types";
+import create from 'assets/config/products/create';
+let componentsName = create.componentsName;
 
 const initialState = {
 	products: [],
@@ -9,10 +11,22 @@ const initialState = {
 	productForm: {
 		activeStep: 0,
 		skipped: [],
-		componentName: 'MainComponent.jsx',
-		steps: ['Select campaign settings', 'Create an ad group', 'Create an ad'],
+		componentName: componentsName[0].component,
+		componentsName: [
+			{
+				label: 'Información del producto',
+				component: 'MainComponent.jsx'
+			},
+			{
+				label: 'Hecho',
+				component: 'FinalForm.jsx'
+			}
+		],
 	}
 };
+
+let nextStep;
+let prevStep;
 
 export const productsReducer = (state = initialState, action) => {
 	switch (action.type) {
@@ -41,28 +55,34 @@ export const productsReducer = (state = initialState, action) => {
 				}
 			};
 		case types.productCreateHandleNext:
+			nextStep = state.productForm.activeStep + 1;
 			return {
 				...state,
 				productForm: {
 					...state.productForm,
-					activeStep: state.productForm.activeStep + 1
+					activeStep: nextStep,
+					componentName: state.productForm.componentsName[nextStep]?.component,
 				}
 			}
 		case types.productCreateHandleBack:
+			prevStep = state.productForm.activeStep - 1;
 			return {
 				...state,
 				productForm: {
 					...state.productForm,
-					activeStep: state.productForm.activeStep - 1
+					activeStep: prevStep,
+					componentName: state.productForm.componentsName[prevStep].component
 				}
 			}
 		case types.productCreateHandleSkip:
+			nextStep = state.productForm.activeStep + 1;
 			return {
 				...state,
 				productForm: {
 					...state.productForm,
-					activeStep: state.productForm.activeStep + 1,
-					skipped: state.productForm.skipped.concat(state.productForm.activeStep)
+					activeStep: nextStep,
+					componentName: state.productForm.componentsName[nextStep]?.component,
+					skipped: state.productForm.skipped.concat(state.productForm.activeStep),
 				}
 			}
 		case types.productCreateHandleReset:

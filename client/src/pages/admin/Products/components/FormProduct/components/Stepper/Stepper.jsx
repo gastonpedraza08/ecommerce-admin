@@ -33,7 +33,12 @@ export default function HorizontalLinearStepper() {
   const classes = useStyles();
   const { productForm } = useSelector(state => state.products);
 
-  const { steps, activeStep, skipped, componentName } = productForm;
+  const { 
+    activeStep, 
+    skipped, 
+    componentName, 
+    componentsName 
+  } = productForm;
 
   const isStepOptional = (step) => {
     return step === 1;
@@ -64,7 +69,7 @@ export default function HorizontalLinearStepper() {
   return (
     <div className={classes.root}>
       <Stepper activeStep={activeStep}>
-        {steps.map((label, index) => {
+        {componentsName.map(({ label }, index) => {
           const stepProps = {};
           const labelProps = {};
           if (isStepOptional(index)) {
@@ -81,7 +86,7 @@ export default function HorizontalLinearStepper() {
         })}
       </Stepper>
       <div>
-        {activeStep === steps.length ? (
+        {activeStep === componentsName.length ? (
           <div>
             <Typography className={classes.instructions}>
               All steps completed - you&apos;re finished
@@ -118,7 +123,7 @@ export default function HorizontalLinearStepper() {
                 onClick={handleNext}
                 className={classes.button}
               >
-                {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                {activeStep === componentsName.length - 1 ? 'Finish' : 'Next'}
               </Button>
             </div>
           </div>
