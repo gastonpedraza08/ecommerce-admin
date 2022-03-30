@@ -62,7 +62,6 @@ export default function FormProduct() {
 	} = useSelector((state) => state.ui);
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
-	const [description, setDescription] = useState('');
 	const [thumbnail, setThumbnail] = useState('');
 
 	const limitImages = 12;
@@ -111,7 +110,7 @@ export default function FormProduct() {
 							description: '',
 						}}
 						validate={(values) =>
-							validateFormProduct(values, images, thumbnail, description)
+							validateFormProduct(values, images, thumbnail)
 						}
 						onSubmit={(values) => {
 							const product = {
@@ -119,7 +118,6 @@ export default function FormProduct() {
 								categoryId: values.category.id,
 								images,
 								thumbnail,
-								description,
 							};
 							console.log(product)
 							//dispatch(productCreateProduct(product));

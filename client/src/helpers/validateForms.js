@@ -1,4 +1,4 @@
-export const validateFormProduct = (values, images, thumbnail, description) => {
+export const validateFormProduct = (values, images, thumbnail) => {
 	let errors = {};
 	if (values.name.length < 3) {
 		errors.name = 'El nombre debe poseer al menos 3 caracteres';
@@ -10,7 +10,7 @@ export const validateFormProduct = (values, images, thumbnail, description) => {
 		errors.price = 'El precio es obligatorio';
 	} else if (values.category === '') {
 		errors.category = 'Selecciona una categoria';
-	} else if (description.length < 20) {
+	} else if (values.description.length < 20) {
 		errors.description =
 			'La descripcion debe poseer al menos 20 caracteres';
 	} else if (thumbnail === '') {
