@@ -4,7 +4,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 export default function DescriptionEditor(props) {
 
-	const { setDescription, description } = props;
+	const { setFieldValue, description } = props;
 
 	return (
 			<CKEditor
@@ -15,7 +15,7 @@ export default function DescriptionEditor(props) {
           }}
 				onBlur={(event, editor) => {
 					const data = editor.getData();
-					setDescription(data);
+					setFieldValue('description', data);
 				}}
 			/>
 	);

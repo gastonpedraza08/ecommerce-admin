@@ -11,7 +11,7 @@ const initialState = {
 	productForm: {
 		activeStep: 0,
 		skipped: [],
-		componentName: 'MainComponent.jsx',
+		componentName: componentsName[0].component,
 		componentsName,
 	}
 };

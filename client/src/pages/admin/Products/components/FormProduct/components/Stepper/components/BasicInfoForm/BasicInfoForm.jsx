@@ -18,7 +18,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
-import { UploadAlbum } from 'components';
+import { UploadAlbum, HandleFormProductButton } from 'components';
 import DescriptionEditor from './CKEditor.jsx';
 
 import { validateFormProduct } from 'helpers/validateForms';
@@ -121,8 +121,9 @@ export default function FormProduct() {
 								thumbnail,
 								description,
 							};
-							dispatch(productCreateProduct(product));
-							setIsTouched(true);
+							console.log(product)
+							//dispatch(productCreateProduct(product));
+							//setIsTouched(true);
 						}}
 						render={(formikProps) => (
 							<Form className={classes.form}>
@@ -205,8 +206,10 @@ export default function FormProduct() {
 												{ title: 'title 2', id: 2 },
 											]}
 											getOptionLabel={(option) => option.title || ''}
-											onChange={(e, value) =>
-												formikProps.setFieldValue('category', value)
+											onChange={(e, value) => {
+													console.log(formikProps)
+													formikProps.setFieldValue('category', value)
+												}
 											}
 											value={formikProps.values.category}
 											name="category"
@@ -267,8 +270,8 @@ export default function FormProduct() {
 										style={{ padding: '0 5px' }}
 									>
 										<DescriptionEditor
-											setDescription={setDescription}
-											description={description}
+											setFieldValue={formikProps.setFieldValue}
+											description={formikProps.values.description}
 										/>
 									</FormControl>
 								</Grid>
@@ -316,13 +319,9 @@ export default function FormProduct() {
 									</Grid>
 								) : null}
 								<div className={clsx(classes.marginTop)}>
-									{isLoading ? (
-										<CircularProgress />
-									) : (
-										<Button color="primary" variant="contained" type="submit">
-											Submit
-										</Button>
-									)}
+									<HandleFormProductButton 
+										validateForm={formikProps.validateForm} 
+									/>
 								</div>
 							</Form>
 						)}

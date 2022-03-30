@@ -5,7 +5,7 @@ let objToExport = {
 			componentsName: [
 				{
 					label: 'Información del producto',
-					component: 'MainComponent.jsx',
+					component: 'components/BasicInfoForm/BasicInfoForm.jsx',
 					isOptional: false,
 				},
 				{
@@ -19,7 +19,7 @@ let objToExport = {
 			componentsName: [
 				{
 					label: 'Información del producto',
-					component: 'MainComponent.jsx',
+					component: 'components/BasicInfoForm/BasicInfoForm.jsx',
 					isOptional: false,
 				},
 				{

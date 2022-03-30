@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HandleFormProductButton(props) {
 
+	const { validateForm } = props;
 	const classes = useStyles();
 	const dispatch = useDispatch();
 	const { productForm } = useSelector(state => state.products);
@@ -43,8 +44,11 @@ export default function HandleFormProductButton(props) {
     return componentsName[step].isOptional;
   };
 
-  const handleNext = () => {
-    dispatch(productCreateHandleNext());
+  const handleNext = async () => {
+    return dispatch(productCreateHandleNext());
+  	const result = await validateForm();
+  	if (Object.keys(result).length===0) {
+  	}
   };
 
   const handleBack = () => {
@@ -70,6 +74,7 @@ export default function HandleFormProductButton(props) {
           color="primary"
           onClick={handleSkip}
           className={classes.button}
+          type="submit"
         >
           Skip
         </Button>
@@ -80,6 +85,7 @@ export default function HandleFormProductButton(props) {
         color="primary"
         onClick={handleNext}
         className={classes.button}
+        type="submit"
       >
         {activeStep === componentsName.length - 1 ? 'Finish' : 'Next'}
       </Button>
