@@ -5,11 +5,13 @@ let objToExport = {
 			componentsName: [
 				{
 					label: 'Información del producto',
-					component: 'MainComponent.jsx'
+					component: 'MainComponent.jsx',
+					isOptional: false,
 				},
 				{
 					label: 'Hecho',
-					component: 'FinalForm.jsx'
+					component: 'FinalForm.jsx',
+					isOptional: false
 				}
 			]
 		},
@@ -17,19 +19,23 @@ let objToExport = {
 			componentsName: [
 				{
 					label: 'Información del producto',
-					component: 'MainComponent.jsx'
+					component: 'MainComponent.jsx',
+					isOptional: false,
 				},
 				{
 					label: 'Camara',
-					component: 'SecondComponent.jsx'
+					component: 'SecondComponent.jsx',
+					isOptional: true,
 				},
 				{
 					label: 'Memoria',
 					component: 'ThirdComponent.jsx',
+					isOptional: true,
 				},
 				{
 					label: 'Hecho',
-					component: 'FinalForm.jsx'
+					component: 'FinalForm.jsx',
+					isOptional: false,
 				}
 			],
 		},
@@ -37,15 +43,18 @@ let objToExport = {
 			componentsName: [
 				{
 					label: 'Información del producto',
-					component: 'MainComponent.jsx'
+					component: 'MainComponent.jsx',
+					isOptional: false,
 				},
 				{
 					label: 'Ruedas',
-					component: 'SecondComponent.jsx'
+					component: 'SecondComponent.jsx',
+					isOptional: true,
 				},
 				{
 					label: 'Hecho',
-					component: 'FinalForm.jsx'
+					component: 'FinalForm.jsx',
+					isOptional: false,
 				}
 			]
 		}	

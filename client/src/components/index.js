@@ -9,3 +9,4 @@ export { default as AccordionSection } from "./AccordionSection";
 export { default as Auth } from "./Auth";
 export { default as FullTable } from "./FullTable";
 export { default as UploadAlbum } from "./UploadAlbum";
+export { default as HandleFormProductButton } from "./HandleFormProductButton";
