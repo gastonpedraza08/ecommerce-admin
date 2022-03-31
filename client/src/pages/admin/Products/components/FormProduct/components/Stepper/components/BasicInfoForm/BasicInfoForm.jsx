@@ -67,26 +67,31 @@ export default function FormProduct() {
 
 	const limitImages = 12;
 
-	const setImagesFn = (payload, type) => {
+	const setImagesFn = (payload, type, setFieldValue) => {
 		if (type === 'add') {
 			setImages((prev) => {
 				let fullArr = prev.concat(payload);
 				if (fullArr.length > limitImages) {
 					fullArr = fullArr.slice(-limitImages);
 				}
+				setFieldValue('images', fullArr);
 				return fullArr;
 			});
 		} else if (type === 'delete') {
 			setImages(prev => {
-				return prev.filter(image => image.url!==payload);
+				let fullArr = prev.filter(image => image.url!==payload);
+				setFieldValue('images', fullArr);
+				return fullArr;
 			});
 		}
 	}
 
-	const setThumbnailFn = (payload, type) => {
+	const setThumbnailFn = (payload, type, setFieldValue) => {
 		if (type === 'add') {
+			setFieldValue('thumbnail', payload[0].url);
 			setThumbnail(payload[0].url);
 		} else if (type === 'delete') {
+			setFieldValue('thumbnail', '');
 			setThumbnail('');
 		}
 	}
@@ -116,8 +121,6 @@ export default function FormProduct() {
 						onSubmit={(values) => {
 							const product = {
 								...values,
-								images,
-								thumbnail,
 							};
 							console.log(product)
 							//dispatch(productCreateProduct(product));
@@ -280,7 +283,9 @@ export default function FormProduct() {
 									</Typography>
 									<UploadAlbum
 										images={images}
-										setImagesFn={setImagesFn}
+										setImagesFn={(payload, type) => { 
+											setImagesFn(payload, type, formikProps.setFieldValue);
+										}}
 										limit={limitImages}
 									/>
 								</Grid>
@@ -290,7 +295,9 @@ export default function FormProduct() {
 									</Typography>
 									<UploadAlbum
 										images={thumbnail !== '' ? [{ name: 'thumbnail', url: thumbnail}] : []}
-										setImagesFn={setThumbnailFn}
+										setImagesFn={(payload, type) => {
+											setThumbnailFn(payload, type, formikProps.setFieldValue);
+										}}
 										limit={1}
 									/>
 								</Grid>
