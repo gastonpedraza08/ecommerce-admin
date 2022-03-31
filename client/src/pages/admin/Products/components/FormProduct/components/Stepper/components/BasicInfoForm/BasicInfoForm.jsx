@@ -63,6 +63,7 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
 	const [thumbnail, setThumbnail] = useState('');
+	const [category, setCategory] = useState('');
 
 	const limitImages = 12;
 
@@ -100,7 +101,7 @@ export default function FormProduct() {
 						initialValues={{
 							name: '',
 							sku: '',
-							category: '',
+							categoryId: '',
 							price: '',
 							state: 'active',
 							condition: 'new',
@@ -115,7 +116,6 @@ export default function FormProduct() {
 						onSubmit={(values) => {
 							const product = {
 								...values,
-								categoryId: values.category.id,
 								images,
 								thumbnail,
 							};
@@ -205,11 +205,12 @@ export default function FormProduct() {
 											]}
 											getOptionLabel={(option) => option.title || ''}
 											onChange={(e, value) => {
+													setCategory(value);
+													formikProps.setFieldValue('categoryId', value ? value.id : '');
 													console.log(formikProps)
-													formikProps.setFieldValue('category', value)
 												}
 											}
-											value={formikProps.values.category}
+											value={category}
 											name="category"
 											renderInput={(params) => (
 												<TextField
