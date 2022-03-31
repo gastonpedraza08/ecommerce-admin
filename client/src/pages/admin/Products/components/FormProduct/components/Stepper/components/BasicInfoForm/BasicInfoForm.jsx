@@ -52,6 +52,9 @@ const useStyles = makeStyles((theme) => ({
 	error: {
 		marginTop: theme.spacing(2),
 	},
+	errorText: {
+		display: 'block'
+	}
 }));
 
 export default function FormProduct() {
@@ -116,7 +119,7 @@ export default function FormProduct() {
 							description: '',
 						}}
 						validate={(values) =>
-							validateFormProduct(values, images, thumbnail)
+							validateFormProduct(values)
 						}
 						onSubmit={(values) => {
 							const product = {
@@ -210,7 +213,6 @@ export default function FormProduct() {
 											onChange={(e, value) => {
 													setCategory(value);
 													formikProps.setFieldValue('categoryId', value ? value.id : '');
-													console.log(formikProps)
 												}
 											}
 											value={category}
@@ -278,7 +280,7 @@ export default function FormProduct() {
 									</FormControl>
 								</Grid>
 								<Grid container className={clsx(classes.marginTop)}>
-									<Typography variant="subtitle1" gutterBottom>
+									<Typography variant="subtitle1"  gutterBottom>
 										Imágenes del Producto
 									</Typography>
 									<UploadAlbum
@@ -303,9 +305,11 @@ export default function FormProduct() {
 								</Grid>
 								<Grid container className={clsx(classes.marginTop)}>
 									{Object.values(formikProps.errors).map((msg) => (
-										<Typography variant="body1" color="error" key={msg}>
-											{msg}
-										</Typography>
+										<Grid item xs={12} >
+											<Typography className={classes.errorText} variant="body1" color="error" key={msg}>
+												{msg}
+											</Typography>
+										</Grid>
 									))}
 								</Grid>
 								{isTouched && error ? (
