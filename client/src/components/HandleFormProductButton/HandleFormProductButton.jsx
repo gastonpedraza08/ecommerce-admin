@@ -7,6 +7,7 @@ import {
   productCreateHandleNext,
   productCreateHandleBack,
   productCreateHandleSkip,
+  productCreateHandleSetCategory,
 } from 'actions/products';
 
 const useStyles = makeStyles((theme) => ({
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HandleFormProductButton(props) {
 
-	const { validateForm } = props;
+	const { validateForm, categoryId, values } = props;
 	const classes = useStyles();
 	const dispatch = useDispatch();
 	const { productForm } = useSelector(state => state.products);
@@ -39,11 +40,14 @@ export default function HandleFormProductButton(props) {
 
   const handleNext = async () => {
   	const result = await validateForm();
-    console.log(result)
-  	return null;
-    return dispatch(productCreateHandleNext());
   	if (Object.keys(result).length===0) {
+      if (categoryId) {
+        console.log(values)
+        dispatch(productCreateHandleSetCategory(categoryId));
+        return dispatch(productCreateHandleNext());
+      }
   	}
+  	return null;
   };
 
   const handleBack = () => {

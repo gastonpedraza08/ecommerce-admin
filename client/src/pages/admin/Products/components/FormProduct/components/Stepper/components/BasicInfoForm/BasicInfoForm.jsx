@@ -112,12 +112,6 @@ export default function FormProduct() {
 						validate={(values) =>
 							validateFormProduct(values)
 						}
-						onSubmit={(values) => {
-							const product = {
-								...values,
-							};
-							console.log(product)
-						}}
 						render={(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined">
@@ -304,6 +298,8 @@ export default function FormProduct() {
 								<div className={clsx(classes.marginTop)}>
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
+										categoryId={formikProps.values.categoryId}
+										values={formikProps.values}
 									/>
 								</div>
 							</Form>
