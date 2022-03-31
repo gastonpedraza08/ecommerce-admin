@@ -39,6 +39,7 @@ export default function HandleFormProductButton(props) {
 
   const handleNext = async () => {
   	const result = await validateForm();
+    console.log(result)
   	return null;
     return dispatch(productCreateHandleNext());
   	if (Object.keys(result).length===0) {

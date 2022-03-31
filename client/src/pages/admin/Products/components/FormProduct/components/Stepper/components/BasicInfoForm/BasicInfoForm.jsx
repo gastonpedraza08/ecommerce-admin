@@ -294,8 +294,8 @@ export default function FormProduct() {
 								</Grid>
 								<Grid container className={clsx(classes.marginTop)}>
 									{Object.values(formikProps.errors).map((msg) => (
-										<Grid item xs={12} >
-											<Typography className={classes.errorText} variant="body1" color="error" key={msg}>
+										<Grid item xs={12} key={msg} >
+											<Typography className={classes.errorText} variant="body1" color="error" >
 												{msg}
 											</Typography>
 										</Grid>
