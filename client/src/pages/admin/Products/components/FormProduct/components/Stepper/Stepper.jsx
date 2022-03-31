@@ -32,7 +32,6 @@ export default function HorizontalLinearStepper() {
 
   const { 
     activeStep, 
-    skipped, 
     componentName, 
     componentsName 
   } = productForm;

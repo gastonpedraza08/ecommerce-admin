@@ -7,7 +7,6 @@ import {
   productCreateHandleNext,
   productCreateHandleBack,
   productCreateHandleSkip,
-  productCreateHandleReset,
 } from 'actions/products';
 
 const useStyles = makeStyles((theme) => ({
@@ -31,16 +30,10 @@ export default function HandleFormProductButton(props) {
 
   const { 
     activeStep, 
-    skipped, 
-    componentName, 
     componentsName 
   } = productForm;
 
 	const isStepOptional = (step) => {
-    return componentsName[step].isOptional;
-  };
-
-  const isStepSkipped = (step) => {
     return componentsName[step].isOptional;
   };
 
@@ -58,10 +51,6 @@ export default function HandleFormProductButton(props) {
 
   const handleSkip = () => {
     dispatch(productCreateHandleSkip());
-  };
-
-  const handleReset = () => {
-    dispatch(productCreateHandleReset());
   };
 
 	return (

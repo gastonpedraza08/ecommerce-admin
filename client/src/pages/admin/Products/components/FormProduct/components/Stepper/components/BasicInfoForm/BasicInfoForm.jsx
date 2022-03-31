@@ -4,7 +4,6 @@ import {
 	Form,
 	FastField,
 } from 'formik';
-import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
@@ -14,15 +13,12 @@ import Button from '@material-ui/core/Button';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
-import { Alert, AlertTitle } from '@material-ui/lab';
 
 import { UploadAlbum, HandleFormProductButton } from 'components';
 import DescriptionEditor from './CKEditor.jsx';
 
 import { validateFormProduct } from 'helpers/validateForms';
-import { productCreateProduct } from 'actions/products';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -58,11 +54,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function FormProduct() {
-	const dispatch = useDispatch();
-	const [isTouched, setIsTouched] = useState(false);
-	const {
-		uiCreateProduct: { isLoading, error, success },
-	} = useSelector((state) => state.ui);
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
 	const [thumbnail, setThumbnail] = useState('');
@@ -126,8 +117,6 @@ export default function FormProduct() {
 								...values,
 							};
 							console.log(product)
-							//dispatch(productCreateProduct(product));
-							//setIsTouched(true);
 						}}
 						render={(formikProps) => (
 							<Form className={classes.form}>
@@ -312,22 +301,6 @@ export default function FormProduct() {
 										</Grid>
 									))}
 								</Grid>
-								{isTouched && error ? (
-									<Grid container className={clsx(classes.marginTop)}>
-										<Alert severity="error" className={classes.error}>
-											<AlertTitle>Error</AlertTitle>
-											<strong>{error}</strong>
-										</Alert>
-									</Grid>
-								) : null}
-								{isTouched && success ? (
-									<Grid container className={clsx(classes.marginTop)}>
-										<Alert severity="success" className={classes.error}>
-											<AlertTitle>Correcto</AlertTitle>
-											<strong>El producto se ha creado con éxito!</strong>
-										</Alert>
-									</Grid>
-								) : null}
 								<div className={clsx(classes.marginTop)}>
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
