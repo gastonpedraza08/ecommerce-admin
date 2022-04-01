@@ -81,7 +81,10 @@ export default function UploadAlbum(props) {
 					) : (
 						<Card
 							className={classes.imageButtonContainer}
-							onClick={() => inputRef.current.click()}
+							onClick={e => {
+								e.preventDefault();
+								inputRef.current.click()
+							}}
 							component="button"
 						>
 							<Tooltip title="Agregar Imagen" placement="bottom">
