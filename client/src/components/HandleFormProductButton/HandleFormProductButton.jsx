@@ -41,11 +41,11 @@ export default function HandleFormProductButton(props) {
   const handleNext = async () => {
   	const result = await validateForm();
   	if (Object.keys(result).length===0) {
+      console.log(values)
       if (categoryId) {
-        console.log(values)
         dispatch(productCreateHandleSetCategory(categoryId));
-        return dispatch(productCreateHandleNext(values));
       }
+      return dispatch(productCreateHandleNext(values));
   	}
   	return null;
   };
