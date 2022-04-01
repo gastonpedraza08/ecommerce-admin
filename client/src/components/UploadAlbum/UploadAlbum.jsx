@@ -16,6 +16,7 @@ import image from 'assets/default.png';
 const useStyles = makeStyles((theme) => ({
 	root: {},
 	imageButtonContainer: {
+		border: 'none!important',
 		'&:hover': {
 			filter: 'brightness(70%)',
 			cursor: 'pointer',
@@ -81,6 +82,7 @@ export default function UploadAlbum(props) {
 						<Card
 							className={classes.imageButtonContainer}
 							onClick={() => inputRef.current.click()}
+							component="button"
 						>
 							<Tooltip title="Agregar Imagen" placement="bottom">
 								<CardMedia component="img" height="100" image={image} />
