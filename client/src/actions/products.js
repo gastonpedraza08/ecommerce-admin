@@ -107,9 +107,10 @@ export const productsSearchProducts = search => {
 	}
 }
 
-export const productCreateHandleNext = () => {
+export const productCreateHandleNext = (values) => {
   return {
     type: types.productCreateHandleNext,
+    payload: values
   };  
 }
 

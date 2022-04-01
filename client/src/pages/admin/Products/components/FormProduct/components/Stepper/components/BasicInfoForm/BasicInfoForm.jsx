@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import {
 	Formik,
 	Form,
@@ -53,13 +54,62 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
+let categories = [
+	{
+		title: 'title 1',
+		id: 1
+	},
+	{
+		title: 'title 2',
+		id: 2
+	},
+]
+
 export default function FormProduct() {
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
 	const [thumbnail, setThumbnail] = useState('');
 	const [category, setCategory] = useState('');
+	const { product } = useSelector(state => state.products.productForm);
+	const [initialValues, setInitialValues] = useState(() => {
+
+		if (!product.name) {
+			return {
+				name: '',
+				sku: '',
+				categoryId: '',
+				price: '',
+				state: 'active',
+				condition: 'new',
+				stock: '',
+				thumbnail: '',
+				images: [],
+				description: '',
+			}
+		} else {
+			setCategory(() => {
+				return categories.find(categ => categ.id === product.categoryId);
+			});
+			setImages(product.images);
+			setThumbnail(product.thumbnail);
+			
+			return {
+				name: product.name,
+				sku: product.sku,
+				categoryId: product.categoryId,
+				price: product.price,
+				state: product.state,
+				condition: product.condition,
+				stock: product.stock,
+				thumbnail: product.thumbnail,
+				images: product.images,
+				description: product.description,
+			}
+		}
+	});
 
 	const limitImages = 12;
+
 
 	const setImagesFn = (payload, type, setFieldValue) => {
 		if (type === 'add') {
@@ -97,18 +147,7 @@ export default function FormProduct() {
 					<Formik
 						validateOnChange={false}
 						validateOnBlur={false}
-						initialValues={{
-							name: 'samsung galaxy',
-							sku: 'aiwjdi-awidjaiwdj-awidjawi',
-							categoryId: 1,
-							price: '20.00',
-							state: 'active',
-							condition: 'new',
-							stock: '2',
-							thumbnail: 'https://image.shutterstock.com/image-vector/feather-flat-vector-icon-260nw-1018924762.jpg',
-							images: [{ name: 'liviana.jpg', url: 'https://image.shutterstock.com/image-vector/feather-flat-vector-icon-260nw-1018924762.jpg'}],
-							description: '<p>Lo mejor de lo mejor en nuestras sucursales</p>',
-						}}
+						initialValues={initialValues}
 						validate={(values) =>
 							validateFormProduct(values)
 						}
@@ -188,10 +227,7 @@ export default function FormProduct() {
 									</Grid>
 									<Grid item xs={12} sm={6} md={4}>
 										<Autocomplete
-											options={[
-												{ title: 'title 1', id: 1 },
-												{ title: 'title 2', id: 2 },
-											]}
+											options={categories}
 											getOptionLabel={(option) => option.title || ''}
 											onChange={(e, value) => {
 													setCategory(value);

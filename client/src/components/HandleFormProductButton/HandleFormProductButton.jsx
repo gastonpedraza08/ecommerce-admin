@@ -44,7 +44,7 @@ export default function HandleFormProductButton(props) {
       if (categoryId) {
         console.log(values)
         dispatch(productCreateHandleSetCategory(categoryId));
-        return dispatch(productCreateHandleNext());
+        return dispatch(productCreateHandleNext(values));
       }
   	}
   	return null;

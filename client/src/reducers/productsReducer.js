@@ -13,6 +13,7 @@ const initialState = {
 		skipped: [],
 		componentName: componentsName[0].component,
 		componentsName,
+		product: {}
 	}
 };
 
@@ -53,6 +54,7 @@ export const productsReducer = (state = initialState, action) => {
 					...state.productForm,
 					activeStep: nextStep,
 					componentName: state.productForm.componentsName[nextStep]?.component,
+					product: action.payload
 				}
 			}
 		case types.productCreateHandleBack:
