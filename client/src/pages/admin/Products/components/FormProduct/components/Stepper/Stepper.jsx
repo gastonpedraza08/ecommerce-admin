@@ -48,7 +48,7 @@ export default function HorizontalLinearStepper() {
     dispatch(productCreateHandleReset());
   };
 
-  const ComponentToRender = React.lazy(() => import('./' + componentName));
+  const ComponentToRender = React.lazy(() => import('./components/' + componentName + '/' + componentName + '.jsx'));
 
   return (
     <div className={classes.root}>
