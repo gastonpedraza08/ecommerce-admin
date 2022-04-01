@@ -98,16 +98,16 @@ export default function FormProduct() {
 						validateOnChange={false}
 						validateOnBlur={false}
 						initialValues={{
-							name: '',
-							sku: '',
-							categoryId: '',
-							price: '',
+							name: 'samsung galaxy',
+							sku: 'aiwjdi-awidjaiwdj-awidjawi',
+							categoryId: 1,
+							price: '20.00',
 							state: 'active',
 							condition: 'new',
-							stock: '',
-							thumbnail: '',
-							images: '',
-							description: '',
+							stock: '2',
+							thumbnail: 'https://image.shutterstock.com/image-vector/feather-flat-vector-icon-260nw-1018924762.jpg',
+							images: [{ name: 'liviana.jpg', url: 'https://image.shutterstock.com/image-vector/feather-flat-vector-icon-260nw-1018924762.jpg'}],
+							description: '<p>Lo mejor de lo mejor en nuestras sucursales</p>',
 						}}
 						validate={(values) =>
 							validateFormProduct(values)
