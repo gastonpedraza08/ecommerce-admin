@@ -22,6 +22,15 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(1),
     marginBottom: theme.spacing(1),
   },
+  stepper: {
+    backgroundColor: 'white',
+    overflow: 'scroll',
+    '&::-webkit-scrollbar': {
+      display: 'none'
+    },
+    '-ms-overflow-style': 'none',
+    'scrollbar-width': 'none'
+  }
 }));
 
 
@@ -52,7 +61,7 @@ export default function HorizontalLinearStepper() {
 
   return (
     <div className={classes.root}>
-      <Stepper activeStep={activeStep}>
+      <Stepper className={classes.stepper} activeStep={activeStep}>
         {componentsName.map(({ label }, index) => {
           const stepProps = {};
           const labelProps = {};
