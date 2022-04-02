@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
@@ -38,12 +38,27 @@ export default function HorizontalLinearStepper() {
   const dispatch = useDispatch();
   const classes = useStyles();
   const { productForm } = useSelector(state => state.products);
+  const [myComponentsName, setMyComponentsName] = useState([]);
+  const [myActiveStep, setMyActiveStep] = useState(0);
 
   const { 
     activeStep, 
     componentName, 
     componentsName 
   } = productForm;
+
+  useEffect(() => {
+    let auxArr = [...componentsName];
+    let index = activeStep;
+
+    if (activeStep < 3) {
+      setMyActiveStep(activeStep);
+      setMyComponentsName(auxArr.splice(0, 5));
+    } else {
+      setMyComponentsName(auxArr.splice(index - 2, 5));
+    }
+
+  }, [componentsName, activeStep]);
 
   const isStepOptional = (step) => {
     return componentsName[step].isOptional;
@@ -61,8 +76,8 @@ export default function HorizontalLinearStepper() {
 
   return (
     <div className={classes.root}>
-      <Stepper className={classes.stepper} activeStep={activeStep}>
-        {componentsName.map(({ label }, index) => {
+      <Stepper className={classes.stepper} activeStep={myActiveStep}>
+        {myComponentsName.map(({ label }, index) => {
           const stepProps = {};
           const labelProps = {};
           if (isStepOptional(index)) {
