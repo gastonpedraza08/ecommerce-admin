@@ -145,7 +145,6 @@ export default function HorizontalLinearStepper() {
       <Stepper 
         className={classes.stepper} 
         activeStep={myActiveStep}
-        alternativeLabel
         connector={<QontoConnector />}
       >
         {myComponentsName.map(({ label, id }, index) => {
