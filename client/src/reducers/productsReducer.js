@@ -19,6 +19,7 @@ const initialState = {
 
 let nextStep;
 let prevStep;
+let activeStep;
 
 export const productsReducer = (state = initialState, action) => {
 	switch (action.type) {
@@ -47,14 +48,17 @@ export const productsReducer = (state = initialState, action) => {
 				}
 			};
 		case types.productCreateHandleNext:
-			nextStep = state.productForm.activeStep + 1;
+			activeStep = state.productForm.activeStep;
+			nextStep = activeStep + 1;
+			
 			return {
 				...state,
 				productForm: {
 					...state.productForm,
 					activeStep: nextStep,
 					componentName: state.productForm.componentsName[nextStep]?.component,
-					product: action.payload
+					product: action.payload,
+					skipped: state.productForm.skipped.filter(id => id !== state.productForm.componentsName[activeStep].id)
 				}
 			}
 		case types.productCreateHandleBack:
@@ -75,7 +79,7 @@ export const productsReducer = (state = initialState, action) => {
 					...state.productForm,
 					activeStep: nextStep,
 					componentName: state.productForm.componentsName[nextStep]?.component,
-					skipped: state.productForm.skipped.concat(state.productForm.activeStep),
+					skipped: state.productForm.skipped.concat(state.productForm.componentsName[nextStep - 1].id),
 				}
 			}
 		case types.productCreateHandleReset:

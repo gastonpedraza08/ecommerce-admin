@@ -44,7 +44,8 @@ export default function HorizontalLinearStepper() {
   const { 
     activeStep, 
     componentName, 
-    componentsName 
+    componentsName,
+    skipped
   } = productForm;
 
   useEffect(() => {
@@ -60,12 +61,12 @@ export default function HorizontalLinearStepper() {
 
   }, [componentsName, activeStep]);
 
-  const isStepOptional = (step) => {
-    return componentsName[step].isOptional;
+  const isStepOptional = (id) => {
+    return componentsName.find(cN => cN.id === id).isOptional;
   };
 
-  const isStepSkipped = (step) => {
-    return componentsName[step].isOptional;
+  const isStepSkipped = (id) => {
+    return skipped.includes(id);
   };
 
   const handleReset = () => {
@@ -77,13 +78,13 @@ export default function HorizontalLinearStepper() {
   return (
     <div className={classes.root}>
       <Stepper className={classes.stepper} activeStep={myActiveStep}>
-        {myComponentsName.map(({ label }, index) => {
+        {myComponentsName.map(({ label, id }, index) => {
           const stepProps = {};
           const labelProps = {};
-          if (isStepOptional(index)) {
+          if (isStepOptional(id)) {
             labelProps.optional = <Typography variant="caption">Optional</Typography>;
           }
-          if (isStepSkipped(index)) {
+          if (isStepSkipped(id)) {
             stepProps.completed = false;
           }
           return (
