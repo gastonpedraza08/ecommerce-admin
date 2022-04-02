@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import StepConnector from '@material-ui/core/StepConnector';
+import Check from '@material-ui/icons/Check';
 
 import { 
   productCreateHandleReset,
@@ -32,6 +35,68 @@ const useStyles = makeStyles((theme) => ({
     'scrollbar-width': 'none'
   }
 }));
+
+const QontoConnector = withStyles(theme => ({
+  alternativeLabel: {
+    top: 10,
+    left: 'calc(-50% + 16px)',
+    right: 'calc(50% + 16px)',
+  },
+  active: {
+    '& $line': {
+      borderColor: theme.palette.primary.dark,
+    },
+  },
+  completed: {
+    '& $line': {
+      borderColor: theme.palette.primary.dark,
+    },
+  },
+  line: {
+    borderColor: theme.palette.primary.light,
+    borderTopWidth: 3,
+    borderRadius: 1,
+  },
+}))(StepConnector);
+
+const useQontoStepIconStyles = makeStyles(theme => ({
+  root: {
+    color: theme.palette.primary.light,
+    display: 'flex',
+    height: 22,
+    alignItems: 'center',
+  },
+  active: {
+    color: theme.palette.primary.dark,
+  },
+  circle: {
+    width: 8,
+    height: 8,
+    borderRadius: '50%',
+    backgroundColor: 'currentColor',
+  },
+  completed: {
+    color: theme.palette.primary.dark,
+    zIndex: 1,
+    fontSize: 18,
+  },
+}));
+
+function QontoStepIcon(props) {
+  const classes = useQontoStepIconStyles();
+  const { active, completed } = props;
+
+  return (
+    <div
+      className={clsx(classes.root, {
+        [classes.active]: active,
+      })}
+    >
+      {completed ? <Check className={classes.completed} /> : <div className={classes.circle} />}
+    </div>
+  );
+}
+
 
 
 export default function HorizontalLinearStepper() {
@@ -77,7 +142,12 @@ export default function HorizontalLinearStepper() {
 
   return (
     <div className={classes.root}>
-      <Stepper className={classes.stepper} activeStep={myActiveStep}>
+      <Stepper 
+        className={classes.stepper} 
+        activeStep={myActiveStep}
+        alternativeLabel
+        connector={<QontoConnector />}
+      >
         {myComponentsName.map(({ label, id }, index) => {
           const stepProps = {};
           const labelProps = {};
@@ -89,7 +159,12 @@ export default function HorizontalLinearStepper() {
           }
           return (
             <Step key={label} {...stepProps}>
-              <StepLabel {...labelProps}>{label}</StepLabel>
+              <StepLabel 
+                {...labelProps}
+                StepIconComponent={QontoStepIcon}
+              >
+                {label}
+              </StepLabel>
             </Step>
           );
         })}
