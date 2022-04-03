@@ -159,7 +159,8 @@ export default function FormProduct() {
 						validate={(values) =>
 							validateFormProduct(values)
 						}
-						render={(formikProps) => (
+					>
+						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined">
 									<FastField name="name">
@@ -255,7 +256,7 @@ export default function FormProduct() {
 										/>
 									</Grid>
 									<Grid item xs={12} sm={6} md={4}>
-										<FastField name="state" as="select">
+										<FastField name="state">
 											{({ field }) => (
 												<TextField
 													style={{ width: '100%' }}
@@ -275,7 +276,7 @@ export default function FormProduct() {
 										</FastField>
 									</Grid>
 									<Grid item xs={12} sm={6} md={4}>
-										<FastField name="condition" as="select">
+										<FastField name="condition">
 											{({ field }) => (
 												<TextField
 													style={{ width: '100%' }}
@@ -349,7 +350,7 @@ export default function FormProduct() {
 								</div>
 							</Form>
 						)}
-					/>
+					</Formik>
 				</Grid>
 			</Grid>
 		</div>
