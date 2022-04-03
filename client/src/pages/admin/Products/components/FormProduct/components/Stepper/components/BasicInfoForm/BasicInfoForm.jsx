@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -71,42 +71,42 @@ export default function FormProduct() {
 	const [thumbnail, setThumbnail] = useState('');
 	const [category, setCategory] = useState('');
 	const { product } = useSelector(state => state.products.productForm);
-	const [initialValues, setInitialValues] = useState(() => {
 
-		if (!product.name) {
-			return {
-				name: '',
-				sku: '',
-				categoryId: '',
-				price: '',
-				state: 'active',
-				condition: 'new',
-				stock: '',
-				thumbnail: '',
-				images: [],
-				description: '',
-			}
-		} else {
-			setCategory(() => {
-				return categories.find(categ => categ.id === product.categoryId);
-			});
-			setImages(product.images);
-			setThumbnail(product.thumbnail);
-			
-			return {
-				name: product.name,
-				sku: product.sku,
-				categoryId: product.categoryId,
-				price: product.price,
-				state: product.state,
-				condition: product.condition,
-				stock: product.stock,
-				thumbnail: product.thumbnail,
-				images: product.images,
-				description: product.description,
-			}
+	let initialValues;
+
+	if (!product.name) {
+		initialValues = {
+			name: '',
+			sku: '',
+			categoryId: '',
+			price: '',
+			state: 'active',
+			condition: 'new',
+			stock: '',
+			thumbnail: '',
+			images: [],
+			description: '',
 		}
-	});
+	} else {
+		setCategory(() => {
+			return categories.find(categ => categ.id === product.categoryId);
+		});
+		setImages(product.images);
+		setThumbnail(product.thumbnail);
+		
+		initialValues = {
+			name: product.name,
+			sku: product.sku,
+			categoryId: product.categoryId,
+			price: product.price,
+			state: product.state,
+			condition: product.condition,
+			stock: product.stock,
+			thumbnail: product.thumbnail,
+			images: product.images,
+			description: product.description,
+		}
+	}
 
 	const limitImages = 12;
 
