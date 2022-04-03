@@ -6,7 +6,7 @@ let objToExport = {
 				{
 					id: 1,
 					label: 'Hecho 1',
-					component: 'FinalForm',
+					component: 'BasicInfoForm',
 					isOptional: false,
 				},
 				{
