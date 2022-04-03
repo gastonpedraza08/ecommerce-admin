@@ -20,6 +20,7 @@ import { UploadAlbum, HandleFormProductButton } from 'components';
 import DescriptionEditor from './CKEditor.jsx';
 
 import { validateFormProduct } from 'helpers/validateForms';
+import objCategories from 'assets/config/products/categories';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -54,22 +55,29 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-let categories = [
-	{
-		title: 'title 1',
-		id: 1
-	},
-	{
-		title: 'title 2',
-		id: 2
-	},
-]
+let categories = [];
+
+let defaultCategory = {
+	id: 0,
+	title: 'Selecciona una categoria',
+	disabled: true
+};
+
+categories.push(defaultCategory);
+
+for (let prop in objCategories) {
+	categories.push({
+		id: prop,
+		title: objCategories[prop]
+	});
+}
+
 
 export default function FormProduct() {
 	const classes = useStyles();
 	const [images, setImages] = useState([]);
 	const [thumbnail, setThumbnail] = useState('');
-	const [category, setCategory] = useState('');
+	const [category, setCategory] = useState(defaultCategory);
 	const { product } = useSelector(state => state.products.productForm);
 
 	let initialValues;
@@ -229,6 +237,7 @@ export default function FormProduct() {
 										<Autocomplete
 											options={categories}
 											getOptionLabel={(option) => option.title || ''}
+											getOptionDisabled={(option) => option.disabled}
 											onChange={(e, value) => {
 													setCategory(value);
 													formikProps.setFieldValue('categoryId', value ? value.id : '');
