@@ -75,46 +75,46 @@ for (let prop in objCategories) {
 
 export default function FormProduct() {
 	const classes = useStyles();
-	const [images, setImages] = useState([]);
-	const [thumbnail, setThumbnail] = useState('');
-	const [category, setCategory] = useState(defaultCategory);
 	const { product } = useSelector(state => state.products.productForm);
 
-	let initialValues;
-
-	if (!product.name) {
-		initialValues = {
-			name: '',
-			sku: '',
-			categoryId: '',
-			price: '',
-			state: 'active',
-			condition: 'new',
-			stock: '',
-			thumbnail: '',
-			images: [],
-			description: '',
-		}
-	} else {
-		setCategory(() => {
+	const [images, setImages] = useState(product.images || []);
+	const [thumbnail, setThumbnail] = useState(product.thumbnail || '');
+	const [category, setCategory] = useState(() => {
+		if (product.categoryId) {
 			return categories.find(categ => categ.id === product.categoryId);
-		});
-		setImages(product.images);
-		setThumbnail(product.thumbnail);
-		
-		initialValues = {
-			name: product.name,
-			sku: product.sku,
-			categoryId: product.categoryId,
-			price: product.price,
-			state: product.state,
-			condition: product.condition,
-			stock: product.stock,
-			thumbnail: product.thumbnail,
-			images: product.images,
-			description: product.description,
+		} else {
+			return defaultCategory;
 		}
-	}
+	});
+	const [initialValues, setInitialValues] = useState(() => {
+		if (!product.name) {
+			return {
+				name: '',
+				sku: '',
+				categoryId: '',
+				price: '',
+				state: 'active',
+				condition: 'new',
+				stock: '',
+				thumbnail: '',
+				images: [],
+				description: '',
+			}
+		} else {
+			return {
+				name: product.name,
+				sku: product.sku,
+				categoryId: product.categoryId,
+				price: product.price,
+				state: product.state,
+				condition: product.condition,
+				stock: product.stock,
+				thumbnail: product.thumbnail,
+				images: product.images,
+				description: product.description,
+			}
+		}
+	});
 
 	const limitImages = 12;
 
@@ -156,10 +156,11 @@ export default function FormProduct() {
 						validateOnChange={false}
 						validateOnBlur={false}
 						initialValues={initialValues}
-						validate={(values) =>{
+						validate={(values) => {
+							console.log(values)
 							let result = validateFormProduct(values)
 							//return result;
-							return { }
+							return result
 						}}
 					>
 						{(formikProps) => (

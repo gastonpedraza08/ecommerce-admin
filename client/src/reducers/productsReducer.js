@@ -57,7 +57,7 @@ export const productsReducer = (state = initialState, action) => {
 					...state.productForm,
 					activeStep: nextStep,
 					componentName: state.productForm.componentsName[nextStep]?.component,
-					product: action.payload,
+					product: {...state.productForm.product, ...action.payload },
 					skipped: state.productForm.skipped.filter(id => id !== state.productForm.componentsName[activeStep].id)
 				}
 			}
