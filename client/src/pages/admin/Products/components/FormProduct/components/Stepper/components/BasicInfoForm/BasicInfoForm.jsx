@@ -67,7 +67,7 @@ categories.push(defaultCategory);
 
 for (let prop in objCategories) {
 	categories.push({
-		id: prop,
+		id: Number(prop),
 		title: objCategories[prop]
 	});
 }
@@ -81,7 +81,8 @@ export default function FormProduct() {
 	const [thumbnail, setThumbnail] = useState(product.thumbnail || '');
 	const [category, setCategory] = useState(() => {
 		if (product.categoryId) {
-			return categories.find(categ => categ.id === product.categoryId);
+			let categoryInList = categories.find(categ => categ.id === product.categoryId);
+			return categoryInList;
 		} else {
 			return defaultCategory;
 		}
@@ -91,13 +92,13 @@ export default function FormProduct() {
 			return {
 				name: '',
 				sku: '',
-				categoryId: '',
+				categoryId: product.categoryId || '',
 				price: '',
 				state: 'active',
 				condition: 'new',
 				stock: '',
-				thumbnail: '',
-				images: [],
+				thumbnail: product.thumbnail || '',
+				images: product.images || [],
 				description: '',
 			}
 		} else {
@@ -157,7 +158,6 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							console.log(values)
 							let result = validateFormProduct(values)
 							//return result;
 							return result
