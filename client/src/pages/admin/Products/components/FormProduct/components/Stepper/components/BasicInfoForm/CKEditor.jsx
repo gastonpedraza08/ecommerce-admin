@@ -7,16 +7,16 @@ export default function DescriptionEditor(props) {
 	const { setFieldValue, description } = props;
 
 	return (
-			<CKEditor
-				editor={ClassicEditor}
-				data={description}
-				config={{
-            removePlugins: ['ImageCaption', 'ImageStyle', 'ImageToolbar', 'ImageUpload', 'MediaEmbed', 'EasyImage']
-          }}
-				onBlur={(event, editor) => {
-					const data = editor.getData();
-					setFieldValue('description', data);
-				}}
-			/>
+		<CKEditor
+			editor={ClassicEditor}
+			data={description}
+			config={{
+        toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
+      }}
+			onBlur={(event, editor) => {
+				const data = editor.getData();
+				setFieldValue('description', data);
+			}}
+		/>
 	);
 }
