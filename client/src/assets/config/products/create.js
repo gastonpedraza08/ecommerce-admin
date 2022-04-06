@@ -1,7 +1,7 @@
 let objToExport = {
 	categories: {
 		//default for all products
-		0: {
+		1: {
 			componentsName: [
 				{
 					id: 1,
@@ -59,7 +59,7 @@ let objToExport = {
 				}
 			]
 		},
-		1: {
+		2: {
 			componentsName: [
 				{
 					label: 'Información del producto',
@@ -83,7 +83,7 @@ let objToExport = {
 				}
 			],
 		},
-		2: {
+		3: {
 			componentsName: [
 				{
 					label: 'Información del producto',

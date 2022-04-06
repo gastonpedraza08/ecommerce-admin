@@ -1,6 +1,6 @@
 import { types } from "../types/types";
 import create from 'assets/config/products/create';
-let componentsName = create.categories[0].componentsName;
+let componentsName = create.categories[1].componentsName;
 
 const initialState = {
 	products: [],

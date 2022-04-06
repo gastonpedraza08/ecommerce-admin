@@ -156,9 +156,11 @@ export default function FormProduct() {
 						validateOnChange={false}
 						validateOnBlur={false}
 						initialValues={initialValues}
-						validate={(values) =>
-							validateFormProduct(values)
-						}
+						validate={(values) =>{
+							let result = validateFormProduct(values)
+							//return result;
+							return { }
+						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
