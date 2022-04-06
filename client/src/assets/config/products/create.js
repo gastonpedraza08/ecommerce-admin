@@ -12,7 +12,7 @@ let objToExport = {
 				{
 					id: 2,
 					label: 'Hecho 2',
-					component: 'FinalForm',
+					component: 'GeneralCharacteristics',
 					isOptional: false
 				},
 				{

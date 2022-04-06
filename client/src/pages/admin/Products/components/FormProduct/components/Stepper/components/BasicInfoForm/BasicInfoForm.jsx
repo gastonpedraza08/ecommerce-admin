@@ -19,7 +19,7 @@ import Typography from '@material-ui/core/Typography';
 import { UploadAlbum, HandleFormProductButton } from 'components';
 import DescriptionEditor from './CKEditor.jsx';
 
-import { validateFormProduct } from 'helpers/validateForms';
+import { validateBasicInfo } from 'helpers/validateProduct';
 import objCategories from 'assets/config/products/categories';
 
 const useStyles = makeStyles((theme) => ({
@@ -158,8 +158,7 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateFormProduct(values)
-							//return result;
+							let result = validateBasicInfo(values)
 							return result
 						}}
 					>

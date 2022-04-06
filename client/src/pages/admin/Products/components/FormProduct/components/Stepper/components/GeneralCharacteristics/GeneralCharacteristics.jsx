@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,15 +8,14 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Autocomplete from '@material-ui/lab/Autocomplete';
-import InputAdornment from '@material-ui/core/InputAdornment';
+import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateFormProduct } from 'helpers/validateForms';
+import { validateGeneralCharacteristics } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -31,17 +30,8 @@ const useStyles = makeStyles((theme) => ({
 		margin: theme.spacing(1),
 		width: '100%',
 	},
-	withoutLabel: {
-		marginTop: theme.spacing(3),
-	},
 	marginTop: {
 		marginTop: theme.spacing(2),
-	},
-	textField: {
-		width: '25ch',
-	},
-	textFieldSmall: {
-		width: '30%',
 	},
 	error: {
 		marginTop: theme.spacing(2),
@@ -51,45 +41,34 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-let categories = [
-	{
-		title: 'title 1',
-		id: 1
-	},
-	{
-		title: 'title 2',
-		id: 2
-	},
-]
 
-export default function GeneralCharacteristics() {
+export default function FormProduct() {
 	const classes = useStyles();
-	const [category, setCategory] = useState('');
 	const { product } = useSelector(state => state.products.productForm);
 
-
-	const [initialValues, setInitialValues] = useState({name: '',
-					categoryId: '',
-					price: '',
-					stock: '',});
-
-	useEffect(() => {
-		setInitialValues(() => {
-			if (product.name) {
-				setCategory(() => {
-					return categories.find(categ => categ.id === product.categoryId);
-				});
-			}	
-				console.log("entra aca")
-				return {
-					name: product.name,
-					categoryId: product.categoryId,
-					price: product.price,
-					stock: product.stock,
-				}
-		});
-	}, [product, setCategory]);
-
+	const [initialValues, setInitialValues] = useState(() => {
+		if (!product.marca) {
+			return {
+				marca: '',
+				línea: '',
+				modelo: '',
+				color: '',
+				origen: '',
+				versión: '',
+				modelo_detallado: ''
+			}
+		} else {
+			return {
+				marca: product.marca,
+				línea: product.línea,
+				modelo: product.modelo,
+				color: product.color,
+				origen: product.origen,
+				versión: product.versión,
+				modelo_detallado: product.modelo_detallado,
+			}
+		}
+	});
 
 	return (
 		<div>
@@ -99,83 +78,86 @@ export default function GeneralCharacteristics() {
 						validateOnChange={false}
 						validateOnBlur={false}
 						initialValues={initialValues}
-						validate={(values) =>	{
-							//let result = validateFormProduct(values);
-							return {};
+						validate={(values) => {
+							let result = validateGeneralCharacteristics(values)
+							//return result;
+							return result
 						}}
-						render={(formikProps) => (
+					>
+						{(formikProps) => (
 							<Form className={classes.form}>
-								<FormControl fullWidth variant="outlined">
-									<FastField name="name">
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="marca">
 										{({ field }) => (
 											<TextField
-												label="Nombre del Producto"
+												label="Marca"
+												placeholder="Ej Samsung"
 												variant="outlined"
 												{...field}
 											/>
 										)}
 									</FastField>
 								</FormControl>
-								<Grid
-									container
-									spacing={2}
-									alignItems="center"
-									className={clsx(classes.marginTop)}
-								>
-									<Grid item xs={12} sm={4}>
-										<FastField name="stock">
-											{({ field }) => (
-												<TextField
-													label="Stock"
-													variant="outlined"
-													fullWidth
-													{...field}
-												/>
-											)}
-										</FastField>
-									</Grid>
-								</Grid>
-								<Grid container spacing={2} className={clsx(classes.marginTop)}>
-									<Grid item xs={12} sm={6} md={4}>
-										<FastField name="price">
-											{({ field }) => (
-												<TextField
-													label="Precio"
-													variant="outlined"
-													InputProps={{
-														startAdornment: (
-															<InputAdornment position="start">
-																$
-															</InputAdornment>
-														),
-													}}
-													{...field}
-													fullWidth
-												/>
-											)}
-										</FastField>
-									</Grid>
-									<Grid item xs={12} sm={6} md={4}>
-										<Autocomplete
-											options={categories}
-											getOptionLabel={(option) => option.title || ''}
-											onChange={(e, value) => {
-													setCategory(value);
-													formikProps.setFieldValue('categoryId', value ? value.id : '');
-												}
-											}
-											value={category}
-											name="category"
-											renderInput={(params) => (
-												<TextField
-													{...params}
-													label="Categoria"
-													variant="outlined"
-												/>
-											)}
-										/>
-									</Grid>
-								</Grid>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="línea">
+										{({ field }) => (
+											<TextField
+												label="Línea"
+												placeholder="Ej Galaxy A"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="modelo">
+										{({ field }) => (
+											<TextField
+												label="Modelo"
+												placeholder="Ej A32"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="color">
+										{({ field }) => (
+											<TextField
+												label="Color"
+												placeholder="Ej Awesome blue"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="origen">
+										{({ field }) => (
+											<TextField
+												label="Origen"
+												placeholder="Ej Argentina"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="modelo_detallado">
+										{({ field }) => (
+											<TextField
+												label="Modelo Detallado"
+												placeholder="Ej IPROV1000406620255"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
 								<Grid container className={clsx(classes.marginTop)}>
 									{Object.values(formikProps.errors).map((msg) => (
 										<Grid item xs={12} key={msg} >
@@ -193,7 +175,7 @@ export default function GeneralCharacteristics() {
 								</div>
 							</Form>
 						)}
-					/>
+					</Formik>
 				</Grid>
 			</Grid>
 		</div>
