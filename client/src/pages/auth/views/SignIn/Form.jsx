@@ -62,7 +62,7 @@ export default function SignIn(props) {
   const { login } = useSelector(state => state.auth);
 
   const [formValues, setFormValues] = useState({
-  	email: 'gastonpedraza.developer@gmail.com',
+  	email: 'gp.ju.dev@gmail.com',
   	password: 'abcd1234'
   });
 
