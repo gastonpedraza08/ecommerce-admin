@@ -51,7 +51,7 @@ export default function FormRegister(props) {
   const [formValues, setFormValues] = useState({
     firstName: 'gaston',
     lastName: 'pedraza',
-    email: 'gastonpedraza.developer@gmail.com',
+    email: 'gp.ju.dev@gmail.com',
     password: 'abcd1234',
     checked: true
   });
