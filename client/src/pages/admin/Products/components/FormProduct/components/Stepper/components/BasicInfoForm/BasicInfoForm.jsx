@@ -68,7 +68,8 @@ categories.push(defaultCategory);
 for (let prop in objCategories) {
 	categories.push({
 		id: Number(prop),
-		title: objCategories[prop]
+		title: objCategories[prop],
+		disabled: Number(prop) != 1 ? true : false
 	});
 }
 
@@ -90,16 +91,16 @@ export default function FormProduct() {
 	const [initialValues, setInitialValues] = useState(() => {
 		if (!product.name) {
 			return {
-				name: '',
-				sku: '',
+				name: 'samsung galaxy',
+				sku: 'aiwdjiawj22828',
 				categoryId: product.categoryId || '',
-				price: '',
+				price: '123',
 				state: 'active',
 				condition: 'new',
-				stock: '',
+				stock: '123',
 				thumbnail: product.thumbnail || '',
 				images: product.images || [],
-				description: '',
+				description: '<p>Descripcion con al menos veinte caracteres</p>',
 			}
 		} else {
 			return {

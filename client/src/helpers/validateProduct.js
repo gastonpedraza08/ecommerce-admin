@@ -71,3 +71,23 @@ export const validateGeneralCharacteristics = (values) => {
 	}
 	return errors;
 }
+
+export const validateSpecs = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateOperatingSystem = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}

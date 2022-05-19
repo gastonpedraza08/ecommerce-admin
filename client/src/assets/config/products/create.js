@@ -5,26 +5,26 @@ let objToExport = {
 			componentsName: [
 				{
 					id: 1,
-					label: 'Hecho 1',
+					label: 'Información Básica del Producto',
 					component: 'BasicInfoForm',
 					isOptional: false,
 				},
 				{
 					id: 2,
-					label: 'Hecho 2',
+					label: 'Características Generales',
 					component: 'GeneralCharacteristics',
 					isOptional: false
 				},
 				{
 					id: 3,
-					label: 'Hecho 3',
-					component: 'FinalForm',
+					label: 'Especificaciones',
+					component: 'Specs',
 					isOptional: false
 				},
 				{
 					id: 4,
-					label: 'Hecho 4',
-					component: 'FinalForm',
+					label: 'Sistema Operativo',
+					component: 'OperatingSystem',
 					isOptional: true
 				},
 				{

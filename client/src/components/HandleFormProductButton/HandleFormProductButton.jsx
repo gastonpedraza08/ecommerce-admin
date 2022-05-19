@@ -50,7 +50,6 @@ export default function HandleFormProductButton(props) {
           validValues[prop] = values[prop];
         }
       }
-      console.log(validValues)
       return dispatch(productCreateHandleNext(validValues));
   	}
   	return null;
