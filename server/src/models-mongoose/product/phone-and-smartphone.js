@@ -27,13 +27,13 @@ module.exports = {
   	type: String
   },
   resolución_de_la_cámara_trasera_principal: {
-  	type: Number
+  	type: String
   },
   resolución_de_video_de_la_cámara_trasera: {
   	type: String
   },
   resolución_de_la_cámara_frontal_principal: {
-  	type: Number
+  	type: String
   },
   con_cámara: {
   	type: String
