@@ -53,13 +53,25 @@ let objToExport = {
 				},
 				{
 					id: 9,
-					label: 'Hecho 9',
-					component: 'FinalForm',
+					label: 'Tarjeta SIM',
+					component: 'SimCard',
 					isOptional: true
 				},
 				{
 					id: 10,
-					label: 'Hecho 9',
+					label: 'Memoria',
+					component: 'Memory',
+					isOptional: true
+				},
+				{
+					id: 11,
+					label: 'Hecho 11',
+					component: 'FinalForm',
+					isOptional: true
+				},
+				{
+					id: 12,
+					label: 'Hecho 12',
 					component: 'FinalForm',
 					isOptional: true
 				}

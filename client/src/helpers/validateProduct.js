@@ -131,3 +131,23 @@ export const validateConectivity = (values) => {
 	}
 	return errors;
 }
+
+export const validateSimCard = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateMemory = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
