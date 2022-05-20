@@ -15,7 +15,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateSpecs } from 'helpers/validateProduct';
+import { validateCamera } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -50,40 +50,44 @@ export default function FormProduct() {
 		if (!product.resolución_de_la_cámara_trasera_principal) {
 			return {
 				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_la_cámara_trasera_principal: '',
+				resolución_de_video_de_la_cámara_trasera: '',
+				resolución_de_la_cámara_frontal_principal: '',
+				con_cámara: '',
+				características_principales_de_las_cámaras: '',
+				cantidad_de_cámaras_traseras: '',
+				resolución_de_las_cámaras_traseras: '',
+				apertura_del_diafragma_de_la_cámara_trasera: '',
+				cantidad_de_cámaras_frontales: '',
+				resolución_de_video_de_la_cámara_frontal: '',
+				apertura_del_diafragma_de_la_cámara_frontal: '',
+				con_flash_en_la_cámara_frontal: '',
+				zoom_digital: '',
+				zoom_óptico: '',
+				zoom_híbrido: '',
+				resolución_de_las_cámaras_frontales: '',
+				tipos_de_cámaras_traseras: '',
+				tipos_de_cámaras_frontales: '',
 			}
 		} else {
 			return {
 				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
+				resolución_de_video_de_la_cámara_trasera: product.resolución_de_video_de_la_cámara_trasera,
+				resolución_de_la_cámara_frontal_principal: product.resolución_de_la_cámara_frontal_principal,
+				con_cámara: product.con_cámara,
+				características_principales_de_las_cámaras: product.características_principales_de_las_cámaras,
+				cantidad_de_cámaras_traseras: product.cantidad_de_cámaras_traseras,
+				resolución_de_las_cámaras_traseras: product.resolución_de_las_cámaras_traseras,
+				apertura_del_diafragma_de_la_cámara_trasera: product.apertura_del_diafragma_de_la_cámara_trasera,
+				cantidad_de_cámaras_frontales: product.cantidad_de_cámaras_frontales,
+				resolución_de_video_de_la_cámara_frontal: product.resolución_de_video_de_la_cámara_frontal,
+				apertura_del_diafragma_de_la_cámara_frontal: product.apertura_del_diafragma_de_la_cámara_frontal,
+				con_flash_en_la_cámara_frontal: product.con_flash_en_la_cámara_frontal,
+				zoom_digital: product.zoom_digital,
+				zoom_óptico: product.zoom_óptico,
+				zoom_híbrido: product.zoom_híbrido,
+				resolución_de_las_cámaras_frontales: product.resolución_de_las_cámaras_frontales,
+				tipos_de_cámaras_traseras: product.tipos_de_cámaras_traseras,
+				tipos_de_cámaras_frontales: product.tipos_de_cámaras_frontales,
 			}
 		}
 	});
@@ -97,18 +101,18 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateSpecs(values)
+							let result = validateCamera(values)
 							return result
 						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="mes_de_lanzamiento">
+									<FastField name="resolución_de_la_cámara_trasera_principal">
 										{({ field }) => (
 											<TextField
-												label="Mes de lanzamiento"
-												placeholder="Ej Abril"
+												label="Resolución de la cámara trasera principal"
+												placeholder="Ej 64 px"
 												variant="outlined"
 												{...field}
 											/>
@@ -116,11 +120,203 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="año_de_lanzamiento">
+									<FastField name="resolución_de_video_de_la_cámara_trasera">
 										{({ field }) => (
 											<TextField
-												label="Año de lanzamiento"
-												placeholder="Ej 2022"
+												label="Resolución de video de la cámara trasera"
+												placeholder="Ej 1920 px x 1080 px"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="resolución_de_la_cámara_frontal_principal">
+										{({ field }) => (
+											<TextField
+												label="Resolución de la cámara frontal principal"
+												placeholder="Ej 20 px"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="con_cámara">
+										{({ field }) => (
+											<TextField
+												label="Con cámara"
+												placeholder="Ej Sí"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="características_principales_de_las_cámaras">
+										{({ field }) => (
+											<TextField
+												label="Características principales de las cámaras"
+												placeholder="Ej Autoenfoque, Flash LED, Foto HDR, Panorámica, Modo retrato"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="cantidad_de_cámaras_traseras">
+										{({ field }) => (
+											<TextField
+												label="Cantidad de cámaras traseras"
+												placeholder="Ej 4"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="resolución_de_las_cámaras_traseras">
+										{({ field }) => (
+											<TextField
+												label="Resolución de las cámaras traseras"
+												placeholder="Ej 64 Mpx/8 Mpx/5 Mpx/5 Mpx"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="apertura_del_diafragma_de_la_cámara_trasera">
+										{({ field }) => (
+											<TextField
+												label="Apertura del diafragma de la cámara trasera"
+												placeholder="Ej f 1.8/f 2.2/f 2.4/f 2.4"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="cantidad_de_cámaras_frontales">
+										{({ field }) => (
+											<TextField
+												label="Cantidad de cámaras frontales"
+												placeholder="Ej 1"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="resolución_de_video_de_la_cámara_frontal">
+										{({ field }) => (
+											<TextField
+												label="Resolución de video de la cámara frontal"
+												placeholder="Ej 1920 px x 1080 px"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="apertura_del_diafragma_de_la_cámara_frontal">
+										{({ field }) => (
+											<TextField
+												label="Apertura del diafragma de la cámara frontal"
+												placeholder="Ej f 2.2"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="con_flash_en_la_cámara_frontal">
+										{({ field }) => (
+											<TextField
+												label="Con flash en la cámara frontal"
+												placeholder="Ej No"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="zoom_digital">
+										{({ field }) => (
+											<TextField
+												label="Zoom digital"
+												placeholder="Ej 10x"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="zoom_óptico">
+										{({ field }) => (
+											<TextField
+												label="Zoom óptico"
+												placeholder="Ej 50x"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="zoom_híbrido">
+										{({ field }) => (
+											<TextField
+												label="Zoom híbrido"
+												placeholder="Ej 3x"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="resolución_de_las_cámaras_frontales">
+										{({ field }) => (
+											<TextField
+												label="Resolución de las cámaras frontales"
+												placeholder="Ej 1920 px x 1080 px"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="tipos_de_cámaras_traseras">
+										{({ field }) => (
+											<TextField
+												label="Tipos de cámaras traseras"
+												placeholder="Ej Wide,Periscope Telephoto,Ultrawide"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="tipos_de_cámaras_frontales">
+										{({ field }) => (
+											<TextField
+												label="Tipos de cámaras frontales"
+												placeholder="Ej Wide"
 												variant="outlined"
 												{...field}
 											/>

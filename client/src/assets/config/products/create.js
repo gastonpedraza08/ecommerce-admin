@@ -13,13 +13,13 @@ let objToExport = {
 					id: 2,
 					label: 'Características Generales',
 					component: 'GeneralCharacteristics',
-					isOptional: false
+					isOptional: true
 				},
 				{
 					id: 3,
 					label: 'Especificaciones',
 					component: 'Specs',
-					isOptional: false
+					isOptional: true
 				},
 				{
 					id: 4,
@@ -29,33 +29,39 @@ let objToExport = {
 				},
 				{
 					id: 5,
-					label: 'Hecho 5',
-					component: 'FinalForm',
+					label: 'Camera',
+					component: 'Camera',
 					isOptional: true
 				},
 				{
 					id: 6,
-					label: 'Hecho 6',
-					component: 'FinalForm',
-					isOptional: false
+					label: 'Seguridad',
+					component: 'Security',
+					isOptional: true
 				},
 				{
 					id: 7,
-					label: 'Hecho 7',
-					component: 'FinalForm',
-					isOptional: false
+					label: 'Peso y Dimensiones',
+					component: 'Weight',
+					isOptional: true
 				},
 				{
 					id: 8,
-					label: 'Hecho 8',
-					component: 'FinalForm',
-					isOptional: false
+					label: 'Conectividad',
+					component: 'Conectivity',
+					isOptional: true
 				},
 				{
 					id: 9,
 					label: 'Hecho 9',
 					component: 'FinalForm',
-					isOptional: false
+					isOptional: true
+				},
+				{
+					id: 10,
+					label: 'Hecho 9',
+					component: 'FinalForm',
+					isOptional: true
 				}
 			]
 		},

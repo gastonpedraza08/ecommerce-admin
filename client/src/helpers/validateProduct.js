@@ -91,3 +91,43 @@ export const validateOperatingSystem = (values) => {
 	}
 	return errors;
 }
+
+export const validateCamera = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateSecurity = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateWeight = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateConectivity = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
