@@ -64,18 +64,6 @@ export default function Sidebar(props) {
       disabled: false,
     },
     {
-      title: "Authentication",
-      href: "/admin/sign-in",
-      icon: <LockOpenIcon />,
-      disabled: true,
-    },
-    {
-      title: "Typography",
-      href: "/admin/typography",
-      icon: <TextFieldsIcon />,
-      disabled: true,
-    },
-    {
       title: "Integration",
       href: "/admin/integration",
       icon: <LayersIcon />,

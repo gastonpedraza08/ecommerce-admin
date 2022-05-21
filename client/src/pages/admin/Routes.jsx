@@ -8,7 +8,6 @@ import IntegrationView from './Integration';
 import NotFoundView from './NotFound';
 import ProductsView from './Products';
 import SettingsView from './Settings';
-import TypographyView from './Typography';
 import UserListView from './Users';
 
 export default function Routes() {
@@ -21,7 +20,6 @@ export default function Routes() {
       <Route exact path="/admin/not-found" component={NotFoundView} />
       <Route path="/admin/products" component={ProductsView} />
       <Route exact path="/admin/settings" component={SettingsView} />
-      <Route exact path="/admin/typography" component={TypographyView} />
       <Route path="/admin/users" component={UserListView} />
       <Redirect to="/not-found" />
     </Switch>
