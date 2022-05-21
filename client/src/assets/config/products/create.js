@@ -65,8 +65,8 @@ let objToExport = {
 				},
 				{
 					id: 11,
-					label: 'Hecho 11',
-					component: 'FinalForm',
+					label: 'Pantalla',
+					component: 'Screen',
 					isOptional: true
 				},
 				{

@@ -151,3 +151,13 @@ export const validateMemory = (values) => {
 	}
 	return errors;
 }
+
+export const validateScreen = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
