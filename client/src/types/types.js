@@ -41,6 +41,7 @@ export const types = {
   productCreateHandleBack: "[products] Create Product Handle Back",
   productCreateHandleSkip: "[products] Create Product Handle Skip",
   productCreateHandleReset: "[products] Create Product Handle Reset",
+  productCreateHandleFinish: "[products] Create Product Handle Finish",
   productCreateHandleSetCategory: "[products] Create Product Handle SetCategory",
 
   usersLoadAllusers: "[users] Load All Users",

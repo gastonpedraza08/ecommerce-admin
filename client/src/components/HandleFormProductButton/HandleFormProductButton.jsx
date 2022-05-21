@@ -8,6 +8,7 @@ import {
   productCreateHandleBack,
   productCreateHandleSkip,
   productCreateHandleSetCategory,
+  productCreateProduct,
 } from 'actions/products';
 
 const useStyles = makeStyles((theme) => ({
@@ -67,6 +68,10 @@ export default function HandleFormProductButton(props) {
     dispatch(productCreateHandleSkip());
   };
 
+  const handleSubmit = () => {
+    dispatch(productCreateProduct(productForm.product));
+  }
+
 	return (
     <div>
       <Button disabled={activeStep === 0} onClick={handleBack} className={classes.button}>
@@ -83,16 +88,34 @@ export default function HandleFormProductButton(props) {
           Skip
         </Button>
       )}
-
-      <Button
-        variant="contained"
-        color="primary"
-        onClick={handleNext}
-        className={classes.button}
-        type="submit"
-      >
-        {activeStep === componentsName.length - 1 ? 'Finish' : 'Next'}
-      </Button>
+      <>
+        {
+          activeStep === componentsName.length - 1 ?
+          (
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleSubmit}
+              className={classes.button}
+              type="submit"
+            >
+              Finish
+            </Button>
+          )
+          :
+          (
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={handleNext}
+              className={classes.button}
+              type="submit"
+            >
+              Next
+            </Button>
+          )
+        }
+      </>
     </div>
 	);
 }

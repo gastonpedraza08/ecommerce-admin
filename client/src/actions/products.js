@@ -29,8 +29,18 @@ export const productsLoadProductsSections = () => {
 	};
 };
 
-export const productCreateProduct = (product) => {
+export const productCreateProduct = (productInfo) => {
 	return async (dispatch) => {
+		let product = {};
+		for (let prop in productInfo) {
+			for (let prop2 in productInfo[prop]) {
+				product[prop2] = productInfo[prop][prop2]
+			}
+		}
+
+		product.images = product.images.map(img => {
+			return img.url
+		})
 		dispatch(uiStartCreateProduct());
 		const result = await fetchWithoutToken("products", { product }, "POST");
 		if (!result.error) {
@@ -41,6 +51,8 @@ export const productCreateProduct = (product) => {
 					product
 				},
 			});
+			dispatch(productCreateHandleNext({}))
+			dispatch(productCreateHandleFinish())
 			dispatch(uiStopCreateProduct(null, true));
 		} else {
 			dispatch(uiStopCreateProduct(result.error, null));
@@ -129,6 +141,12 @@ export const productCreateHandleSkip = () => {
 export const productCreateHandleReset = () => {
   return {
     type: types.productCreateHandleReset,
+  };  
+}
+
+export const productCreateHandleFinish = () => {
+  return {
+    type: types.productCreateHandleFinish,
   };  
 }
 

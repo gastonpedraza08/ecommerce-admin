@@ -32,7 +32,9 @@ const initialState = {
 				price: 20000,
 				sku: 'idjiajdaiwjidaw',
 				stock: 5,
-				description: '<p>Esta es una descripcion con mas de 20 chars</p>'
+				description: '<p>Esta es una descripcion con mas de 20 chars</p>',
+				state: 'Activo',
+				condition: 'Nuevo'
 			}
 		}
 	}
@@ -110,6 +112,14 @@ export const productsReducer = (state = initialState, action) => {
 			return {
 				...state,
 				productForm: initialState.productForm
+			}
+		case types.productCreateHandleFinish:
+			return {
+				...state,
+				productForm: {
+					...state.productForm,
+					product: {}
+				}
 			}
 		case types.productCreateHandleSetCategory:
 			return {

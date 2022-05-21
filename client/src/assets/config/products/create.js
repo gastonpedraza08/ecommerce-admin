@@ -103,7 +103,7 @@ let objToExport = {
 					id: 17,
 					label: 'Ultimos Pasos',
 					component: 'FinalForm',
-					isOptional: true
+					isOptional: false
 				}
 			]
 		},

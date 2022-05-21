@@ -171,11 +171,11 @@ export default function HorizontalLinearStepper() {
       <div>
         {activeStep === componentsName.length ? (
           <div>
-            <Typography className={classes.instructions}>
-              All steps completed - you&apos;re finished
+            <Typography style={{color: 'green'}} className={classes.instructions}>
+              Producto creado con éxito.
             </Typography>
             <Button onClick={handleReset} className={classes.button}>
-              Reset
+              Crear Nuevo Producto
             </Button>
           </div>
         ) : (
