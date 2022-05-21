@@ -54,7 +54,6 @@ function AuthAdminProtect(props) {
         history.push('/admin/users');
       } else {
         localStorage.deleteItem('access_token');
-        history.push('/');
       }
     }
   }, [login.success, history]);
