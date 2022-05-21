@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,29 +45,29 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.marca) {
-			return {
-				marca: '',
-				línea: '',
-				modelo: '',
-				color: '',
-				origen: '',
-				versión: '',
-				modelo_detallado: ''
-			}
-		} else {
-			return {
-				marca: product.marca,
-				línea: product.línea,
-				modelo: product.modelo,
-				color: product.color,
-				origen: product.origen,
-				versión: product.versión,
-				modelo_detallado: product.modelo_detallado,
-			}
+	let initialValues;
+
+	if (!product.caracteristias_generales) {
+		initialValues = {
+			marca: '',
+			línea: '',
+			modelo: '',
+			color: '',
+			origen: '',
+			versión: '',
+			modelo_detallado: ''
 		}
-	});
+	} else {
+		initialValues = {
+			marca: product.caracteristias_generales.marca,
+			línea: product.caracteristias_generales.línea,
+			modelo: product.caracteristias_generales.modelo,
+			color: product.caracteristias_generales.color,
+			origen: product.caracteristias_generales.origen,
+			versión: product.caracteristias_generales.versión,
+			modelo_detallado: product.caracteristias_generales.modelo_detallado,
+		}
+	}
 
 	return (
 		<div>
@@ -171,6 +170,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"caracteristias_generales"}
 									/>
 								</div>
 							</Form>

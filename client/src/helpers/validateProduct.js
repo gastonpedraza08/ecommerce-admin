@@ -161,3 +161,53 @@ export const validateScreen = (values) => {
 	}
 	return errors;
 }
+
+export const validateBattery = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateDesign = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateProcessor = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateSensors = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}
+
+export const validateOthers = (values) => {
+	let errors = {};
+
+	switch (true) {
+
+		default:
+	}
+	return errors;
+}

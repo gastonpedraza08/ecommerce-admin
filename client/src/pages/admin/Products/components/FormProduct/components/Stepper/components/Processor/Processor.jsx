@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateSecurity } from 'helpers/validateProduct';
+import { validateProcessor } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -47,19 +47,23 @@ export default function FormProduct() {
 
 	let initialValues;
 
-	if (!product.seguridad) {
+	if (!product.procesador) {
 		initialValues = {
-			con_lector_de_huella_digital: '',
-			con_reconocimiento_facial: '',
-			con_reconocimiento_de_iris: '',
-			con_reconocimiento_de_mano: '',
+			modelo_del_procesador: '',
+			modelos_de_cpu: '',
+			cantidad_de_núcleos_del_procesador: '',
+			velocidad_del_procesador: '',
+			modelo_de_gpu: '',
+			velocidad_del_gpu: '',
 		}
 	} else {
 		initialValues = {
-			con_lector_de_huella_digital: product.seguridad.con_lector_de_huella_digital,
-			con_reconocimiento_facial: product.seguridad.con_reconocimiento_facial,
-			con_reconocimiento_de_iris: product.seguridad.con_reconocimiento_de_iris,
-			con_reconocimiento_de_mano: product.seguridad.con_reconocimiento_de_mano,
+			modelo_del_procesador: product.procesador.modelo_del_procesador,
+			modelos_de_cpu: product.procesador.modelos_de_cpu,
+			cantidad_de_núcleos_del_procesador: product.procesador.cantidad_de_núcleos_del_procesador,
+			velocidad_del_procesador: product.procesador.velocidad_del_procesador,
+			modelo_de_gpu: product.procesador.modelo_de_gpu,
+			velocidad_del_gpu: product.procesador.velocidad_del_gpu,
 		}
 	}
 
@@ -72,18 +76,18 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateSecurity(values)
+							let result = validateProcessor(values)
 							return result
 						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_lector_de_huella_digital">
+									<FastField name="modelo_del_procesador">
 										{({ field }) => (
 											<TextField
-												label="Con lector de huella digital"
-												placeholder="Ej Sí"
+												label="Modelo del procesador"
+												placeholder="Ej Snapdragon 888 5G"
 												variant="outlined"
 												{...field}
 											/>
@@ -91,11 +95,11 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_facial">
+									<FastField name="modelos_de_cpu">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento facial"
-												placeholder="Ej Sí"
+												label="Modelos de CPU"
+												placeholder="Ej 4x1.3 GHz Cortex-A53"
 												variant="outlined"
 												{...field}
 											/>
@@ -103,11 +107,11 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_iris">
+									<FastField name="cantidad_de_núcleos_del_procesador">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de iris"
-												placeholder="Ej Sí"
+												label="Cantidad de núcleos del procesador"
+												placeholder="Ej 4"
 												variant="outlined"
 												{...field}
 											/>
@@ -115,11 +119,35 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_mano">
+									<FastField name="velocidad_del_procesador">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de mano"
-												placeholder="Ej Sí"
+												label="Velocidad del procesador (GHz)"
+												placeholder="Ej 1.3"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="modelo_de_gpu">
+										{({ field }) => (
+											<TextField
+												label="Modelo de GPU"
+												placeholder="Ej Adreno 308"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="velocidad_del_gpu">
+										{({ field }) => (
+											<TextField
+												label="Velocidad del GPU"
+												placeholder="Ej 485 MHz"
 												variant="outlined"
 												{...field}
 											/>
@@ -139,7 +167,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
-										sectionName={"seguridad"}
+										sectionName={"procesador"}
 									/>
 								</div>
 							</Form>

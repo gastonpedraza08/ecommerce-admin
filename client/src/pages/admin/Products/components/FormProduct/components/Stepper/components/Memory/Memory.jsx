@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,25 +45,25 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.mes_de_lanzamiento) {
-			return {
-				memoria_interna: '',
-				memoria_ram: '',
-				con_ranura_para_tarjeta_de_memoria: '',
-				tipos_de_tarjeta_de_memoria: '',
-				capacidad_máxima_de_la_tarjeta_de_memoria: '',
-			}
-		} else {
-			return {
-				memoria_interna: product.memoria_interna,
-				memoria_ram: product.memoria_ram,
-				con_ranura_para_tarjeta_de_memoria: product.con_ranura_para_tarjeta_de_memoria,
-				tipos_de_tarjeta_de_memoria: product.tipos_de_tarjeta_de_memoria,
-				capacidad_máxima_de_la_tarjeta_de_memoria: product.capacidad_máxima_de_la_tarjeta_de_memoria,
-			}
+	let initialValues;
+
+	if (!product.memoria) {
+		initialValues = {
+			memoria_interna: '',
+			memoria_ram: '',
+			con_ranura_para_tarjeta_de_memoria: '',
+			tipos_de_tarjeta_de_memoria: '',
+			capacidad_máxima_de_la_tarjeta_de_memoria: '',
 		}
-	});
+	} else {
+		initialValues = {
+			memoria_interna: product.memoria.memoria_interna,
+			memoria_ram: product.memoria.memoria_ram,
+			con_ranura_para_tarjeta_de_memoria: product.memoria.con_ranura_para_tarjeta_de_memoria,
+			tipos_de_tarjeta_de_memoria: product.memoria.tipos_de_tarjeta_de_memoria,
+			capacidad_máxima_de_la_tarjeta_de_memoria: product.memoria.capacidad_máxima_de_la_tarjeta_de_memoria,
+		}
+	}
 
 	return (
 		<div>
@@ -154,6 +153,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"memoria"}
 									/>
 								</div>
 							</Form>

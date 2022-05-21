@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateSecurity } from 'helpers/validateProduct';
+import { validateDesign } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -47,19 +47,25 @@ export default function FormProduct() {
 
 	let initialValues;
 
-	if (!product.seguridad) {
+	if (!product.diseno_y_resistencia) {
 		initialValues = {
-			con_lector_de_huella_digital: '',
-			con_reconocimiento_facial: '',
-			con_reconocimiento_de_iris: '',
-			con_reconocimiento_de_mano: '',
+			con_teclado_qwerty_físico: '',
+			es_a_prueba_de_agua: '',
+			es_resistente_al_agua: '',
+			es_resistente_al_polvo: '',
+			clasificación_ip: '',
+			es_resistente_a_caídas: '',
+			es_resistente_a_salpicaduras: '',
 		}
 	} else {
 		initialValues = {
-			con_lector_de_huella_digital: product.seguridad.con_lector_de_huella_digital,
-			con_reconocimiento_facial: product.seguridad.con_reconocimiento_facial,
-			con_reconocimiento_de_iris: product.seguridad.con_reconocimiento_de_iris,
-			con_reconocimiento_de_mano: product.seguridad.con_reconocimiento_de_mano,
+			con_teclado_qwerty_físico: product.diseno_y_resistencia.con_teclado_qwerty_físico,
+			es_a_prueba_de_agua: product.diseno_y_resistencia.es_a_prueba_de_agua,
+			es_resistente_al_agua: product.diseno_y_resistencia.es_resistente_al_agua,
+			es_resistente_al_polvo: product.diseno_y_resistencia.es_resistente_al_polvo,
+			clasificación_ip: product.diseno_y_resistencia.clasificación_ip,
+			es_resistente_a_caídas: product.diseno_y_resistencia.es_resistente_a_caídas,
+			es_resistente_a_salpicaduras: product.diseno_y_resistencia.es_resistente_a_salpicaduras,
 		}
 	}
 
@@ -72,17 +78,17 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateSecurity(values)
+							let result = validateDesign(values)
 							return result
 						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_lector_de_huella_digital">
+									<FastField name="con_teclado_qwerty_físico">
 										{({ field }) => (
 											<TextField
-												label="Con lector de huella digital"
+												label="Con teclado QWERTY físico"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -91,10 +97,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_facial">
+									<FastField name="es_a_prueba_de_agua">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento facial"
+												label="Es a prueba de agua"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -103,10 +109,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_iris">
+									<FastField name="es_resistente_al_agua">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de iris"
+												label="Es resistente al agua"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -115,10 +121,46 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_mano">
+									<FastField name="es_resistente_al_polvo">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de mano"
+												label="Es resistente al polvo"
+												placeholder="Ej Sí"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="clasificación_ip">
+										{({ field }) => (
+											<TextField
+												label="Clasificación IP"
+												placeholder="Ej IP68"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="es_resistente_a_caídas">
+										{({ field }) => (
+											<TextField
+												label="Es resistente a caídas"
+												placeholder="Ej Sí"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="es_resistente_a_salpicaduras">
+										{({ field }) => (
+											<TextField
+												label="Es resistente a salpicaduras"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -139,7 +181,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
-										sectionName={"seguridad"}
+										sectionName={"diseno_y_resistencia"}
 									/>
 								</div>
 							</Form>

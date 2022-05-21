@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,51 +45,51 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.resolución_de_la_cámara_trasera_principal) {
-			return {
-				resolución_de_la_cámara_trasera_principal: '',
-				resolución_de_video_de_la_cámara_trasera: '',
-				resolución_de_la_cámara_frontal_principal: '',
-				con_cámara: '',
-				características_principales_de_las_cámaras: '',
-				cantidad_de_cámaras_traseras: '',
-				resolución_de_las_cámaras_traseras: '',
-				apertura_del_diafragma_de_la_cámara_trasera: '',
-				cantidad_de_cámaras_frontales: '',
-				resolución_de_video_de_la_cámara_frontal: '',
-				apertura_del_diafragma_de_la_cámara_frontal: '',
-				con_flash_en_la_cámara_frontal: '',
-				zoom_digital: '',
-				zoom_óptico: '',
-				zoom_híbrido: '',
-				resolución_de_las_cámaras_frontales: '',
-				tipos_de_cámaras_traseras: '',
-				tipos_de_cámaras_frontales: '',
-			}
-		} else {
-			return {
-				resolución_de_la_cámara_trasera_principal: product.resolución_de_la_cámara_trasera_principal,
-				resolución_de_video_de_la_cámara_trasera: product.resolución_de_video_de_la_cámara_trasera,
-				resolución_de_la_cámara_frontal_principal: product.resolución_de_la_cámara_frontal_principal,
-				con_cámara: product.con_cámara,
-				características_principales_de_las_cámaras: product.características_principales_de_las_cámaras,
-				cantidad_de_cámaras_traseras: product.cantidad_de_cámaras_traseras,
-				resolución_de_las_cámaras_traseras: product.resolución_de_las_cámaras_traseras,
-				apertura_del_diafragma_de_la_cámara_trasera: product.apertura_del_diafragma_de_la_cámara_trasera,
-				cantidad_de_cámaras_frontales: product.cantidad_de_cámaras_frontales,
-				resolución_de_video_de_la_cámara_frontal: product.resolución_de_video_de_la_cámara_frontal,
-				apertura_del_diafragma_de_la_cámara_frontal: product.apertura_del_diafragma_de_la_cámara_frontal,
-				con_flash_en_la_cámara_frontal: product.con_flash_en_la_cámara_frontal,
-				zoom_digital: product.zoom_digital,
-				zoom_óptico: product.zoom_óptico,
-				zoom_híbrido: product.zoom_híbrido,
-				resolución_de_las_cámaras_frontales: product.resolución_de_las_cámaras_frontales,
-				tipos_de_cámaras_traseras: product.tipos_de_cámaras_traseras,
-				tipos_de_cámaras_frontales: product.tipos_de_cámaras_frontales,
-			}
+	let initialValues;
+
+	if (!product.camara) {
+		initialValues = {
+			resolución_de_la_cámara_trasera_principal: '',
+			resolución_de_video_de_la_cámara_trasera: '',
+			resolución_de_la_cámara_frontal_principal: '',
+			con_cámara: '',
+			características_principales_de_las_cámaras: '',
+			cantidad_de_cámaras_traseras: '',
+			resolución_de_las_cámaras_traseras: '',
+			apertura_del_diafragma_de_la_cámara_trasera: '',
+			cantidad_de_cámaras_frontales: '',
+			resolución_de_video_de_la_cámara_frontal: '',
+			apertura_del_diafragma_de_la_cámara_frontal: '',
+			con_flash_en_la_cámara_frontal: '',
+			zoom_digital: '',
+			zoom_óptico: '',
+			zoom_híbrido: '',
+			resolución_de_las_cámaras_frontales: '',
+			tipos_de_cámaras_traseras: '',
+			tipos_de_cámaras_frontales: '',
 		}
-	});
+	} else {
+		initialValues = {
+			resolución_de_la_cámara_trasera_principal: product.camara.resolución_de_la_cámara_trasera_principal,
+			resolución_de_video_de_la_cámara_trasera: product.camara.resolución_de_video_de_la_cámara_trasera,
+			resolución_de_la_cámara_frontal_principal: product.camara.resolución_de_la_cámara_frontal_principal,
+			con_cámara: product.camara.con_cámara,
+			características_principales_de_las_cámaras: product.camara.características_principales_de_las_cámaras,
+			cantidad_de_cámaras_traseras: product.camara.cantidad_de_cámaras_traseras,
+			resolución_de_las_cámaras_traseras: product.camara.resolución_de_las_cámaras_traseras,
+			apertura_del_diafragma_de_la_cámara_trasera: product.camara.apertura_del_diafragma_de_la_cámara_trasera,
+			cantidad_de_cámaras_frontales: product.camara.cantidad_de_cámaras_frontales,
+			resolución_de_video_de_la_cámara_frontal: product.camara.resolución_de_video_de_la_cámara_frontal,
+			apertura_del_diafragma_de_la_cámara_frontal: product.camara.apertura_del_diafragma_de_la_cámara_frontal,
+			con_flash_en_la_cámara_frontal: product.camara.con_flash_en_la_cámara_frontal,
+			zoom_digital: product.camara.zoom_digital,
+			zoom_óptico: product.camara.zoom_óptico,
+			zoom_híbrido: product.camara.zoom_híbrido,
+			resolución_de_las_cámaras_frontales: product.camara.resolución_de_las_cámaras_frontales,
+			tipos_de_cámaras_traseras: product.camara.tipos_de_cámaras_traseras,
+			tipos_de_cámaras_frontales: product.camara.tipos_de_cámaras_frontales,
+		}
+	}
 
 	return (
 		<div>
@@ -336,6 +335,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"camara"}
 									/>
 								</div>
 							</Form>

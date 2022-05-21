@@ -88,6 +88,9 @@ export default function CustomizedTables(props) {
         >
           {
             Object.keys(config).map(infotype => {
+              if (config[infotype].name === 'Información Básica del Producto') {
+                return null
+              }
               return (
                 <div key={infotype}>
                   <h3 style={{marginBottom: 8}}>{config[infotype].name}</h3>

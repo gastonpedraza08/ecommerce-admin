@@ -71,7 +71,37 @@ let objToExport = {
 				},
 				{
 					id: 12,
-					label: 'Hecho 12',
+					label: 'Batería',
+					component: 'Battery',
+					isOptional: true
+				},
+				{
+					id: 13,
+					label: 'Diseño y resistencia',
+					component: 'Design',
+					isOptional: true
+				},
+				{
+					id: 14,
+					label: 'Procesador',
+					component: 'Processor',
+					isOptional: true
+				},
+				{
+					id: 15,
+					label: 'Sensores',
+					component: 'Sensors',
+					isOptional: true
+				},
+				{
+					id: 16,
+					label: 'Otros',
+					component: 'Others',
+					isOptional: true
+				},
+				{
+					id: 17,
+					label: 'Ultimos Pasos',
 					component: 'FinalForm',
 					isOptional: true
 				}

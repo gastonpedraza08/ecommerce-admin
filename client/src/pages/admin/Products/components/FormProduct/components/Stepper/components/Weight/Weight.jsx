@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,33 +45,33 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.mes_de_lanzamiento) {
-			return {
-				peso: '',
-				altura_x_ancho_x_profundidad: '',
-				altura_cerrado: '',
-				ancho_cerrado: '',
-				profundidad_cerrado: '',
-				altura_x_ancho: '',
-				profundidad: '',
-				ancho: '',
-				altura: '',
-			}
-		} else {
-			return {
-				peso: product.peso,
-				altura_x_ancho_x_profundidad: product.altura_x_ancho_x_profundidad,
-				altura_cerrado: product.altura_cerrado,
-				ancho_cerrado: product.ancho_cerrado,
-				profundidad_cerrado: product.profundidad_cerrado,
-				altura_x_ancho: product.altura_x_ancho,
-				profundidad: product.profundidad,
-				ancho: product.ancho,
-				altura: product.altura,
-			}
+	let initialValues;
+
+	if (!product.peso_y_dimensiones) {
+		initialValues = {
+			peso: '',
+			altura_x_ancho_x_profundidad: '',
+			altura_cerrado: '',
+			ancho_cerrado: '',
+			profundidad_cerrado: '',
+			altura_x_ancho: '',
+			profundidad: '',
+			ancho: '',
+			altura: '',
 		}
-	});
+	} else {
+		initialValues = {
+			peso: product.peso_y_dimensiones.peso,
+			altura_x_ancho_x_profundidad: product.peso_y_dimensiones.altura_x_ancho_x_profundidad,
+			altura_cerrado: product.peso_y_dimensiones.altura_cerrado,
+			ancho_cerrado: product.peso_y_dimensiones.ancho_cerrado,
+			profundidad_cerrado: product.peso_y_dimensiones.profundidad_cerrado,
+			altura_x_ancho: product.peso_y_dimensiones.altura_x_ancho,
+			profundidad: product.peso_y_dimensiones.profundidad,
+			ancho: product.peso_y_dimensiones.ancho,
+			altura: product.peso_y_dimensiones.altura,
+		}
+	}
 
 	return (
 		<div>
@@ -210,6 +209,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"peso_y_dimensiones"}
 									/>
 								</div>
 							</Form>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,59 +45,59 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.mes_de_lanzamiento) {
-			return {
-				tamaño_de_la_pantalla: '',
-				tipo_de_resolución_de_la_pantalla_: '',
-				resolución_de_la_pantalla: '',
-				tecnología_de_la_pantalla: '',
-				tipo_de_pantalla: '',
-				relación_de_aspecto_de_la_pantalla: '',
-				píxeles_por_pulgada_de_la_pantalla: '',
-				frecuencia_de_actualización_de_la_pantalla: '',
-				brillo_máximo_de_la_pantalla: '',
-				con_pantalla_táctil: '',
-				tamaño_de_la_pantalla_plegada: '',
-				resolución_de_la_pantalla_plegada: '',
-				píxeles_por_pulgada_de_la_pantalla_plegada: '',
-				brillo_máximo_de_la_pantalla_secundaria: '',
-				relación_de_aspecto_de_la_pantalla_secundaria: '',
-				con_pantalla_plegable: '',
-				tecnología_de_la_pantalla_secundaria: '',
-				tamaño_de_la_pantalla_secundaria: '',
-				resolución_de_la_pantalla_secundaria: '',
-				píxeles_por_pulgada_de_la_pantalla_secundaria: '',
-				con_pantalla_secundaria_táctil: '',
-				frecuencia_de_actualización_de_la_pantalla_secundaria: '',
-			}
-		} else {
-			return {
-				tamaño_de_la_pantalla: product.tamaño_de_la_pantalla,
-				tipo_de_resolución_de_la_pantalla_: product.tipo_de_resolución_de_la_pantalla_,
-				resolución_de_la_pantalla: product.resolución_de_la_pantalla,
-				tecnología_de_la_pantalla: product.tecnología_de_la_pantalla,
-				tipo_de_pantalla: product.tipo_de_pantalla,
-				relación_de_aspecto_de_la_pantalla: product.relación_de_aspecto_de_la_pantalla,
-				píxeles_por_pulgada_de_la_pantalla: product.píxeles_por_pulgada_de_la_pantalla,
-				frecuencia_de_actualización_de_la_pantalla: product.frecuencia_de_actualización_de_la_pantalla,
-				brillo_máximo_de_la_pantalla: product.brillo_máximo_de_la_pantalla,
-				con_pantalla_táctil: product.con_pantalla_táctil,
-				tamaño_de_la_pantalla_plegada: product.tamaño_de_la_pantalla_plegada,
-				resolución_de_la_pantalla_plegada: product.resolución_de_la_pantalla_plegada,
-				píxeles_por_pulgada_de_la_pantalla_plegada: product.píxeles_por_pulgada_de_la_pantalla_plegada,
-				brillo_máximo_de_la_pantalla_secundaria: product.brillo_máximo_de_la_pantalla_secundaria,
-				relación_de_aspecto_de_la_pantalla_secundaria: product.relación_de_aspecto_de_la_pantalla_secundaria,
-				con_pantalla_plegable: product.con_pantalla_plegable,
-				tecnología_de_la_pantalla_secundaria: product.tecnología_de_la_pantalla_secundaria,
-				tamaño_de_la_pantalla_secundaria: product.tamaño_de_la_pantalla_secundaria,
-				resolución_de_la_pantalla_secundaria: product.resolución_de_la_pantalla_secundaria,
-				píxeles_por_pulgada_de_la_pantalla_secundaria: product.píxeles_por_pulgada_de_la_pantalla_secundaria,
-				con_pantalla_secundaria_táctil: product.con_pantalla_secundaria_táctil,
-				frecuencia_de_actualización_de_la_pantalla_secundaria: product.frecuencia_de_actualización_de_la_pantalla_secundaria,
-			}
+	let initialValues;
+
+	if (!product.pantalla) {
+		initialValues = {
+			tamaño_de_la_pantalla: '',
+			tipo_de_resolución_de_la_pantalla_: '',
+			resolución_de_la_pantalla: '',
+			tecnología_de_la_pantalla: '',
+			tipo_de_pantalla: '',
+			relación_de_aspecto_de_la_pantalla: '',
+			píxeles_por_pulgada_de_la_pantalla: '',
+			frecuencia_de_actualización_de_la_pantalla: '',
+			brillo_máximo_de_la_pantalla: '',
+			con_pantalla_táctil: '',
+			tamaño_de_la_pantalla_plegada: '',
+			resolución_de_la_pantalla_plegada: '',
+			píxeles_por_pulgada_de_la_pantalla_plegada: '',
+			brillo_máximo_de_la_pantalla_secundaria: '',
+			relación_de_aspecto_de_la_pantalla_secundaria: '',
+			con_pantalla_plegable: '',
+			tecnología_de_la_pantalla_secundaria: '',
+			tamaño_de_la_pantalla_secundaria: '',
+			resolución_de_la_pantalla_secundaria: '',
+			píxeles_por_pulgada_de_la_pantalla_secundaria: '',
+			con_pantalla_secundaria_táctil: '',
+			frecuencia_de_actualización_de_la_pantalla_secundaria: '',
 		}
-	});
+	} else {
+		initialValues = {
+			tamaño_de_la_pantalla: product.pantalla.tamaño_de_la_pantalla,
+			tipo_de_resolución_de_la_pantalla_: product.pantalla.tipo_de_resolución_de_la_pantalla_,
+			resolución_de_la_pantalla: product.pantalla.resolución_de_la_pantalla,
+			tecnología_de_la_pantalla: product.pantalla.tecnología_de_la_pantalla,
+			tipo_de_pantalla: product.pantalla.tipo_de_pantalla,
+			relación_de_aspecto_de_la_pantalla: product.pantalla.relación_de_aspecto_de_la_pantalla,
+			píxeles_por_pulgada_de_la_pantalla: product.pantalla.píxeles_por_pulgada_de_la_pantalla,
+			frecuencia_de_actualización_de_la_pantalla: product.pantalla.frecuencia_de_actualización_de_la_pantalla,
+			brillo_máximo_de_la_pantalla: product.pantalla.brillo_máximo_de_la_pantalla,
+			con_pantalla_táctil: product.pantalla.con_pantalla_táctil,
+			tamaño_de_la_pantalla_plegada: product.pantalla.tamaño_de_la_pantalla_plegada,
+			resolución_de_la_pantalla_plegada: product.pantalla.resolución_de_la_pantalla_plegada,
+			píxeles_por_pulgada_de_la_pantalla_plegada: product.pantalla.píxeles_por_pulgada_de_la_pantalla_plegada,
+			brillo_máximo_de_la_pantalla_secundaria: product.pantalla.brillo_máximo_de_la_pantalla_secundaria,
+			relación_de_aspecto_de_la_pantalla_secundaria: product.pantalla.relación_de_aspecto_de_la_pantalla_secundaria,
+			con_pantalla_plegable: product.pantalla.con_pantalla_plegable,
+			tecnología_de_la_pantalla_secundaria: product.pantalla.tecnología_de_la_pantalla_secundaria,
+			tamaño_de_la_pantalla_secundaria: product.pantalla.tamaño_de_la_pantalla_secundaria,
+			resolución_de_la_pantalla_secundaria: product.pantalla.resolución_de_la_pantalla_secundaria,
+			píxeles_por_pulgada_de_la_pantalla_secundaria: product.pantalla.píxeles_por_pulgada_de_la_pantalla_secundaria,
+			con_pantalla_secundaria_táctil: product.pantalla.con_pantalla_secundaria_táctil,
+			frecuencia_de_actualización_de_la_pantalla_secundaria: product.pantalla.frecuencia_de_actualización_de_la_pantalla_secundaria,
+		}
+	}
 
 	return (
 		<div>
@@ -392,6 +391,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"pantalla"}
 									/>
 								</div>
 							</Form>

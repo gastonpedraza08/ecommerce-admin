@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,27 +45,27 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.nombre_del_sistema_operativo) {
-			return {
-				nombre_del_sistema_operativo: '',
-				versión_original_del_sistema_operativo: '',
-				capa_original_de_personalización_del_sistema_operativo: '',
-				última_versión_compatible_del_sistema_operativo: '',
-				edición_del_sistema_operativo: '',
-				última_capa_compatible_de_personalización_del_sistema_operativo: '',
-			}
-		} else {
-			return {
-				nombre_del_sistema_operativo: product.nombre_del_sistema_operativo,
-				versión_original_del_sistema_operativo: product.versión_original_del_sistema_operativo,
-				capa_original_de_personalización_del_sistema_operativo: product.capa_original_de_personalización_del_sistema_operativo,
-				última_versión_compatible_del_sistema_operativo: product.última_versión_compatible_del_sistema_operativo,
-				edición_del_sistema_operativo: product.edición_del_sistema_operativo,
-				última_capa_compatible_de_personalización_del_sistema_operativo: product.última_capa_compatible_de_personalización_del_sistema_operativo,
-			}
+	let initialValues;
+
+	if (!product.sistema_operativo) {
+		initialValues = {
+			nombre_del_sistema_operativo: '',
+			versión_original_del_sistema_operativo: '',
+			capa_original_de_personalización_del_sistema_operativo: '',
+			última_versión_compatible_del_sistema_operativo: '',
+			edición_del_sistema_operativo: '',
+			última_capa_compatible_de_personalización_del_sistema_operativo: '',
 		}
-	});
+	} else {
+		initialValues = {
+			nombre_del_sistema_operativo: product.sistema_operativo.nombre_del_sistema_operativo,
+			versión_original_del_sistema_operativo: product.sistema_operativo.versión_original_del_sistema_operativo,
+			capa_original_de_personalización_del_sistema_operativo: product.sistema_operativo.capa_original_de_personalización_del_sistema_operativo,
+			última_versión_compatible_del_sistema_operativo: product.sistema_operativo.última_versión_compatible_del_sistema_operativo,
+			edición_del_sistema_operativo: product.sistema_operativo.edición_del_sistema_operativo,
+			última_capa_compatible_de_personalización_del_sistema_operativo: product.sistema_operativo.última_capa_compatible_de_personalización_del_sistema_operativo,
+		}
+	}
 
 	return (
 		<div>
@@ -168,6 +167,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"sistema_operativo"}
 									/>
 								</div>
 							</Form>

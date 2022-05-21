@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,37 +45,37 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.mes_de_lanzamiento) {
-			return {
-				red: '',
-				tipo_de_conector_de_carga: '',
-				con_conector_usb: '',
-				con_jack_3_punto_5: '',
-				con_wi_fi: '',
-				con_gps: '',
-				con_bluetooth: '',
-				con_nfc: '',
-				con_radio: '',
-				con_sintonizador_de_tv: '',
-				con_mini_hdmi: '',
-			}
-		} else {
-			return {
-				red: product.red,
-				tipo_de_conector_de_carga: product.tipo_de_conector_de_carga,
-				con_conector_usb: product.con_conector_usb,
-				con_jack_3_punto_5: product.con_jack_3_punto_5,
-				con_wi_fi: product.con_wi_fi,
-				con_gps: product.con_gps,
-				con_bluetooth: product.con_bluetooth,
-				con_nfc: product.con_nfc,
-				con_radio: product.con_radio,
-				con_sintonizador_de_tv: product.con_sintonizador_de_tv,
-				con_mini_hdmi: product.con_mini_hdmi,
-			}
+	let initialValues;
+
+	if (!product.conectividad) {
+		initialValues = {
+			red: '',
+			tipo_de_conector_de_carga: '',
+			con_conector_usb: '',
+			con_jack_3_punto_5: '',
+			con_wi_fi: '',
+			con_gps: '',
+			con_bluetooth: '',
+			con_nfc: '',
+			con_radio: '',
+			con_sintonizador_de_tv: '',
+			con_mini_hdmi: '',
 		}
-	});
+	} else {
+		initialValues = {
+			red: product.conectividad.red,
+			tipo_de_conector_de_carga: product.conectividad.tipo_de_conector_de_carga,
+			con_conector_usb: product.conectividad.con_conector_usb,
+			con_jack_3_punto_5: product.conectividad.con_jack_3_punto_5,
+			con_wi_fi: product.conectividad.con_wi_fi,
+			con_gps: product.conectividad.con_gps,
+			con_bluetooth: product.conectividad.con_bluetooth,
+			con_nfc: product.conectividad.con_nfc,
+			con_radio: product.conectividad.con_radio,
+			con_sintonizador_de_tv: product.conectividad.con_sintonizador_de_tv,
+			con_mini_hdmi: product.conectividad.con_mini_hdmi,
+		}
+	}
 
 	return (
 		<div>
@@ -238,6 +237,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"conectividad"}
 									/>
 								</div>
 							</Form>

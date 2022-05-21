@@ -15,18 +15,25 @@ const initialState = {
 		componentsName,
 		product: {
 			//initial values to improve the development process
-			thumbnail: 'https://st2.depositphotos.com/1203257/7557/i/450/depositphotos_75573601-stock-photo-brand-new-cars-for-sale.jpg',
-			images: [
-				{ 
-					name: 'imagen1', 
-					url: 'https://image.shutterstock.com/image-photo/cars-sale-stock-row-car-260nw-1906135519.jpg'
-				},
-				{
-					name: 'imagen2',
-					url: 'https://elceo.com/wp-content/uploads/2021/12/seguro.jpg'
-				}
-			],
-			categoryId: 1
+			basic_info: {
+				thumbnail: 'https://st2.depositphotos.com/1203257/7557/i/450/depositphotos_75573601-stock-photo-brand-new-cars-for-sale.jpg',
+				images: [
+					{ 
+						name: 'imagen1', 
+						url: 'https://image.shutterstock.com/image-photo/cars-sale-stock-row-car-260nw-1906135519.jpg'
+					},
+					{
+						name: 'imagen2',
+						url: 'https://elceo.com/wp-content/uploads/2021/12/seguro.jpg'
+					}
+				],
+				categoryId: 1,
+				name: 'Samsung Galaxy',
+				price: 20000,
+				sku: 'idjiajdaiwjidaw',
+				stock: 5,
+				description: '<p>Esta es una descripcion con mas de 20 chars</p>'
+			}
 		}
 	}
 };
@@ -71,7 +78,10 @@ export const productsReducer = (state = initialState, action) => {
 					...state.productForm,
 					activeStep: nextStep,
 					componentName: state.productForm.componentsName[nextStep]?.component,
-					product: {...state.productForm.product, ...action.payload },
+					product: {
+						...state.productForm.product, 
+						[action.payload.name]: action.payload.values
+					},
 					skipped: state.productForm.skipped.filter(id => id !== state.productForm.componentsName[activeStep].id)
 				}
 			}

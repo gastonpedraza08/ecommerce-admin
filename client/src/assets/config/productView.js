@@ -1,4 +1,39 @@
 const objToExport = {
+  basic_info: {
+    name: 'Información Básica del Producto',
+    list: {
+      name: {
+        name: 'Nombre',
+      },
+      sku: {
+        name: 'Sku',
+      },
+      categoryId: {
+        name: 'Categoria',
+      },
+      price: {
+        name: 'Precio',
+      },
+      state: {
+        name: 'Estado',
+      },
+      condition: {
+        name: 'Condición',
+      },
+      stock: {
+        name: 'Stock',
+      },
+      thumbnail: {
+        name: 'Miniatura',
+      },
+      images: {
+        name: 'Imagenes',
+      },
+      description: {
+        name: 'Descripción',
+      }
+    }
+  },
   caracteristias_generales: {
     name: 'Características generales',
     list: {

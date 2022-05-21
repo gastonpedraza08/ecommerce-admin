@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function HandleFormProductButton(props) {
 
-	const { validateForm, categoryId, values } = props;
+	const { validateForm, categoryId, values, sectionName } = props;
 	const classes = useStyles();
 	const dispatch = useDispatch();
 	const { productForm } = useSelector(state => state.products);
@@ -50,7 +50,11 @@ export default function HandleFormProductButton(props) {
           validValues[prop] = values[prop];
         }
       }
-      return dispatch(productCreateHandleNext(validValues));
+      let info = {
+        values: validValues,
+        name: sectionName
+      }
+      return dispatch(productCreateHandleNext(info));
   	}
   	return null;
   };

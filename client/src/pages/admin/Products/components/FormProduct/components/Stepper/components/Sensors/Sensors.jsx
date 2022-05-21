@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateSecurity } from 'helpers/validateProduct';
+import { validateSensors } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -47,19 +47,23 @@ export default function FormProduct() {
 
 	let initialValues;
 
-	if (!product.seguridad) {
+	if (!product.sensores) {
 		initialValues = {
-			con_lector_de_huella_digital: '',
-			con_reconocimiento_facial: '',
-			con_reconocimiento_de_iris: '',
-			con_reconocimiento_de_mano: '',
+			con_acelerómetro: '',
+			con_sensor_de_proximidad: '',
+			con_giroscopio: '',
+			con_brújula: '',
+			con_barómetro: '',
+			con_sensor_de_ritmo_cardíaco: '',
 		}
 	} else {
 		initialValues = {
-			con_lector_de_huella_digital: product.seguridad.con_lector_de_huella_digital,
-			con_reconocimiento_facial: product.seguridad.con_reconocimiento_facial,
-			con_reconocimiento_de_iris: product.seguridad.con_reconocimiento_de_iris,
-			con_reconocimiento_de_mano: product.seguridad.con_reconocimiento_de_mano,
+			con_acelerómetro: product.sensores.con_acelerómetro,
+			con_sensor_de_proximidad: product.sensores.con_sensor_de_proximidad,
+			con_giroscopio: product.sensores.con_giroscopio,
+			con_brújula: product.sensores.con_brújula,
+			con_barómetro: product.sensores.con_barómetro,
+			con_sensor_de_ritmo_cardíaco: product.sensores.con_sensor_de_ritmo_cardíaco,
 		}
 	}
 
@@ -72,17 +76,17 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateSecurity(values)
+							let result = validateSensors(values)
 							return result
 						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_lector_de_huella_digital">
+									<FastField name="con_acelerómetro">
 										{({ field }) => (
 											<TextField
-												label="Con lector de huella digital"
+												label="Con acelerómetro"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -91,10 +95,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_facial">
+									<FastField name="con_sensor_de_proximidad">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento facial"
+												label="Con sensor de proximidad"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -103,10 +107,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_iris">
+									<FastField name="con_giroscopio">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de iris"
+												label="Con giroscopio"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -115,10 +119,34 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_mano">
+									<FastField name="con_brújula">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de mano"
+												label="Con brújula"
+												placeholder="Ej Sí"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="con_barómetro">
+										{({ field }) => (
+											<TextField
+												label="Con barómetro"
+												placeholder="Ej Sí"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="con_sensor_de_ritmo_cardíaco">
+										{({ field }) => (
+											<TextField
+												label="Con sensor de ritmo cardíaco"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -139,7 +167,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
-										sectionName={"seguridad"}
+										sectionName={"sensores"}
 									/>
 								</div>
 							</Form>

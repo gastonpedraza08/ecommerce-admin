@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateSecurity } from 'helpers/validateProduct';
+import { validateOthers } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -47,19 +47,21 @@ export default function FormProduct() {
 
 	let initialValues;
 
-	if (!product.seguridad) {
+	if (!product.otros) {
 		initialValues = {
-			con_lector_de_huella_digital: '',
-			con_reconocimiento_facial: '',
-			con_reconocimiento_de_iris: '',
-			con_reconocimiento_de_mano: '',
+			con_imei: '',
+			compañía_telefónica: '',
+			incluye_lápiz: '',
+			con_botón_sos: '',
+			es_kit: '',
 		}
 	} else {
 		initialValues = {
-			con_lector_de_huella_digital: product.seguridad.con_lector_de_huella_digital,
-			con_reconocimiento_facial: product.seguridad.con_reconocimiento_facial,
-			con_reconocimiento_de_iris: product.seguridad.con_reconocimiento_de_iris,
-			con_reconocimiento_de_mano: product.seguridad.con_reconocimiento_de_mano,
+			con_imei: product.otros.con_imei,
+			compañía_telefónica: product.otros.compañía_telefónica,
+			incluye_lápiz: product.otros.incluye_lápiz,
+			con_botón_sos: product.otros.con_botón_sos,
+			es_kit: product.otros.es_kit,
 		}
 	}
 
@@ -72,17 +74,17 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateSecurity(values)
+							let result = validateOthers(values)
 							return result
 						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_lector_de_huella_digital">
+									<FastField name="con_imei">
 										{({ field }) => (
 											<TextField
-												label="Con lector de huella digital"
+												label="Con IMEI"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -91,10 +93,22 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_facial">
+									<FastField name="compañía_telefónica">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento facial"
+												label="Compañía telefónica"
+												placeholder="Ej Liberado"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="incluye_lápiz">
+										{({ field }) => (
+											<TextField
+												label="Incluye lápiz"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -103,10 +117,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_iris">
+									<FastField name="con_botón_sos">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de iris"
+												label="Con botón SOS"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -115,10 +129,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_mano">
+									<FastField name="es_kit">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de mano"
+												label="Es KIT"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -139,7 +153,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
-										sectionName={"seguridad"}
+										sectionName={"otros"}
 									/>
 								</div>
 							</Form>

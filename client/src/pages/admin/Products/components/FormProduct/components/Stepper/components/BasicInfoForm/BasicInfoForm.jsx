@@ -69,7 +69,7 @@ for (let prop in objCategories) {
 	categories.push({
 		id: Number(prop),
 		title: objCategories[prop],
-		disabled: Number(prop) != 1 ? true : false
+		disabled: Number(prop) !== 1 ? true : false
 	});
 }
 
@@ -78,45 +78,46 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [images, setImages] = useState(product.images || []);
-	const [thumbnail, setThumbnail] = useState(product.thumbnail || '');
+	const [images, setImages] = useState(product.basic_info.images || []);
+	const [thumbnail, setThumbnail] = useState(product.basic_info.thumbnail || '');
 	const [category, setCategory] = useState(() => {
-		if (product.categoryId) {
-			let categoryInList = categories.find(categ => categ.id === product.categoryId);
+		if (product.basic_info.categoryId) {
+			let categoryInList = categories.find(categ => categ.id === product.basic_info.categoryId);
 			return categoryInList;
 		} else {
 			return defaultCategory;
 		}
 	});
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.name) {
-			return {
-				name: 'samsung galaxy',
-				sku: 'aiwdjiawj22828',
-				categoryId: product.categoryId || '',
-				price: '123',
-				state: 'active',
-				condition: 'new',
-				stock: '123',
-				thumbnail: product.thumbnail || '',
-				images: product.images || [],
-				description: '<p>Descripcion con al menos veinte caracteres</p>',
-			}
-		} else {
-			return {
-				name: product.name,
-				sku: product.sku,
-				categoryId: product.categoryId,
-				price: product.price,
-				state: product.state,
-				condition: product.condition,
-				stock: product.stock,
-				thumbnail: product.thumbnail,
-				images: product.images,
-				description: product.description,
-			}
+
+	let initialValues;
+
+	if (!product.basic_info) {
+		initialValues = {
+			name: '',
+			sku: '',
+			categoryId: product.basic_info.categoryId || '',
+			price: '',
+			state: '',
+			condition: '',
+			stock: '',
+			thumbnail: product.basic_info.thumbnail || '',
+			images: product.basic_info.images || [],
+			description: '',
 		}
-	});
+	} else {
+		initialValues = {
+			name: product.basic_info.name,
+			sku: product.basic_info.sku,
+			categoryId: product.basic_info.categoryId,
+			price: product.basic_info.price,
+			state: product.basic_info.state,
+			condition: product.basic_info.condition,
+			stock: product.basic_info.stock,
+			thumbnail: product.basic_info.thumbnail,
+			images: product.basic_info.images,
+			description: product.basic_info.description,
+		}
+	}
 
 	const limitImages = 12;
 
@@ -349,6 +350,7 @@ export default function FormProduct() {
 										validateForm={formikProps.validateForm} 
 										categoryId={formikProps.values.categoryId}
 										values={formikProps.values}
+										sectionName={"basic_info"}
 									/>
 								</div>
 							</Form>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import {
 	Formik,
@@ -8,7 +8,6 @@ import {
 import Grid from '@material-ui/core/Grid';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
@@ -46,19 +45,19 @@ export default function FormProduct() {
 	const classes = useStyles();
 	const { product } = useSelector(state => state.products.productForm);
 
-	const [initialValues, setInitialValues] = useState(() => {
-		if (!product.mes_de_lanzamiento) {
-			return {
-				mes_de_lanzamiento: '',
-				año_de_lanzamiento: '',
-			}
-		} else {
-			return {
-				mes_de_lanzamiento: product.mes_de_lanzamiento,
-				año_de_lanzamiento: product.año_de_lanzamiento,
-			}
+	let initialValues;
+
+	if (!product.especificaciones) {
+		initialValues = {
+			mes_de_lanzamiento: '',
+			año_de_lanzamiento: '',
 		}
-	});
+	} else {
+		initialValues = {
+			mes_de_lanzamiento: product.especificaciones.mes_de_lanzamiento,
+			año_de_lanzamiento: product.especificaciones.año_de_lanzamiento,
+		}
+	}
 
 	return (
 		<div>
@@ -112,6 +111,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
+										sectionName={"especificaciones"}
 									/>
 								</div>
 							</Form>

@@ -14,7 +14,7 @@ import Typography from '@material-ui/core/Typography';
 
 import { HandleFormProductButton } from 'components';
 
-import { validateSecurity } from 'helpers/validateProduct';
+import { validateBattery } from 'helpers/validateProduct';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -47,19 +47,25 @@ export default function FormProduct() {
 
 	let initialValues;
 
-	if (!product.seguridad) {
+	if (!product.bateria) {
 		initialValues = {
-			con_lector_de_huella_digital: '',
-			con_reconocimiento_facial: '',
-			con_reconocimiento_de_iris: '',
-			con_reconocimiento_de_mano: '',
+			capacidad_de_la_batería: '',
+			tipo_de_batería: '',
+			con_carga_rápida: '',
+			con_carga_inalámbrica: '',
+			con_batería_removible: '',
+			tiempo_de_conversación: '',
+			duración_de_la_batería_en_espera: '',
 		}
 	} else {
 		initialValues = {
-			con_lector_de_huella_digital: product.seguridad.con_lector_de_huella_digital,
-			con_reconocimiento_facial: product.seguridad.con_reconocimiento_facial,
-			con_reconocimiento_de_iris: product.seguridad.con_reconocimiento_de_iris,
-			con_reconocimiento_de_mano: product.seguridad.con_reconocimiento_de_mano,
+			capacidad_de_la_batería: product.bateria.capacidad_de_la_batería,
+			tipo_de_batería: product.bateria.tipo_de_batería,
+			con_carga_rápida: product.bateria.con_carga_rápida,
+			con_carga_inalámbrica: product.bateria.con_carga_inalámbrica,
+			con_batería_removible: product.bateria.con_batería_removible,
+			tiempo_de_conversación: product.bateria.tiempo_de_conversación,
+			duración_de_la_batería_en_espera: product.bateria.duración_de_la_batería_en_espera,
 		}
 	}
 
@@ -72,17 +78,41 @@ export default function FormProduct() {
 						validateOnBlur={false}
 						initialValues={initialValues}
 						validate={(values) => {
-							let result = validateSecurity(values)
+							let result = validateBattery(values)
 							return result
 						}}
 					>
 						{(formikProps) => (
 							<Form className={classes.form}>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_lector_de_huella_digital">
+									<FastField name="capacidad_de_la_batería">
 										{({ field }) => (
 											<TextField
-												label="Con lector de huella digital"
+												label="Capacidad de la batería (mAh)"
+												placeholder="Ej 4500"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="tipo_de_batería">
+										{({ field }) => (
+											<TextField
+												label="Tipo de batería"
+												placeholder="Ej Polímero de litio"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="con_carga_rápida">
+										{({ field }) => (
+											<TextField
+												label="Con carga rápida"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -91,10 +121,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_facial">
+									<FastField name="con_carga_inalámbrica">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento facial"
+												label="Con carga inalámbrica"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -103,10 +133,10 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_iris">
+									<FastField name="con_batería_removible">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de iris"
+												label="Con batería removible"
 												placeholder="Ej Sí"
 												variant="outlined"
 												{...field}
@@ -115,11 +145,23 @@ export default function FormProduct() {
 									</FastField>
 								</FormControl>
 								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
-									<FastField name="con_reconocimiento_de_mano">
+									<FastField name="tiempo_de_conversación">
 										{({ field }) => (
 											<TextField
-												label="Con reconocimiento de mano"
-												placeholder="Ej Sí"
+												label="Tiempo de conversación (Hs)"
+												placeholder="Ej 26"
+												variant="outlined"
+												{...field}
+											/>
+										)}
+									</FastField>
+								</FormControl>
+								<FormControl fullWidth variant="outlined" className={clsx(classes.marginTop)}>
+									<FastField name="duración_de_la_batería_en_espera">
+										{({ field }) => (
+											<TextField
+												label="Duración de la batería en espera"
+												placeholder="Ej 125 h"
 												variant="outlined"
 												{...field}
 											/>
@@ -139,7 +181,7 @@ export default function FormProduct() {
 									<HandleFormProductButton 
 										validateForm={formikProps.validateForm} 
 										values={formikProps.values}
-										sectionName={"seguridad"}
+										sectionName={"bateria"}
 									/>
 								</div>
 							</Form>
