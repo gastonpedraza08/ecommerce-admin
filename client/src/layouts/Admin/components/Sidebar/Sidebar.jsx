@@ -9,8 +9,6 @@ import LayersIcon from "@material-ui/icons/Layers";
 
 import DashboardIcon from "@material-ui/icons/Layers";
 import PeopleIcon from "@material-ui/icons/People";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
-import TextFieldsIcon from "@material-ui/icons/TextFields";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import SettingsIcon from "@material-ui/icons/Settings";
 

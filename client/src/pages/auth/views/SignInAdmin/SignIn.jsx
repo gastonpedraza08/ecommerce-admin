@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import { useSelector } from 'react-redux';
 import { makeStyles } from "@material-ui/styles";
 import {
   Grid,
@@ -71,16 +73,39 @@ export default function SignIn(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid className={classes.grid} container justifyContent="center">
-        <Grid className={classes.content} item lg={7} xs={12}>
-          <div className={classes.content}>
-            <div className={classes.contentBody}>
-              <FormLogin />
+    <AuthAdminProtect>
+      <div className={classes.root}>
+        <Grid className={classes.grid} container justifyContent="center">
+          <Grid className={classes.content} item lg={7} xs={12}>
+            <div className={classes.content}>
+              <div className={classes.contentBody}>
+                <FormLogin />
+              </div>
             </div>
-          </div>
+          </Grid>
         </Grid>
-      </Grid>
-    </div>
+      </div>
+    </AuthAdminProtect>
+  );
+}
+
+function AuthAdminProtect(props) {
+  const history = useHistory();
+  const { login, user } = useSelector(state => state.auth);
+
+  useEffect(() => {
+    if (login.success) {
+      if (user.role.name === "admin") {
+        history.push('/admin/users');
+      } else {
+        localStorage.removeItem('access_token');
+      }
+    }
+  }, [login.success, history, user]);
+
+  return (
+    <>
+      {props.children}
+    </>
   );
 }

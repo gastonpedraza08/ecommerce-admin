@@ -66,7 +66,7 @@ export const authLoginAdmin = (values) => {
     });
     const result = await fetchWithoutToken("auth/login", values, "POST");
     if (!result.error) {
-      if (result.data.user.role.name == "admin") {
+      if (result.data.user.role.name === "admin") {
         localStorage.setItem('access_token', result.data.token);
 
         dispatch({

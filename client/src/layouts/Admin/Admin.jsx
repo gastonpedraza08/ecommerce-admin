@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useHistory } from 'react-router-dom';
 import clsx from "clsx";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { makeStyles, useTheme } from "@material-ui/styles";
+import jwt from 'jsonwebtoken';
 
 import { Sidebar, Topbar, Footer } from "./components";
 
@@ -23,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Admin(props) {
   const { children } = props;
+  const history = useHistory();
 
   const classes = useStyles();
   const theme = useTheme();
@@ -41,6 +44,22 @@ export default function Admin(props) {
   };
 
   const shouldOpenSidebar = isDesktop ? true : openSidebar;
+
+  useEffect(() => {
+    let access_token = localStorage.getItem('access_token');
+    jwt.verify(access_token, process.env.REACT_APP_JWT_SECRET, (err, decoded) => {
+      if (err) {
+        localStorage.removeItem('access_token');
+        history.push('/auth/admin');
+      } else {
+        if (decoded.role.name === "admin") {
+        } else {
+          localStorage.removeItem('access_token');
+          history.push('/auth/admin');
+        }
+      }
+    });
+  }, [history]);
 
   return (
     <div
