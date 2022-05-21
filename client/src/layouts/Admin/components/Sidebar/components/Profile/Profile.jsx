@@ -1,5 +1,4 @@
-import React from "react";
-import { Link as RouterLink } from "react-router-dom";
+import React, { useState } from "react";
 import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
@@ -24,27 +23,24 @@ const useStyles = makeStyles((theme) => ({
 export default function Profile(props) {
   const { className, ...rest } = props;
 
+  const [user, setUser] = useState(() => {
+    let admin = localStorage.getItem('admin');
+    return JSON.parse(admin)
+  });
   const classes = useStyles();
-
-  const user = {
-    name: "Shen Zhi",
-    avatar: "/images/avatars/avatar_11.png",
-    bio: "Brain Director",
-  };
 
   return (
     <div {...rest} className={clsx(classes.root, className)}>
       <Avatar
         alt="Person"
         className={classes.avatar}
-        component={RouterLink}
-        src={user.avatar}
+        src={user.avatarUrl}
         to="/settings"
       />
       <Typography className={classes.name} variant="h4">
-        {user.name}
+        {user.firstName + " " + user.lastName}
       </Typography>
-      <Typography variant="body2">{user.bio}</Typography>
+      <Typography variant="body2">{user.role.name}</Typography>
     </div>
   );
 }

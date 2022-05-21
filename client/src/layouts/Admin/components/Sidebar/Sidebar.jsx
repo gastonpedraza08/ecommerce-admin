@@ -77,7 +77,7 @@ export default function Sidebar(props) {
       title: "Settings",
       href: "/admin/settings",
       icon: <SettingsIcon />,
-      disabled: false,
+      disabled: true,
     },
   ];
 

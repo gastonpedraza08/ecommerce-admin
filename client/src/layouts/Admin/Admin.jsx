@@ -54,6 +54,7 @@ export default function Admin(props) {
       } else {
         if (decoded.role.name === "admin") {
         } else {
+          localStorage.setItem('admin', JSON.stringify(decoded));
           localStorage.removeItem('access_token');
           history.push('/auth/admin');
         }
