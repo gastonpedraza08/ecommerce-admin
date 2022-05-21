@@ -49,8 +49,13 @@ function AuthAdminProtect(props) {
   const { login, user } = useSelector(state => state.auth);
 
   useEffect(() => {
-    if (login.success && user.role.name == "admin") {
-      history.push('/admin/users');
+    if (login.success) {
+      if (user.role.name == "admin") {
+        history.push('/admin/users');
+      } else {
+        localStorage.deleteItem('access_token');
+        history.push('/');
+      }
     }
   }, [login.success, history]);
 
