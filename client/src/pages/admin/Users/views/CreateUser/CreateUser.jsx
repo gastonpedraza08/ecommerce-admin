@@ -82,7 +82,7 @@ export default function FormProduct() {
 						initialValues={{
 							firstName: 'gaston',
 							lastName: 'pedraza',
-							email: 'gastonpedraza.developer@gmail.com',
+							email: 'gp.ju.dev@gmail.com',
 							password: 'abcd1234',
 							roleId: '2',
 							avatarUrl: '',

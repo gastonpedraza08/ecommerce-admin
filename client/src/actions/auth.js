@@ -59,6 +59,50 @@ export const authLogin = (values) => {
   }
 }
 
+export const authLoginAdmin = (values) => {
+  return async dispatch => {
+    dispatch({
+      type: types.authStartLogin
+    });
+    const result = await fetchWithoutToken("auth/login", values, "POST");
+    if (!result.error) {
+      if (result.data.user.role.name == "admin") {
+        localStorage.setItem('access_token', result.data.token);
+
+        dispatch({
+          type: types.authEndLogin,
+          payload: {
+            success: true,
+            error: null,
+            user: result.data.user,
+            isLoggedIn: true,
+          },
+        });
+      } else {
+        dispatch({
+          type: types.authEndLogin,
+          payload: {
+            success: false,
+            error: "No admin",
+            user: null,
+            isLoggedIn: false,
+          },
+        });
+      }
+    } else {
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: false,
+          error: result.error,
+          user: null,
+          isLoggedIn: false,
+        },
+      });
+    }
+  }
+}
+
 export const authRenewToken = token => {
   return async dispatch => {
     const result = await fetchWithToken("auth/renewtoken", {}, "POST", token);
