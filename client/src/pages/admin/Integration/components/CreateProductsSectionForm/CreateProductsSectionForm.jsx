@@ -205,7 +205,7 @@ export default function FormProduct(props) {
 									variant="contained" 
 									type="submit"
 									>
-										Crear Sección
+										{info.update ? "Actualizar Sección" : "Crear Sección"}
 									</Button>
 								)}
 							</div>

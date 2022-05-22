@@ -4,6 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
+import IconButton from "@material-ui/core/IconButton";
+import DeleteIcon from "@material-ui/icons/Delete";
+import Tooltip from "@material-ui/core/Tooltip";
 
 import SlideProducts from 'components/SlideProducts';
 import Product from 'components/SlideProducts/Product';
@@ -26,6 +29,18 @@ const useStyles = makeStyles((theme) => ({
 	formSection: {
 		marginBottom: theme.spacing(3),
 	},
+	productContainer: {
+		position: 'relative',
+		'&:hover': {
+			'& > button': {
+				backgroundColor: 'white'
+			}
+		}
+	},
+	iconDeleteProduct: {
+		position: 'absolute',
+		right: 20
+	}
 }));
 
 export default function CreateProductsSection(props) {
@@ -71,6 +86,12 @@ export default function CreateProductsSection(props) {
 		setOpen(false);
 	};
 
+	const deleteProduct = id => {
+		setProducts(prev => {
+			return prev.filter(p => p._id !== id)
+		});
+	}
+
 	return (
 		<div className={classes.root}>
 			<div className={classes.title}>
@@ -111,7 +132,16 @@ export default function CreateProductsSection(props) {
 				{products.length > 0 ? (
 					<SlideProducts>
 						{products.map((product) => {
-							return <Product key={product._id} product={product} />;
+							return (
+								<div className={classes.productContainer}>
+									<Tooltip title="Eliminar Producto" placement="bottom">
+										<IconButton className={classes.iconDeleteProduct} onClick={() => deleteProduct(product._id)}>
+				              <DeleteIcon />
+				            </IconButton>
+									</Tooltip>
+									<Product key={product._id} product={product} />
+								</div>
+							)
 						})}
 					</SlideProducts>
 				) : (

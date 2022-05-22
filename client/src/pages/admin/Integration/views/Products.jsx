@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
+import Tooltip from "@material-ui/core/Tooltip";
 
 import SlideProducts from 'components/SlideProducts';
 import Product from 'components/SlideProducts/Product';
@@ -93,15 +94,19 @@ export default function Products(props) {
 										<Typography variant="h3" style={{ display: 'inline'}}>
 											{productsSection.name}
 										</Typography>
-										<IconButton onClick={() => deleteSection(productsSection._id)}>
-				              <DeleteIcon />
-				            </IconButton>
-				            <IconButton 
-				            	component={CustomRouterLink} 
-				            	to={"/admin/integration/products/create-section/" + productsSection._id}
-				            >
-				              <EditIcon />
-				            </IconButton>
+										<Tooltip title="Eliminar Sección" placement="bottom">
+											<IconButton onClick={() => deleteSection(productsSection._id)}>
+					              <DeleteIcon />
+					            </IconButton>
+										</Tooltip>
+										<Tooltip title="Editar Sección" placement="bottom">
+					            <IconButton 
+					            	component={CustomRouterLink} 
+					            	to={"/admin/integration/products/create-section/" + productsSection._id}
+					            >
+					              <EditIcon />
+					            </IconButton>
+										</Tooltip>
 									</div>
 									<SlideProducts>
 										{productsSection.products.map((product) => {
