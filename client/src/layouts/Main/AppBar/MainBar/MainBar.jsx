@@ -42,7 +42,6 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'flex-start',
       width: '100%',
       height: '100%',
-      zIndex: 50,
       '& span': {
         color: 'white'
       }
