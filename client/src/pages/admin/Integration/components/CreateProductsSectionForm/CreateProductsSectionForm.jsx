@@ -16,7 +16,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import { Alert, AlertTitle } from '@material-ui/lab';
 
-import { productAddProductsSection } from 'actions/products';
+import { productAddProductsSection, productUpdateProductsSection } from 'actions/products';
 import { fetchWithoutToken } from 'helpers/fetch';
 
 const useStyles = makeStyles((theme) => ({
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
 export default function FormProduct(props) {
 
 	const history = useHistory();
-	const { setProducts, products } = props;
+	const { setProducts, products, info } = props;
 	const dispatch = useDispatch();
 	const {
 		uiCreateProduct: { isLoading },
@@ -99,8 +99,9 @@ export default function FormProduct(props) {
 					<Formik
 						validateOnChange={false}
 						validateOnBlur={false}
+						enableReinitialize
 						initialValues={{
-							name: '',
+							name: info.name,
 							_id: '',
 						}}
 						validate={(values) => {
@@ -114,11 +115,20 @@ export default function FormProduct(props) {
 						}}
 						onSubmit={(values) => {
 							const productsId = products.map(product => product._id);
-							dispatch(productAddProductsSection({
-								name: values.name,
-								order: 10,
-								products: productsId
-							}, history, productsId));
+							if (info.update) {
+								dispatch(productUpdateProductsSection({
+									name: values.name,
+									order: info.order,
+									products: productsId,
+									_id: info._id
+								}, history, productsId));
+							} else {
+								dispatch(productAddProductsSection({
+									name: values.name,
+									order: 10,
+									products: productsId
+								}, history, productsId));
+							}
 						}}
 					>
 					{(formikProps) => (

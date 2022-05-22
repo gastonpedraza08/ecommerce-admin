@@ -34,6 +34,7 @@ export const types = {
 
   productCreateProduct: "[products] Create Product",
   productAddProductsSection: "[products] Add Products Section",
+  productUpdateProductsSection: "[products] Update Products Section",
   productDeleteProductsSection: "[products] Delete Products Section",
   productsLoadProductsSections: "[products] Load All Products Sections",
   productsSearchProducts: "[products] Search Products",

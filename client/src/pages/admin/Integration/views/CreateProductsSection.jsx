@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
@@ -8,6 +9,8 @@ import SlideProducts from 'components/SlideProducts';
 import Product from 'components/SlideProducts/Product';
 import CreateProductsSectionForm from '../components/CreateProductsSectionForm';
 import ModalOrderProducts from '../components/CreateProductsSectionForm/ModalOrderProducts';
+
+import { fetchWithoutToken } from 'helpers/fetch';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -28,8 +31,37 @@ const useStyles = makeStyles((theme) => ({
 export default function CreateProductsSection(props) {
 	const classes = useStyles();
 	const [products, setProducts] = useState([]);
+	const [info, setInfo] = useState({
+		name: '',
+		_id: '',
+		update: false
+	});
+	const { id } = useParams();
 
 	const [open, setOpen] = React.useState(false);
+
+	React.useEffect(() => {
+		if (id) {
+			(async () => {
+				try {
+					const result = await fetchWithoutToken('products-section/' + id, {}, 'GET');
+					if (!result.error) {
+						setProducts(result.data.productsSection.products)
+						setInfo({
+							name: result.data.productsSection.name,
+							_id: result.data.productsSection._id,
+							order: result.data.productsSection.order,
+							update: true,
+						});
+					} else {
+						console.log(result.error)
+					}
+				} catch (error) {
+					console.log(error)
+				}
+			})();
+		}
+	}, [id]);
 
 	const handleOpen = () => {
 		setOpen(true);
@@ -48,6 +80,7 @@ export default function CreateProductsSection(props) {
 				<CreateProductsSectionForm
 					setProducts={setProducts}
 					products={products}
+					info={info}
 				/>
 			</div>
 			<Box

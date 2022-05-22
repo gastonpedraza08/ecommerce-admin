@@ -41,7 +41,7 @@ export default function Routes() {
       <Switch>
         <Route exact path="/admin/integration/slides" component={SlidesView} />
         <Route exact path="/admin/integration/products" component={ProductsView} />
-        <Route exact path="/admin/integration/products/create-section" component={CreateProductsSectionView} />
+        <Route exact path="/admin/integration/products/create-section/:id?" component={CreateProductsSectionView} />
         <Route exact path="/admin/integration/" component={MainView} />
         <Redirect to="/not-found" />
       </Switch>

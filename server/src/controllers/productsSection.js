@@ -30,9 +30,10 @@ router.put('/:id', async (req, res) => {
 	const fieldsToUpdate = req.body.fieldsToUpdate;
 	try {
 		const result = await handler.updateProductsSection(productsSectionToUpdate, fieldsToUpdate);
-		if (result[0] === 1) {
+		if (result) {
 			res.json({
 				ok: true,
+				productsSection: result
 			});
 		} else {
 			res.status(400).json({

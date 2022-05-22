@@ -99,6 +99,45 @@ export const productAddProductsSection = (productsSection, history) => {
 	};
 };
 
+export const productUpdateProductsSection = (productsSection, history) => {
+	return async (dispatch) => {
+		Swal.fire({
+			title: "Cargando",
+			text: "Actualizando Sección de Productos",
+			didOpen: async () => {
+				Swal.showLoading();
+				const result = await fetchWithoutToken('products-section/' + productsSection._id, { fieldsToUpdate: productsSection }, 'PUT');
+				if (!result.error) {
+					dispatch({
+						type: types.productUpdateProductsSection,
+						payload: {
+							productsSection: result.data.productsSection,
+						},
+					});
+					Swal.fire({
+						title: "Correcto!",
+						text: "Redirigiendo a las secciones",
+						icon: "success",
+						timer: 2000,
+						didOpen: async () => {
+							Swal.showLoading();
+						}
+					}).then(() => {
+						history.goBack();
+					})
+				} else {
+					Swal.fire({
+						icon: "error",
+						title: "No se pudo actualizar la sección de productos",
+						text: result.error,
+					});
+				}
+			},
+			allowOutsideClick: () => !Swal.isLoading(),
+		});
+	};
+};
+
 export const productDeleteProductsSection = id => {
 	return async (dispatch) => {
 		Swal.fire({

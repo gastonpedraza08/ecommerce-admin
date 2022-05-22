@@ -52,9 +52,7 @@ export default function Products(props) {
 		dispatch(productDeleteProductsSection(id));
 	}
 
-	const editSection = id => {
-		console.log(id)
-	}
+	console.log(productsSections)
 
 	return (
 		<div className={classes.root}>
@@ -98,7 +96,10 @@ export default function Products(props) {
 										<IconButton onClick={() => deleteSection(productsSection._id)}>
 				              <DeleteIcon />
 				            </IconButton>
-				            <IconButton onClick={() => editSection(productsSection._id)}>
+				            <IconButton 
+				            	component={CustomRouterLink} 
+				            	to={"/admin/integration/products/create-section/" + productsSection._id}
+				            >
 				              <EditIcon />
 				            </IconButton>
 									</div>

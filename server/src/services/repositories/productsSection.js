@@ -34,7 +34,11 @@ const destroy = async productsSectionId => {
 }
 
 const update = async (productsSectionId, fieldsToUpdate) => {
-	const result = await ProductsSection.findOneAndUpdate({ _id: productsSectionId }, fieldsToUpdate);
+	const result = await ProductsSection.findOneAndUpdate({ _id: productsSectionId }, fieldsToUpdate, { new: true })
+	.populate({
+			path: 'products',
+			select: 'name description price _id thumbnail'
+		});;
 	return result;
 }
 
