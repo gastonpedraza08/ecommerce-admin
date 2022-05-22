@@ -118,7 +118,7 @@ router.get('/', async (req, res) => {
 router.put('/:id', async (req, res) => {
 	let fieldsToUpdate = req.body.fieldsToUpdate;
 
-	const user = await handler.getUserById(req.params.id);
+	const user = await handler.getUserByIdWithSoftdelete(req.params.id);
 	if (!user) {
 		return res.status(400).json({
 			ok: false,
@@ -132,13 +132,15 @@ router.put('/:id', async (req, res) => {
 		delete fieldsToUpdate.password;
 	}
 
-	const enabled = fieldsToUpdate.enabled;
+	if (fieldsToUpdate.enabled !== undefined) {
+		const enabled = fieldsToUpdate.enabled;
 
-	const currentDateFormatted = enabled ? null : moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
+		const currentDateFormatted = enabled ? null : moment(new Date()).format("YYYY-MM-DD HH:mm:ss");
 
-	user.deletedAt = currentDateFormatted;
+		user.deletedAt = currentDateFormatted;
 
-	delete fieldsToUpdate.enabled;
+		delete fieldsToUpdate.enabled;
+	}
 
 	for (let prop in fieldsToUpdate) {
 		user[prop] = fieldsToUpdate[prop];
@@ -146,7 +148,7 @@ router.put('/:id', async (req, res) => {
 
 	await user.save();
 
-	user.password = null;
+	user.password = undefined;
 
 	res.status(200).json({
 		ok: true,
