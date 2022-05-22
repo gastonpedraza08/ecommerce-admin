@@ -70,6 +70,12 @@ export default function Product(props) {
 	const classes = useStyles();
 	const { product } = props;
 
+	const addToCar = (e, id) => {
+		e.stopPropagation();
+		e.preventDefault();
+		console.log(id)
+	}
+
 	return (
 		<Card className={classes.root} component={CustomRouterLink} to={`/product/${product._id}`} >
 			<div 
@@ -95,7 +101,9 @@ export default function Product(props) {
 				<Typography className={classes.price} display="block" gutterBottom>
 					$ {product.price}
 				</Typography>
-				<IconButton>
+				<IconButton 
+					onClick={(e) => addToCar(e, product._id)}
+				>
 					<ShoppingCartIcon />
 				</IconButton>
 			</div>

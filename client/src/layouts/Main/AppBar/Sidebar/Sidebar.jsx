@@ -11,7 +11,7 @@ import CardHeader from "@material-ui/core/CardHeader";
 
 import IconButton from "@material-ui/core/IconButton";
 import CloseIcon from "@material-ui/icons/Close";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import PermIdentityIcon from "@material-ui/icons/PermIdentity";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 
@@ -59,7 +59,7 @@ export default function Sidebar() {
           <Divider />
           <CardContent>
             <Button classes={{ root: classes.button, label: classes.label }}>
-              <FavoriteBorderIcon />
+              <ShoppingCartIcon />
               <span className="iconText">FAVORITOS</span>
             </Button>
             <Button classes={{ root: classes.button, label: classes.label }}>

@@ -9,7 +9,7 @@ import Hidden from "@material-ui/core/Hidden";
 import MenuIcon from "@material-ui/icons/Menu";
 import StorefrontIcon from "@material-ui/icons/Storefront";
 import IconButton from "@material-ui/core/IconButton";
-import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 
 import CustomRouterLink from 'components/CustomRouterLink';
 import { makeStyles } from "@material-ui/core/styles";
@@ -93,7 +93,7 @@ export default function MenuAppBar() {
       <Hidden smDown>
         <AuthButton />
         <IconButton onClick={showAlert} color="inherit">
-          <FavoriteBorderIcon />
+          <ShoppingCartIcon />
         </IconButton>
         <IconButton onClick={showAlert} color="inherit">
           <StorefrontIcon />
