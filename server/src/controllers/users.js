@@ -8,6 +8,7 @@ const jwt = require('jsonwebtoken');
 sgMail.setApiKey(process.env.MAIL_KEY);
 
 const handler = require('../handlers/users');
+const productHandler = require('../handlers/products');
 const { requireSignin, adminMiddleware } = require('./middlewares/auth');
 const { updateUser } = require('./middlewares/express-validator/auth');
 const { validate, createTokenAccountActivation } = require('../utils/commons');
@@ -166,6 +167,40 @@ router.delete('/bulk/delete', async (req, res) => {
 			result
 		});
 
+	} catch (error) {
+		res.status(500).json({
+			ok: false,
+			error: 'Error en el servidor'
+		});
+		console.log(error);
+	}
+});
+
+router.get('/mycart/:id', async (req, res) => {
+	try {
+		let userId = req.params.id;
+		let user = await handler.getUserById(userId);
+		let productsInCartId = user.info.productsInCart;
+		let result = await productHandler.getProductsByIds(productsInCartId);
+
+		let products = result.map(pro => {
+			console.log(pro)
+			for (let i = 0; i < productsInCartId.length; i++) {
+				if (pro._id == productsInCartId[i]._id) {
+					return {
+						...pro._doc,
+						count: productsInCartId[i].count
+					}
+				}
+			}
+			return pro._doc
+		})
+
+		res.status(200).json({
+			ok: true,
+			products,
+			user
+		});
 	} catch (error) {
 		res.status(500).json({
 			ok: false,

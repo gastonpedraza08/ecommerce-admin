@@ -38,6 +38,11 @@ const bulkDeleteProducts = async ids => {
 	return result;
 } 
 
+const getProductsByIds = async ids => {
+	const result = await repository.getProductsByIds(ids);
+	return result;
+}
+
 module.exports = {
 	getProducts,
 	createProduct,
@@ -45,5 +50,6 @@ module.exports = {
 	deleteProduct,
 	getProductById,
 	searchProducts,
-	bulkDeleteProducts
+	bulkDeleteProducts,
+	getProductsByIds,
 };

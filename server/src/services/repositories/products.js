@@ -101,6 +101,11 @@ const searchProducts = async params => {
 	}
 }
 
+const getProductsByIds = async ids => {
+	const result = await Product.find({ '_id': { $in: ids } });
+	return result;
+}
+
 
 module.exports = {
 	getProducts,
@@ -110,4 +115,5 @@ module.exports = {
 	persist,
 	searchProducts,
 	bulkDeleteProducts,
+	getProductsByIds
 }

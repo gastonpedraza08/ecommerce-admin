@@ -59,7 +59,10 @@ router.post('/register', async (req, res) => {
 			lastName,
 			email,
 			password: hash,
-			deletedAt: currentDateFormatted
+			deletedAt: currentDateFormatted,
+			info: {
+				productsInCart: []
+			}
 		};
 
 		const result = await handler.createUser(newUser, token);
