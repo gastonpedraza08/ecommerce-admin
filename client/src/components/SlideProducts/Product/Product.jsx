@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import Box from '@material-ui/core/Box';
@@ -8,6 +9,8 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import CustomRouterLink from 'components/CustomRouterLink';
+
+import { authUpdateMe } from 'actions/auth';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -71,10 +74,40 @@ export default function Product(props) {
 	const classes = useStyles();
 	const { product } = props;
 
+	const dispatch = useDispatch();
+	const { user } = useSelector(state => state.auth);
+
 	const addToCar = (e, id) => {
 		e.stopPropagation();
 		e.preventDefault();
-		console.log(id)
+
+		let fieldsToUpdate;
+
+		if (user.info) {
+			if (user.info.productsInCart) {
+			let productsInCart = user.info.productsInCart;
+			productsInCart.push(id);
+				fieldsToUpdate = {
+					info: {
+						productsInCart: productsInCart
+					}
+				}
+			} else {
+				fieldsToUpdate = {
+					info: {
+						productsInCart: [id]
+					}
+				}
+			}
+		} else {
+			fieldsToUpdate = {
+				info: {
+					productsInCart: [id]
+				}
+			}
+		}
+
+		dispatch(authUpdateMe(fieldsToUpdate, user.id));
 	}
 
 	return (

@@ -170,7 +170,7 @@ router.post('/login', async (req, res) => {
 	}
 });
 
-router.post('/renewtoken', (req, res) => {
+router.post('/renewtoken',  (req, res) => {
 
 	const authorization = req.get('Authorization');
 	if (!authorization) {
@@ -182,17 +182,19 @@ router.post('/renewtoken', (req, res) => {
 
 	const token = authorization.split(' ')[1];
 
-	jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
+	jwt.verify(token, process.env.JWT_SECRET, async (err, decoded) => {
 		if (err) {
 			return res.status(401).json({
 				ok: false,
 				error: 'invalid token'
 			});
 		} else {
+			const user = await handler.getUserByIdWithSoftdelete(decoded.id);
+			console.log(user)
 			return res.status(200).json({
 				ok: true,
 				token,
-				user: decoded
+				user
 			});
 		}
 	});

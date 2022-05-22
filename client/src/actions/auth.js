@@ -110,6 +110,7 @@ export const authRenewToken = token => {
     const result = await fetchWithToken("auth/renewtoken", {}, "POST", token);
     if (!result.error) {
       localStorage.setItem('access_token', result.data.token);
+      localStorage.setItem('user', JSON.stringify(result.data.user));
       dispatch({
         type: types.authEndLogin,
         payload: {
@@ -121,6 +122,36 @@ export const authRenewToken = token => {
       });
     } else {
       localStorage.removeItem('access_token');
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: false,
+          error: result.error,
+          user: null,
+          isLoggedIn: false,
+        },
+      });
+    }
+  }
+}
+
+export const authUpdateMe = (user, id) => {
+  return async dispatch => {
+    const result = await fetchWithoutToken("users/" + id, { fieldsToUpdate: user }, "PUT");
+    if (!result.error) {
+      localStorage.setItem('user', JSON.stringify(result.data.user));
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: true,
+          error: null,
+          user: result.data.user,
+          isLoggedIn: true,
+        },
+      });
+    } else {
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('user');
       dispatch({
         type: types.authEndLogin,
         payload: {

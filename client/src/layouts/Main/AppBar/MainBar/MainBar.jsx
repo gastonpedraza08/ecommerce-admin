@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import React, { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory, useLocation } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import Toolbar from "@material-ui/core/Toolbar";
@@ -33,6 +33,21 @@ const useStyles = makeStyles((theme) => ({
   toolBar: {
   	backgroundColor: theme.palette.primary.dark
   },
+  cartIconContainer: {
+    position: 'relative',
+    '& > div': {
+      position: 'absolute',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'flex-start',
+      width: '100%',
+      height: '100%',
+      zIndex: 50,
+      '& span': {
+        color: 'white'
+      }
+    }
+  }
 }));
 
 export default function MenuAppBar() {
@@ -40,6 +55,10 @@ export default function MenuAppBar() {
   const history = useHistory();
   const location = useLocation();
   const classes = useStyles();
+  const [itemsInCart, setItemsInCart] = useState(0);
+
+  const { isLoggedIn, user } = useSelector(state => state.auth);
+
   let query = useQuery();
   const searchedValue = query.get('search');
 
@@ -53,6 +72,20 @@ export default function MenuAppBar() {
       dispatch(productsSearchProducts(searchString));
     }
   }, [location, dispatch]);
+
+  useEffect(() => {
+    if (user) {
+      if (user.info) {
+        if (user.info.productsInCart) {
+          setItemsInCart(user.info.productsInCart.length);
+        } else {
+          setItemsInCart(0);
+        }
+      } else {
+        setItemsInCart(0);
+      }
+    }
+  }, [user]);
 
   return (
     <Toolbar className={classes.toolBar}>
@@ -92,12 +125,26 @@ export default function MenuAppBar() {
       <div className={classes.grow} />
       <Hidden smDown>
         <AuthButton />
-        <IconButton onClick={showAlert} color="inherit">
-          <ShoppingCartIcon />
-        </IconButton>
-        <IconButton onClick={showAlert} color="inherit">
-          <StorefrontIcon />
-        </IconButton>
+        {
+          isLoggedIn ?
+          (
+            <>
+              <div className={classes.cartIconContainer}>
+                <div>
+                  <span>{itemsInCart}</span>
+                </div>
+                <IconButton onClick={showAlert} color="inherit">
+                  <ShoppingCartIcon />
+                </IconButton>
+              </div>
+              <IconButton onClick={showAlert} color="inherit">
+                <StorefrontIcon />
+              </IconButton>
+            </>
+          )
+          :
+          (null)
+        }
       </Hidden>
     </Toolbar>
   );
