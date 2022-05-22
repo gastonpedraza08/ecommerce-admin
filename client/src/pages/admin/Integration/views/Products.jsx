@@ -13,6 +13,8 @@ import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from '@material-ui/icons/Edit';
 
+import { productDeleteProductsSection } from 'actions/products';
+
 const useStyles = makeStyles((theme) => ({
 	root: {
 		marginTop: theme.spacing(2),
@@ -47,7 +49,7 @@ export default function Products(props) {
 	}, [dispatch, productsSections.length]);
 
 	const deleteSection = id => {
-		console.log(id)
+		dispatch(productDeleteProductsSection(id));
 	}
 
 	const editSection = id => {

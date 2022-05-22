@@ -56,6 +56,11 @@ export const productsReducer = (state = initialState, action) => {
 				...state,
 				productsSections: [action.payload.productsSection].concat(state.productsSections),
 			};
+		case types.productDeleteProductsSection:
+			return {
+				...state,
+				productsSections: state.productsSections.filter(pS => pS._id != action.payload)
+			};
 		case types.productsLoadProductsSections:
 			return {
 				...state,

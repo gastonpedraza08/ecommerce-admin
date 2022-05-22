@@ -50,23 +50,18 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
 	const productsSectionToDelete = req.params.id;
-	console.log(productsSectionToDelete)
 	try {
-		console.log("1")
 		const result = await handler.deleteProductsSection(productsSectionToDelete);
 		if (result.deletedCount === 1) {
-			console.log("2")
 			res.json({
 				ok: true,
 			});
 		} else {
-			console.log("3")
 			res.status(400).json({
 				ok: false,
 			})
 		}
 	} catch (error) {
-		console.log("4")
 		res.status(500).json({
 			ok: false,
 		})

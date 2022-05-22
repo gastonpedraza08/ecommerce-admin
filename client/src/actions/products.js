@@ -99,6 +99,37 @@ export const productAddProductsSection = (productsSection, history) => {
 	};
 };
 
+export const productDeleteProductsSection = id => {
+	return async (dispatch) => {
+		Swal.fire({
+			title: "Cargando",
+			text: "Eliminando Sección de Productos",
+			didOpen: async () => {
+				Swal.showLoading();
+				const result = await fetchWithoutToken('products-section/' + id, {}, 'DELETE');
+				if (!result.error) {
+					dispatch({
+						type: types.productDeleteProductsSection,
+						payload: id
+					});
+					Swal.fire({
+						title: "Correcto!",
+						text: "Sección de Productos eliminada con éxito.",
+						icon: "success",
+					})
+				} else {
+					Swal.fire({
+						icon: "error",
+						title: "No se pudo eliminar la sección de productos",
+						text: result.error,
+					});
+				}
+			},
+			allowOutsideClick: () => !Swal.isLoading(),
+		});
+	};
+};
+
 export const productsSearchProducts = search => {
 	return async (dispatch) => {
 		dispatch(uiStartSearchingProducts());
