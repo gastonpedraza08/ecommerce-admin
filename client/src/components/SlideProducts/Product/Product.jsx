@@ -83,29 +83,26 @@ export default function Product(props) {
 
 		let fieldsToUpdate;
 
-		if (user.info) {
-			if (user.info.productsInCart) {
-			let productsInCart = user.info.productsInCart;
-			productsInCart.push(id);
-				fieldsToUpdate = {
-					info: {
-						productsInCart: productsInCart
-					}
-				}
-			} else {
-				fieldsToUpdate = {
-					info: {
-						productsInCart: [id]
-					}
+		let productsInCart = user.info.productsInCart;
+
+		let index = productsInCart.findIndex(prod => prod._id === id);
+
+		if (index === -1) {
+			productsInCart.push({ _id: id, count: 1});
+			fieldsToUpdate = {
+				info: {
+					productsInCart
 				}
 			}
 		} else {
+			productsInCart[index].count++;
 			fieldsToUpdate = {
 				info: {
-					productsInCart: [id]
+					productsInCart: productsInCart
 				}
 			}
 		}
+
 
 		dispatch(authUpdateMe(fieldsToUpdate, user.id));
 	}

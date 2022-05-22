@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cartIconContainer: {
     position: 'relative',
-    '& > div': {
+    '& > #number-cart': {
       position: 'absolute',
       display: 'flex',
       justifyContent: 'center',
@@ -128,11 +128,17 @@ export default function MenuAppBar() {
           isLoggedIn ?
           (
             <>
-              <div className={classes.cartIconContainer}>
-                <div>
+              <div 
+                className={classes.cartIconContainer}
+              >
+                <div id="number-cart">
                   <span>{itemsInCart}</span>
                 </div>
-                <IconButton onClick={showAlert} color="inherit">
+                <IconButton 
+                  color="inherit" 
+                  component={CustomRouterLink}
+                  to={"/mycart/" + user.id}
+                >
                   <ShoppingCartIcon />
                 </IconButton>
               </div>
