@@ -127,10 +127,6 @@ const getUsers = async (params, search) => {
 	return result;
 };
 
-const bulkCreateUsers = async users => {
-	const result = await User.bulkCreate(users);
-	return result;
-}
 
 module.exports = {
 	getByEmailWithSoftdelete,
@@ -140,7 +136,6 @@ module.exports = {
 	getById,
 	deleteByEmail,
 	getUsers,
-	bulkCreateUsers,
 	bulkDeleteUsers,
 	getUserByIdWithSoftdelete,
 };

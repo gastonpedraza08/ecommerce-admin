@@ -61,48 +61,6 @@ router.post('/', async (req, res) => {
 	}
 });
 
-router.post('/multiple', async (req, res) => {
-	const { users } = req.body;
-	try {
-
-		let hashedUsers = users.map(user => {
-			const hash = bcrypt.hashSync(user.password, 10);
-			return {
-				...user,
-				password: hash
-			}
-		});
-
-		const result = await handler.bulkCreateUsers(hashedUsers);
-
-		if (result) {
-			const usersToReturn = result.map(user => {
-				return {
-					...user.dataValues,
-					password: undefined
-				}
-			});
-
-			return res.status(200).json({
-				ok: true,
-				users: usersToReturn
-			});
-		} else {
-			return res.status(400).json({
-				ok: false,
-				error: 'Can not bulk create users'
-			});
-		}
-	} catch (error) {
-		const errorToReturn = errorHandler(error);
-		res.status(errorToReturn.status).json({
-			ok: false,
-			error: errorToReturn.message
-		});
-	}
-});
-
-
 router.get('/:id', async (req, res) => {
 	const userId = req.params.id;
 	const user = await handler.getUserByIdWithSoftdelete(userId);
