@@ -17,6 +17,9 @@ module.exports = {
 				onUpdate: 'CASCADE',
 				onDelete: 'SET NULL',
 			},
+			info: {
+				type: Sequelize.JSON,
+			},
 			ammount: {
 				type: Sequelize.DECIMAL,
 				allowNull: false,

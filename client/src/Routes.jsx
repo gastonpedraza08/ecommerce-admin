@@ -12,6 +12,7 @@ import {
   Main as MainView,
   SearchProduct as SearchProductView,
   Product as ProductView,
+  Checkout as CheckoutView,
   MyCart as MyCartView,
   Admin as AdminView,
   Auth as AuthView,
@@ -42,6 +43,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/mycart/:id"
+      />
+      <RouteWithLayout
+        component={CheckoutView}
+        exact
+        layout={MainLayout}
+        path="/checkout/:id"
       />
       <RouteWithLayout
         component={AuthView}

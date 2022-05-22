@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     ammount: DataTypes.DECIMAL,
     shippingAddress: DataTypes.STRING,
     orderAddress: DataTypes.STRING,
+    info: DataTypes.JSON,
     orderEmail: DataTypes.STRING,
     orderDate: DataTypes.STRING,
     orderStatus: DataTypes.STRING,

@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-export default function FormProduct() {
+export default function MyCart() {
 	const classes = useStyles();
 	const { id } = useParams();
 	const history = useHistory();
