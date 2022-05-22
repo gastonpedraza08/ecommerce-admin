@@ -22,6 +22,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'hbs');
+
 app.use('/api/auth', authRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/slides', slidesRouter);
