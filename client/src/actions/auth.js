@@ -35,6 +35,7 @@ export const authLogin = (values) => {
     const result = await fetchWithoutToken("auth/login", values, "POST");
     if (!result.error) {
       localStorage.setItem('access_token', result.data.token);
+      localStorage.setItem('user', JSON.stringify(result.data.user));
 
       dispatch({
         type: types.authEndLogin,
@@ -135,6 +136,7 @@ export const authRenewToken = token => {
 
 export const authLogout = token => {
   localStorage.removeItem('access_token');
+  localStorage.removeItem('user');
   return {
     type: types.authEndLogin,
     payload: {
