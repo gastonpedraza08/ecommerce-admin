@@ -9,6 +9,9 @@ import SlideProducts from 'components/SlideProducts';
 import Product from 'components/SlideProducts/Product';
 import { CustomRouterLink } from 'components';
 import { productsLoadProductsSections } from 'actions/products';
+import IconButton from "@material-ui/core/IconButton";
+import DeleteIcon from "@material-ui/icons/Delete";
+import EditIcon from '@material-ui/icons/Edit';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -22,6 +25,11 @@ const useStyles = makeStyles((theme) => ({
 		paddingTop: theme.spacing(1),
 		marginBottom: theme.spacing(3),
 	},
+	titleSection: {
+		display: 'flex',
+		alignItems: 'center',
+		marginBottom: 10
+	}
 }));
 
 export default function Products(props) {
@@ -37,6 +45,14 @@ export default function Products(props) {
 			dispatch(productsLoadProductsSections());
 		}
 	}, [dispatch, productsSections.length]);
+
+	const deleteSection = id => {
+		console.log(id)
+	}
+
+	const editSection = id => {
+		console.log(id)
+	}
 
 	return (
 		<div className={classes.root}>
@@ -73,9 +89,17 @@ export default function Products(props) {
 									className={classes.productsSection}
 									key={productsSection._id}
 								>
-									<Typography variant="h3" gutterBottom>
-										{productsSection.name}
-									</Typography>
+									<div className={classes.titleSection}>
+										<Typography variant="h3" style={{ display: 'inline'}}>
+											{productsSection.name}
+										</Typography>
+										<IconButton onClick={() => deleteSection(productsSection._id)}>
+				              <DeleteIcon />
+				            </IconButton>
+				            <IconButton onClick={() => editSection(productsSection._id)}>
+				              <EditIcon />
+				            </IconButton>
+									</div>
 									<SlideProducts>
 										{productsSection.products.map((product) => {
 											return <Product key={product._id} product={product} />;
