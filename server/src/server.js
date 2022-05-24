@@ -9,6 +9,7 @@ const authRouter = require('./controllers/auth');
 const usersRouter = require('./controllers/users');
 const slidesRouter = require('./controllers/slides');
 const productsRouter = require('./controllers/products');
+const ordersRouter = require('./controllers/orders');
 const productsSectionRouter = require('./controllers/productsSection');
 const sharedRouter = require('./controllers/shared');
 
@@ -30,6 +31,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/users', usersRouter);
 app.use('/api/slides', slidesRouter);
 app.use('/api/products', productsRouter);
+app.use('/api/orders', ordersRouter);
 app.use('/api/products-section', productsSectionRouter);
 app.use('/api/shared', sharedRouter);
 

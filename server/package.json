@@ -23,6 +23,7 @@
     "http-errors": "~1.6.3",
     "is-base64": "^1.1.0",
     "jsonwebtoken": "^8.5.1",
+    "mercadopago": "^1.5.13",
     "moment": "^2.29.1",
     "mongoose": "^6.2.0",
     "mongoosejs-cli": "^1.0.7",

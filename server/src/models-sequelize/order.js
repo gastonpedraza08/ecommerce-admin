@@ -3,24 +3,26 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class order extends Model {
+  class Order extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Order.belongsTo(models.User, {
+        as: 'user',
+        foreingKey: 'userId',
+      });
     }
   };
-  order.init({
+  Order.init({
     customerId: DataTypes.INTEGER,
     ammount: DataTypes.DECIMAL,
     shippingAddress: DataTypes.STRING,
-    orderAddress: DataTypes.STRING,
     info: DataTypes.JSON,
     orderEmail: DataTypes.STRING,
-    orderDate: DataTypes.STRING,
+    orderDate: DataTypes.DATE,
     orderStatus: DataTypes.STRING,
     createdAt: DataTypes.DATE(6),
     updatedAt: DataTypes.DATE(6),
@@ -31,5 +33,5 @@ module.exports = (sequelize, DataTypes) => {
     timestamps: true,
 		paranoid: true,
   });
-  return order;
+  return Order;
 };

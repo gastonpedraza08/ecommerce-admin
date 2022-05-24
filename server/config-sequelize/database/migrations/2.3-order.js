@@ -8,10 +8,10 @@ module.exports = {
 				primaryKey: true,
 				type: Sequelize.INTEGER
 			},
-			customerId: {
+			userId: {
 				type: Sequelize.INTEGER,
 				references: {
-					model: 'Customers',
+					model: 'Users',
 					key: 'id',
 				},
 				onUpdate: 'CASCADE',
@@ -28,16 +28,16 @@ module.exports = {
 				type: Sequelize.STRING,
 				allowNull: false,
 			},
-			orderAddress: {
-				type: Sequelize.STRING,
-				allowNull: false,
-			},
 			orderEmail: {
 				type: Sequelize.STRING,
 				allowNull: false,
 			},
 			orderStatus: {
 				type: Sequelize.STRING,
+				allowNull: false,
+			},
+			orderDate: {
+				type: Sequelize.DATE,
 				allowNull: false,
 			},
 			createdAt: {
