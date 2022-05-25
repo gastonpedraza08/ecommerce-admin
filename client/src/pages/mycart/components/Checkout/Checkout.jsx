@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import clsx from  'clsx';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -11,6 +11,8 @@ import Swal from "sweetalert2";
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import Select from '@material-ui/core/Select';
+
+import { authRenewToken } from 'actions/auth';
 
 import { formInfo, handleSubmit } from './formInfo.js';
 
@@ -36,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Checkout(props) {
 	const { setOpen } = props;
 	const classes = useStyles();
+	const dispatch = useDispatch();
 	const { user } = useSelector(state => state.auth);
 	const [mercadopago, setMercadpago] = useState(null);
   const [shouldMount, setShouldMount] = useState(false);
@@ -62,6 +65,10 @@ export default function Checkout(props) {
   		setOpen(false);
   		Swal.fire("Correcto!", "Pago realizado con éxito.", "success");
       localStorage.removeItem('userPaymentInfo');
+      const token = localStorage.getItem('access_token');
+	  	if (token) {
+	  		dispatch(authRenewToken(token));
+	  	}
   	}
   }, [paymentState]);
 
