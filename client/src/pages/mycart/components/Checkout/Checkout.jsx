@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import clsx from  'clsx';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
@@ -35,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Checkout(props) {
 	const { setOpen } = props;
 	const classes = useStyles();
+	const { user } = useSelector(state => state.auth);
 	const [mercadopago, setMercadpago] = useState(null);
   const [shouldMount, setShouldMount] = useState(false);
   const [paymentState, setPaymentState] = useState({
@@ -71,6 +73,7 @@ export default function Checkout(props) {
     script.src = "https://sdk.mercadopago.com/js/v2";
     script.async = true;
     document.body.appendChild(script);
+    //console.log(user)
   }, []);
 
   useEffect(() => {
@@ -154,7 +157,7 @@ export default function Checkout(props) {
                 />
               </FormControl>
 
-              <Grid container spacing={2} justifyContent="start">
+              <Grid container spacing={2} justifyContent="flex-start">
               	<Grid item>
 		            	{/* identificationType */}
 		            	<FormControl className={clsx(classes.marginTop)} variant="outlined">
@@ -276,53 +279,7 @@ export default function Checkout(props) {
 			      	>
 				        Pay
 				      </Button>
-				      <>
-				      	{
-                  paymentState.isLoading ?
-                  (
-                    <p>Loading, please wait...</p>
-                  ) : null
-                }
-				      </>
-
-
-							{/* RESULT */}
-
-							<div>
-								<>
-								  {
-								    paymentState.error ?
-								    (
-								      <div>
-								        <p>Something went wrong</p>
-								        <>
-								          {
-								            paymentState.errors.map(error => {
-								              return (
-								                <p key={error.message}>{error.message}</p>
-								              );
-								            })
-								          }
-								        </>
-								      </div>
-								    ) : null
-								  }
-								</>
-								<>
-								  {
-								    paymentState.success ?
-								    (
-								      <div>
-								        <p>ID: {paymentState.paymentInfo.id}</p>
-								        <p>Status: {paymentState.paymentInfo.status}</p>
-								        <p>Detail: {paymentState.paymentInfo.detail}</p>
-								      </div>
-								    ) : null
-								  }
-								</>
-							</div>
 						</form>
-
 
 						{/* FIN CONTENIDO DEL CHECKOUT */}
 					</div>
