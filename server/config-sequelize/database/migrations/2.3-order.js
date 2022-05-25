@@ -48,6 +48,11 @@ module.exports = {
 				type: Sequelize.DATE,
 				allowNull: false,
 			},
+			isShipmentPending: {
+				type: Sequelize.BOOLEAN,
+				allowNull: false,
+				defaultValue: true,
+			},
 			createdAt: {
 				allowNull: false,
 				type: Sequelize.DATE(6),

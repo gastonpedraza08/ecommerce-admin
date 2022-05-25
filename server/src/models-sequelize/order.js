@@ -26,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     orderEmail: DataTypes.STRING,
     orderDate: DataTypes.DATE,
     orderStatus: DataTypes.STRING,
+    isShipmentPending: DataTypes.BOOLEAN,
     createdAt: DataTypes.DATE(6),
     updatedAt: DataTypes.DATE(6),
     deletedAt: DataTypes.DATE(6),
