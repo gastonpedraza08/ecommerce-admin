@@ -1,4 +1,5 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
@@ -7,6 +8,8 @@ import IconButton from "@material-ui/core/IconButton";
 import DeleteIcon from "@material-ui/icons/Delete";
 
 import CustomRouterLink from 'components/CustomRouterLink';
+
+import { authUpdateCart } from 'actions/auth';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -63,11 +66,13 @@ const useStyles = makeStyles((theme) => ({
 export default function ComplexGrid(props) {
 	const { product } = props;
   const classes = useStyles();
+  const dispatch = useDispatch();
+  const { user } = useSelector(state => state.auth);
 
   const removeFromCart = (e, id) => {
   	e.stopPropagation();
   	e.preventDefault();
-  	console.log(id)
+  	dispatch(authUpdateCart(user.id, id));
   }
 
   return (

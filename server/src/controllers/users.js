@@ -180,7 +180,12 @@ router.get('/mycart/:id', async (req, res) => {
 	try {
 		let userId = req.params.id;
 		let user = await handler.getUserById(userId);
-		let productsInCartId = user.info.productsInCart;
+		let productsInCartId;
+		if (typeof user.info === "string") {
+			productsInCartId = JSON.parse(user.info).productsInCart;
+		} else {
+			productsInCartId = user.info.productsInCart;
+		}
 		let result = await productHandler.getProductsByIds(productsInCartId);
 
 		let products = result.map(pro => {
@@ -217,6 +222,44 @@ router.get('/mycart/:id', async (req, res) => {
 		});
 		console.log(error);
 	}
+});
+
+
+router.put('/mycart/:id', async (req, res) => {
+	let productId = req.body.productId;
+
+	const user = await handler.getUserByIdWithSoftdelete(req.params.id);
+	if (!user) {
+		return res.status(400).json({
+			ok: false,
+			error: 'user not found'
+		});
+	}
+
+	let productsInCart = user.info.productsInCart;
+
+	for (let i = 0; i < productsInCart.length; i++) {
+		if (productsInCart[i]._id === productId) {
+			if (productsInCart[i].count > 1) {
+				productsInCart[i].count--;
+			} else {
+				productsInCart.splice(i, 1);
+			}
+		}
+	}
+
+	user.info.productsInCart = productsInCart;
+
+	user.changed("info", true);
+
+	await user.save();
+
+	user.password = undefined;
+
+	res.status(200).json({
+		ok: true,
+		user
+	});
 });
 
 module.exports = router;

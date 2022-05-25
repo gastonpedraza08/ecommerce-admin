@@ -178,3 +178,31 @@ export const authLogout = token => {
     },
   };  
 }
+
+export const authUpdateCart = (userId, productId) => {
+  return async dispatch => {
+    const result = await fetchWithoutToken("users/mycart/" + userId, { productId }, "PUT");
+    if (!result.error) {
+      localStorage.setItem('user', JSON.stringify(result.data.user));
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: true,
+          error: null,
+          user: result.data.user,
+          isLoggedIn: true,
+        },
+      });
+    } else {
+      dispatch({
+        type: types.authEndLogin,
+        payload: {
+          success: false,
+          error: result.error,
+          user: null,
+          isLoggedIn: false,
+        },
+      });
+    }
+  }
+}
