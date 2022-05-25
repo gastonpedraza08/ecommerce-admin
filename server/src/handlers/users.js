@@ -49,6 +49,7 @@ const createUser = async (newUser, token, enabled) => {
 
 const updateUser = async data => {
 	const result = await repository.update(data);
+	return result;
 }
 
 const deleteUserByEmail = async email => {

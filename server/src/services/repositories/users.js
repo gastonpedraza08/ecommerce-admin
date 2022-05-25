@@ -127,6 +127,16 @@ const getUsers = async (params, search) => {
 	return result;
 };
 
+const update = async (userToUpdate, fieldsToUpdate) => {
+	const result = await User.update(fieldsToUpdate, {
+		where: {
+			id: userToUpdate
+		}
+	});
+	return result;
+};
+
+
 
 module.exports = {
 	getByEmailWithSoftdelete,
@@ -136,6 +146,7 @@ module.exports = {
 	getById,
 	deleteByEmail,
 	getUsers,
+	update,
 	bulkDeleteUsers,
 	getUserByIdWithSoftdelete,
 };
