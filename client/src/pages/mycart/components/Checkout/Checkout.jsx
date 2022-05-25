@@ -56,10 +56,12 @@ export default function Checkout(props) {
         title: "No se pudo procesar el pago.",
         text: "Rellena bien los datos o comunicate con tu banco.",
       });
+      localStorage.removeItem('userPaymentInfo');
   	}
   	if (paymentState.success) {
   		setOpen(false);
   		Swal.fire("Correcto!", "Pago realizado con éxito.", "success");
+      localStorage.removeItem('userPaymentInfo');
   	}
   }, [paymentState]);
 
@@ -73,13 +75,19 @@ export default function Checkout(props) {
     script.src = "https://sdk.mercadopago.com/js/v2";
     script.async = true;
     document.body.appendChild(script);
-    //console.log(user)
   }, []);
 
   useEffect(() => {
   	function loadCardForm() {
-  		const productCost = "100";
-    	const productDescription = "descripcion sin html";
+  		let payerData = {
+  			id: Number(localStorage.getItem('customerId')),
+  			...JSON.parse(localStorage.getItem('userPaymentInfo'))
+  		}
+
+  		let products = JSON.parse(localStorage.getItem('products'));
+
+  		const productCost = localStorage.getItem('totalCart');
+    	const productDescription = localStorage.getItem('descriptionCart');
 
 	  	const cardForm = mercadopago.cardForm({
 	  		amount: productCost,
@@ -90,7 +98,6 @@ export default function Checkout(props) {
 	          if (error) {
 	            return console.warn("Form Mounted handling error: ", error);
 	          }
-	          console.log("Form mounted");
 	        },
 	        onSubmit: event => {
 	          if (paymentState.error) {
@@ -98,10 +105,10 @@ export default function Checkout(props) {
 	            return;
 	          };
 	          event.preventDefault();
-	          handleSubmit(cardForm, productDescription, setPaymentState)
+	          handleSubmit(cardForm, productDescription, setPaymentState, payerData, products);
 	        },
 	        onFetching: (resource) => {
-	          console.log("Fetching resource: ", resource);
+	          //console.log("Fetching resource: ", resource);
 	          setPaymentState(prev => {
 	            return {
 	              ...prev,

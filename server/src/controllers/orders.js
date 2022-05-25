@@ -8,7 +8,7 @@ mercadopago.configurations.setAccessToken(process.env.MERCADO_PAGO_SAMPLE_ACCESS
 
 router.post("/process_payment", (req, res) => {
   const { paymentDataReq } = req.body;
-  const { payer } = paymentDataReq;
+  const { payer, products } = paymentDataReq;
 
   const paymentData = {
     transaction_amount: Number(paymentDataReq.transactionAmount),
@@ -37,11 +37,13 @@ router.post("/process_payment", (req, res) => {
             status: data.status,
             id: data.id
           },
-          productsId: [] //id the productos
+          products, //id the productos
         },
-        userId: 1, //id user
+        userId: payer.id, //id user
         ammount: paymentData.transaction_amount,
-        shippingAddress: 'Lozano 781', //sacar del front
+        shippingAddress: payer.address, //sacar del front
+        referenceAddress: payer.referenceAddress,
+        fullName: payer.fullName,
         orderEmail: payer.email,
         orderDate: new Date(),
         orderStatus: data.status,

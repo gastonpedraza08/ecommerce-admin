@@ -41,7 +41,7 @@ export const formInfo = {
   },
 };
 
-export const handleSubmit = (cardForm, productDescription, setPaymentState) => {
+export const handleSubmit = (cardForm, productDescription, setPaymentState, payerData, products) => {
 	const {
 		paymentMethodId,
 		issuerId,
@@ -61,6 +61,7 @@ export const handleSubmit = (cardForm, productDescription, setPaymentState) => {
 		body: JSON.stringify({
 			paymentDataReq: {
 				token,
+				products,
 				issuerId,
 				paymentMethodId,
 				transactionAmount: Number(amount),
@@ -72,6 +73,7 @@ export const handleSubmit = (cardForm, productDescription, setPaymentState) => {
 						type: identificationType,
 						number: identificationNumber,
 					},
+					...payerData,
 				},
 			}
 		}),

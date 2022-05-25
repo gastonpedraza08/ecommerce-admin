@@ -28,6 +28,14 @@ module.exports = {
 				type: Sequelize.STRING,
 				allowNull: false,
 			},
+			referenceAddress: {
+				type: Sequelize.STRING,
+				allowNull: false,
+			},
+			fullName: {
+				type: Sequelize.STRING,
+				allowNull: false,
+			},
 			orderEmail: {
 				type: Sequelize.STRING,
 				allowNull: false,

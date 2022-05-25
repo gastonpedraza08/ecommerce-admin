@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
@@ -42,21 +42,30 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MyCart() {
 	const classes = useStyles();
-	const { id } = useParams();
 	const history = useHistory();
+	const { user } = useSelector(state => state.auth);
 	const [products, setProducts] = useState([]);
 	const [total, setTotal] = useState(0);
 
 	useEffect(() => {
-		(async () => {
-			const result = await fetchWithoutToken("users/mycart/" + id, {}, "GET");
-	    if (!result.error) {
-	    	setProducts(result.data.products);
-	    } else {
-	    	console.log(result.error)
-	    }
-		})()
-	}, [id]);
+		if (user) {
+			(async () => {
+				const result = await fetchWithoutToken("users/mycart/" + user.id, {}, "GET");
+		    if (!result.error) {
+		    	setProducts(result.data.products);
+		    	let description = '';
+		    	for (let i = 0; i < result.data.products.length; i++) {
+		    		description += result.data.products[i].count + 'x ' + result.data.products[i].name + '. ';
+		    	}
+		    	localStorage.setItem('descriptionCart', description);
+		    	localStorage.setItem('customerId', user.id);
+		    	localStorage.setItem('products', JSON.stringify(result.data.products));
+		    } else {
+		    	console.log(result.error)
+		    }
+			})();
+		}
+	}, [user]);
 
 	useEffect(() => {
 		let totalTmp = 0;
@@ -64,6 +73,7 @@ export default function MyCart() {
 			totalTmp += Number(products[i].count) * Number(products[i].price)
 		}
 		setTotal(totalTmp);
+		localStorage.setItem('totalCart', totalTmp);
 	}, [products]);
 
 	const buyCart = () => {

@@ -9,6 +9,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import Typography from '@material-ui/core/Typography';
 
 import Checkout from '../Checkout';
+import Stepper from '../Stepper';
 
 const styles = (theme) => ({
   root: {
@@ -65,7 +66,8 @@ export default function CustomizedDialogs() {
           Modal title
         </DialogTitle>
         <DialogContent dividers>
-          <Checkout setOpen={setOpen} />
+          {/**<Checkout setOpen={setOpen} />**/}
+          <Stepper setOpen={setOpen} />
         </DialogContent>
       </Dialog>
     </div>
