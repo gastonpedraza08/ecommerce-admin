@@ -94,14 +94,31 @@ export default function MyCart() {
 								})
 							}
 						</>
-						<div className={classes.infoContainer}>
-							<Typography variant="h3">
-								Total ${total}
-							</Typography>
-						</div>
-						<div className={classes.buyButtonContainer}>
-							<Dialog />
-						</div>
+						<>
+							{
+								user ?
+								(
+									<>
+										<div className={classes.infoContainer}>
+											<Typography variant="h3">
+												Total ${total}
+											</Typography>
+										</div>
+										<div className={classes.buyButtonContainer}>
+											<Dialog />
+										</div>
+									</>
+								)
+								:
+								(
+									<div style={{height: 85}}>
+										<Typography variant="h2">
+											Opps... Carrito Vacío
+										</Typography>						
+									</div>
+								)
+							}
+						</>
 					</div>
 				</Grid>
 			</Grid>
