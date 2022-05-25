@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useSelector } from 'react-redux';
 import clsx from "clsx";
 import Typography from "@material-ui/core/Typography";
 import Avatar from "@material-ui/core/Avatar";
@@ -22,11 +23,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Profile(props) {
   const { className, ...rest } = props;
-
-  const [user, setUser] = useState(() => {
-    let admin = localStorage.getItem('admin');
-    return JSON.parse(admin)
-  });
+  const { user } = useSelector(state => state.auth);
   const classes = useStyles();
 
   return (
@@ -34,13 +31,13 @@ export default function Profile(props) {
       <Avatar
         alt="Person"
         className={classes.avatar}
-        src={user.avatarUrl}
+        src={user ? user.avatarUrl : ''}
         to="/settings"
       />
       <Typography className={classes.name} variant="h4">
-        {user.firstName + " " + user.lastName}
+        {user ? user.firstName + " " + user.lastName : ''}
       </Typography>
-      <Typography variant="body2">{user.role.name}</Typography>
+      <Typography variant="body2">{user ? user.role.name : ''}</Typography>
     </div>
   );
 }

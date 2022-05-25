@@ -69,7 +69,7 @@ export const authLoginAdmin = (values) => {
     if (!result.error) {
       if (result.data.user.role.name === "admin") {
         localStorage.setItem('access_token', result.data.token);
-        localStorage.setItem('admin', JSON.stringify(result.data.user));
+        localStorage.setItem('user', JSON.stringify(result.data.user));
 
         dispatch({
           type: types.authEndLogin,
