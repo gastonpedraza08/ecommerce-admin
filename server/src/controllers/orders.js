@@ -6,6 +6,28 @@ const handler = require('../handlers/orders');
 
 mercadopago.configurations.setAccessToken(process.env.MERCADO_PAGO_SAMPLE_ACCESS_TOKEN);
 
+router.get('/', async (req, res) => {
+  try {
+    const params = {
+      limit: parseInt(req.query.limit) || 10,
+      order: req.query.order || 'ASC',
+      orderBy: req.query.orderBy || 'id',
+      from: parseInt(req.query.from) - 1 || 0
+    };
+    const result = await handler.getOrders(params);
+    res.json({
+      ok: true,
+      count: result.count,
+      orders: result.rows
+    });
+  } catch (error) {
+    res.status(500).json({
+      ok: false,
+    });
+    console.log(error);
+  }
+});
+
 router.post("/process_payment", (req, res) => {
   const { paymentDataReq } = req.body;
   const { payer, products } = paymentDataReq;

@@ -1,7 +1,7 @@
 const repository = require('../services/repositories/orders');
 
-const getOrders = async (params, conditions) => {
-	const orders = await repository.getOrders(params, conditions);
+const getOrders = async (params) => {
+	const orders = await repository.getOrders(params);
 	return orders;
 };
 

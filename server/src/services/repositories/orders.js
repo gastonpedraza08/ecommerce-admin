@@ -1,14 +1,11 @@
 const { Order } = require('../../models-sequelize');
 const { sequelize } = require('../../models-sequelize');
 
-const getOrders = async (params, conditions) => {
+const getOrders = async (params) => {
 	const result = await Order.findAndCountAll({
 		limit: params.limit,
 		offset: params.from,
 		order: [[params.orderBy, params.order]],
-		where: {
-			...conditions
-		}
 	});
 	return result;
 };
