@@ -41,7 +41,7 @@ const Routes = () => {
         component={MyCartView}
         exact
         layout={MainLayout}
-        path="/mycart/:id"
+        path="/mycart"
       />
       <RouteWithLayout
         component={AuthView}

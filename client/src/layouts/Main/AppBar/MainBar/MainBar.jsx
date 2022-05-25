@@ -137,7 +137,7 @@ export default function MenuAppBar() {
                 <IconButton 
                   color="inherit" 
                   component={CustomRouterLink}
-                  to={"/mycart/" + user.id}
+                  to={"/mycart"}
                 >
                   <ShoppingCartIcon />
                 </IconButton>
