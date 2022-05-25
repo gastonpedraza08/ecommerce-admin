@@ -27,13 +27,13 @@ export default function Routes() {
 
 function AuthProtect(props) {
   const history = useHistory();
-  const { login } = useSelector(state => state.auth);
+  const { login, isLoggedIn } = useSelector(state => state.auth);
 
   useEffect(() => {
-    if (login.isLoggedIn) {
+    if (isLoggedIn) {
       history.push('/');
     }
-  }, [login.isLoggedIn, history]);
+  }, [isLoggedIn, history]);
 
   return (
     <>
