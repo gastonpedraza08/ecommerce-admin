@@ -11,7 +11,7 @@ const createOrder = async orderToPersist => {
 	let userId = orderToPersist.userId;
 	const result = await userRepository.update(userId, {
 		info: {
-			productsInCard: []
+			productsInCart: []
 		}
 	});
 	return order;

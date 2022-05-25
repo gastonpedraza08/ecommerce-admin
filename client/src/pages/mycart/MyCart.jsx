@@ -96,7 +96,7 @@ export default function MyCart() {
 						</>
 						<>
 							{
-								user ?
+								products.length !== 0 ?
 								(
 									<>
 										<div className={classes.infoContainer}>
