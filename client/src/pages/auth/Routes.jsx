@@ -15,8 +15,8 @@ export default function Routes() {
   return (
     <Switch>
       <Route exact path="/auth/activate/:token" component={ActivationView} />
+      <Route exact path="/auth/admin" component={SignInAdminView} />
       <AuthProtect>
-        <Route exact path="/auth/admin" component={SignInAdminView} />
         <Route exact path="/auth/login" component={SignInView} />
         <Route exact path="/auth/register" component={SignUpView} />
       </AuthProtect>
