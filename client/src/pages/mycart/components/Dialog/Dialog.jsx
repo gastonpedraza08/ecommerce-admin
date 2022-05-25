@@ -65,7 +65,7 @@ export default function CustomizedDialogs() {
           Modal title
         </DialogTitle>
         <DialogContent dividers>
-          <Checkout />
+          <Checkout setOpen={setOpen} />
         </DialogContent>
       </Dialog>
     </div>

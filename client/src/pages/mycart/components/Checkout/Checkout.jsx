@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import Swal from "sweetalert2";
 
 import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
@@ -31,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
 	}
 }));
 
-export default function Checkout() {
+export default function Checkout(props) {
+	const { setOpen } = props;
 	const classes = useStyles();
 	const [mercadopago, setMercadpago] = useState(null);
   const [shouldMount, setShouldMount] = useState(false);
@@ -43,6 +45,21 @@ export default function Checkout() {
     paymentInfo: {},
     isLoading: false
   });
+
+  useEffect(() => {
+  	if (paymentState.error) {
+  		setOpen(false);
+  		Swal.fire({
+        icon: "error",
+        title: "No se pudo procesar el pago.",
+        text: "Rellena bien los datos o comunicate con tu banco.",
+      });
+  	}
+  	if (paymentState.success) {
+  		setOpen(false);
+  		Swal.fire("Correcto!", "Pago realizado con éxito.", "success");
+  	}
+  }, [paymentState]);
 
   useEffect(() => {
    const script = document.createElement('script');
