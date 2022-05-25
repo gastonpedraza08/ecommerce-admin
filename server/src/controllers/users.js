@@ -188,8 +188,18 @@ router.get('/mycart/:id', async (req, res) => {
 			for (let i = 0; i < productsInCartId.length; i++) {
 				if (pro._id == productsInCartId[i]._id) {
 					return {
-						...pro._doc,
-						count: productsInCartId[i].count
+						count: productsInCartId[i].count,
+						_id: pro._doc._id,
+						name: pro._doc.name,
+						price: pro._doc.price,
+						sku: pro._doc.sku,
+						thumbnail: pro._doc.thumbnail,
+						condition: pro._doc.condition,
+						description: pro._doc.description,
+						categoryId: pro._doc.categoryId,
+						stock: pro._doc.stock,
+						state: pro._doc.state,
+						images: pro._doc.images,
 					}
 				}
 			}
