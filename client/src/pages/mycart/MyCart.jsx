@@ -8,7 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { fetchWithoutToken } from 'helpers/fetch';
 
-import { Product } from './components';
+import { Product, Dialog } from './components';
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -90,11 +90,7 @@ export default function MyCart() {
 							</Typography>
 						</div>
 						<div className={classes.buyButtonContainer}>
-							<Button 
-								color="primary" 
-								variant="outlined"
-								onClick={() => buyCart()}
-							>Comprar Carrito</Button>
+							<Dialog />
 						</div>
 					</div>
 				</Grid>
