@@ -184,7 +184,6 @@ router.get('/mycart/:id', async (req, res) => {
 		let result = await productHandler.getProductsByIds(productsInCartId);
 
 		let products = result.map(pro => {
-			console.log(pro)
 			for (let i = 0; i < productsInCartId.length; i++) {
 				if (pro._id == productsInCartId[i]._id) {
 					return {
