@@ -91,6 +91,7 @@ export default function Product(props) {
 			productsInCart.push({ _id: id, count: 1});
 			fieldsToUpdate = {
 				info: {
+					...user.info,
 					productsInCart
 				}
 			}
@@ -98,6 +99,7 @@ export default function Product(props) {
 			productsInCart[index].count++;
 			fieldsToUpdate = {
 				info: {
+					...user.info,
 					productsInCart: productsInCart
 				}
 			}

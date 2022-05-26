@@ -248,7 +248,10 @@ router.put('/mycart/:id', async (req, res) => {
 		}
 	}
 
-	user.info.productsInCart = productsInCart;
+	user.info = {
+		...user.info,
+		productsInCart
+	};
 
 	user.changed("info", true);
 
