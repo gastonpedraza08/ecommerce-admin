@@ -14,7 +14,9 @@ module.exports = {
 					avatarUrl: null,
 					roleId: 1,
 					info: JSON.stringify({
-						productsInCart: []
+						productsInCart: [],
+						pendingShipments: [],
+						completedShipments: []
 					}),
 					createdAt: new Date(),
 					updatedAt: new Date(),

@@ -43,9 +43,6 @@ module.exports = {
 			},
 			info: {
 				type: Sequelize.JSON,
-				defaultValue: {
-					productsInCart: []
-				}
 			},
 			createdAt: {
 				allowNull: false,
