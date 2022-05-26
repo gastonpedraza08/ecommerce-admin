@@ -59,11 +59,11 @@ router.post("/process_payment", (req, res) => {
             status: data.status,
             id: data.id
           },
-          products, //id the productos
+          products,
         },
-        userId: payer.id, //id user
+        userId: payer.id,
         ammount: paymentData.transaction_amount,
-        shippingAddress: payer.address, //sacar del front
+        shippingAddress: payer.address,
         referenceAddress: payer.referenceAddress,
         fullName: payer.fullName,
         orderEmail: payer.email,
