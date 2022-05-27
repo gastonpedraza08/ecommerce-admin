@@ -13,6 +13,7 @@ import {
   SearchProduct as SearchProductView,
   Product as ProductView,
   MyCart as MyCartView,
+  MyPurchase as MyPurchaseView,
   Admin as AdminView,
   Auth as AuthView,
 } from "./pages";
@@ -42,6 +43,12 @@ const Routes = () => {
         exact
         layout={MainLayout}
         path="/mycart"
+      />
+      <RouteWithLayout
+        component={MyPurchaseView}
+        exact
+        layout={MainLayout}
+        path="/mypurchase"
       />
       <RouteWithLayout
         component={AuthView}
