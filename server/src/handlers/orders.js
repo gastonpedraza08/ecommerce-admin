@@ -15,7 +15,7 @@ const createOrder = async orderToPersist => {
 		info: {
 			...user.info,
 			productsInCart: [],
-			pendingShipments: products,
+			pendingShipments: user.info.pendingShipments.concat(products),
 		}
 	});
 	return order;

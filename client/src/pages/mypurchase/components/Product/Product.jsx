@@ -57,14 +57,13 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: theme.spacing(2)
 	},
 	infoCountContainer: {
-		display: 'flex',
 		width: '100%',
-		justifyContent: 'space-around'
+		margin: 'auto'
 	}
 }));
 
 export default function ComplexGrid(props) {
-	const { product } = props;
+	const { product, status } = props;
   const classes = useStyles();
   const dispatch = useDispatch();
   const { user } = useSelector(state => state.auth);
@@ -91,33 +90,31 @@ export default function ComplexGrid(props) {
           <Grid item xs container>
             <Grid item xs container direction="column" spacing={2}>
               <Grid item xs>
-                <Box
-									fontSize="h5.fontSize"
-									component="div"
-									classes={{ root: classes.title }}
-								>
-									{product.name}
-								</Box>
+                <Typography 
+                	style={{
+                		color: status === 'pending' ? 'orange' : 'green'}}>
+                	{status === 'pending' ? "Pendiente" : "Entregado"}
+                </Typography>
 								<Box component="div" classes={{ root: classes.subtitle }}>
-									<div dangerouslySetInnerHTML={{ __html: product.description }} >
-									</div>
+					        <div className={classes.infoCountContainer}>
+					        	<Typography color="textSecondary">{product.name}</Typography>
+					        	<Typography 
+					        		color="textSecondary"
+					        	>
+					        		{product.count}
+					        		{" "}
+					        		{product.count > 1 ? "Unidades" : "Unidad"}
+					        	</Typography>
+					        	<Typography color="textSecondary">Price: {product.price}</Typography>
+					        </div>
 								</Box>
                 <Typography className={classes.price} display="block" gutterBottom>
-									$ {product.price}
+									Total: $ {product.price * product.count}
 								</Typography>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item>
-          	<IconButton onClick={(e) => removeFromCart(e, product._id)}>
-              <DeleteIcon />
-            </IconButton>
-          </Grid>
         </Grid>
-        <div className={classes.infoCountContainer}>
-        	<Typography color="primary">Cantidad: {product.count}</Typography>
-        	<Typography color="secondary">Total: ${product.price * product.count}</Typography>
-        </div>
       </div>
     </Box>
   );

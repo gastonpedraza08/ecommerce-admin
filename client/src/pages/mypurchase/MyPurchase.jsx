@@ -49,7 +49,7 @@ export default function MyPurchase() {
 						{
 							pendingProducts.map(product => {
 								return (
-									<Product key={product._id} product={product} />
+									<Product status="pending" key={product._id} product={product} />
 								)
 							})
 						}
