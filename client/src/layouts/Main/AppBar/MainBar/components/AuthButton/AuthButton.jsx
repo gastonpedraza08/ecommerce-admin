@@ -86,8 +86,7 @@ export default function MenuListComposition() {
                     <Paper>
                       <ClickAwayListener onClickAway={handleClose}>
                         <MenuList autoFocusItem={open} id="menu-list-grow" onKeyDown={handleListKeyDown}>
-                          <MenuItem onClick={handleClose}>Mi Cuenta</MenuItem>
-                          <MenuItem onClick={handleClose}>Configuración</MenuItem>
+                          <MenuItem onClick={handleClose} component={CustomRouterLink} to="/mypurchase">Mis compras</MenuItem>
                           <MenuItem onClick={handleLogout}>
                             Cerrar Sesión
                           </MenuItem>
