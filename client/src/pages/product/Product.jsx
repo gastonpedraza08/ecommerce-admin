@@ -8,6 +8,7 @@ import Divider from '@material-ui/core/Divider';
 
 import CarouselImagesPrev from './components/CarouselImagesPrev';
 import AdvancedInfo from './components/AdvancedInfo';
+import CartButton from './components/CartButton';
 
 const useStyles = makeStyles(theme => ({
 	root: {
@@ -208,6 +209,9 @@ export default function SearchProduct() {
 
 				{/*sidebar*/}
 				<Grid item xs={12} sm={12} md={3}>
+					<div style={{height: '150%', position: 'absolute'}}>
+						<CartButton _id={product._id} />
+					</div>
 				</Grid>
 			</Grid>
 		</div>
