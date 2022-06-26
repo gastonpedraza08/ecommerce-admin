@@ -17,11 +17,11 @@
   },
   "production": {
     "database": {
-      "protocol": "mongodb",
-      "username": "gp",
-      "password": "abcd1234",
+      "protocol": "mongodb+srv",
+      "username": "gaston",
+      "password": "Abcd1234",
       "name": "database_production",
-      "host": "cluster0.qvjuj.mongodb.net",
+      "host": "cluster0.ddh1bcl.mongodb.net/?retryWrites=true",
       "port": "27017",
       "options": {
         "useNewUrlParser": true

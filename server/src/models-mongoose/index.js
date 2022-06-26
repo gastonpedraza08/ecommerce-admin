@@ -3,12 +3,13 @@ const path = require('path');
 const Mongoose = require('mongoose');
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = require('../../config-mongoose/config.json')[env];
+const config = require('../../config-mongoose/config.json')["production"];
 
 if (config.database.url) {
   Mongoose.connect(config.database.url, config.database.options);
 } else if (config.database) {
-  Mongoose.connect(`${config.database.protocol}://${config.database.username}:${config.database.password}@${config.database.host}:${config.database.port}`, config.database.options);
+  console.log("2")
+  Mongoose.connect(`${config.database.protocol}://${config.database.username}:${config.database.password}@${config.database.host}`, config.database.options);
 } else {
   Mongoose.connect(`${config.database.protocol}://${config.database.username}:${config.database.password}@${config.database.host}:${config.database.port}/${config.database.name}`, config.database.options);
 }
