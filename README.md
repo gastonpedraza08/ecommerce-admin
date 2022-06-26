@@ -4,10 +4,6 @@
 
 <div align="center">
   <h3>
-    <a href="https://trusting-mccarthy-c53249.netlify.app/">
-      Demo
-    </a>
-    <span> | </span>
     <a href="https://github.com/gastonpedraza08/ecommerce-admin">
       Code
     </a>
@@ -27,7 +23,6 @@
 
 ## Overview
 
-- Click [aquí](https://trusting-mccarthy-c53249.netlify.app/) para ver la demo!
 - Este proyecto fue hecho para poner a prueba mis conocimientos como desarrollador web full stack.
 - A pesar de que ya existe una demo para visualizarse, aún quedan mejoras por hacer y las estare subiendo a medida que las vaya desarrollando.
 
@@ -60,6 +55,11 @@ Cambian el nombre de .env.example por .env y llenan con las variables de entorno
 
 # Corre la app
 $ cd server
+
+$ npx sequelize-cli db:migrate
+$ npx sequelize-cli db:seed:all
+$ npx mongoosejs-cli db:seed:all
+
 $ yarn start
 $ cd ..
 $ cd client
@@ -68,6 +68,5 @@ $ yarn start
 
 ## Contact
 - GitHub [https://github.com/gastonpedraza08](https://github.com/gastonpedraza08)
-- Linkedin [https://www.linkedin.com/in/gaston-pedraza](https://www.linkedin.com/in/gaston-pedraza)
-- Email: gastonpedraza.developer@gmail.com
-- Phone Number: +54 3886087452
+- Email: gp.ju.dev@gmail.com
+- Phone Number: +54 3883108912
